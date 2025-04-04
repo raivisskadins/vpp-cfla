@@ -3,6 +3,7 @@
   question: "Iepirkuma dati atbilst apstiprinātajā iepirkuma plānā minētajam. Gadījumā, ja ir izmaiņas, tās nav uzskatāmas par būtiskām (izmaiņas neskar procedūras izvēli un līgumcenu)"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 2
+  question0: "Vai tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra?"
   question: "Ja tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra, vai ir PIL regulējumam atbilstošs pamatojums šo procedūru piemērošanai"
   PIL:
    - chapter: 8
@@ -16,6 +17,7 @@
    - chapter: 11
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 4
+  question0: "Vai iepirkuma priekšmets nav sadalīts daļās?"
   question: "Ja iepirkuma priekšmets nav sadalīts daļās, vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai un tas objektīvi pamato iepirkuma priekšmeta nesadalīšanu"
   MK107: 
    - chapter: 196
@@ -24,15 +26,42 @@
   question: "Iepirkumam atbilstoši būvdarbu, preču grupu un pakalpojumu kategorijām ir piešķirts CPV kods un tas pēc būtības atbilst iepirkuma priekšmetam un tas ir norādīts Elektronisko iepirkumu sistēmā (EIS) E-konkursu apakšsistēmā, paziņojumā par plānoto līgumu un pārējā iepirkuma dokumentācijā pēc būtības atbilst iepirkuma priekšmeta saturam"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 6
+  question0: "Vai līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes)?"
   question: "Ja līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes), tas klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 7
+  question0: "Vai līguma priekšmets daļēji ietver PIL 2.pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes?"
   question: "Ja līguma priekšmets daļēji ietver PIL 2.pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes, vai galvenais priekšmets un piemērojamā iepirkuma procedūra ir noteikta pēc tā, kuru pakalpojumu vai piegāžu paredzamā līgumcena ir visaugstākā"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+  PIL:
+   - appendix: 2
 - nr: 8
   question: "Vienlaicīgi ar procedūras izsludināšanas dienu (diena, kad paziņojums par iepirkumu publicēts IUB tīmekļvietnē) pasūtītājs ir nodrošinājis pircēja profilā EIS E-konkursu apakšsistēmā brīvu un tiešu elektronisku piekļuvi iepirkuma procedūras dokumentācijai"
   PIL:
    - chapter: 27
    - chapter: 28
    - chapter: 34
+  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+- nr: 10
+  question: "Pasūtītājs ir nodrošinājis iespēju piegādātājiem iepazīties uz vietas ar iepirkuma papildu dokumentiem, kam tehnisku iemeslu dēļ vai tajos iekļautās informācijas vai komerciālu interešu aizsardzības dēļ nav nodrošināma brīva un tieša elektroniska piekļuve, sākot ar attiecīgā iepirkuma izsludināšanas brīdi"
+  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+- nr: 15
+  question: "Pasūtītājs ir noteicis informācijas apmaiņas veidu, kas ir vispārpieejams un neapgrūtina piegādātāja piekļuvi iepirkumam"
+  PIL:
+   - chapter: 36
+  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+- nr: 16
+  question: "Ir atbilstoši noteiktas prasības elektroniskai pieteikumu un piedāvājumu saņemšanai.\n Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu EIS E-konkursu apakšsistēmā, izņemot MK noteikumu 231.punktā noteiktos gadījumus, kad pasūtītājam nav pienākuma pieteikumu un piedāvājumu vai tā sastāvdaļu saņemšanai izmantot elektroniskās informācijas sistēmas."
+  PIL:
+   - chapter: 39
+  MK107: 
+   - chapter: 231
+  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+- nr: 17
+  question0: "Vai nolikumā noteikts, ka piedāvājumu var iesniegt elektroniski?"
+  question: "Ja nolikumā noteikts, ka piedāvājumu var iesniegt elektroniski, pasūtītājs nav noteicis, ka papildus elektroniskajam piedāvājumam piegādātājam jāiesniedz arī rakstveida piedāvājums"
+  PIL:
+   - chapter: 38
+     pt:
+      - 8
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
