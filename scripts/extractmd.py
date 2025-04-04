@@ -40,7 +40,20 @@ class Extractor:
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return ''
-    
+
+    def useMammoth(self,file_path):
+        try:
+            with open(file_path, 'rb') as myfile:
+                binarycontent = myfile.read()
+                    
+            result = mammoth.convert_to_html(BytesIO(binarycontent))
+            htmlstr = result.value
+                                           
+            return htmlstr  
+        except Exception as error:
+            print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
+            return ''
+            
     def useMarkdownify(self,file_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as myfile:
@@ -80,6 +93,13 @@ class Extractor:
             return(self.useMarkdownify(file_path))
         elif re.match(r".+\.(txt|md|csv)$", file_path):
             return(self.useTxtFileReader(file_path))
+        else:
+            return("Not supported")
+
+    def convert2html(self,file_path):
+    
+        if re.match(r".+\.docx$", file_path):
+            return(self.useMammoth(file_path))
         else:
             return("Not supported")
 

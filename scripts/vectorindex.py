@@ -32,7 +32,9 @@ text_qa_template_str = """Context information is below:
 
 Using the context information, answer the question:
 {query_str}"""
-       
+
+mddict={"#":"H1", "##":"H2", "###":"H3"}
+
 class QnAEngine:
     
     def __init__(self, embedding: HuggingFaceEmbedding, llm: LLM):
