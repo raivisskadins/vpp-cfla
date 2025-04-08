@@ -4,7 +4,7 @@
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 2
   question0: "Vai tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra?"
-  question: "Ja tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra, vai ir PIL regulējumam atbilstošs pamatojums šo procedūru piemērošanai"
+  question: "Vai ir PIL regulējumam atbilstošs pamatojums konkursa procedūru piemērošanai"
   PIL:
    - chapter: 8
      pt:
@@ -12,27 +12,27 @@
       - 7
   prompt:  "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 3
-  question: "Nav konstatējama iepirkuma priekšmeta nepamatota apvienošana"
+  question: "Vai nav konstatējama iepirkuma priekšmeta nepamatota apvienošana?"
   PIL: 
    - chapter: 11
-  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+  prompt: "Atbildi uzlietotāja jautājumu, balstoties uz informāciju kontekstā. Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 4
-  question0: "Vai iepirkuma priekšmets nav sadalīts daļās?"
-  question: "Ja iepirkuma priekšmets nav sadalīts daļās, vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai un tas objektīvi pamato iepirkuma priekšmeta nesadalīšanu"
+  question0: "Vai iepirkuma priekšmetam ir viena daļa?"
+  question: "Vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai un tas objektīvi pamato iepirkuma priekšmeta nesadalīšanu?"
   MK107: 
    - chapter: 196
-  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+  prompt: "Atbildi uzlietotāja jautājumu, balstoties uz informāciju kontekstā. Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 5
   question: "Iepirkumam atbilstoši būvdarbu, preču grupu un pakalpojumu kategorijām ir piešķirts CPV kods un tas pēc būtības atbilst iepirkuma priekšmetam un tas ir norādīts Elektronisko iepirkumu sistēmā (EIS) E-konkursu apakšsistēmā, paziņojumā par plānoto līgumu un pārējā iepirkuma dokumentācijā pēc būtības atbilst iepirkuma priekšmeta saturam"
-  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+  prompt: "Noskaidro, vai lietotāja apgalvojumam var atrast pamatojumu kontekstā. Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 6
   question0: "Vai līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes)?"
-  question: "Ja līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes), tas klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
+  question: "līguma priekšmets ir klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 7
-  question0: "Vai līguma priekšmets daļēji ietver PIL 2.pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes?"
-  question: "Ja līguma priekšmets daļēji ietver PIL 2.pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes, vai galvenais priekšmets un piemērojamā iepirkuma procedūra ir noteikta pēc tā, kuru pakalpojumu vai piegāžu paredzamā līgumcena ir visaugstākā"
-  prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+  question0: "Vai līguma priekšmets daļēji ietver PIL 2. pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes?"
+  question: "Vai galvenais priekšmets un piemērojamā iepirkuma procedūra ir noteikta pēc tā, kuru pakalpojumu vai piegāžu paredzamā līgumcena ir visaugstākā"
+  prompt: "Atbildi uzlietotāja jautājumu, balstoties uz informāciju kontekstā. Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
   PIL:
    - appendix: 2
 - nr: 8
@@ -42,6 +42,28 @@
    - chapter: 28
    - chapter: 34
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+- nr: 9
+  question0: "Vai iepirkuma līgums tiek slēgts par veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas CPV kodi 75121000-0, 75122000-7, 75123000-4, 79622000-0, 79624000-4, 79625000-1, 80110000-8, 80300000-7, 80420000-4, 80430000-7, 80511000-9, 80520000-5, 80590000-6, no 85000000-9 līdz 85323000-9, 92500000-6, 92600000-7, 98133000-4, 98133110-8?"
+  questions:
+  - question: "Pasūtītājs ir rezervējis iespēju piedalīties iepirkumā PIL 10. panta kārtībā tikai tiem kandidātiem vai pretendentiem, kuriem ir piešķirts sociālā uzņēmuma statuss un kuri sniedz minēto jomu pakalpojumus, un kuriem pēdējo triju gadu laikā no dienas, kad būtu pieņemams lēmums par iepirkuma līguma tiesību piešķiršanu, pasūtītājs nav piešķīris iepirkuma līguma slēgšanas tiesības par PIL 16.pantā minētajiem pakalpojumiem PIL 16.panta kārtībā."
+    prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."   
+    PIL:
+     - chapter: 10
+     - chapter: 16
+       pt:
+        - 2
+  - question: "pasūtītājs ir atsaucies uz PIL 16.pantu paziņojumā par sociālajiem un citiem īpašiem pakalpojumiem"
+    prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+    PIL:
+     - chapter: 16
+       pt:
+        - 3
+  - question: "iepirkuma līguma termiņš nepārsniedz trīs gadus"
+    prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
+    PIL:
+     - chapter: 16
+       pt:
+        - 2
 - nr: 10
   question: "Pasūtītājs ir nodrošinājis iespēju piegādātājiem iepazīties uz vietas ar iepirkuma papildu dokumentiem, kam tehnisku iemeslu dēļ vai tajos iekļautās informācijas vai komerciālu interešu aizsardzības dēļ nav nodrošināma brīva un tieša elektroniska piekļuve, sākot ar attiecīgā iepirkuma izsludināšanas brīdi"
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
@@ -59,7 +81,7 @@
   prompt: "Noskaidro, vai lietotāja apgalvojums ir patiess? Domā soli pa soli, katram solim neveltot vairāk par pieciem vārdiem. Pamato savu atbildi, citējot fragmentu no konteksta. Atbildei jābūt 'jā', 'nē' vai 'kontekstā nav informācijas'. Atbildi ietver kvadrātiekavās '[]'. Ja kontekstā nav informācijas, paskaidro, kāda informācija ir nepieciešama, lai novērtētu apgalvojumu."
 - nr: 17
   question0: "Vai nolikumā noteikts, ka piedāvājumu var iesniegt elektroniski?"
-  question: "Ja nolikumā noteikts, ka piedāvājumu var iesniegt elektroniski, pasūtītājs nav noteicis, ka papildus elektroniskajam piedāvājumam piegādātājam jāiesniedz arī rakstveida piedāvājums"
+  question: "Pasūtītājs nav noteicis, ka papildus elektroniskajam piedāvājumam piegādātājam jāiesniedz arī rakstveida piedāvājums"
   PIL:
    - chapter: 38
      pt:
