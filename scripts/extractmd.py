@@ -11,7 +11,10 @@ class Extractor:
     
     def usePymupdf4llm(self,file_path):
         try:
-            return pymupdf4llm.to_markdown(file_path)
+            result = pymupdf4llm.to_markdown(file_path)
+            result = re.sub(r'(\r?\n)+\#\s\d+(\r?\n)+(---+(\r?\n)+)?',r'\n\n',result)
+            
+            return result
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return ''

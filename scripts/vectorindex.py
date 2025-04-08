@@ -64,7 +64,7 @@ class QnAEngine:
                     found = re.search(rf"^(##?#?)([^#]+)$",currline)
                     
                     if found and len(found.group(2).strip())>0:
-                        if len(segmentlines)>1 or (mddict[found.group(1)] == "H2" and "H2" in metalist): 
+                        if (len(segmentlines)>1 and len(segmentlines[0].strip())>0) or (mddict[found.group(1)] == "H2" and "H2" in metalist): 
                             #more than 1 line before or new H2 and previousely was H2
                            
                             if found.group(2).strip() != txt2add: #new chunk if not only title but other text as well
@@ -107,15 +107,38 @@ class QnAEngine:
                                 newmeta={**metalist, **othermeta}
                                 docs.append(Document(text=txt2add, extra_info=newmeta))
                                 segmentlines.clear()
-                            segmentlines.append(currline[4:])
-                            
+                            segmentlines.append(currline[4:])                                            
                     elif len(txt2add)>500 and (currline.strip().endswith(":") or currline.strip().endswith("?")) and currline[0].isupper():
                         newmeta={**metalist, **othermeta}
                         docs.append(Document(text=txt2add, extra_info=newmeta))
                         segmentlines.clear()
                         segmentlines.append(currline)
                     else:
-                        segmentlines.append(currline)
+                        found = re.search(rf"^\*\*(\d+\.)(\d+\.)?\*\* \*\*([^*\n]+)\*\*$",currline)
+                        if found:
+                            if found.group(2):
+                                title = "H2"
+                            else:
+                                title = "H1"
+                             
+                            if (len(segmentlines)>1 and len(segmentlines[0].strip())>0) or (title == "H2" and "H2" in metalist): 
+                                #more than 1 line before or new H2 and previousely was H2
+                             
+                                newmeta={**metalist, **othermeta}
+                                docs.append(Document(text=txt2add, extra_info=newmeta))
+                                segmentlines.clear()    
+                                    
+                            if title == "H1":
+                                metalist.pop("H2", None)
+                                metalist.pop("H3", None)
+                                segmentlines.append(f"# {found.group(1)} {found.group(3)}") 
+                                metalist[title]=f"{found.group(1)} {found.group(3)}"
+                            else:
+                                metalist.pop("H3", None)
+                                segmentlines.append(f"## {found.group(1)}{found.group(2)} {found.group(3)}") 
+                                metalist[title]=f"{found.group(1)}{found.group(2)} {found.group(3)}"
+                        else:
+                            segmentlines.append(currline)
                         
                 elif len(txt2add)>2000 and '|' not in currline: # currline not table row
                     pos=txt2add.rfind("<figure>")
@@ -141,7 +164,7 @@ class QnAEngine:
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return docs
-            
+    
         return docs
 
     async def get_nodes(self,documents,filetype,chunk_size,chunk_overlap) -> List[TextNode]:
