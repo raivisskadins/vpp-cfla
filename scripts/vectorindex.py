@@ -47,6 +47,7 @@ class QnAEngine:
         self.llm = llm
         Settings.llm = self.llm   #default language model for all functions
         Settings.embed_model = self.embeddingobject
+        self.chached_responses = {}
             
     def load_md(self,text) -> List[Document]:
         docs = []
@@ -238,6 +239,9 @@ class QnAEngine:
        
     def askQuestion(self,query_prompt,q,usecontext=True,n=5):
 
+        if (query_prompt,q) in self.chached_responses:
+            return self.chached_responses[(query_prompt,q)]
+            
         if usecontext==True:
             numitemsinidx=self.newindex.vector_store.client.ntotal
             
@@ -259,7 +263,7 @@ class QnAEngine:
                 #        })
                     
                 result = query_engine.query(q)
-
+                self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
                 
             except Exception as error:
@@ -268,6 +272,7 @@ class QnAEngine:
         else:
             try:
                 result = self.llm.complete(query_prompt + '\n\n' + q)
+                self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
                 
             except Exception as error:
