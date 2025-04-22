@@ -11,14 +11,14 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core import  VectorStoreIndex, StorageContext, Document, Settings
 from llama_index.core.schema import TextNode, MetadataMode, NodeWithScore
-
+from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.core.prompts import PromptTemplate
 from llama_index.core.retrievers import BaseRetriever
 from llama_index.core.query_engine import CustomQueryEngine, RetrieverQueryEngine
 from llama_index.core.response_synthesizers import get_response_synthesizer,BaseSynthesizer
 
 from llama_index.core.llms.llm import LLM
-
+from llama_index.core.utilities.token_counting import TokenCounter
 from tqdm import tqdm
 import json
 
@@ -48,6 +48,8 @@ class QnAEngine:
         Settings.llm = self.llm   #default language model for all functions
         Settings.embed_model = self.embeddingobject
         self.chached_responses = {}
+        self._token_counter = TokenCounter()
+        self.token_limit = self.llm.metadata.context_window * 0.8
             
     def load_md(self,text) -> List[Document]:
         docs = []
@@ -185,7 +187,7 @@ class QnAEngine:
                 doc.text=re.sub("([\s\t]*\r?\n){3,}",'\n\n',doc.text)
 
             if len(doc.text)>0:
-                
+
                 doc.extra_info['FileType']=filetype   
                 cur_text_chunks = node_parser.split_text(doc.text)
                      
@@ -230,17 +232,32 @@ class QnAEngine:
         try:
             documents = self.load_md(file_content)
             nodes = await self.get_nodes(documents,filetype,chunk_size,chunk_overlap)
+            with open ("tmp2.md", 'w',encoding='utf-8') as ofile:
+                for node in nodes:
+                    print(f"ChunkNr:{node.metadata['ChunkNr']}\n{node.text}", file = ofile)
             self.newindex = VectorStoreIndex(nodes, show_progress=False, use_async=True, storage_context=self.storage_context, embed_model=self.embeddingobject)
             return True
             
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return False
-       
+
+    def compressPrompt(self,prompt):
+        response = self.llm.complete(f"The following text exceeds context window token limit. Summarize it so its size does not exceed {self.token_limit} tokens. The text is the following:\n{prompt}\nThe summaized text: ")
+        newprompt = str(response).replace(r'The summarized text is as follows:','').strip()
+        #print(f"Old size:{len(prompt)} New size:{len(newprompt)}")
+        #print(f"NEW PROMPT:\n{newprompt}")
+        return newprompt
+        
     def askQuestion(self,query_prompt,q,usecontext=True,n=5):
 
         if (query_prompt,q) in self.chached_responses:
             return self.chached_responses[(query_prompt,q)]
+            
+        token_count = self._token_counter.estimate_tokens_in_messages([ChatMessage(content=query_prompt, role=MessageRole.SYSTEM)])  
+        
+        if token_count > self.token_limit:
+            query_prompt = self.compressPrompt(query_prompt)
             
         if usecontext==True:
             numitemsinidx=self.newindex.vector_store.client.ntotal
@@ -250,18 +267,12 @@ class QnAEngine:
     
             retriever = self.newindex.as_retriever(similarity_top_k=n)                    
             try:    
-                #query_engine = self.newindex.as_query_engine()
                 query_engine = RetrieverQueryEngine.from_args(
                     retriever=retriever, 
                     llm=self.llm,
                     text_qa_template = PromptTemplate(query_prompt+'\n'+text_qa_template_str)
                 )
-
-                #query_engine.update_prompts(
-                #        {
-                #            "response_synthesizer:text_qa_template": PromptTemplate(query_prompt+'\n'+text_qa_template_str)
-                #        })
-                    
+                
                 result = query_engine.query(q)
                 self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
