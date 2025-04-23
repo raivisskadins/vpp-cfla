@@ -67,7 +67,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters):
         extrainfo += 'MK107\n' + ';\n'.join(mk107txtlist).replace(';;',';') + '\n'
 
     if len(extrainfo) > 0:
-        extrainfo = 'Likumdošanas prasības: \n' + extrainfo
+        extrainfo = f"Izvilkumi no likumiem ietverti <law> tagos: \n<law>{extrainfo}</law>"
         
     return extrainfo
     

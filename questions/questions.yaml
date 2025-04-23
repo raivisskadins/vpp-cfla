@@ -130,87 +130,14 @@
   PIL:
    - chapter: 68
 - nr: 25
-  question0: "Vai Nolikumā ir norādīts identifikācijas numurs?"
+  question0: "Vai Nolikumā ir norādīts identifikācijas numurs? Kāds tas ir (atgriez numuru ietvertu tagos <num>...</num>)?"
   question: "Nolikumā norādītais identifikācijas numurs ir tāds pats kā publikācijā IUB tīmekļa vietnē"
-  MK107:
-   - chapter: 2
-     pt:
-      - 1
-   - chapter: 26
-     pt:
-      - 1
-   - chapter: 42
-     pt:
-      - 1
-   - chapter: 63
-     pt:
-      - 1
-   - chapter: 79
-     pt:
-      - 1
-   - chapter: 104
-     pt:
-      - 1
-   - chapter: 139
-     pt:
-      - 1
 - nr: 26
   question: "Nolikumā ir pareizi norādīts pasūtītāja nosaukums, adrese un rekvizīti (ja nepieciešams)"
-  MK107:
-   - chapter: 2
-     pt:
-      - 2
-   - chapter: 26
-     pt:
-      - 2
-   - chapter: 42
-     pt:
-      - 2
-   - chapter: 63
-     pt:
-      - 2
-   - chapter: 79
-     pt:
-      - 2
-   - chapter: 104
-     pt:
-      - 2
-   - chapter: 139
-     pt:
-      - 2
 - nr: 27
-  question: "Nolikumā ir norādīta atbilstoša piedāvājuma/pieteikuma iesniegšanas un atvēršanas vieta, datums, laiks un piedāvājuma atvēršanas kārtība"
-  MK107:
-   - chapter: 2
-     pt:
-      - 7
-   - chapter: 26
-     pt:
-      - 7
-   - chapter: 42
-     pt:
-      - 7
-   - chapter: 63
-     pt:
-      - 6
-   - chapter: 79
-     pt:
-      - 5
-   - chapter: 104
-     pt:
-      - 6
-   - chapter: 139
-     pt:
-      - 6
+  question: "Vai ir norādīta atbilstoša piedāvājuma/pieteikuma iesniegšanas un atvēršanas vieta, datums, laiks un piedāvājuma atvēršanas kārtība?"
 - nr: 28
-  question: "Nolikumā ir norādīts līguma izpildes laiks un vieta"
-  MK107:
-   - chapter: 2
-     pt:
-      - 6
-   - chapter: 42
-     pt:
-      - 3
+  question: "Vai ir ir norādīts līguma izpildes laiks un vieta?"
 - nr: 29
   question: "Piedāvājumu/ pieteikumu iesniegšanas termiņš iepirkuma dokumentācijā sakrīt ar paziņojumā par līgumu norādīto"
 - nr: 30
@@ -681,7 +608,7 @@
       - 1
       - 2
 - nr: 48
-  question: "Iepirkuma procedūras dokumentos ir norādīts izšķirošais piedāvājuma izvēles kritērijs, atbilstoši kuram pasūtītājs izvēlēsies piedāvājumu, ja pirms tam, kad tiks pieņemts lēmums par iepirkuma līguma slēgšanas tiesību piešķiršanu, tiks konstatēts, ka vismaz divu piedāvājumu novērtējums ir vienāds"
+  question: "Vai iepirkuma procedūras dokumentos ir norādīts izšķirošais piedāvājuma izvēles kritērijs, atbilstoši kuram pasūtītājs izvēlēsies piedāvājumu, ja pirms tam, kad tiks pieņemts lēmums par iepirkuma līguma slēgšanas tiesību piešķiršanu, tiks konstatēts, ka vismaz divu piedāvājumu novērtējums ir vienāds?"
 - nr: 49
   question: "Nav citi konstatējumi saistībā ar piedāvājuma izvērtēšanas kritērija neatbilstību"
 - nr: 50
@@ -695,16 +622,14 @@
   question0: "Vai iepirkuma procedūras dokumentācijai ir pievienots iepirkuma līguma projekts?"
   questions:
   - nr: 51.1
-    question: "Iepirkuma līguma termiņš ir noteikts atbilstoši"
+    question: "Iepirkuma līguma projektā iepirkuma līguma termiņš ir noteikts atbilstoši iepirkuma līguma projektā"
     PIL:
      - chapter: 60
-     - chapter: 61
-     - chapter: 62
   - nr: 51.2
-    question: "Ir paredzētas pasūtītāja tiesības vienpusēji atkāpties no līguma izpildes, ja līgumu nav iespējams izpildīt tādēļ, ka ir piemērotas starptautiskās vai nacionālās sankcijas vai būtiskas finanšu un kapitāla tirgus intereses ietekmējošas Eiropas Savienības vai Ziemeļatlantijas līguma organizācijas dalībvalsts noteiktās sankcijas"
+    question: "Iepirkuma līguma projektā ir paredzētas pasūtītāja tiesības vienpusēji atkāpties no līguma izpildes, ja līgumu nav iespējams izpildīt tādēļ, ka ir piemērotas starptautiskās vai nacionālās sankcijas vai būtiskas finanšu un kapitāla tirgus intereses ietekmējošas Eiropas Savienības vai Ziemeļatlantijas līguma organizācijas dalībvalsts noteiktās sankcijas"
   - nr: 51.3
     question0: "Vai iepirkumu veic tiešās pārvaldes iestāde?"
-    question: "Ir paredzēts nosacījums, ka tad, ja piegādātājs vai - ja pasūtītājs ir paredzējis tiešos maksājumus apakšuzņēmējiem saskaņā ar PIL 63.panta piekto daļu - apakšuzņēmējs iesniedz elektronisko rēķinu, tas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību"
+    question: "Iepirkuma līguma projektā ir paredzēts nosacījums, ka tad, ja piegādātājs vai - ja pasūtītājs ir paredzējis tiešos maksājumus apakšuzņēmējiem saskaņā ar PIL 63.panta piekto daļu - apakšuzņēmējs iesniedz elektronisko rēķinu, tas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību"
   - nr: 51.4
     question: "Iepirkuma līguma projektā nav ietverta pretrunīga informācija"
 - nr: 52
@@ -735,7 +660,7 @@
   PIL:
    - chapter: 62
 - nr: 58
-  question0: "Vai finansējuma saņēmējs ir tiešās valsts pārvaldes iestāde?"
+  question0: "Vai finansējuma saņēmējs iepirkuma līguma projektā ir tiešās valsts pārvaldes iestāde?"
   question: "Ir veikta līguma projekta satura atbilstības pārbaude atbilstoši Ministru kabineta 2016.gada 20.septembra instrukcijai Nr.3 „Ārvalstu finanšu instrumentu finansētu civiltiesisku līgumu izstrādes un slēgšanas instrukcija valsts tiešās pārvaldes iestādēs”, un atbilstošā papildus pārbaudes lapa pievienota pielikumā"
 - nr: 59
   question: "Paziņojumā par līgumu elektroniskajā informācijas sistēmā un nolikumā ietvertā informācija ir savstarpēji saskaņota (piemēram, vai piedāvājumu iesniegšanas datums, piedāvājumu derīguma termiņš ir noteikts vienāds; ja nolikumā ir izvirzītas noteiktas prasības, vai nolikuma pielikumos ietvertajā dokumentācijā – veidnēs/ formās/ CV veidnēs u.tml., kuras pretendentam jāiesniedz kopā ar piedāvājumu, ietvertās prasības atbilst nolikumā izvirzītajām prasībām)"

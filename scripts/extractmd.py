@@ -45,7 +45,9 @@ class Extractor:
         
         while re.search(r"( *\r\n *\r\n)( *\r\n *\r\n)+", filetxt):
             filetxt = re.sub(r"( *\r\n *\r\n)( *\r\n *\r\n)+", r"\1", filetxt)
-                    
+            
+        filetxt = re.sub(r"(\r?\n)([^\n]+\r?\n)[=]+ *\n", r"\1# \2\n\n", filetxt)
+        filetxt = re.sub(r"(\r?\n)\*\*(\d+\.)(\*\*)? *(\*\*)?([^\n]+)\*\*(\r?\n)", r"\1\1## \2 \5\6\6", filetxt) 
         return filetxt
     
     def usePymupdf4llm(self,file_path):
@@ -80,7 +82,7 @@ class Extractor:
             updated_content = re.sub(r"\n\*\*([IVX]+ NODAĻA)\*\*(\r?\n)", r"\n## \1 \2", updated_content) 
             updated_content = re.sub(r"\n(\d+\.) \*\*([^*]+)\*\*(\r?\n)", r"\n### \1 \2 \3", updated_content) 
           
-            return updated_content  
+            return self.fromPdfText2mdText(updated_content)  
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return ''

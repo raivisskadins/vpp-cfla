@@ -25,12 +25,12 @@ import json
 import nest_asyncio
 nest_asyncio.apply()
 
-text_qa_template_str = """Context information is below:
+text_qa_template_str = """Konteksta informācija ietverta <context> tagos:
 <context>
 {context_str}
 </context>
 
-Using the context information, answer the question:
+Lietotāja apgalvojums vai jautājums ir šāds:
 {query_str}"""
 
 mddict={"#":"H1", "##":"H2", "###":"H3"}
@@ -49,7 +49,8 @@ class QnAEngine:
         Settings.embed_model = self.embeddingobject
         self.chached_responses = {}
         self._token_counter = TokenCounter()
-        self.token_limit = self.llm.metadata.context_window * 0.8
+        self.token_limit = self.llm.metadata.context_window * 0.7
+        self.compressed_txt = {}
             
     def load_md(self,text) -> List[Document]:
         docs = []
@@ -243,18 +244,22 @@ class QnAEngine:
             return False
 
     def compressPrompt(self,prompt):
+        if prompt in self.compressed_txt:
+            return self.compressed_txt[prompt]
+            
         response = self.llm.complete(f"The following text exceeds context window token limit. Summarize it so its size does not exceed {self.token_limit} tokens. The text is the following:\n{prompt}\nThe summaized text: ")
         newprompt = str(response).replace(r'The summarized text is as follows:','').strip()
         #print(f"Old size:{len(prompt)} New size:{len(newprompt)}")
         #print(f"NEW PROMPT:\n{newprompt}")
+        self.compressed_txt[prompt] = newprompt
         return newprompt
         
-    def askQuestion(self,query_prompt,q,usecontext=True,n=5):
+    def askQuestion(self,query_prompt,q,usecontext=True,n=3):
 
         if (query_prompt,q) in self.chached_responses:
             return self.chached_responses[(query_prompt,q)]
             
-        token_count = self._token_counter.estimate_tokens_in_messages([ChatMessage(content=query_prompt, role=MessageRole.SYSTEM)])  
+        token_count = self._token_counter.estimate_tokens_in_messages([ChatMessage(content=query_prompt, role=MessageRole.SYSTEM),ChatMessage(content=q, role=MessageRole.USER)])  
         
         if token_count > self.token_limit:
             query_prompt = self.compressPrompt(query_prompt)
@@ -290,7 +295,7 @@ class QnAEngine:
                 print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
                 return ''
 
-    def getSimilarNodes(self,q,n=5):
+    def getSimilarNodes(self,q,n=3):
 
         numitemsinidx=self.newindex.vector_store.client.ntotal
         
