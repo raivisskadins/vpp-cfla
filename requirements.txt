@@ -13,6 +13,5 @@ mammoth==1.9.0
 markdownify==0.14.1
 pyyaml==6.0.1
 tqdm==4.66.5
-tabulate==0.9.0
 beautifulsoup4==4.13.3
 playwright==1.46.0

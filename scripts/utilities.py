@@ -6,23 +6,25 @@ from llama_index.core import Document
 
 import asyncio
 
-def get_extra_info(singleq, pilchapters, mk107chapters):
+def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapters):
     
     piltxtlist = []
     mk107txtlist = []
+    nsltxtlist = []
+    mki3txtlist = []
     extrainfo = ''
     
     if 'PIL' in singleq:
         
-        for pilitem in singleq['PIL']:
+        for item in singleq['PIL']:
             
-            if 'chapter' in pilitem:
-                chaptertxt = pilchapters[f"{pilitem['chapter']}. pants"]
+            if 'chapter' in item:
+                chaptertxt = pilchapters[f"{item['chapter']}. pants"]
                 
-                if 'pt' in pilitem:
+                if 'pt' in item:
                     pointstxt = ''
                     
-                    for ptitem in pilitem['pt']:
+                    for ptitem in item['pt']:
                         pattern = re.compile(rf'^\({ptitem}\)\s.*?(?=^\(\d\)\s|\Z)', re.DOTALL | re.MULTILINE)
                         match = pattern.search(chaptertxt)
 
@@ -36,36 +38,83 @@ def get_extra_info(singleq, pilchapters, mk107chapters):
                     
                 piltxtlist.append(chaptertxt)
                 
-            elif 'appendix' in pilitem:
-                piltxtlist.append(pilchapters[f"{pilitem['appendix']}. pielikums"])
+            elif 'appendix' in item:
+                piltxtlist.append(pilchapters[f"{item['appendix']}. pielikums"])
                 
     elif 'MK107' in singleq:
         
-        for mk107item in singleq['MK107']:
+        for item in singleq['MK107']:
             
-            if 'chapter' in mk107item:
-                chaptertxt = mk107chapters[f"{mk107item['chapter']}"]
+            if 'chapter' in item:
+                chaptertxt = mk107chapters[f"{item['chapter']}"]
                 
-                if 'pt' in mk107item:
+                if 'pt' in item:
                     pointslist = chaptertxt.split('\n')
                     pointstxt = ''
                     
-                    for ptitem in mk107item['pt']:
+                    for ptitem in item['pt']:
                         for point in pointslist:
-                            if point.find(f"{mk107item['chapter']}.{ptitem}.") == 0:
+                            if point.find(f"{item['chapter']}.{ptitem}.") == 0:
                                 pointstxt += point
                                 break
                             
                     chaptertxt = f"\n{pointslist[0]} {pointstxt}"
                     
                 mk107txtlist.append(chaptertxt)
-    
+    elif 'MKI3' in singleq:
+        
+        for item in singleq['MKI3']:
+            
+            if 'chapter' in item:
+                chaptertxt = mki3chapters[f"{item['chapter']}"]
+                
+                if 'pt' in item:
+                    pointslist = chaptertxt.split('\n')
+                    pointstxt = ''
+                    
+                    for ptitem in item['pt']:
+                        for point in pointslist:
+                            if point.find(f"{item['chapter']}.{ptitem}.") == 0:
+                                pointstxt += point
+                                break
+                            
+                    chaptertxt = f"\n{pointslist[0]} {pointstxt}"
+                    
+                mki3txtlist.append(chaptertxt)
+    elif 'NSL' in singleq:
+        
+        for item in singleq['NSL']:
+            
+            if 'chapter' in item:
+                chaptertxt = nslchapters[f"{item['chapter']} pants"]
+                
+                if 'pt' in item:
+                    pointstxt = ''
+                    
+                    for ptitem in item['pt']:
+                        pattern = re.compile(rf'^\({ptitem}\)\s.*?(?=^\(\d\)\s|\Z)', re.DOTALL | re.MULTILINE)
+                        match = pattern.search(chaptertxt)
+
+                        if match:
+                            pointstxt += match.group(0)
+                        else:
+                            break
+                            
+                    if len(pointstxt) > 0:
+                       chaptertxt = pointstxt
+                    
+                nsltxtlist.append(chaptertxt)
+                
     if len(piltxtlist) > 0:
         extrainfo += 'PIL\n' + ';\n'.join(piltxtlist) + '\n'
 
     if len(mk107txtlist) > 0:
         extrainfo += 'MK107\n' + ';\n'.join(mk107txtlist).replace(';;',';') + '\n'
-
+    if len(mki3txtlist) > 0:
+        extrainfo += 'MK instrukcija Nr. 3\n' + ';\n'.join(mki3txtlist).replace(';;',';') + '\n'
+    if len(nsltxtlist) > 0:
+        extrainfo += 'Nacionālo Sankciju Likums\n' + ';\n'.join(nsltxtlist) + '\n'
+        
     if len(extrainfo) > 0:
         extrainfo = f"Izvilkumi no likumiem ietverti <law> tagos: \n<law>{extrainfo}</law>"
         
