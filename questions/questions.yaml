@@ -2,7 +2,7 @@
 - nr: 1
   question: "Iepirkuma dati atbilst apstiprinātajā iepirkuma plānā minētajam. Gadījumā, ja ir izmaiņas, tās nav uzskatāmas par būtiskām (izmaiņas neskar procedūras izvēli un līgumcenu)"
 - nr: 2
-  question0: "Vai tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra?"
+  question0: "Vai nolikumā tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra un netiek piemērots atklāts vai slēgts konkurss?"
   question: "Vai ir PIL regulējumam atbilstošs pamatojums konkursa procedūru piemērošanai?"
   PIL:
    - chapter: 8
@@ -38,20 +38,20 @@
   question0: "Vai iepirkuma līgums tiek slēgts par veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas CPV kodi 75121000-0, 75122000-7, 75123000-4, 79622000-0, 79624000-4, 79625000-1, 80110000-8, 80300000-7, 80420000-4, 80430000-7, 80511000-9, 80520000-5, 80590000-6, no 85000000-9 līdz 85323000-9, 92500000-6, 92600000-7, 98133000-4, 98133110-8?"
   questions:
   - nr: 9.1
-    question: "Pasūtītājs ir rezervējis iespēju piedalīties iepirkumā PIL 10. panta kārtībā tikai tiem kandidātiem vai pretendentiem, kuriem ir piešķirts sociālā uzņēmuma statuss un kuri sniedz minēto jomu pakalpojumus, un kuriem pēdējo triju gadu laikā no dienas, kad būtu pieņemams lēmums par iepirkuma līguma tiesību piešķiršanu, pasūtītājs nav piešķīris iepirkuma līguma slēgšanas tiesības par PIL 16.pantā minētajiem pakalpojumiem PIL 16.panta kārtībā."
+    question: "Pasūtītājs ir rezervējis iespēju piedalīties iepirkumā PIL 10. panta kārtībā tikai tiem kandidātiem vai pretendentiem, kuriem ir piešķirts sociālā uzņēmuma statuss un kuri sniedz minēto jomu pakalpojumus, un kuriem pēdējo triju gadu laikā no dienas, kad būtu pieņemams lēmums par iepirkuma līguma tiesību piešķiršanu, pasūtītājs nav piešķīris iepirkuma līguma slēgšanas tiesības par PIL 16. pantā minētajiem pakalpojumiem PIL 16. panta kārtībā."
     PIL:
      - chapter: 10
      - chapter: 16
        pt:
         - 2
   - nr: 9.2
-    question: "pasūtītājs ir atsaucies uz PIL 16.pantu paziņojumā par sociālajiem un citiem īpašiem pakalpojumiem"
+    question: "pasūtītājs ir atsaucies uz PIL 16. pantu paziņojumā par sociālajiem un citiem īpašiem pakalpojumiem"
     PIL:
      - chapter: 16
        pt:
         - 3
   - nr: 9.3
-    question: "iepirkuma līguma termiņš nepārsniedz trīs gadus"
+    question: "Vai iepirkuma līguma termiņš nepārsniedz trīs gadus?"
     PIL:
      - chapter: 16
        pt:
@@ -126,14 +126,14 @@
    - chapter: 11
 - nr: 24
   question0: "Vai ir noteiktas pretendentu tiesības iesniegt iesniegumu IUB?"
-  question: "vai pretendentu tiesības iesniegt iesniegumu IUB ir noteiktas atbilstoši PIL 68.panta nosacījumiem?"
+  question: "vai pretendentu tiesības iesniegt iesniegumu IUB ir noteiktas atbilstoši PIL 68. panta nosacījumiem?"
   PIL:
    - chapter: 68
 - nr: 25
   question0: "Vai Nolikumā ir norādīts identifikācijas numurs? Kāds tas ir (atgriez numuru ietvertu tagos <num>...</num>)?"
   question: "Nolikumā norādītais identifikācijas numurs ir tāds pats kā publikācijā IUB tīmekļa vietnē"
 - nr: 26
-  question: "Nolikumā ir pareizi norādīts pasūtītāja nosaukums, adrese un rekvizīti (ja nepieciešams)"
+  question: "Vai ir pareizi norādīts pasūtītāja nosaukums, adrese un rekvizīti (ja nepieciešams)?"
 - nr: 27
   question: "Vai ir norādīta atbilstoša piedāvājuma/pieteikuma iesniegšanas un atvēršanas vieta, datums, laiks un piedāvājuma atvēršanas kārtība?"
 - nr: 28
@@ -141,7 +141,7 @@
 - nr: 29
   question: "Piedāvājumu/ pieteikumu iesniegšanas termiņš iepirkuma dokumentācijā sakrīt ar paziņojumā par līgumu norādīto"
 - nr: 30
-  question0: "Vai konkurss ir slēgts?"
+  question0: "Konkurss var būt slēgts vai atklāts. Vai šis konkurss ir slēgts?"
   question: "Slēgtā konkursā piedāvājumu iesniegšanas termiņš, kā arī konkursa procedūrā ar sarunām sākotnējo piedāvājumu iesniegšanas termiņš ir vismaz 20 dienas pēc dienas, kad kandidātiem nosūtīts uzaicinājums iesniegt piedāvājumus"
   MK107:
    - chapter: 43
@@ -207,7 +207,7 @@
        pt:
         - 3
   - nr: 35.5
-    question: "Piedāvājuma nodrošinājuma spēkā esamības termiņš ir noteikts atbilstoši PIL 50.panta 5. vai 7. daļai"
+    question: "Piedāvājuma nodrošinājuma spēkā esamības termiņš ir noteikts atbilstoši PIL 50. panta 5. vai 7. daļai"
     PIL:
      - chapter: 50
        pt:
@@ -224,7 +224,7 @@
     question: "Pasūtītājs nav paredzējis konkrētu piedāvājuma nodrošinājuma formu (veidlapu), kura obligāti ir izmantojama"
   - nr: 35.8
     question0: "Vai ir noteikti nolikumā gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu?"
-    question: "Vai gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu, atbilst PIL 50.panta 6.daļā noteiktajam?"
+    question: "Vai gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu, atbilst PIL 50. panta 6.daļā noteiktajam?"
     PIL:
      - chapter: 50
        pt:
@@ -339,6 +339,8 @@
     question: "Obligātie izslēgšanas nosacījumi papildus pretendentam ir attiecināti tikai uz šādām likumā noteiktajām personām:\n1) pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu, piegāžu vai sniedzamo pakalpojumu vērtība ir vismaz 10 % no kopējās publiska būvdarbu, piegādes vai pakalpojumu līguma vērtības (attiecināmi 42.panta 1.daļas 2. - 7.punktā minētie nosacījumi);\n2)personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība (attiecināmi 42.panta 1.daļas 1. - 7.punktā minētie nosacījumi);\n3) pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām (attiecināmi 42.panta 1.daļas 1.- 7.punktā minētie nosacījumi)."
     PIL:
      - chapter: 42
+       pt:
+        - 1
   - nr: 38.4
     question: "Izvēles izslēgšanas nosacījumi papildus pretendentam/ kandidātam ir attiecināti tikai uz šādām likumā noteiktajām personām:\n1) uz personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, ir attiecināmi PIL 42.panta otrās daļas 2. punkta nosacījumi;\n 2) uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no kopējās publiska būvdarbu, pakalpojuma vai piegādes līguma vērtības, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi;\n 3) uz kandidāta vai pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi."
     PIL:
@@ -347,6 +349,11 @@
         - 2
   - nr: 38.5
     question0: "Vai iepirkuma dokumentācijā ir iekļauti Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumi?"
+    NSL:
+     - chapter: 11.1
+       pt:
+        - 1
+        - 2
     question: "Vai Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumi ir noteikti atbilstoši?"
   - nr: 38.6
     question: "Pretendentu izslēgšanas nosacījumi netiek nepamatoti paplašināti"
@@ -356,6 +363,10 @@
         - 9
   - nr: 38.7
     question: "Nav paredzēts automātiski noraidīt piegādātāju, ja šis piegādātājs, tā darbinieks vai piegādātāja piedāvājumā norādītā persona ir piedalījusies kādā no iepriekšējiem attiecīgā iepirkuma projekta posmiem vai to dokumentu izstrādāšanā, liedzot tam iespēju pierādīt, ka minētie apstākļi šādam piegādātājam nedod nekādas priekšrocības konkrētajā iepirkuma procedūrā"
+    PIL:
+     - chapter: 41
+       pt:
+        - 11
   - nr: 38.8
     question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 1.punkta regulējumu, t.i, 'Pasūtītājs noraida pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz iepirkuma procedūras dokumentos pasūtītāja norādīto līgumcenu, ja tā noteikta kā piedāvājuma atbilstības prasība'?"
     question: "Iepirkuma dokumentācijā ir norādīta līgumcena un noteikums, ka pretendenta piedāvājums tiks noraidīts, ja tā piedāvātā līgumcena pārsniegs iepirkuma dokumentācijā norādīto līgumcenu."
@@ -394,6 +405,10 @@
         - 10
   - nr: 39.4
     question: "Pasūtītājs nav izvirzījis konkrētas kvalifikācijas prasības tādējādi, ka tās visas attiecas arī uz katru no personām, uz kuru iespējām pretendents balstās (t.sk. apakšuzņēmējiem), vai katru no piegādātāju apvienības dalībniekiem"
+    PIL:
+     - chapter: 42
+       pt:
+        - 1
   - nr: 39.5
     question: "Pasūtītājs ir pieprasījis, lai pretendents savā piedāvājumā norāda visus tos apakšuzņēmējus, kuru veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka (minētais attiecas uz visa veida līgumiem), un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu (vienlaikus, ja tiek pirkti tikai būvdarbi (bez projektēšanas), nav nepieciešams iebilst, ja pasūtītājs nolikumā nav prasījis piedāvājumā norādīt apakšuzņēmējus, kuru sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu)."
     PIL:
@@ -662,6 +677,8 @@
 - nr: 58
   question0: "Vai finansējuma saņēmējs iepirkuma līguma projektā ir tiešās valsts pārvaldes iestāde?"
   question: "Ir veikta līguma projekta satura atbilstības pārbaude atbilstoši Ministru kabineta 2016.gada 20.septembra instrukcijai Nr.3 „Ārvalstu finanšu instrumentu finansētu civiltiesisku līgumu izstrādes un slēgšanas instrukcija valsts tiešās pārvaldes iestādēs”, un atbilstošā papildus pārbaudes lapa pievienota pielikumā"
+  MKI3:
+   - chapter: 2
 - nr: 59
   question: "Paziņojumā par līgumu elektroniskajā informācijas sistēmā un nolikumā ietvertā informācija ir savstarpēji saskaņota (piemēram, vai piedāvājumu iesniegšanas datums, piedāvājumu derīguma termiņš ir noteikts vienāds; ja nolikumā ir izvirzītas noteiktas prasības, vai nolikuma pielikumos ietvertajā dokumentācijā – veidnēs/ formās/ CV veidnēs u.tml., kuras pretendentam jāiesniedz kopā ar piedāvājumu, ietvertās prasības atbilst nolikumā izvirzītajām prasībām)"
 - nr: 60
@@ -701,9 +718,13 @@
       - 4
 - nr: 65
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
-  question: "Pasūtītājs ir atrunājis kārtību, kādā vispārīgās vienošanās piegādātāji tiks uzaicināti iesniegt piedāvājumus, lai izvēlētos ar kuru no piegādātājiem slēgt konkrēto līgumu (ja attiecināms), un vai šī kārtība atbilst PIL 56.panta 5., 6. un 7.daļas noteikumiem"
+  question: "Pasūtītājs ir atrunājis kārtību, kādā vispārīgās vienošanās piegādātāji tiks uzaicināti iesniegt piedāvājumus, lai izvēlētos ar kuru no piegādātājiem slēgt konkrēto līgumu (ja attiecināms), un vai šī kārtība atbilst PIL 56.panta 5., 6. un 7.daļas noteikumiem"  
   PIL:
    - chapter: 56
+     pt:
+      - 5
+      - 6
+      - 7
 - nr: 66
   question0: "Vai konstatētie trūkumi iepirkuma dokumentācijā ir būtiski?"
   question: "Iepirkums tiek rekomendēts uz iepirkuma norises pirmspārbaudi"

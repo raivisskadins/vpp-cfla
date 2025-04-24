@@ -1,4 +1,4 @@
-ublisko iepirkumu likums
+Publisko iepirkumu likums
 I nodaļa
 Vispārīgie noteikumi
 1. pants. Likumā lietotie termini
@@ -94,8 +94,6 @@ b) M3, N2 vai N3 kategorijas elektrotransportlīdzeklis vai autotransporta līdz
 33) vispārīgā vienošanās — tāda vienošanās starp vienu vai vairākiem pasūtītājiem un vienu vai vairākiem piegādātājiem, kuras mērķis ir noteikt un raksturot attiecīgā laikposmā slēdzamos iepirkuma līgumus un paredzēt noteikumus, saskaņā ar kuriem tie tiks slēgti (īpaši attiecībā uz cenām un, ja nepieciešams, paredzēto daudzumu);
 
 34) zaļais publiskais iepirkums — tādu preču, pakalpojumu un būvdarbu iepirkums, kuru ietekme uz vidi to aprites ciklā ir mazāka nekā precēm, pakalpojumiem un būvdarbiem ar tādu pašu lietojuma mērķi, kas iegādāti, nepiemērojot zaļā publiskā iepirkuma principus.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 21.02.2019., 05.12.2019., 02.09.2021., 24.03.2022., 03.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 2. pants. Likuma mērķis
 
@@ -547,8 +545,6 @@ b) ja termiņš ir garāks par 12 mēnešiem, — kā kopējo līgumcenu iepirku
 
 Šā likuma 5. pantā, 6. panta pirmās daļas 1. un 2. punktā, 8. panta vienpadsmitajā daļā, 27. panta otrajā daļā, 34. panta otrajā un trešajā daļā, 35. panta ceturtajā daļā, 47. panta trešajā daļā, 48. panta trešajā daļā, 54. panta sestajā daļā, 55. panta pirmajā daļā, 61. panta piektās daļas 1. punktā, 73. panta trešās daļas 2. punkta "a" apakšpunktā, 74. panta pirmās daļas 2., 5. un 6. punktā un otrās daļas 2. punktā minētās līgumcenu robežvērtības nosaka Ministru kabinets, pamatojoties uz Eiropas Savienības starptautiskajām saistībām attiecībā uz līgumcenu robežvērtībām, kas jāievēro pasūtītājam. Ministru kabinets nosaka minētās līgumcenu robežvērtības vismaz reizi divos gados mēneša laikā pēc tam, kad Eiropas Komisija ir paziņojusi Eiropas Savienības Oficiālajā Vēstnesī attiecīgās līgumcenu robežvērtības.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 02.09.2021., 03.03.2022., 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 13. pants. Vispārīgie nosacījumi attiecībā uz piegādātāju
 
 (1) Pasūtītājs nenoraida kandidātu, pretendentu vai metu konkursa dalībnieku, ja tam atbilstoši Latvijas normatīvajiem aktiem nav noteikta juridiskā statusa, bet tas ir tiesīgs veikt būvdarbus, piegādāt preces vai sniegt pakalpojumus atbilstoši tās Eiropas Savienības dalībvalsts normatīvajiem aktiem, kurā tas dibināts.
@@ -573,8 +569,6 @@ b) ja termiņš ir garāks par 12 mēnešiem, — kā kopējo līgumcenu iepirku
 
 Pasūtītājs, ciktāl tas ir noteikts Pasaules Tirdzniecības organizācijas Nolīgumā par valsts iepirkumu un citos Eiropas Savienībai saistošos starptautiskajos līgumos, piemēro vismaz tikpat labvēlīgus nosacījumus minēto līgumslēdzēju būvdarbiem, piegādēm, pakalpojumiem un piegādātājiem kā Eiropas Savienības būvdarbiem, piegādēm, pakalpojumiem un piegādātājiem.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
-
 16. pants. Privileģētie līgumi
 
 (1) Ja paredzamā iepirkuma līguma priekšmets to pieļauj, pasūtītājs noteiktām personu grupām paredzētu pasākumu ietvaros ir tiesīgs rezervēt iespēju piedalīties iepirkuma procedūrās tikai tiem kandidātiem vai pretendentiem, kuriem vairāk nekā 30 procenti no vidējā nodarbināto darbinieku skaita gadā ir personas ar invaliditāti.
@@ -582,8 +576,6 @@ Pasūtītājs, ciktāl tas ir noteikts Pasaules Tirdzniecības organizācijas No
 (2) Ja iepirkuma līgums tiek slēgts par šā likuma 2. pielikumā minētajiem veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas CPV kodi 75121000-0, 75122000-7, 75123000-4, 79622000-0, 79624000-4, 79625000-1, 80110000-8, 80300000-7, 80420000-4, 80430000-7, 80511000-9, 80520000-5, 80590000-6, no 85000000-9 līdz 85323000-9, 92500000-6, 92600000-7, 98133000-4, 98133110-8, pasūtītājs ir tiesīgs rezervēt iespēju piedalīties iepirkuma procedūrā un iepirkumā šā likuma 10. panta kārtībā tikai tiem kandidātiem vai pretendentiem, kuriem ir piešķirts sociālā uzņēmuma statuss un kuri sniedz minēto jomu pakalpojumus, un kuriem pēdējo triju gadu laikā no dienas, kad būtu pieņemams lēmums par iepirkuma līguma tiesību piešķiršanu, pasūtītājs nav piešķīris iepirkuma līguma slēgšanas tiesības par šajā pantā minētajiem pakalpojumiem šā panta kārtībā. Šāda iepirkuma līguma termiņš nepārsniedz trīs gadus.
 
 (3) Ja tiek piemērota šā panta pirmā vai otrā daļa, pasūtītājs to norāda attiecīgajā iepirkuma paziņojumā.
-
-(26.04.2018. likuma redakcijā ar grozījumiem, kas izdarīti ar 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 17. pants. Centralizēto iepirkumu institūciju veiktie iepirkumi un pasūtītāju kopīgi veiktie iepirkumi
 
@@ -689,8 +681,6 @@ Sagatavošanās iepirkumam, iepirkuma procedūras dokumentu sagatavošana un teh
 
 (11) Iepirkuma procedūras dokumentos norāda tehnisko specifikāciju sagatavošanas vai pēdējās aktualizācijas datumu. Pasūtītājs aktualizē tehniskās specifikācijas pirms iepirkuma izsludināšanas, ja pēc to sagatavošanas vai pēdējās aktualizācijas ir izdarīti grozījumi attiecīgās jomas tiesību aktos. Ja tehniskās specifikācijas sagatavotas vai aktualizētas vairāk nekā 12 mēnešus pirms iepirkuma izsludināšanas, pasūtītājs, to fiksējot protokolā, pirms iepirkuma izsludināšanas pārskata un, ja nepieciešams, aktualizē tehniskajās specifikācijās un, ja attiecināms, citos iepirkuma procedūras dokumentos ietvertos rādītājus un aprēķinus, kas var ietekmēt paredzamās līgumcenas noteikšanu.
 
-(Ar grozījumiem, kas izdarīti ar 24.03.2022. un 16.03.2023. likumu, kas stājas spēkā 11.04.2023.)
-
 21. pants. Marķējumi
 
 (1) Ja pasūtītājs plāno iegādāties būvdarbus, preces vai pakalpojumus, kas atbilst noteiktām vides aizsardzības, sociālajām vai citām īpašām prasībām, tas var tehniskajās specifikācijās, piedāvājuma izvērtēšanas kritērijos vai iepirkuma līguma izpildes noteikumos prasīt īpašu marķējumu kā pierādījumu būvdarbu, pakalpojumu vai piegāžu atbilstībai noteiktajām prasībām, ja ir ievēroti visi šādi nosacījumi:
@@ -783,13 +773,9 @@ Izsludināšana un atklātības ievērošana
 
 (2) Pasūtītājs publicē iepriekšējo informatīvo paziņojumu, ja iepirkuma līguma paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka.
 
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
-
 27.1 pants. Paziņojums par apspriedi
 
 Ja pasūtītājs rīko apspriedi atbilstoši šā likuma 18. panta 2.1 daļai, tas publicē paziņojumu par apspriedi.
-
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
 
 28. pants. Paziņojums par līgumu un grozījumu veikšanu
 
@@ -797,15 +783,11 @@ Ja pasūtītājs rīko apspriedi atbilstoši šā likuma 18. panta 2.1 daļai, t
 
 (2) Ja pasūtītājs izdara grozījumus iepirkuma procedūras dokumentos vai šā likuma 10. pantā noteiktajā kārtībā veicamā iepirkuma dokumentos, metu konkursa dokumentācijā vai pagarina noteiktos pieteikumu, piedāvājumu vai metu iesniegšanas termiņus, tas atkārtoti publicē paziņojumu, ar kuru izsludināta iepirkuma procedūra, šā likuma 10. pantā noteiktajā kārtībā veicamais iepirkums vai metu konkurss.
 
-(Ar grozījumiem, kas izdarīti ar 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 29. pants. Paziņojums par līguma slēgšanas tiesību piešķiršanu
 
 (1) Pasūtītājs 10 darbdienu laikā pēc tam, kad noslēgts iepirkuma līgums vai vispārīgā vienošanās, pieņemts lēmums par iepirkuma procedūras izbeigšanu vai pārtraukšanu vai dinamiskās iepirkumu sistēmas darbības pārtraukšanu, publicē paziņojumu par līguma slēgšanas tiesību piešķiršanu.
 
 (2) Ja pasūtītājs pieņem lēmumu dinamiskās iepirkumu sistēmas ietvaros, tas paziņojumu par līguma slēgšanas tiesību piešķiršanu attiecībā uz katru iepirkuma līgumu publicē 10 darbdienu laikā pēc līguma noslēgšanas. Pasūtītājs paziņojumus par līguma slēgšanas tiesību piešķiršanu var apvienot viena ceturkšņa ietvaros un publicēt 10 darbdienu laikā pēc katra ceturkšņa beigām.
-
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
 
 30. pants. Brīvprātīgs paziņojums par iepirkuma rezultātiem
 
@@ -833,21 +815,15 @@ Ja pasūtītājs rīko apspriedi atbilstoši šā likuma 18. panta 2.1 daļai, t
 
 (3) Pasūtītājs ir tiesīgs nepublicēt šā panta pirmajā daļā minēto paziņojumu, ja iepirkums atbilst kādam no šā likuma 8. panta septītajā daļā minētajiem gadījumiem.
 
-(26.04.2018. likuma redakcijā ar grozījumiem, kas izdarīti ar 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 33. pants. Paziņojums par izmaiņām līguma darbības laikā
 
 Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. punktā minētos grozījumus iepirkuma līgumā, ja publiska piegādes līguma vai pakalpojuma līguma līgumcena ir 42 000 euro vai lielāka un publiska būvdarbu līguma līgumcena ir 170 000 euro vai lielāka, 10 darbdienu laikā pēc grozījumu spēkā stāšanās dienas publicē paziņojumu par izmaiņām līguma darbības laikā.
-
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
 
 33.1 pants. Paziņojums par līguma izpildi
 
 (1) Pasūtītājs 10 darbdienu laikā pēc iepirkuma līguma vai vispārīgās vienošanās izpildes publicē paziņojumu par līguma izpildi.
 
 (2) Pasūtītājs paziņojumus par līguma izpildi attiecībā uz iepirkuma līgumiem, kas noslēgti vispārīgās vienošanās ietvaros, var apvienot viena ceturkšņa ietvaros un publicēt 10 darbdienu laikā pēc katra ceturkšņa beigām.
-
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
 
 34. pants. Paziņojumu publicēšana
 
@@ -1013,11 +989,7 @@ Kandidātu un pretendentu atlase un piedāvājuma izvēle
 
 2) iepirkuma procedūras pārtraukšana apdraud sabiedrības drošības vai veselības aizsardzības intereses. Šādā gadījumā pasūtītājs iepirkuma procedūras ziņojumā ietver pamatojumu tam, kādas sabiedrības drošības un veselības aizsardzības intereses tiktu apdraudētas, rīkojot atkārtotu iepirkumu.
 
-(Ar grozījumiem, kas izdarīti ar 20.09.2018. un 24.03.2022. likumu, kas stājas spēkā 01.01.2023.)
-
 42. pants. Kandidātu un pretendentu izslēgšanas noteikumi
-
-(1) Pasūtītājs izslēdz kandidātu vai pretendentu no turpmākās dalības iepirkuma procedūrā saskaņā ar šā panta noteikumiem.
 
 (2) Kandidātu un pretendentu izslēgšanas iemesli ir šādi:
 
@@ -1141,18 +1113,6 @@ c) ja attiecīgajā ārvalstī šā punkta "a" apakšpunktā minētās kompetent
 
 4) konkursa procedūrā ar sarunām šā likuma 8. panta sestās daļas 5. punktā minētajā gadījumā — ja uzaicina piedalīties sarunās tikai visus tos pretendentus, kuri iepriekš izsludinātajā attiecīgajā iepirkuma procedūrā nav izslēgti saskaņā ar šā panta noteikumiem un atbilst izvirzītajām kvalifikācijas prasībām. Ja konkursa procedūra ar sarunām tiek piemērota pēc atklāta konkursa izbeigšanas, pasūtītājs pārbaudi veic attiecībā uz katru pretendentu, kas iesniedzis piedāvājumu atklātā konkursā un ir uzaicināts uz sarunu procedūru. Šo pārbaudi veic pirms sarunu uzsākšanas.
 
-(11) Ministru kabinets nosaka:
-
-1) informācijas sistēmu, kurā veicama šā panta piektās daļas 1. punktā minētā pārbaude, kā arī šīs sistēmas uzturēšanas un izmantošanas kārtību;
-
-2) šā panta piektās daļas 1. punkta "a" apakšpunktā minētās pārbaudāmās informācijas apstrādes mērķi un apjomu, kā arī tos normatīvos aktus un to pantus, kuri atbilst šā panta otrajā daļā noteiktajiem kandidātu un pretendentu izslēgšanas iemesliem un par kuros paredzētajiem pārkāpumiem un noziedzīgajiem nodarījumiem veicama šā panta piektās daļas 1. punkta "a" apakšpunktā noteiktā pārbaude;
-
-3) kārtību, kādā šīs daļas 1. punktā minētā informācijas sistēma saņem un apstrādā informāciju no šā panta piektajā daļā minēto iestāžu uzturētajām informācijas sistēmām;
-
-4) šā panta piektās daļas 1. punktā minētās pārbaudāmās informācijas apjomu šīs daļas 1. punktā minētajā informācijas sistēmā par ārvalstī reģistrētām vai pastāvīgi dzīvojošām personām.
-
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
 43. pants. Uzticamības nodrošināšana
 
 (1) Ja pasūtītājs konstatē, ka kandidāts vai pretendents būtu izslēdzams no dalības iepirkuma procedūrā, pamatojoties uz šā likuma 42. panta otrās daļas 1., 4., 5., 6., 7., 8., 9., 10., 11., 12., 13. un 14. punktā minētajiem izslēgšanas iemesliem, tai skaitā saistībā ar šā likuma 42. panta trešās daļas 1., 4. un 5. punktā minēto personu, un nav piemērojami šā likuma 42. panta ceturtās daļas 2., 3., 4., 5. un 6. punktā noteiktie izņēmumi, pasūtītājs dod kandidātam vai pretendentam tiesības termiņā, kas ir vismaz 10 dienas pēc informācijas pieprasījuma nosūtīšanas dienas, iesniegt skaidrojumu un pierādījumus, kas apliecina kandidāta vai pretendenta uzticamību saskaņā ar šā panta noteikumiem.
@@ -1169,8 +1129,6 @@ c) ja attiecīgajā ārvalstī šā punkta "a" apakšpunktā minētās kompetent
 
 (7) Šajā pantā paredzētā iespēja nodrošināt uzticamības atjaunošanu atbilstoši šā panta otrajai un trešajai daļai nav attiecināma uz personu, par kuru tās reģistrācijas vai pastāvīgās dzīvesvietas valstī ir stājies spēkā galīgs un nepārsūdzams spriedums, ar kuru persona izslēgta no dalības iepirkuma procedūrās, un nav pagājis attiecīgajā spriedumā noteiktais termiņš, līdz kuram persona izslēdzama no dalības iepirkuma procedūrās.
 
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
 44. pants. Atbilstība profesionālās darbības veikšanai
 
 (1) Pasūtītājs var pieprasīt pierādījumus tam, ka attiecīgais piegādātājs ir reģistrēts, licencēts vai sertificēts atbilstoši reģistrācijas vai pastāvīgās dzīvesvietas valsts normatīvo aktu prasībām.
@@ -1180,8 +1138,6 @@ c) ja attiecīgajā ārvalstī šā punkta "a" apakšpunktā minētās kompetent
 (3) (Izslēgta ar 30.04.2020. likumu)
 
 (4) Pasūtītājs nenosaka prasības attiecībā uz minimālo laiku kopš piegādātāja reģistrēšanas, licencēšanas vai pilnvarošanas, vai kļūšanas par noteiktas organizācijas biedru.
-
-(Ar grozījumiem, kas izdarīti ar 30.04.2020. likumu, kas stājas spēkā 01.05.2020.)
 
 45. pants. Saimnieciskais un finansiālais stāvoklis
 
@@ -1214,8 +1170,6 @@ c) ja attiecīgajā ārvalstī šā punkta "a" apakšpunktā minētās kompetent
 (8) Piegādātājs var balstīties uz citu personu saimnieciskajām un finansiālajām iespējām, ja tas ir nepieciešams konkrētā līguma izpildei, neatkarīgi no savstarpējo attiecību tiesiskā rakstura. Šādā gadījumā piegādātājs pierāda pasūtītājam, ka viņa rīcībā būs nepieciešamie resursi, iesniedzot, piemēram, šo personu apliecinājumu vai vienošanos par sadarbību konkrētā līguma izpildē. Pasūtītājs var prasīt, lai piegādātājs un persona, uz kuras saimnieciskajām un finansiālajām iespējām tas balstās, ir solidāri atbildīgi par iepirkuma līguma izpildi.
 
 (9) Paziņojumā par līgumu vai uzaicinājumā iesniegt piedāvājumu un iepirkuma procedūras dokumentos pasūtītājs nosaka dokumentus, kurus piegādātājs vai kandidāts iesniedz, lai apliecinātu atbilstību pasūtītāja prasībām. Piegādātājs vai kandidāts, kas pamatotu iemeslu dēļ nespēj iesniegt pasūtītāja pieprasītos dokumentus, ir tiesīgs apliecināt savu saimniecisko vai finansiālo stāvokli ar jebkuriem citiem dokumentiem, ja pasūtītājs uzskata tos par piemērotiem.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 30.04.2020. likumu, kas stājas spēkā 01.05.2020.)
 
 46. pants. Tehniskās un profesionālās spējas
 
@@ -1259,8 +1213,6 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 
 (6) Paziņojumā par līgumu vai uzaicinājumā iesniegt piedāvājumu un iepirkuma procedūras dokumentos pasūtītājs nosaka dokumentus, kurus piegādātājs vai kandidāts iesniedz, lai apliecinātu atbilstību pasūtītāja prasībām.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 30.04.2020. likumu, kas stājas spēkā 01.05.2020.)
-
 47. pants. Kvalitātes vadības standarti
 
 (1) Ja pasūtītājs pieprasa neatkarīgas institūcijas sertifikātu par piegādātāja atbilstību noteiktiem kvalitātes nodrošināšanas standartiem, tai skaitā par piekļūstamības nodrošināšanu personām ar invaliditāti, tas atsaucas uz kvalitātes nodrošināšanas sistēmām, kuras atbilstoši Eiropas standartiem apstiprinājušas normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas. Pasūtītājs atzīst citas Eiropas Savienības dalībvalsts normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas izdotu sertifikātu. Ja piegādātājam no tā neatkarīgu iemeslu dēļ nebija iespējams šādus sertifikātus iegūt līdz pieteikuma vai piedāvājuma iesniegšanas dienai, piegādātājs iesniedz citus pierādījumus par līdzvērtīgu kvalitātes nodrošināšanas pasākumu veikšanu un pierāda, ka piedāvātie kvalitātes nodrošināšanas pasākumi atbilst pasūtītāja prasībām.
@@ -1269,8 +1221,6 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 
 (3) Šā panta pirmo daļu piemēro tikai iepirkumiem, kuru paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka.
 
-(Ar grozījumiem, kas izdarīti ar 30.04.2020. un 16.03.2023. likumu, kas stājas spēkā 11.04.2023.)
-
 48. pants. Vides vadības standarti
 
 (1) Ja pasūtītājs pieprasa neatkarīgas institūcijas sertifikātu par piegādātāja atbilstību vides vadības standartiem vai vides vadības sistēmām, tas atsaucas uz vides pārvaldības un audita sistēmu (EMAS) vai uz citām sistēmām, kuras atzītas saskaņā ar Eiropas Parlamenta un Padomes 2009. gada 25. novembra regulas (EK) Nr. 1221/2009 par organizāciju brīvprātīgu dalību Kopienas vides vadības un audita sistēmā (EMAS), kā arī par regulas (EK) Nr. 761/2001 un Komisijas lēmumu 2001/681/EK un 2006/193/EK atcelšanu 45. pantu vai citiem vides vadības standartiem, kuri atbilst Eiropas vai starptautiskajiem vides vadības sistēmas standartiem un kurus ir apstiprinājušas normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas. Pasūtītājs atzīst citas Eiropas Savienības dalībvalsts normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas izdotu sertifikātu. Ja piegādātājam no tā neatkarīgu iemeslu dēļ nebija iespējams šādus sertifikātus iegūt līdz pieteikuma vai piedāvājuma iesniegšanas dienai, piegādātājs iesniedz citus pierādījumus par līdzvērtīgiem pasākumiem, kas būtu jānodrošina saskaņā ar pasūtītāja prasīto vides vadības sistēmu vai standartu.
@@ -1278,8 +1228,6 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 (2) (Izslēgta ar 30.04.2020. likumu)
 
 (3) Šā panta pirmo daļu piemēro tikai iepirkumiem, kuru paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka.
-
-(Ar grozījumiem, kas izdarīti ar 30.04.2020. likumu, kas stājas spēkā 01.05.2020.)
 
 49. pants. Eiropas vienotais iepirkuma procedūras dokuments
 
@@ -1290,8 +1238,6 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 (3) Pasūtītājam jebkurā iepirkuma procedūras stadijā ir tiesības prasīt, lai pretendents un kandidāts iesniedz visus vai daļu no dokumentiem, kas apliecina atbilstību paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām pretendentu un kandidātu atlases prasībām. Pasūtītājs nepieprasa tādus dokumentus un informāciju, kas ir tā rīcībā vai ir pieejama publiskās datubāzēs.
 
 (4) Eiropas vienotā iepirkuma procedūras dokumenta piemērošanas kārtību iepirkuma procedūrās nosaka Ministru kabinets. Eiropas vienotā iepirkuma procedūras dokumenta veidlapu paraugus nosaka Eiropas Komisijas 2016. gada 5. janvāra Īstenošanas regula 2016/7, ar ko nosaka standarta veidlapu Eiropas vienotajam iepirkuma procedūras dokumentam.
-
-(Ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
 50. pants. Piedāvājuma nodrošinājums un saistību izpildes nodrošinājums
 
@@ -1320,8 +1266,6 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 3) pretendents, kuram piešķirtas iepirkuma līguma slēgšanas tiesības, neparaksta iepirkuma līgumu vai vispārīgo vienošanos pasūtītāja noteiktajā termiņā.
 
 (7) Ja iepirkuma procedūras dokumentos un iepirkuma līgumā ir noteikts, ka pretendents, kura piedāvājums izraudzīts saskaņā ar piedāvājuma izvēles kritēriju, iesniedz līguma nodrošinājumu pēc līguma noslēgšanas, attiecībā uz šo personu piedāvājuma nodrošinājums ir spēkā līdz dienai, kad tā iesniedz šādu līguma nodrošinājumu.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
 
 51. pants. Piedāvājuma izvērtēšanas kritēriji
 
@@ -1360,8 +1304,6 @@ c) pēcpārdošanas pakalpojumus un tehnisko palīdzību, piegādes noteikumus (
 (6) Pasūtītājs iepirkuma procedūras dokumentos norāda visus piedāvājuma izvērtēšanas kritērijus to nozīmīguma secībā, kritēriju vērtības un, ja attiecināms, vērtību diapazonus, kā arī piedāvājuma izvēles algoritmu saskaņā ar šiem kritērijiem un apraksta, kā tiks piemērots katrs no norādītajiem izvērtēšanas kritērijiem.
 
 (7) Pasūtītājs iepirkuma procedūras dokumentos norāda izšķirošo piedāvājuma izvēles kritēriju, atbilstoši kuram izvēlēsies piedāvājumu, ja pirms tam, kad pieņems lēmumu par iepirkuma līguma slēgšanas tiesību piešķiršanu, konstatēs, ka vismaz divu piedāvājumu novērtējums ir vienāds. Pasūtītājam ir tiesības par izšķirošo piedāvājuma izvēles kritēriju noteikt tādu kritēriju, kas raksturo piegādātāja atbilstību sociālās aizsardzības prasībām, tai skaitā to, ka izraudzīto piedāvājumu iesniedzis piegādātājs, kas ir nacionāla līmeņa darba devēju organizācijas biedrs un ir noslēdzis koplīgumu ar arodbiedrību, kas ir nacionāla līmeņa arodbiedrības biedre (ja piedāvājumu iesniegusi personālsabiedrība vai personu apvienība, koplīgumam jābūt noslēgtam ar katru personālsabiedrības biedru un katru personu apvienības dalībnieku).
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 24.03.2022. un 16.03.2023. likumu, kas stājas spēkā 11.04.2023.)
 
 52. pants. Aprites cikla izmaksas
 
@@ -1423,8 +1365,6 @@ d) aprites cikla beigu izmaksas (piemēram, savākšanas un reģenerācijas izma
 
 3) kārtību, kādā šīs daļas 1. punktā minētā informācijas sistēma saņem informāciju no šā panta sestajā daļā minētās iestādes uzturētās informācijas sistēmas un apstrādā to.
 
-(Ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
-
 54. pants. Īpaši noteikumi iepirkumiem autotransporta jomā
 
 (1) Pasūtītājs, rīkojot M un N kategorijas autotransporta līdzekļu iepirkumus, kas definēti Eiropas Parlamenta un Padomes 2018. gada 30. maija regulas (ES) 2018/858 par mehānisko transportlīdzekļu un to piekabju, kā arī tādiem transportlīdzekļiem paredzētu sistēmu, sastāvdaļu un atsevišķu tehnisku vienību apstiprināšanu un tirgus uzraudzību un ar ko groza regulas (EK) Nr. 715/2007 un (EK) Nr. 595/2009 un atceļ direktīvu 2007/46/EK (turpmāk — regula Nr. 2018/858) 4. panta 1. punkta "a" un "b" apakšpunktā, ņem vērā to ekspluatācijas ietekmi uz enerģētiku un vidi un šajā nolūkā izvērtē vismaz enerģijas patēriņu un oglekļa dioksīda, slāpekļa oksīdu, metānu nesaturošo ogļūdeņražu un cieto daļiņu emisiju apjomu.
@@ -1446,8 +1386,6 @@ d) aprites cikla beigu izmaksas (piemēram, savākšanas un reģenerācijas izma
 (6) Šā panta ceturtajā daļā minētās prasības piemēro arī publiskiem pakalpojumu līgumiem, uz kuriem attiecas CPV kodi 60112000-6, 60130000-8, 60140000-1, 90511000-2, 60160000-7, 60161000-4, 64121100-1 un 64121200-2, ja paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka.
 
 (7) Šā panta prasības nav attiecināmas uz tādu autotransporta līdzekļu iepirkumiem, kuri minēti regulas Nr. 2018/858 2. panta 2. punkta "a", "b", "c" un "d" apakšpunktā, 3. punkta "a", "b" un "c" apakšpunktā un I pielikuma A daļas 5.2., 5.3., 5.4., 5.5. un 5.7. punktā.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 02.09.2021. likumu, kas stājas spēkā 14.09.2021. Sk. pārejas noteikumu 17. un 18. punktu)
 
 55. pants. Īpaši noteikumi attiecībā uz energoefektivitāti
 
@@ -1547,8 +1485,6 @@ Iepirkumiem dinamiskajā iepirkumu sistēmā piemēro slēgtu konkursu. Dinamisk
 
 (11) Kad elektroniskā izsole ir pabeigta, pasūtītājs, izmantojot šīs izsoles rezultātus, izvēlas piedāvājumu saskaņā ar noteiktajiem piedāvājuma izvērtēšanas kritērijiem.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
-
 59. pants. Elektronisko katalogu piemērošana
 
 (1) Pasūtītājs var prasīt, lai piedāvājums tiek iesniegts elektroniskā kataloga formā vai piedāvājumā tiek iekļauts elektroniskais katalogs, ja paredzēts, ka piedāvājumi tiks iesniegti, izmantojot tikai elektroniskās saziņas līdzekļus. Ja piedāvājumi tiek pieņemti vai pieprasīti elektroniskā kataloga formā, pasūtītājs to norāda paziņojumā par līgumu. Pasūtītājs iepirkuma procedūras dokumentos norāda visu elektronisko dokumentu saņemšanai nepieciešamo informāciju saskaņā ar šā likuma 36. pantu, tai skaitā katalogam nepieciešamo formu, izmantojamo elektronisko aprīkojumu, pieslēguma tehnisko kārtību un specifikācijas.
@@ -1639,13 +1575,9 @@ Iepirkuma līguma noslēgšana un izpilde
 
 (11) Ja iepirkumu veic centralizēto iepirkumu institūcija, tā vienojas ar pasūtītājiem, kuru vajadzībām tiek veikts iepirkums, par to, kurš savā pircēja profilā ievieto šā panta desmitajā daļā minētos dokumentus. Ja pasūtītāji nevienojas ar centralizēto iepirkumu institūciju, šā panta desmitajā daļā minētos dokumentus savā pircēja profilā ievieto centralizēto iepirkumu institūcija.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 14.02.2019., 21.02.2019., 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 60.1 pants. Līgumu reģistrs
 
 Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts paziņojums par līguma slēgšanas tiesību piešķiršanu, paziņojums par līguma slēgšanas tiesību piešķiršanu attiecībā uz sociālajiem un citiem īpašiem pakalpojumiem, informatīvs paziņojums par līguma slēgšanas tiesību piešķiršanu, paziņojums par izmaiņām līguma darbības laikā vai paziņojums par līguma izpildi, attiecīgi izveido vai papildina līgumu reģistra ierakstu par noslēgto iepirkuma līgumu, vispārīgo vienošanos vai to grozījumiem un līguma izpildi ar attiecīgajā paziņojumā norādīto informāciju.
-
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
 
 61. pants. Iepirkuma līguma vai vispārīgās vienošanās grozīšana
 
@@ -1691,8 +1623,6 @@ Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts 
 
 (8) Iepirkuma līguma un vispārīgās vienošanās grozījumiem, kas nav atbilstoši šā panta pirmajā daļā minētajiem gadījumiem, piemērojamas šajā likumā noteiktās iepirkuma procedūras.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 24.03.2022., 03.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 62. pants. Iepirkuma līguma izpildē iesaistītā personāla un apakšuzņēmēju nomaiņa un jauna personāla un apakšuzņēmēju piesaiste
 
 (1) Iepirkuma procedūrā izraudzītais pretendents (iepirkuma līguma vai vispārīgās vienošanās puse) nav tiesīgs bez saskaņošanas ar pasūtītāju veikt piedāvājumā norādītā personāla un apakšuzņēmēju nomaiņu un iesaistīt papildu apakšuzņēmējus iepirkuma līguma izpildē. Pasūtītājs var prasīt personāla un apakšuzņēmēja viedokli par nomaiņas iemesliem. Pasūtītājs var iepirkuma līgumā vai vispārīgās vienošanās noteikumos paredzēt, ka iepirkuma procedūrā izraudzītajam pretendentam (iepirkuma līguma vai vispārīgās vienošanās pusei) ir pienākums saskaņot ar pasūtītāju papildu personāla iesaistīšanu iepirkuma līguma izpildē.
@@ -1715,8 +1645,6 @@ Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts 
 
 (6) Pasūtītājs pieņem lēmumu atļaut vai atteikt iepirkuma procedūrā izraudzītā pretendenta (iepirkuma līguma vai vispārīgās vienošanās puses) personāla vai apakšuzņēmēju nomaiņu vai jaunu apakšuzņēmēju iesaistīšanu iepirkuma līguma izpildē iespējami īsā laikā, bet ne vēlāk kā piecu darbdienu laikā pēc tam, kad saņēmis visu informāciju un dokumentus, kas nepieciešami lēmuma pieņemšanai saskaņā ar šā panta noteikumiem.
 
-(Ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
-
 63. pants. Apakšuzņēmēji
 
 (1) Pasūtītājs nolūkā pārliecināties, ka piegādātājs spēs izpildīt iepirkuma līgumu, ir tiesīgs pieprasīt, lai pretendents savā piedāvājumā norāda tās iepirkuma līguma daļas, kuras nodos izpildei apakšuzņēmējiem, kā arī visus paredzamos apakšuzņēmējus.
@@ -1731,8 +1659,6 @@ Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts 
 
 (6) Šā panta pirmajā un piektajā daļā paredzētā kārtība neietekmē jautājumus, kas attiecas uz piegādātāja atbildību par iepirkuma līguma izpildi.
 
-(Ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
-
 64. pants. Iepirkuma līguma pirmstermiņa izbeigšana
 
 (1) Pasūtītājam ir tiesības vienpusēji atkāpties no iepirkuma līguma pirms termiņa, nosūtot piegādātājam rakstveida paziņojumu, iepirkuma līgumā paredzētajos un šādos gadījumos:
@@ -1746,8 +1672,6 @@ Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts 
 4) iepirkuma līguma slēgšanas tiesībām piegādātājam nevajadzēja tikt piešķirtām Līgumā par Eiropas Savienību, Līgumā par Eiropas Savienības darbību un šajā likumā paredzēto pienākumu būtiska pārkāpuma dēļ, kuru Līguma par Eiropas Savienības darbību 258. pantā noteiktajā procedūrā konstatējusi Eiropas Savienības Tiesa.
 
 (2) Ja iepirkuma līgumu izbeidz pirms termiņa šā panta pirmajā daļā minētajos gadījumos, pasūtītājs samaksā par piegādātāja faktiski veiktiem būvdarbiem, piegādēm un sniegtiem pakalpojumiem. Pasūtītājs un piegādātājs vienojas par samaksas apmēru un kārtību.
-
-(Ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
 VIII nodaļa
 Iepirkumu uzraudzības birojs
@@ -1786,8 +1710,6 @@ Iepirkumu uzraudzības birojs
 4) pieaicināt kompetentās institūcijas atzinumu sniegšanai;
 
 5) pieprasīt, lai pasūtītājs sniedz informāciju par tā veikto tirgus izpēti, ja tas nepieciešams iesniegumu izskatīšanai vai atzinuma sniegšanai, veicot iepirkuma procedūras pirmspārbaudes.
-
-(Ar grozījumiem, kas izdarīti ar 24.03.2022. likumu, kas stājas spēkā 01.01.2023. Sk. pārejas noteikumu 22. punktu)
 
 67. pants. Iesniegumu izskatīšanas komisija
 
@@ -2019,8 +1941,6 @@ b) pasūtītājs informējis attiecīgo pretendentu par iepirkuma līguma vai vi
 
 3) ir ievērots šā likuma 68. panta sestajā daļā noteiktais aizliegums slēgt iepirkuma līgumu.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
-
 75. pants. Tiesas spriedums par iepirkuma līgumu vai vispārīgo vienošanos
 
 (1) Ja tiesa konstatē, ka iepirkuma līgums vai vispārīgā vienošanās noslēgta, pārkāpjot šā likuma normas, un secina, ka pieteikums ir apmierināms, tā, ievērojot šā likuma nosacījumus, pati izvēlas vienu no šādiem sprieduma veidiem:
@@ -2042,8 +1962,6 @@ b) pasūtītājs informējis attiecīgo pretendentu par iepirkuma līguma vai vi
 (6) Pieņemot kādu no šā panta pirmās daļas 1. un 2. punktā minētajiem spriedumiem, tiesa lemj par to iepirkuma līgumu spēkā esību, kuri noslēgti, pamatojoties uz attiecīgo vispārīgo vienošanos.
 
 (7) Tiesa sprieduma norakstu nosūta Iepirkumu uzraudzības birojam un Finanšu ministrijai.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
 
 XI nodaļa
 Zaudējumu atlīdzināšana
@@ -2073,8 +1991,6 @@ XIII nodaļa
 Citi noteikumi
 80. pants. Lēmuma par aizliegumu ieņemt valsts amatpersonas amatus izpildes kārtība
 
-(Izslēgts no 01.07.2020. ar 05.12.2019. likumu, kas stājas spēkā 31.12.2019. Sk. pārejas noteikumu 15. punktu)
-
 81. pants. Būvdarbu līgumu nomenklatūras piemērošana
 
 Ja šā likuma 1. pielikumā minētās iepirkuma nomenklatūras CPV dati atšķiras no NACE nomenklatūras, kas noteikta Komisijas 2001. gada 19. decembra regulā (EK) Nr. 29/2002, ar ko groza Padomes regulu (EEK) Nr. 3037/90 par saimniecisko darbību statistisko klasifikāciju Eiropas Kopienā, piemēro attiecīgo CPV nomenklatūru.
@@ -2083,17 +1999,12 @@ Ja šā likuma 1. pielikumā minētās iepirkuma nomenklatūras CPV dati atšķi
 
 Iepirkumu uzraudzības birojs apkopo un savā tīmekļvietnē publicē to zemu nodokļu vai beznodokļu valstu vai teritoriju sarakstu, kuras nav uzskatāmas par ārzonu šā likuma 1. panta 3.1 punkta izpratnē.
 
-(26.04.2018. likuma redakcijā, kas stājas spēkā 01.06.2018.)
-
 83. pants. Elektroniskie rēķini
 
 Pasūtītājs pieņem elektronisko rēķinu, kas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību un, ja tas paredzēts iepirkuma līgumā, ietver papildu pamatelementus atbilstoši minētajiem normatīvajiem aktiem. Ministru kabinets nosaka piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību.
 
-(21.02.2019. likuma redakcijā, kas stājas spēkā 18.04.2019. Sk. pārejas noteikumu 14. punktu)
-
 XIV nodaļa
 Administratīvie pārkāpumi publisko iepirkumu jomā un kompetence administratīvo pārkāpumu procesā
-(Nodaļa 05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Nodaļa stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
 
 84. pants. Līguma prettiesiska noslēgšana
 
@@ -2105,23 +2016,17 @@ Administratīvie pārkāpumi publisko iepirkumu jomā un kompetence administrat�
 
 (4) Par šā panta pirmajā, otrajā vai trešajā daļā minētajām darbībām, ja noslēgtā iepirkuma līguma vai vispārīgās vienošanās, vai cita veiktā darījuma līgumcena ir 145 000 euro vai lielāka, piemēro naudas sodu no septiņdesmit līdz četrsimt naudas soda vienībām un tiesību izmantošanas aizliegumu — aizliegumu uz laiku no viena līdz diviem gadiem ieņemt amatus, kuru pienākumos ietilpst lēmumu pieņemšana publisko iepirkumu un publiskās un privātās partnerības jomā vai iepirkuma līgumu, vispārīgo vienošanos, partnerības iepirkuma līgumu vai koncesijas līgumu noslēgšana.
 
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Pants stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
-
 85. pants. Interešu konflikta novēršanas noteikumu neievērošana
 
 (1) Par to, ka nav nodrošināta šajā likumā noteiktā apliecinājuma parakstīšana par tādu apstākļu neesību, kuru dēļ varētu uzskatīt, ka iepirkuma procedūras dokumentu sagatavotājs, iepirkuma komisijas locekļi, iepirkuma komisijas sekretārs vai eksperti ir ieinteresēti konkrēta kandidāta vai pretendenta izvēlē vai darbībā vai ir saistīti ar konkrētu kandidātu vai pretendentu, piemēro brīdinājumu vai naudas sodu no četrpadsmit līdz septiņdesmit naudas soda vienībām.
 
 (2) Par to, ka nav ievērots šajā likumā noteiktais aizliegums pasūtītāja amatpersonām un darbiniekiem, kas sagatavo iepirkuma procedūras dokumentus, iepirkuma komisijas locekļiem, iepirkuma komisijas sekretāram un ekspertiem pārstāvēt kandidāta vai pretendenta intereses, kā arī par to, ka nav ievērots aizliegums būt saistītiem ar kandidātu vai pretendentu, piemēro naudas sodu no četrpadsmit līdz simt četrdesmit naudas soda vienībām.
 
-(05.12.2019. likuma redakcijā ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
-
 86. pants. Kandidātu un pretendentu izslēgšanas noteikumu, atlases prasību un tehnisko specifikāciju prasību neievērošana
 
 (1) Par šajā likumā noteikto kandidātu un pretendentu izslēgšanas noteikumu neievērošanu, ja kandidāts vai pretendents nepamatoti izslēgts vai nepamatoti nav izslēgts no dalības iepirkumā un tas ir ietekmējis lēmumu par kandidātu atlases rezultātiem vai lēmumu par līguma slēgšanas tiesību piešķiršanu, piemēro naudas sodu no četrpadsmit līdz septiņdesmit naudas soda vienībām.
 
 (2) Par iepirkuma procedūras dokumentos noteikto kandidātu un pretendentu atlases prasību vai tehnisko specifikāciju prasību neievērošanu, ja kandidāta pieteikums vai pretendenta piedāvājums nepamatoti noraidīts vai nepamatoti atzīts par atbilstošu iepirkuma procedūras dokumentos noteiktajām prasībām un tas ir ietekmējis lēmumu par kandidātu atlases rezultātiem vai lēmumu par līguma slēgšanas tiesību piešķiršanu, piemēro naudas sodu no četrpadsmit līdz septiņdesmit naudas soda vienībām.
-
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Pants stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
 
 87. pants. Iepirkuma līguma un vispārīgās vienošanās noslēgšanas un grozīšanas noteikumu neievērošana
 
@@ -2135,8 +2040,6 @@ Administratīvie pārkāpumi publisko iepirkumu jomā un kompetence administrat�
 
 (5) Par šā panta pirmajā, otrajā, trešajā vai ceturtajā daļā minētajām darbībām, ja noslēgtā iepirkuma līguma vai vispārīgās vienošanās līgumcena vai grozījumu kopējā līgumcena ir 145 000 euro vai lielāka, piemēro naudas sodu no septiņdesmit līdz četrsimt naudas soda vienībām un tiesību izmantošanas aizliegumu — aizliegumu uz laiku no viena līdz diviem gadiem ieņemt amatus, kuru pienākumos ietilpst lēmumu pieņemšana publisko iepirkumu un publiskās un privātās partnerības jomā vai iepirkuma līgumu, vispārīgo vienošanos, partnerības iepirkuma līgumu vai koncesijas līgumu noslēgšana.
 
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Pants stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
-
 88. pants. Dokumentu un informācijas nenodrošināšana
 
 (1) Par šajā likumā un uz tā pamata izdotajos normatīvajos aktos ietverto noteikumu neievērošanu pieteikumu, piedāvājumu vai metu sagatavošanas laikā attiecībā uz iepirkuma procedūras dokumentu pieejamības nodrošināšanu, iepirkuma procedūras dokumentu izsniegšanu vai papildu informācijas sniegšanu piemēro brīdinājumu vai naudas sodu no četrpadsmit līdz septiņdesmit naudas soda vienībām.
@@ -2149,13 +2052,9 @@ Administratīvie pārkāpumi publisko iepirkumu jomā un kompetence administrat�
 
 (5) Par statistikas pārskata neiesniegšanu šajā likumā noteiktajā termiņā vai nepilnīga pārskata iesniegšanu piemēro brīdinājumu vai naudas sodu no četrpadsmit līdz septiņdesmit naudas soda vienībām.
 
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Pants stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
-
 89. pants. Kompetence administratīvo pārkāpumu procesā
 
 Administratīvā pārkāpuma procesu par šā likuma 84., 85., 86., 87. un 88. pantā minētajiem pārkāpumiem veic Iepirkumu uzraudzības birojs.
-
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019. Pants stājas spēkā 01.07.2020. Sk. pārejas noteikumu 15. punktu)
 
 90. pants. Kārtība, kādā izpildāms lēmums par tiesību izmantošanas aizliegumu ieņemt amatus
 
@@ -2165,146 +2064,7 @@ Administratīvā pārkāpuma procesu par šā likuma 84., 85., 86., 87. un 88. p
 
 (3) Institūcijai, kurā persona, kurai piemērots tiesību izmantošanas aizliegums — aizliegums ieņemt amatus, kuru pienākumos ietilpst lēmumu pieņemšana publisko iepirkumu un publiskās un privātās partnerības jomā vai iepirkuma līgumu, vispārīgo vienošanos, partnerības iepirkuma līgumu vai koncesijas līgumu noslēgšana, ieņem šādus amatus, ir pienākums nodrošināt, ka pēc tam, kad lēmums administratīvā pārkāpuma lietā ir stājies spēkā, attiecīgā persona šādus amatus neieņem, lēmumus nepieņem un līgumus neslēdz.
 
-(05.12.2019. likuma redakcijā ar grozījumiem, kas izdarīti ar 03.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
-Pārejas noteikumi
-1. Ar šā likuma spēkā stāšanos spēku zaudē Publisko iepirkumu likums (Latvijas Republikas Saeimas un Ministru Kabineta Ziņotājs, 2006, 10. nr.; 2007, 6. nr.; 2009, 17. nr.; Latvijas Vēstnesis, 2010, 91. nr.; 2012, 24., 109. nr.; 2013, 129., 183., 194. nr.; 2014, 175., 204. nr.; 2015, 107., 242. nr.; 2016, 52., 95. nr.).
-
-2. Ja iepirkums vai iepirkuma procedūra ir izsludināta vai lēmums par iepirkuma vai iepirkuma procedūras uzsākšanu, ja iepirkums vai iepirkuma procedūra nav jāizsludina, ir pieņemts pirms šā likuma spēkā stāšanās dienas, tad iepirkums vai iepirkuma procedūra pabeidzama, tai skaitā apstrīdama vai pārsūdzama, saskaņā ar tā likuma noteikumiem, kas bija spēkā attiecīgā iepirkuma vai iepirkuma procedūras izsludināšanas vai lēmuma par tās uzsākšanu pieņemšanas dienā, izņemot noteikumus, kas iekļauti šā likuma 28. panta otrajā daļā, 29. pantā, 30. panta pirmajā daļā un 31. panta otrajā daļā. Noslēgtās vispārīgās vienošanās administrējamas saskaņā ar tā likuma noteikumiem, kas bija spēkā attiecīgā iepirkuma vai iepirkuma procedūras izsludināšanas dienā un kā rezultātā tika noslēgta vispārīgā vienošanās.
-
-3. Šā likuma 39. panta pirmo daļu piemēro:
-
-1) attiecībā uz centralizēto iepirkumu institūciju veiktajām iepirkuma procedūrām, kuru paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka, no 2017. gada 18. aprīļa;
-
-2) attiecībā uz iepirkuma procedūrām, kuru paredzamā līgumcena ir vienāda ar Ministru kabineta noteiktajām līgumcenu robežvērtībām vai lielāka, no 2017. gada 1. oktobra;
-
-3) attiecībā uz iepirkuma procedūrām, kuru paredzamā līgumcena ir mazāka par Ministru kabineta noteiktajām līgumcenu robežvērtībām, no 2018. gada 1. aprīļa;
-
-4) attiecībā uz šā likuma 9. un 10. pantā minētajiem iepirkumiem no 2019. gada 1. janvāra, ciktāl šā punkta 5. un 6. apakšpunktā nav noteikts citādi;
-
-5) attiecībā uz šā likuma 9. un 10. pantā minētajiem iepirkumiem, kurus veic atvasinātās publiskās personas un to iestādes, no 2019. gada 1. oktobra;
-
-6) attiecībā uz šā likuma 9. un 10. pantā minētajiem iepirkumiem, kurus veic privāto tiesību juridiskās personas, no 2020. gada 1. jūlija.
-
-(Ar grozījumiem, kas izdarīti ar 20.09.2018. likumu, kas stājas spēkā 18.10.2018.)
-
-4. (Izslēgts ar 30.04.2020. likumu, kas stājas spēkā 01.05.2020.)
-
-5. Šā likuma 18. panta pirmo daļu piemēro no 2017. gada 1. jūnija.
-
-6. Iepirkumu uzraudzības birojs publikāciju vadības sistēmā publicē šā likuma 80. panta trešajā daļā minēto informāciju par visiem lēmumiem administratīvo pārkāpumu lietās publisko iepirkumu un publiskās un privātās partnerības jomā, kurās piemērots aizliegums ieņemt valsts amatpersonas amatus, kuri ir stājušies spēkā un kuru izpilde nav beigusies.
-
-7. Ja lēmums administratīvā pārkāpuma lietā publisko iepirkumu un publiskās un privātās partnerības jomā, kurā piemērots aizliegums ieņemt valsts amatpersonas amatus, ir paziņots personai, kas saukta pie administratīvās atbildības, pirms šā likuma stāšanās spēkā un tas vēl nav stājies spēkā, šā likuma 80. panta pirmajā daļā minēto pienākumu attiecībā uz šo lēmumu Iepirkumu uzraudzības birojs izpilda līdz 2017. gada 10. martam.
-
-8. Statistikas pārskatus par 2016. gadu pasūtītāji iesniedz, piemērojot Ministru kabineta 2016. gada 1. marta noteikumus Nr. 121 "Noteikumi par oficiālās statistikas veidlapu paraugiem iepirkumu jomā un veidlapu iesniegšanas un aizpildīšanas kārtību".
-
-9. Grozījums šā likuma 1. panta 23. punktā stājas spēkā 2019. gada 1. janvārī.
-
-(26.04.2018. likuma redakcijā, kas stājas spēkā 01.06.2018.)
-
-10. Šā likuma 9. panta astotās daļas 5. punktā un 42. panta pirmās daļas 12., 13. un 14. punktā minētos kandidātu vai pretendentu izslēgšanas nosacījumus neattiecina uz tiem iepirkumiem vai tām iepirkuma procedūrām, kuras uzsāktas vai izsludinātas pirms šo normu spēkā stāšanās dienas.
-
-(26.04.2018. likuma redakcijā, kas stājas spēkā 01.06.2018.)
-
-11. Šā likuma grozījums par 42. panta pirmās daļas 1. punkta "d" apakšpunkta izteikšanu jaunā redakcijā stājas spēkā 2019. gada 1. janvārī.
-
-(20.09.2018. likuma redakcijā, kas stājas spēkā 18.10.2018.)
-
-12. Šā likuma 9. panta divdesmitās daļas otrajā teikumā un 10. panta pirmās daļas otrajā teikumā minētās prasības iepirkumiem attiecībā uz apsardzes pakalpojumiem, uz kuriem attiecas CPV kods 79710000-4, neattiecina uz šiem iepirkumiem, ja tie uzsākti vai izsludināti pirms attiecīgo normu spēkā stāšanās dienas.
-
-(14.02.2019. likuma redakcijā, kas stājas spēkā 13.03.2019.)
-
-13. Šā likuma grozījumi par 60. panta desmitās daļas izteikšanu jaunā redakcijā neattiecas uz iepirkuma līgumiem, vispārīgo vienošanos vai to grozījumiem, kas noslēgti pirms šīs normas spēkā stāšanās dienas, un tie pircēja profilā uzglabājami saskaņā ar 60. panta noteikumiem, kuri bija spēkā pirms tā desmitās daļas jaunās redakcijas spēkā stāšanās dienas. Iepirkuma līguma vai vispārīgās vienošanās grozījumi, kas tiek veikti pēc dienas, kad stājusies spēkā 60. panta desmitās daļas jaunā redakcija, kā arī iepirkuma līgums, kas noslēgts uz tādas vispārīgās vienošanās pamata, kura noslēgta pirms minēto grozījumu spēkā stāšanās dienas, pircēja profilā ievietojami kopā ar konkrētā iepirkuma līguma vai vispārīgās vienošanās pamattekstu.
-
-(14.02.2019. likuma redakcijā, kas stājas spēkā 13.03.2019.)
-
-14. Šā likuma 60. panta otrās daļas 8.1 punktu un 83. pantu tiešās pārvaldes iestādes piemēro to iepirkuma līgumu apmaksai, kuriem iepirkums vai iepirkuma procedūra izsludināta vai lēmums par iepirkuma vai iepirkuma procedūras uzsākšanu, ja iepirkums vai iepirkuma procedūra nav jāizsludina, pieņemts, sākot ar 2019. gada 18. aprīli, pārējie pasūtītāji — sākot ar 2020. gada 18. aprīli.
-
-(21.02.2019. likuma redakcijā, kas stājas spēkā 18.04.2019.)
-
-15. Šā likuma grozījums, kas paredz aizstāt 1. panta 25. punktā vārdus "aizliegums ieņemt valsts amatpersonas amatu" ar vārdiem "tiesību izmantošanas aizliegums — aizliegums ieņemt amatus, kuru pienākumos ietilpst lēmumu pieņemšana publisko iepirkumu un publiskās un privātās partnerības jomā vai iepirkuma līgumu, vispārīgo vienošanos, partnerības iepirkuma līgumu vai koncesijas līgumu noslēgšana", grozījums par 24. panta pirmās daļas izteikšanu jaunā redakcijā, grozījums par 80. panta izslēgšanu un XIV nodaļa stājas spēkā vienlaikus ar Administratīvās atbildības likumu.
-
-(05.12.2019. likuma redakcijā, kas stājas spēkā 31.12.2019.)
-
-16. Ar 2026. gada 1. janvāri par tīru autotransporta līdzekli atbilstoši šā likuma 1. panta 32.1 punkta "a" apakšpunktam tiek uzskatīts tāds M1, M2 vai N1 kategorijas autotransporta līdzeklis, kura izpūtēja emisijas ir nulle CO2 g/km.
-
-(02.09.2021. likuma redakcijā, kas stājas spēkā 14.09.2021.)
-
-17. Šā likuma 54. panta ceturtajā daļā noteiktais tīro autotransporta līdzekļu procentuālais īpatsvars katrā autotransporta līdzekļu iepirkumā ir:
-
-1) no attiecīgās normas spēkā stāšanās dienas līdz 2025. gada 31. decembrim — 22 procenti M1, M2 vai N1 kategorijas autotransporta līdzekļiem;
-
-2) no 2026. gada 1. janvāra līdz 2030. gada 31. decembrim — 22 procenti M1, M2 vai N1 kategorijas autotransporta līdzekļiem;
-
-3) no attiecīgās normas spēkā stāšanās dienas līdz 2025. gada 31. decembrim — 8 procenti N2 vai N3 kategorijas autotransporta līdzekļiem;
-
-4) no 2026. gada 1. janvāra līdz 2030. gada 31. decembrim — 9 procenti N2 vai N3 kategorijas autotransporta līdzekļiem;
-
-5) no attiecīgās normas spēkā stāšanās dienas līdz 2025. gada 31. decembrim — 35 procenti I klases un A klases M3 kategorijas autotransporta līdzekļiem;
-
-6) no 2026. gada 1. janvāra līdz 2030. gada 31. decembrim — 50 procenti I klases un A klases M3 kategorijas autotransporta līdzekļiem;
-
-7) no 2031. gada 1. janvāra katram piecu gadu laikposmam piemērojams šā punkta 2., 4. un 6. apakšpunktā noteiktais tīro autotransporta līdzekļu procentuālais īpatsvars.
-
-(02.09.2021. likuma redakcijā, kas stājas spēkā 14.09.2021.)
-
-18. Šā likuma 54. panta ceturtajā, piektajā, sestajā un septītajā daļā minētās prasības piemērojamas iepirkumiem vai iepirkuma procedūrām, kuras izsludinātas, vai, ja iepirkums vai iepirkuma procedūra nav izsludināma, lēmums par iepirkuma vai iepirkuma procedūras uzsākšanu pieņemts, sākot ar dienu, kad stājās spēkā šīs tiesību normas.
-
-(02.09.2021. likuma redakcijā, kas stājas spēkā 14.09.2021.)
-
-19. Ja iepirkums vai iepirkuma procedūra ir izsludināta vai lēmums par iepirkuma vai iepirkuma procedūras uzsākšanu, kad iepirkums vai iepirkuma procedūra nav jāizsludina, ir pieņemts līdz 2022. gada 31. decembrim, iepirkums vai iepirkuma procedūra pabeidzama, tai skaitā apstrīdama vai pārsūdzama, saskaņā ar tiem šā likuma noteikumiem, kuri bija spēkā attiecīgā iepirkuma vai iepirkuma procedūras izsludināšanas vai lēmuma par tās uzsākšanu pieņemšanas dienā.
-
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
-20. Pasūtītājs līgumu reģistra ierakstu veido par tādu iepirkuma līgumu un vispārīgo vienošanos, kas noslēgta, sākot ar 2023. gada 1. janvāri.
-
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
-21. Ja iepirkuma procedūrā pēc dinamiskās iepirkumu sistēmas izveidošanas kandidātus vai pretendentus pārbauda attiecībā uz atbilstību izslēgšanas noteikumiem, kā arī iepirkumā vai iepirkuma procedūrā pēc līguma noslēgšanas apakšuzņēmējus pārbauda attiecībā uz atbilstību izslēgšanas noteikumiem, minētā pārbaude veicama saskaņā ar tiem šā likuma noteikumiem, kas ir spēkā pārbaudes veikšanas dienā.
-
-(03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
-22. Šo pārejas noteikumu 19. punkts neattiecas uz noteikumiem, kas iekļauti šā likuma 9. panta astoņpadsmitajā daļā, 39. panta ceturtajā daļā, 60. panta desmitās daļas 2. punktā, 66. panta 4. un 5. punktā, 68. panta ceturtajā daļā.
-
-(24.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
-
-23. Šā likuma 20. panta 9.1 daļa stājas spēkā 2025. gada 28. jūnijā. Šā likuma 20. panta 9.1 daļas prasības neattiecas uz iepirkumiem un iepirkuma procedūrām, kuras izsludinātas vai par kurām, ja iepirkums vai iepirkuma procedūra nav izsludināma, lēmums par iepirkuma vai iepirkuma procedūras uzsākšanu pieņemts līdz 2025. gada 27. jūnijam.
-
-(16.03.2023. likuma redakcijā, kas stājas spēkā 11.04.2023. 20. panta 9.1 daļa iekļauta likuma redakcijā uz 28.06.2025.)
-
-24. Šā likuma 9. panta 6.1 daļu piemēro no 2024. gada 1. jūlija. Šā likuma 9. panta 6.1 daļas prasības neattiecas uz iepirkumiem, kas izsludināti līdz 2024. gada 30. jūnijam.
-
-(05.10.2023. likuma redakcijā, kas stājas spēkā 25.10.2023.)
-
-Informatīva atsauce uz Eiropas Savienības direktīvām
-(Ar grozījumiem, kas izdarīti ar 21.02.2019., 02.09.2021. un 16.03.2023. likumu, kas stājas spēkā 11.04.2023.)
-
-Likumā iekļautas tiesību normas, kas izriet no:
-
-1) Padomes 1989. gada 21. decembra direktīvas 89/665/EK par to normatīvo un administratīvo aktu koordinēšanu, kuri attiecas uz izskatīšanas procedūru piemērošanu, piešķirot piegādes un uzņēmuma līgumus valsts vajadzībām;
-
-2) Eiropas Parlamenta un Padomes 2007. gada 11. decembra direktīvas 2007/66/EK, ar ko Padomes direktīvas 89/665/EEK un 92/13/EEK groza attiecībā uz pārskatīšanas procedūru efektivitātes uzlabošanu valsts līgumu piešķiršanas jomā;
-
-3) Eiropas Parlamenta un Padomes 2009. gada 23. aprīļa direktīvas 2009/33/EK par tīru autotransporta līdzekļu izmantošanas veicināšanu mazemisiju mobilitātes atbalstam;
-
-4) Eiropas Parlamenta un Padomes 2009. gada 18. jūnija direktīvas 2009/52/EK, ar ko nosaka minimālos standartus sankcijām un pasākumiem pret darba devējiem, kas nodarbina trešo valstu valstspiederīgos, kuri dalībvalstīs uzturas nelikumīgi;
-
-5) Eiropas Parlamenta un Padomes 2012. gada 25. oktobra direktīvas 2012/27/ES par energoefektivitāti, ar ko groza direktīvas 2009/125/EK un 2010/30/ES un atceļ direktīvas 2004/8/EK un 2006/32/EK;
-
-6) Eiropas Parlamenta un Padomes 2014. gada 26. februāra direktīvas 2014/24/ES par publisko iepirkumu un ar ko atceļ direktīvu 2004/18/EK;
-
-7) Eiropas Parlamenta un Padomes 2014. gada 16. aprīļa direktīvas 2014/55/ES par elektroniskajiem rēķiniem publiskā iepirkuma procedūrās;
-
-8) Eiropas Parlamenta un Padomes 2019. gada 20. jūnija direktīvas 2019/1161, ar ko groza direktīvu 2009/33/EK par "tīro" un energoefektīvo autotransporta līdzekļu izmantošanas veicināšanu;
-
-9) Eiropas Parlamenta un Padomes 2019. gada 17. aprīļa direktīvas (ES) 2019/882 par produktu un pakalpojumu piekļūstamības prasībām.
-
-Likums stājas spēkā 2017. gada 1. martā.
-
-Likums Saeimā pieņemts 2016. gada 15. decembrī.
-Valsts prezidents R.Vējonis
-Rīgā 2016. gada 29. decembrī
-Publisko iepirkumu likuma
 1. pielikums
 Būvdarbu līgumu nomenklatūra
 Eiropas Savienības ekonomisko aktivitāšu klasifikācija (NACE)	CPV kods
@@ -2656,7 +2416,6 @@ p. k.	Apraksts	CPV kods
 Publisko iepirkumu likuma
 3. pielikums
 Starptautiskās konvencijas sociālajā un vides jomā
-(Pielikums 03.03.2022. likuma redakcijā, kas stājas spēkā 01.01.2023.)
 
 1. 1930. gada Piespiedu darba konvencija (ILO konvencija Nr. 29).
 

@@ -49,7 +49,7 @@ class QnAEngine:
         Settings.embed_model = self.embeddingobject
         self.chached_responses = {}
         self._token_counter = TokenCounter()
-        self.token_limit = self.llm.metadata.context_window * 0.7
+        self.token_limit = self.llm.metadata.context_window * 0.5
         self.compressed_txt = {}
             
     def load_md(self,text) -> List[Document]:
@@ -66,7 +66,7 @@ class QnAEngine:
 
                 if len(currline.strip())>0:
                     found = re.search(rf"^(##?#?)([^#]+)$",currline)
-                    
+                    print(currline)
                     if found and len(found.group(2).strip())>0:
                         if (len(segmentlines)>1 and len(segmentlines[0].strip())>0) or (mddict[found.group(1)] == "H2" and "H2" in metalist): 
                             #more than 1 line before or new H2 and previousely was H2
@@ -112,7 +112,7 @@ class QnAEngine:
                                 docs.append(Document(text=txt2add, extra_info=newmeta))
                                 segmentlines.clear()
                             segmentlines.append(currline[4:])                                            
-                    elif len(txt2add)>500 and (currline.strip().endswith(":") or currline.strip().endswith("?")) and currline[0].isupper():
+                    elif len(txt2add)>1000 and (currline.strip().endswith(":") or currline.strip().endswith("?")) and currline[0].isupper():
                         newmeta={**metalist, **othermeta}
                         docs.append(Document(text=txt2add, extra_info=newmeta))
                         segmentlines.clear()
@@ -143,23 +143,6 @@ class QnAEngine:
                                 metalist[title]=f"{found.group(1)}{found.group(2)} {found.group(3)}"
                         else:
                             segmentlines.append(currline)
-                        
-                elif len(txt2add)>2000 and '|' not in currline: # currline not table row
-                    pos=txt2add.rfind("<figure>")
-                    addtonextfragment = ""
-                    if pos > -1:
-                        posclose=txt2add.rfind("</figure>")
-
-                        if posclose < pos: # opening tag not closed, add to the next fragment
-                            addtonextfragment = txt2add[pos:].strip()
-                            txt2add = txt2add[0:pos]
-                            
-                    newmeta={**metalist, **othermeta}
-                    docs.append(Document(text=txt2add, extra_info=newmeta))
-                    segmentlines.clear()
-                    if len(addtonextfragment) > 0:
-                        segmentlines.append(addtonextfragment)
-                    segmentlines.append(currline)
                 
             if len(segmentlines)>0:
                 newmeta={**metalist, **othermeta}
@@ -184,8 +167,7 @@ class QnAEngine:
         
         for doc in documents:
                     
-            if re.search("([\s\t]*\r?\n){3,}",doc.text):   
-                doc.text=re.sub("([\s\t]*\r?\n){3,}",'\n\n',doc.text)
+            doc.text=doc.text.strip()
 
             if len(doc.text)>0:
 
@@ -243,26 +225,25 @@ class QnAEngine:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return False
 
-    def compressPrompt(self,prompt):
+    def compressPrompt(self,prompt,size):
+        
         if prompt in self.compressed_txt:
             return self.compressed_txt[prompt]
+        elif self._token_counter.estimate_tokens_in_messages([ChatMessage(content=prompt, role=MessageRole.SYSTEM)])  < size:
+            return prompt
             
-        response = self.llm.complete(f"The following text exceeds context window token limit. Summarize it so its size does not exceed {self.token_limit} tokens. The text is the following:\n{prompt}\nThe summaized text: ")
-        newprompt = str(response).replace(r'The summarized text is as follows:','').strip()
-        #print(f"Old size:{len(prompt)} New size:{len(newprompt)}")
+        response = self.llm.complete(f"The following text exceeds context window token limit. Summarize it so its size does not exceed {size} tokens. Do not translate the text. The text is the following:\n{prompt}\nThe summaized text: ")
+        newprompt = str(response)
+        newprompt = re.sub(r'The summarized text is( as follows)?:','',newprompt).strip()
+        print(f"Old size:{len(prompt)} New size:{len(newprompt)}")
         #print(f"NEW PROMPT:\n{newprompt}")
         self.compressed_txt[prompt] = newprompt
         return newprompt
         
-    def askQuestion(self,query_prompt,q,usecontext=True,n=3):
+    def askQuestion(self,query_prompt,q,usecontext=True,n=4):
 
         if (query_prompt,q) in self.chached_responses:
             return self.chached_responses[(query_prompt,q)]
-            
-        token_count = self._token_counter.estimate_tokens_in_messages([ChatMessage(content=query_prompt, role=MessageRole.SYSTEM),ChatMessage(content=q, role=MessageRole.USER)])  
-        
-        if token_count > self.token_limit:
-            query_prompt = self.compressPrompt(query_prompt)
             
         if usecontext==True:
             numitemsinidx=self.newindex.vector_store.client.ntotal
@@ -295,7 +276,7 @@ class QnAEngine:
                 print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
                 return ''
 
-    def getSimilarNodes(self,q,n=3):
+    def getSimilarNodes(self,q,n=4):
 
         numitemsinidx=self.newindex.vector_store.client.ntotal
         
