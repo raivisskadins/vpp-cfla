@@ -66,7 +66,6 @@ class QnAEngine:
 
                 if len(currline.strip())>0:
                     found = re.search(rf"^(##?#?)([^#]+)$",currline)
-                    print(currline)
                     if found and len(found.group(2).strip())>0:
                         if (len(segmentlines)>1 and len(segmentlines[0].strip())>0) or (mddict[found.group(1)] == "H2" and "H2" in metalist): 
                             #more than 1 line before or new H2 and previousely was H2
@@ -144,9 +143,11 @@ class QnAEngine:
                         else:
                             segmentlines.append(currline)
                 
-            if len(segmentlines)>0:
+            if len(segmentlines)>1:
                 newmeta={**metalist, **othermeta}
                 docs.append(Document(text='\n\n'.join(segmentlines), extra_info=newmeta))
+            elif len(segmentlines)==1:
+                docs[-1].text = docs[-1].text + '\n' + segmentlines[0]
                 
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")

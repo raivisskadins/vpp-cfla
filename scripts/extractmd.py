@@ -13,7 +13,7 @@ class Extractor:
 
         filetxt = re.sub(r"^ *\d+ *\r?\n", "", filetxt) # page numbers
         filetxt = re.sub(r"\n *\d+ *\r?\n ", "\n", filetxt) # page numbers
-        filetxt = re.sub(r"([a-zāēīūķļņčžšģ] +)\r?\n([a-zāēīūķļņčžšģ])", r"\1\2", filetxt) #line divided, merge it
+        filetxt = re.sub(r"([a-zāēīūķļņčžšģ\d] *)(\r?\n)+ ?([a-zāēīūķļņčžšģ\(]{2,})", r"\1 \3", filetxt) #line divided, merge it
         filetxt = re.sub(r"([‒-])\r?\n", r"\1", filetxt) #hyphen at the end or line, merge with the next line
         filetxt = re.sub(r"(\([^\n\(\)]+)\r?\n([^\n\)\(]+\))", r"\1\2", filetxt) # line divided '(' on first line, merge it
         filetxt = re.sub(r"([„“][^\n„“”]+)\r?\n([^\n„“”]+”)", r"\1\2", filetxt) # line divided '„' on first line, merge it

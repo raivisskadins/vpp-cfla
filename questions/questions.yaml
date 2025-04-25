@@ -10,18 +10,18 @@
       - 6
       - 7
 - nr: 3
-  question: "Vai nav konstatējama iepirkuma priekšmeta nepamatota apvienošana?"
+  question: "Iepirkuma priekšmets netiek nepamatoti apvienots"
   PIL:
    - chapter: 11
 - nr: 4
-  question0: "Vai iepirkuma priekšmetam ir viena daļa?"
+  question0: "Vai iepirkuma priekšmets ir nesadalīts daļās?"
   question: "Vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai un tas objektīvi pamato iepirkuma priekšmeta nesadalīšanu?"
   MK107:
    - chapter: 196
 - nr: 5
   question: "Iepirkumam atbilstoši būvdarbu, preču grupu un pakalpojumu kategorijām ir piešķirts CPV kods un tas pēc būtības atbilst iepirkuma priekšmetam un tas ir norādīts Elektronisko iepirkumu sistēmā (EIS) E-konkursu apakšsistēmā, paziņojumā par plānoto līgumu un pārējā iepirkuma dokumentācijā pēc būtības atbilst iepirkuma priekšmeta saturam"
 - nr: 6
-  question0: "Vai līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes)?"
+  question0: "Noskaidro, par ko ir iepirkums. Vai līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes)?"
   question: "līguma priekšmets ir klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
 - nr: 7
   question0: "Vai līguma priekšmets daļēji ietver PIL 2. pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes?"
@@ -104,8 +104,8 @@
      pt:
       - 1
 - nr: 19
-  question0: "Vai iepirkuma dokumentācijā ir noteikts termiņš, kādā pasūtītājs sniedz papildu informāciju par iepirkuma dokumentācijā iekļautajām prasībām?"
-  question: "Informācijas sniegšanas termiņš ir noteikts atbilstoši. Pasūtītājs sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā (bet ne vēlāk kā sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām)"
+  question0: "Vai iepirkuma dokumentācijā ir noteikts termiņš, kādā pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkuma dokumentācijā iekļautajām prasībām?"
+  question: "Informācijas sniegšanas termiņš ir noteikts atbilstoši. Pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā (bet ne vēlāk kā sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām)"
   PIL:
    - chapter: 36
      pt:
@@ -147,7 +147,7 @@
    - chapter: 43
    - chapter: 105
 - nr: 31
-  question0: "Vai tiesa, ka konkursa procedūra ir vai nu konkursa procedūras ar sarunām vai konkursa dialogs?"
+  question0: "Vai tiesa, ka konkursa procedūra ir vai nu konkursa procedūras ar sarunām vai konkursa dialogs, bet nav slēgts vai atklāts konkurss?"
   question: "Konkursa procedūras ar sarunām vai konkursa dialoga gadījumā noteikts, ka piedāvājumi tiek atvērti pēc to iesniegšanas termiņa beigām"
   MK107:
    - chapter: 89
@@ -159,7 +159,7 @@
    - chapter: 15
    - chapter: 53
 - nr: 33
-  question0: "Vai tiek piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs?"
+  question0: "Vai tiek piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs, bet netiek piemērots atklāts konkurss?"
   question: "Vai ir atbilstoši noteikta kandidātu vērtēšanas sistēmas metodika (ja tāda paredzēta)?"
   MK107:
    - chapter: 26
@@ -175,7 +175,7 @@
      pt:
       - 12
 - nr: 34
-  question0: "Vai tiek piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs?"
+  question0: "Vai tiek piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs, bet netiek piemērots atklāts konkurss?"
   question: "Ir norādīti objektīvi un nediskriminējoši kritēriji vai noteikumi, kas tiks piemēroti kandidātu skaita samazināšanai, kas tiks uzaicināti iesniegt piedāvājumus, kā arī minimālais un, ja nepieciešams, maksimālais kandidātu skaits. Slēgtā konkursā minimālais kandidātu skaits ir ne mazāks kā 5, bet konkursa procedūrā ar sarunām un konkursa dialogā – vismaz 3."
   MK107:
    - chapter: 29
@@ -348,7 +348,7 @@
        pt:
         - 2
   - nr: 38.5
-    question0: "Vai iepirkuma dokumentācijā ir iekļauti Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumi?"
+    question0: "Vai iepirkuma dokumentācijā ir atsauce uz Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumiem?"
     NSL:
      - chapter: 11.1
        pt:
