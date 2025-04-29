@@ -30,10 +30,6 @@
    - appendix: 2
 - nr: 8
   question: "Vienlaicīgi ar procedūras izsludināšanas dienu (diena, kad paziņojums par iepirkumu publicēts IUB tīmekļvietnē) pasūtītājs ir nodrošinājis pircēja profilā EIS E-konkursu apakšsistēmā brīvu un tiešu elektronisku piekļuvi iepirkuma procedūras dokumentācijai"
-  PIL:
-   - chapter: 27
-   - chapter: 28
-   - chapter: 34
 - nr: 9
   question0: "Vai iepirkuma līgums tiek slēgts par veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas CPV kodi 75121000-0, 75122000-7, 75123000-4, 79622000-0, 79624000-4, 79625000-1, 80110000-8, 80300000-7, 80420000-4, 80430000-7, 80511000-9, 80520000-5, 80590000-6, no 85000000-9 līdz 85323000-9, 92500000-6, 92600000-7, 98133000-4, 98133110-8?"
   questions:
@@ -52,24 +48,12 @@
         - 3
   - nr: 9.3
     question: "Vai iepirkuma līguma termiņš nepārsniedz trīs gadus?"
-    PIL:
-     - chapter: 16
-       pt:
-        - 2
 - nr: 10
   question: "Pasūtītājs ir nodrošinājis iespēju piegādātājiem iepazīties uz vietas ar iepirkuma papildu dokumentiem, kam tehnisku iemeslu dēļ vai tajos iekļautās informācijas vai komerciālu interešu aizsardzības dēļ nav nodrošināma brīva un tieša elektroniska piekļuve, sākot ar attiecīgā iepirkuma izsludināšanas brīdi"
 - nr: 11
   question: "IUB tīmekļa vietnē ir publicēts paziņojums par izmaiņām vai papildu informācija (t.sk., ja grozījumi nosaukti par precizējumiem, tomēr pēc būtības groza nolikuma saturu)"
-  PIL:
-   - chapter: 28
-     pt:
-      - 2
 - nr: 12
   question: "Grozījumi un grozītie iepirkuma procedūras dokumenti ir pieejami elektroniski pircēja profilā EIS E-konkursu apakšsistēmā ne vēlāk kā dienu pēc tam, kad paziņojums par izmaiņām vai papildu informāciju iesniegts IUB publicēšanai"
-  PIL:
-   - chapter: 36
-     pt:
-      - 4
 - nr: 13
   question0: "Vai pasūtītājs ir veicis izmaiņas/precizējumus iepirkuma dokumentācijā vai sniedzis atbildes uz jautājumiem?"
   question: "Veiktās izmaiņas/precizējumi vai sniegtās atbildes ir vērtējamas tikai kā iepirkuma dokumentācijas precizējumi vai skaidrojumi par iepirkuma dokumentāciju (t.i., pēc būtības negroza iepirkuma dokumentācijā noteiktās prasības)"
@@ -81,8 +65,6 @@
       - 3
 - nr: 15
   question: "Pasūtītājs ir noteicis informācijas apmaiņas veidu, kas ir vispārpieejams un neapgrūtina piegādātāja piekļuvi iepirkumam"
-  PIL:
-   - chapter: 36
 - nr: 16
   question: "Ir atbilstoši noteiktas prasības elektroniskai pieteikumu un piedāvājumu saņemšanai.\n Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu EIS E-konkursu apakšsistēmā, izņemot MK noteikumu 231.punktā noteiktos gadījumus, kad pasūtītājam nav pienākuma pieteikumu un piedāvājumu vai tā sastāvdaļu saņemšanai izmantot elektroniskās informācijas sistēmas."
   PIL:
@@ -92,24 +74,12 @@
 - nr: 17
   question0: "Vai nolikumā noteikts, ka piedāvājumu var iesniegt elektroniski?"
   question: "Pasūtītājs nav noteicis, ka papildus elektroniskajam piedāvājumam piegādātājam jāiesniedz arī rakstveida piedāvājums"
-  PIL:
-   - chapter: 38
-     pt:
-      - 8
 - nr: 18
   question0: "Vai ir noteikta maksa par iepirkuma dokumentācijas izsniegšanu?"
   question: "Maksa par iepirkuma dokumentācijas izsniegšanu ir tikai tāda, kas nepārsniedz dokumentu pavairošanas un nosūtīšanas faktiskos izdevumus"
-  PIL:
-   - chapter: 36
-     pt:
-      - 1
 - nr: 19
   question0: "Vai iepirkuma dokumentācijā ir noteikts termiņš, kādā pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkuma dokumentācijā iekļautajām prasībām?"
-  question: "Informācijas sniegšanas termiņš ir noteikts atbilstoši. Pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā (bet ne vēlāk kā sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām)"
-  PIL:
-   - chapter: 36
-     pt:
-      - 2
+  question: "Pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā (bet ne vēlāk kā sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām)"
 - nr: 20
   question: "Pasūtītājs ir izvērtējis piegādātāju uzdotos jautājumus un ir atbildējis uz visiem uzdotajiem jautājumiem konkrēti un pēc būtības"
 - nr: 21
@@ -122,15 +92,13 @@
 - nr: 23
   question0: "Vai tiek paredzēta ieinteresēto piegādātāju sanāksme?"
   question: "Nolikumā ir norādīta precīza vieta, datums un laiks un atklātā konkursā ieinteresēto piegādātāju sanāksme tiks rīkota ne vēlāk kā 5 dienas pirms piedāvājumu atvēršanas un informācija par sanāksmi ievietota pircēja profilā vismaz trīs dienas iepriekš"
-  MK107:
-   - chapter: 11
 - nr: 24
   question0: "Vai ir noteiktas pretendentu tiesības iesniegt iesniegumu IUB?"
   question: "vai pretendentu tiesības iesniegt iesniegumu IUB ir noteiktas atbilstoši PIL 68. panta nosacījumiem?"
   PIL:
    - chapter: 68
 - nr: 25
-  question0: "Vai Nolikumā ir norādīts identifikācijas numurs? Kāds tas ir (atgriez numuru ietvertu tagos <num>...</num>)?"
+  question0: "Vai Nolikumā ir norādīts identifikācijas numurs?"
   question: "Nolikumā norādītais identifikācijas numurs ir tāds pats kā publikācijā IUB tīmekļa vietnē"
 - nr: 26
   question: "Vai ir pareizi norādīts pasūtītāja nosaukums, adrese un rekvizīti (ja nepieciešams)?"
@@ -143,21 +111,12 @@
 - nr: 30
   question0: "Konkurss var būt slēgts vai atklāts. Vai šis konkurss ir slēgts?"
   question: "Slēgtā konkursā piedāvājumu iesniegšanas termiņš, kā arī konkursa procedūrā ar sarunām sākotnējo piedāvājumu iesniegšanas termiņš ir vismaz 20 dienas pēc dienas, kad kandidātiem nosūtīts uzaicinājums iesniegt piedāvājumus"
-  MK107:
-   - chapter: 43
-   - chapter: 105
 - nr: 31
   question0: "Vai tiesa, ka konkursa procedūra ir vai nu konkursa procedūras ar sarunām vai konkursa dialogs, bet nav slēgts vai atklāts konkurss?"
-  question: "Konkursa procedūras ar sarunām vai konkursa dialoga gadījumā noteikts, ka piedāvājumi tiek atvērti pēc to iesniegšanas termiņa beigām"
-  MK107:
-   - chapter: 89
-   - chapter: 128
+  question: "Piedāvājumi tiek atvērti pēc to iesniegšanas termiņa beigām"
 - nr: 32
-  question0: "Vai tiesa, ka konkurss ir vai nu atklāts vai slēgts?"
-  question: "Atklāta vai slēgta konkursa gadījumā noteikts, ka piedāvājumu atvēršanas sanāksme ir atklāta"
-  MK107:
-   - chapter: 15
-   - chapter: 53
+  question0: "Vai tiesa, ka ir atklāts vai slēgts konkurss, bet nav konkursa procedūras ar sarunām vai konkursa dialogs?"
+  question: "Piedāvājumu atvēršanas sanāksme ir atklāta"
 - nr: 33
   question0: "Vai tiek piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs, bet netiek piemērots atklāts konkurss?"
   question: "Vai ir atbilstoši noteikta kandidātu vērtēšanas sistēmas metodika (ja tāda paredzēta)?"
@@ -187,19 +146,11 @@
   questions:
   - nr: 35.1
     question: "Piedāvājuma nodrošinājuma apmērs ir noteikts konkrētas summās veidā un nav lielāks par 2% no paredzamās līgumcenas (bez PVN)."
-    PIL:
-     - chapter: 50
-       pt:
-        - 2
   - nr: 35.2
     question0: "Vai iepirkuma priekšmets ir sadalīts daļās?"
     question: "Piedāvājuma nodrošinājums attiecībā uz katru daļu ir noteikts ne lielāks kā 2% no attiecīgās daļas paredzamās līgumcenas (bez PVN)"
   - nr: 35.3
     question: "Nav ierobežotas piegādātāja tiesības brīvi izvēlēties veidu, kādā iesniegt piedāvājuma nodrošinājumu un saistību izpildes nodrošinājumu"
-    PIL:
-     - chapter: 50
-       pt:
-        - 4
   - nr: 35.4
     question: "Piedāvājuma nodrošinājuma termiņš ir noteikts samērīgi, ņemot vērā attiecīgā iepirkuma sarežģītību un paredzamo piedāvājumu izvērtēšanas termiņu un tas nepārsniedz 6 mēnešus, skaitot no piedāvājumu atvēršanas dienas"
     PIL:
@@ -224,7 +175,7 @@
     question: "Pasūtītājs nav paredzējis konkrētu piedāvājuma nodrošinājuma formu (veidlapu), kura obligāti ir izmantojama"
   - nr: 35.8
     question0: "Vai ir noteikti nolikumā gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu?"
-    question: "Vai gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu, atbilst PIL 50. panta 6.daļā noteiktajam?"
+    question: "Vai gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu, atbilst PIL 50. panta 6. daļā noteiktajam?"
     PIL:
      - chapter: 50
        pt:
@@ -276,13 +227,9 @@
   - nr: 37.4
     question0: "Vai iepirkuma dokumentācijā ir norādīti konkrēti zīmoli, specifiska izcelsme, īpaši procesi, patenti vai specifiski preču veidi, kā arī standarti?"
     question: "Ja iepirkuma dokumentācijā ir norādīti konkrēti zīmoli, specifiska izcelsme, īpaši procesi, patenti vai specifiski preču veidi, kā arī standarti, vai klāt ir norāde „vai ekvivalents”, kas attiecas uz visām šīm atsaucēm?"
-    PIL:
-     - chapter: 20
-       pt:
-        - 6
   - nr: 37.5
     question0: "Vai pasūtītājs būvdarbu, preču vai pakalpojumu iepirkumam, kas atbilst noteiktām vides aizsardzības, sociālajām vai citām īpašām prasībām, ir tehniskajās specifikācijās (vai iepirkuma līguma izpildes noteikumos) pieprasījis īpašu marķējumu kā pierādījumu būvdarbu, pakalpojumu vai piegāžu atbilstībai noteiktajām prasībām?"
-    question: "Ja pasūtītājs būvdarbu, preču vai pakalpojumu iepirkumam, kas atbilst noteiktām vides aizsardzības, sociālajām vai citām īpašām prasībām, ir tehniskajās specifikācijās (vai iepirkuma līguma izpildes noteikumos) pieprasījis īpašu marķējumu kā pierādījumu būvdarbu, pakalpojumu vai piegāžu atbilstībai noteiktajām prasībām, vai ir ievēroti PIL 21.pantā ietvertie nosacījumi (galvenokārt attiecībā uz PIL 21.panta 1.daļas 1.punktu)?"
+    question: "Ja pasūtītājs būvdarbu, preču vai pakalpojumu iepirkumam, kas atbilst noteiktām vides aizsardzības, sociālajām vai citām īpašām prasībām, ir tehniskajās specifikācijās (vai iepirkuma līguma izpildes noteikumos) pieprasījis īpašu marķējumu kā pierādījumu būvdarbu, pakalpojumu vai piegāžu atbilstībai noteiktajām prasībām, vai ir ievēroti PIL 21. pantā ietvertie nosacījumi?"
     PIL:
      - chapter: 21
        pt:
@@ -363,19 +310,11 @@
         - 9
   - nr: 38.7
     question: "Nav paredzēts automātiski noraidīt piegādātāju, ja šis piegādātājs, tā darbinieks vai piegādātāja piedāvājumā norādītā persona ir piedalījusies kādā no iepriekšējiem attiecīgā iepirkuma projekta posmiem vai to dokumentu izstrādāšanā, liedzot tam iespēju pierādīt, ka minētie apstākļi šādam piegādātājam nedod nekādas priekšrocības konkrētajā iepirkuma procedūrā"
-    PIL:
-     - chapter: 41
-       pt:
-        - 11
   - nr: 38.8
-    question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 1.punkta regulējumu, t.i, 'Pasūtītājs noraida pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz iepirkuma procedūras dokumentos pasūtītāja norādīto līgumcenu, ja tā noteikta kā piedāvājuma atbilstības prasība'?"
+    question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis noraidīt pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz iepirkuma procedūras dokumentos pasūtītāja norādīto līgumcenu, ja tā noteikta kā piedāvājuma atbilstības prasība?"
     question: "Iepirkuma dokumentācijā ir norādīta līgumcena un noteikums, ka pretendenta piedāvājums tiks noraidīts, ja tā piedāvātā līgumcena pārsniegs iepirkuma dokumentācijā norādīto līgumcenu."
-    PIL:
-     - chapter: 41
-       pt:
-        - 11
   - nr: 38.9
-    question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 2.punkta regulējumu, t.i, 'Pasūtītājs noraida pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz 150 procentus no iepirkuma procedūras dokumentos norādītās paredzamās līgumcenas'?"
+    question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis noraidīt pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz 150 procentus no iepirkuma procedūras dokumentos norādītās paredzamās līgumcenas?"
     question: "Vai iepirkuma dokumentācijā ir norādīta iepirkuma paredzamā līgumcena?"
 - nr: 39
   questions:
@@ -437,11 +376,6 @@
         - 6
   - nr: 39.11
     question: "Nav noteikts, ka piegādātāju apvienībai, attiecībā uz kuru pieņemts lēmums slēgt iepirkuma līgumu, uz līguma izpildes brīdi jāizveido pilnsabiedrība (vai arī jāiegūst kāds cits konkrēts juridisks statuss), nepieļaujot iespēju noslēgt sabiedrības līgumu"
-    PIL:
-     - chapter: 13
-       pt:
-        - 4
-        - 6
   - nr: 39.12
     question: "Pasūtītājs nav ierobežojis pretendenta tiesības dalībai iepirkumā ar nosacījumu, ka tam jābūt reģistrētam, licencētam vai sertificētam atbilstoši Latvijas Republikas normatīvo aktu prasībām"
   - nr: 39.13
@@ -458,10 +392,6 @@
     question: "Prasība attiecībā uz nepieciešamo finanšu apgrozījumu ir attiecināta uz termiņu ne vairāk kā par iepriekšējiem trim pārskata gadiem, ciktāl informācija par šo apgrozījumu ir pieejama, ņemot vērā piegādātāja dibināšanas vai darbības uzsākšanas laiku (proti, ir noteikts, ka piegādātājiem, kuru darbības laiks ir īsāks par iepriekšējiem trim pārskata gadiem, jāapliecina nepieciešamais apgrozījums to darbības periodā)"
   - nr: 39.17
     question: "Gada minimālais finanšu apgrozījums nav noteikts lielāks par divām paredzamo līgumcenu vērtībām"
-    PIL:
-     - chapter: 45
-       pt:
-        - 2
   - nr: 39.18
     question0: "Vai iepirkums ir dalīts daļās?"
     question: "Vai prasītais finanšu apgrozījums ir noteikts pret katras iepirkuma daļas paredzamo līgumcenu (nevis kopējo iepirkuma paredzamo līgumcenu)?"
@@ -629,10 +559,6 @@
 - nr: 50
   question0: "Vai tiek vērtētas aprites cikla izmaksas?"
   question: "Iepirkuma procedūras dokumentos ir norādīta aprites cikla izmaksu aprēķina metodika un aprēķina veikšanai nepieciešamie dati, ko iesniegs pretendenti"
-  PIL:
-   - chapter: 52
-     pt:
-      - 2
 - nr: 51
   question0: "Vai iepirkuma procedūras dokumentācijai ir pievienots iepirkuma līguma projekts?"
   questions:
@@ -671,7 +597,7 @@
 - nr: 56
   question: "Pasūtītājs līgumprojektā ir norādījis, ka iepirkuma līguma izpildes laikā piegādātājam ir pienākums paziņot pasūtītājam par jebkurām minētās informācijas izmaiņām, kā arī papildināt sarakstu ar informāciju par apakšuzņēmēju, kas tiek vēlāk iesaistīts būvdarbu veikšanā vai pakalpojumu sniegšanā"
 - nr: 57
-  question: "Iepirkuma līgumprojektā ir atrunāta piedāvājumā norādīto apakšuzņēmēju un personāla nomaiņas un jaunu apakšuzņēmēju un personāla piesaistes kārtība atbilstoši PIL 62.panta noteikumiem"
+  question: "Iepirkuma līgumprojektā ir atrunāta piedāvājumā norādīto apakšuzņēmēju un personāla nomaiņas un jaunu apakšuzņēmēju un personāla piesaistes kārtība atbilstoši PIL 62. panta noteikumiem"
   PIL:
    - chapter: 62
 - nr: 58
@@ -691,10 +617,6 @@
 - nr: 61
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
   question: "Nav noteikts, ka vispārīgā vienošanās attiecas arī uz citiem pasūtītājiem un piegādātājiem, proti, ne tikai tiem, kuri kā dalībnieki noteikti vispārīgās vienošanās noteikumos tās noslēgšanas dienā"
-  PIL:
-   - chapter: 56
-     pt:
-      - 2
 - nr: 62
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
   question: "Pasūtītājs ir noteicis piedāvājuma izvērtēšanas kritērijus vispārīgās vienošanās dalībnieku noteikšanai"
