@@ -177,8 +177,6 @@ b) M3, N2 vai N3 kategorijas elektrotransportlīdzeklis vai autotransporta līdz
 
 (9) Šo likumu nepiemēro, ja Ministru kabinets saskaņā ar ārējiem normatīvajiem aktiem informāciju par līgumu vai tā izpildi atzinis par valsts noslēpumu.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 14.11.2024. likumu, kas stājas spēkā 22.11.2024.)
-
 4. pants. Pasūtītāju savstarpēji iepirkuma līgumi
 
 (1) Šo likumu nepiemēro tādas personas veiktajiem būvdarbiem, piegādēm vai sniegtajiem pakalpojumiem, kura atbilst visām šādām pazīmēm:
@@ -265,8 +263,6 @@ Pasūtītājs nepiemēro šajā likumā noteiktās iepirkuma procedūras, ja iep
 
 22) speciālistu un ekspertu pakalpojumiem saskaņā ar Starptautiskās palīdzības likumu īstenojamos attīstības sadarbības projektos.
 
-(Ar grozījumiem, kas izdarīti ar 14.02.2019., 30.04.2020., 03.03.2022., 16.03.2023., 05.10.2023. un 30.05.2024. likumu, kas stājas spēkā 05.06.2024.)
-
 6. pants. Līgumi, kuru izpildi vairāk par 50 procentiem finansē pasūtītājs
 
 (1) Šo likumu piemēro līgumu noslēgšanai, ja:
@@ -285,19 +281,7 @@ Pasūtītājs nepiemēro šajā likumā noteiktās iepirkuma procedūras, ja iep
 
 8. pants. Iepirkuma procedūru veidi un to piemērošana
 
-(1) Ir šādas iepirkuma procedūras:
-
-1) atklāts konkurss;
-
-2) slēgts konkurss;
-
-3) konkursa procedūra ar sarunām;
-
-4) konkursa dialogs;
-
-5) inovācijas partnerības procedūra;
-
-6) sarunu procedūra.
+(1) Ir šādas iepirkuma procedūras: atklāts konkurss; slēgts konkurss; konkursa procedūra ar sarunām; konkursa dialogs; inovācijas partnerības procedūra; sarunu procedūra.
 
 (2) Pasūtītājs ir tiesīgs rīkot metu konkursu, ja paredzamā līgumcena ir 10 000 euro vai lielāka. Metu konkursu rīko kā iepirkuma procedūras sastāvdaļu, kuras rezultātā tiek piešķirtas publiska pakalpojuma līguma slēgšanas tiesības, vai kā atsevišķu konkursu, kurā paredzētas godalgas vai maksājumi dalībniekiem. Metu konkursa norises kārtību nosaka Ministru kabinets.
 
@@ -326,46 +310,22 @@ Pasūtītājs nepiemēro šajā likumā noteiktās iepirkuma procedūras, ja iep
 (5) Šā likuma 17. panta septītajā un astotajā daļā minētajos gadījumos pasūtītājs iepērk preces un pakalpojumus no centralizēto iepirkumu institūcijas vai ar tās starpniecību, nepiemērojot šā panta pirmajā daļā noteiktās iepirkuma procedūras vai šā likuma 9. un 10. panta noteikumus.
 
 (6) Konkursa procedūru ar sarunām un konkursa dialogu pasūtītājs ir tiesīgs piemērot, ja:
-
-1) pasūtītāja vajadzības nevar apmierināt, nepielāgojot jau tirgū pieejamus risinājumus;
-
-2) iepirkuma līgums ietver projektēšanu vai inovatīvus risinājumus;
-
-3) iepirkuma līguma slēgšanas tiesības nevar piešķirt bez iepriekšējām sarunām īpašu apstākļu dēļ, kas attiecas uz iepirkuma raksturu, sarežģītību vai juridisko un finansiālo struktūru, vai ar tiem saistīto risku dēļ;
-
-4) pasūtītājs nevar pietiekami precīzi sagatavot tehniskās specifikācijas, atsaucoties uz standartiem, Eiropas tehnisko novērtējumu, kopējām tehniskajām specifikācijām vai tehniskajām atsaucēm;
-
-5) atklātā vai slēgtā konkursā ir iesniegti iepirkuma procedūras dokumentos noteiktajām prasībām neatbilstoši piedāvājumi vai piedāvājumi pārsniedz iepirkuma procedūras dokumentos norādīto paredzamo līgumcenu, vai piedāvājumi atzīti par nepamatoti lētiem, vai piedāvājumi ir iesniegti pēc piedāvājumu iesniegšanas termiņa beigām, vai pretendenti neatbilst iepirkuma procedūras dokumentos noteiktajām kvalifikācijas prasībām. Šo procedūru var piemērot, nepublicējot paziņojumu par līgumu, ja uz sarunām tiek aicināti tikai visi tie pretendenti, kas atbilst atklātā vai slēgtā konkursā noteiktajām kvalifikācijas prasībām, kas nav izslēgti no dalības iepirkuma procedūrā un kas iesnieguši piedāvājumus atklātā vai slēgtā konkursā noteiktajā piedāvājumu iesniegšanas termiņā.
+1) Nepieciešami pielāgojumi tirgū pieejamiem risinājumiem;
+2) Iepirkuma līgums ietver projektēšanu vai inovatīvus risinājumus;
+3) Nepieciešamas iepriekšējas sarunas īpašu apstākļu dēļ;
+4) Tehniskās specifikācijas nevar precīzi sagatavot;
+5) Piedāvājumi neatbilst prasībām vai pārsniedz paredzamo līgumcenu.
 
 (7) Sarunu procedūru pasūtītājs ir tiesīgs piemērot, ja:
-
-1) atklātā vai slēgtā konkursā nav iesniegti piedāvājumi vai pieteikumi vai ir iesniegti iepirkuma līgumam neatbilstoši piedāvājumi, kas bez būtiskiem grozījumiem neatbilst iepirkuma procedūras dokumentos noteiktajām prasībām, vai iesniegti kvalifikācijas prasībām neatbilstošu un no iepirkuma procedūras izslēdzamu kandidātu pieteikumi un ja netiek būtiski mainīti sākotnējie iepirkuma līguma izpildes noteikumi. Pēc Eiropas Komisijas pieprasījuma pasūtītājs tai nosūta iepirkuma procedūras ziņojumu. Ja atklāts vai slēgts konkurss izbeigts vai pārtraukts, jo piedāvājumi noraidīti saskaņā ar šā likuma 41. panta vienpadsmito daļu, sarunu rezultātā noslēgtā līguma līgumcena nedrīkst pārsniegt jebkuru no šādām vērtībām:
-
-a) atklātā vai slēgtā konkursa iepirkuma procedūras dokumentos pasūtītāja norādīto līgumcenu, kas noteikta kā piedāvājuma atbilstības prasība,
-
-b) 150 procentus no atklātā vai slēgtā konkursa iepirkuma procedūras dokumentos norādītās paredzamās līgumcenas;
-
-2) būvdarbus, piegādes vai pakalpojumus var nodrošināt tikai konkrēts piegādātājs kādā no šādiem gadījumiem:
-
-a) iepirkuma mērķis ir radīt vai iegādāties unikālu mākslas darbu vai māksliniecisku izpildījumu,
-
-b) nav konkurences tehnisku iemeslu dēļ,
-
-c) nepieciešams ievērot izņēmuma tiesību, tai skaitā intelektuālā īpašuma tiesību, aizsardzību;
-
-3) pasūtītājam neparedzamu ārkārtas apstākļu rezultātā objektīvi radusies situācija, kurā steidzamības dēļ nav iespējams piemērot atklātu konkursu, slēgtu konkursu vai konkursa procedūru ar sarunām. Minētie apstākļi, kas pamato ārkārtas situāciju, nedrīkst būt atkarīgi no pasūtītāja darbības;
-
-4) nepieciešamās preces ir īpaši izgatavotas izpētei un izmēģinājumiem. Šī norma neattiecas uz preču ražošanu to noieta izpētei vai izpētes un izmēģinājumu izmaksu segšanai;
-
-5) pasūtītājam nepieciešamas papildu piegādes no sākotnējā preču piegādātāja (ražotāja), lai papildinātu vai daļēji nomainītu tā rīcībā jau esošās preces vai iekārtas, jo, izvēloties citu preču piegādātāju (ražotāju), pasūtītājam vajadzētu iepirkt preces, kas pēc saviem tehniskajiem parametriem atšķirtos no tā rīcībā jau esošajām precēm, un šāda atšķirība radītu nesaderību vai ievērojamas tehniskās grūtības preču vai iekārtu uzturēšanā un ekspluatācijā. Šāda iepirkuma līguma, kā arī atkārtotu iepirkuma līgumu darbības termiņš nedrīkst pārsniegt trīs gadus;
-
-6) iepirkuma līguma priekšmets ir tādu preču piegāde, kuras tiek kotētas un kuras pasūtītājs pērk preču biržā;
-
-7) ir iespēja iepirkt preces vai pakalpojumus ar īpaši izdevīgiem noteikumiem no piegādātāja, kas izbeidz savu saimniecisko darbību, vai likvidatora, kurš veica piegādātāja likvidācijas procesu, vai no administratora, kurš rīko bankrotējuša piegādātāja mantas izpārdošanu saskaņā ar normatīvajiem aktiem;
-
-8) publisks pakalpojuma līgums tiek slēgts ar metu konkursa uzvarētāju vai kādu no uzvarētājiem un metu konkurss rīkots saskaņā ar šā likuma prasībām. Ja metu konkursā noteikti vairāki uzvarētāji, visus uzvarētājus uzaicina uz sarunām;
-
-9) iepirkuma līguma priekšmets ir atkārtota iepriekš iepirkuma procedūras rezultātā noslēgta iepirkuma līgumā paredzēto būvdarbu veikšana vai pakalpojumu sniegšana, kas tiek uzticēta šā līguma izpildītājam, un atkārtoti nepieciešamie būvdarbi vai pakalpojumi atbilst iepriekš iepirkuma procedūras rezultātā noslēgtā iepirkuma līguma pamatā esošajam projektam. Šis nosacījums attiecas uz gadījumiem, kad pasūtītājs pirmā projekta iepirkuma procedūras dokumentos, nosakot paredzamo līgumcenu, ir paredzējis atkārtotu iepirkuma līgumu slēgšanu, kopējo būvdarbu vai pakalpojumu paredzamo vērtību un to piešķiršanas nosacījumus. Sarunu procedūru var piemērot triju gadu laikā no sākotnējā iepirkuma līguma noslēgšanas.
+1) Atklātā vai slēgtā konkursā nav iesniegti piedāvājumi vai tie neatbilst prasībām;
+2) Būvdarbus, piegādes vai pakalpojumus var nodrošināt tikai konkrēts piegādātājs;
+3) Neparedzamu ārkārtas apstākļu dēļ steidzamības dēļ nav iespējams piemērot atklātu konkursu;
+4) Nepieciešamās preces ir īpaši izgatavotas izpētei un izmēģinājumiem;
+5) Nepieciešamas papildu piegādes no sākotnējā preču piegādātāja;
+6) Iepirkuma līguma priekšmets ir preču piegāde, kuras tiek kotētas preču biržā;
+7) Iespēja iepirkt preces vai pakalpojumus ar īpaši izdevīgiem noteikumiem no piegādātāja, kas izbeidz savu saimniecisko darbību;
+8) Publisks pakalpojuma līgums tiek slēgts ar metu konkursa uzvarētāju;
+9) Iepirkuma līguma priekšmets ir atkārtota iepriekš noslēgta iepirkuma līguma būvdarbu veikšana vai pakalpojumu sniegšana.
 
 (8) Šā panta septītās daļas 2. punkta "b" un "c" apakšpunktā minētie izņēmumi ir piemērojami tikai tad, ja nav pamatotas alternatīvas vai aizstājēja un ja konkurences trūkuma iemesls nav iepirkumam noteiktās prasības.
 
@@ -384,8 +344,6 @@ c) nepieciešams ievērot izņēmuma tiesību, tai skaitā intelektuālā īpaš
 2) gadījumos, kad uz daļu no iepirkuma līguma attiecas Aizsardzības un drošības jomas iepirkumu likuma 3. panta pirmās daļas 2., 3. un 4. punkts, iepirkuma līguma slēgšanas tiesības var piešķirt saskaņā ar aizsardzības un drošības jomas iepirkumu regulējošiem normatīvajiem aktiem, ja nedalīta iepirkuma līguma piešķiršanu pamato objektīvi iemesli.
 
 (14) Ja iepirkuma līgums atbilst gan šā panta trīspadsmitās daļas 1. punktam, gan 2. punktam, pasūtītājs piemēro šā panta trīspadsmitās daļas 1. punktu.
-
-(Ar grozījumiem, kas izdarīti ar 20.09.2018. likumu, kas stājas spēkā 18.10.2018.)
 
 9. pants. Iepirkumi, kuriem nepiemēro šajā likumā noteiktās iepirkuma procedūras
 
@@ -473,8 +431,6 @@ c) nepieciešams ievērot izņēmuma tiesību, tai skaitā intelektuālā īpaš
 
 (23) Pretendents, kurš iesniedzis piedāvājumu iepirkumā, uz ko attiecas šā panta noteikumi, un kurš uzskata, ka ir aizskartas tā tiesības vai ir iespējams šo tiesību aizskārums, ir tiesīgs pārsūdzēt pieņemto lēmumu Administratīvajā rajona tiesā Administratīvā procesa likumā noteiktajā kārtībā mēneša laikā no lēmuma saņemšanas dienas. Administratīvās rajona tiesas nolēmumu var pārsūdzēt kasācijas kārtībā Augstākās tiesas Administratīvo lietu departamentā. Lēmuma pārsūdzēšana neaptur tā darbību.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 20.09.2018., 14.02.2019., 02.09.2021., 03.03.2022., 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023. 6.1 daļu piemēro no 01.07.2024. Sk. pārejas noteikumu 24. punktu)
-
 10. pants. Šā likuma 2. pielikumā minēto pakalpojumu iepirkumi
 
 (1) Ja publiska pakalpojuma līguma paredzamā līgumcena ir 42 000 euro vai lielāka un līgumu slēdz par šā likuma 2. pielikumā minētajiem pakalpojumiem, pasūtītājs var nepiemērot šajā likumā noteiktās iepirkuma procedūras, izņemot šā likuma 13., 14., 19., 20., 21. un 22. pantā, III nodaļā, 28. panta otrajā daļā, 32., 33. un 33.1 pantā, 36. panta pirmajā, trešajā un ceturtajā daļā, 37., 38. un 39. pantā, 40. panta pirmajā, trešajā, ceturtajā un piektajā daļā, 60. un 61. pantā minētās prasības. Ja publisku pakalpojuma līgumu slēdz par šā likuma 2. pielikuma sadaļā "Izmeklēšanas un apsardzes pakalpojumi" norādītajiem apsardzes pakalpojumiem, uz kuriem attiecas CPV kods 79710000-4, pasūtītājs piemēro arī šā likuma 42. un 43. pantā minētās prasības.
@@ -483,54 +439,43 @@ c) nepieciešams ievērot izņēmuma tiesību, tai skaitā intelektuālā īpaš
 
 (3) Pasūtītājs ir tiesīgs nepiemērot šo likumu publiskam pakalpojuma līgumam, kurš tiek slēgts par mācību prakses vai studiju prakses, vai darba vidē balstītu mācību nodrošināšanu, ja tā paredzamā līgumcena ir mazāka par 750 000 euro.
 
-(Ar grozījumiem, kas izdarīti ar 14.02.2019. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 11. pants. Paredzamās līgumcenas noteikšana
 
-(1) Paredzamo līgumcenu nosaka, lai izvēlētos iepirkuma veidu un piemērojamo procedūru.
+1) Paredzamo līgumcenu nosaka, lai izvēlētos iepirkuma veidu un piemērojamo procedūru.
 
-(2) Paredzamo līgumcenu noteic kā pasūtītāja plānoto kopējo samaksu par iepirkuma līguma izpildi, ko piegādātājs var saņemt no pasūtītāja un citām personām. Pasūtītājs, plānojot kopējo samaksu, ņem vērā jebkuru izvēles iespēju un jebkurus iepirkuma līguma papildinājumus, visus saistībā ar iepirkuma līgumu maksājamos nodokļus (izņemot pievienotās vērtības nodokli), kā arī godalgu un maksājumu vērtību, ja pasūtītājs paredz kandidātiem, pretendentiem, konkursa dialoga dalībniekiem, inovāciju partnerības procedūras partneriem vai metu konkursa dalībniekiem piešķirt godalgas vai izmaksāt maksājumus.
+(2) Paredzamo līgumcenu noteic kā pasūtītāja plānoto kopējo samaksu par iepirkuma līguma izpildi, ko piegādātājs var saņemt no pasūtītāja un citām personām. Pasūtītājs ņem vērā jebkuru izvēles iespēju, iepirkuma līguma papildinājumus, visus saistībā ar iepirkuma līgumu maksājamos nodokļus (izņemot PVN), kā arī godalgu un maksājumu vērtību.
 
-(21) Ja pasūtītājs sastāv no atsevišķām struktūrvienībām, kurām nav noteikta patstāvīga atbildība par iepirkumu veikšanu, paredzamo līgumcenu noteic kā visu struktūrvienību plānoto kopējo samaksu par iepirkuma līguma vai vispārīgās vienošanās izpildi. Patstāvīga atbildība par iepirkuma veikšanu ir tad, ja pasūtītāja struktūrvienība saskaņā ar normatīvajos aktos noteikto kompetenci neatkarīgi veic iepirkumu un slēdz iepirkuma līgumu vai vispārīgo vienošanos, un šo iepirkumu finansē no tās rīcībā esošajiem finanšu līdzekļiem, kas paredzēti konkrētā iepirkuma veikšanai.
+(21) Ja pasūtītājs sastāv no atsevišķām struktūrvienībām bez patstāvīgas atbildības par iepirkumu veikšanu, paredzamo līgumcenu noteic kā visu struktūrvienību plānoto kopējo samaksu.
 
-(3) Paredzamo līgumcenu nosaka, pirms publicē šā likuma 9. panta sestajā daļā, 28. panta pirmajā daļā, 31. panta pirmajā daļā vai 32. panta pirmajā daļā minēto paziņojumu vai, ja šāda paziņojuma publicēšana nav nepieciešama, pirms iepirkuma vai iepirkuma procedūras uzsākšanas.
+(3) Paredzamo līgumcenu nosaka pirms paziņojuma publicēšanas vai iepirkuma uzsākšanas.
 
-(4) Nav atļauts sadalīt daļās būvdarbu projektus, paredzamās piegādes vai pakalpojumus, lai izvairītos no iepirkuma vai attiecīgās iepirkuma procedūras piemērošanas. Paredzamās līgumcenas noteikšanai nav atļauts izmantot tādu metodi, kas vērsta uz šajā likumā noteikto iepirkumu vai iepirkuma procedūru nepiemērošanu.
+(4) Nav atļauts sadalīt daļās būvdarbu projektus, piegādes vai pakalpojumus, lai izvairītos no iepirkuma procedūras piemērošanas.
 
-(5) Publiska būvdarbu līguma paredzamā līgumcena ir visu būvdarbu vai būves kopējā vērtība, ieskaitot to piegāžu un pakalpojumu līgumcenu, kuri nepieciešami publiska būvdarbu līguma izpildei un kurus pasūtītājs paredzējis attiecīgi veikt vai sniegt būvdarbu izpildītājam. Pasūtītājs nepievieno publiska būvdarbu līguma paredzamajai līgumcenai to piegāžu un pakalpojumu paredzamo līgumcenu, kuri nav nepieciešami konkrētā publiskā būvdarbu līguma izpildei, ja tādējādi var izvairīties no šā likuma prasību piemērošanas attiecīgajiem piegādes vai pakalpojuma līgumiem.
+(5) Publiska būvdarbu līguma paredzamā līgumcena ir visu būvdarbu vai būves kopējā vērtība, ieskaitot piegāžu un pakalpojumu līgumcenu, kas nepieciešami līguma izpildei.
 
-(6) Ja iespējamo publiska būvdarbu vai publiska pakalpojuma līguma priekšmetu var sadalīt daļās, vienlaikus slēdzot iepirkuma līgumu par katru daļu, paredzamo līgumcenu nosaka kā visu daļu kopējo summu. Pasūtītājs šā likuma prasības piemēro katrai daļai, ja daļu kopējā summa ir vienāda ar attiecīgajām šā likuma 8. panta ceturtajā daļā minētajām līgumcenu robežvērtībām vai lielāka. Attiecībā uz tām daļām, kuru paredzamā līgumcena ir mazāka par 80 000 euro publiskiem pakalpojuma līgumiem un par 1 000 000 euro publiskiem būvdarbu līgumiem, pasūtītājs ir tiesīgs veikt iepirkumu, kas attiektos uz šo daļu paredzamo līgumcenu atbilstoši šā likuma 8., 9. vai 10. pantam, ja attiecīgo daļu kopējā paredzamā līgumcena ir mazāka par 20 procentiem no visu daļu kopējās paredzamās līgumcenas. Ja šādu daļu kopējā paredzamā līgumcena ir mazāka par 20 000 euro publiskiem būvdarbu līgumiem un mazāka par 10 000 euro publiskiem pakalpojuma līgumiem, pasūtītājs attiecībā uz šādām daļām ir tiesīgs nepiemērot šo likumu.
+(6) Ja līguma priekšmetu var sadalīt daļās, paredzamo līgumcenu nosaka kā visu daļu kopējo summu. Pasūtītājs piemēro likuma prasības katrai daļai, ja kopējā summa ir vienāda ar likumā minētajām robežvērtībām vai lielāka.
 
-(7) Ja paredz iepirkt līdzīgas preces, vienlaikus slēdzot vairākus publiskus piegādes līgumus tā, ka tie ir iepirkuma līgumi par daļām, paredzamo līgumcenu nosaka kā visu daļu kopējo summu. Pasūtītājs šā likuma prasības piemēro katrai daļai, ja daļu kopējā summa ir vienāda ar attiecīgajām šā likuma 8. panta ceturtajā daļā minētajām līgumcenu robežvērtībām vai lielāka. Attiecībā uz tām daļām, kuru paredzamā līgumcena ir mazāka par 80 000 euro, pasūtītājs ir tiesīgs veikt iepirkumu, kas attiektos uz šo daļu paredzamo līgumcenu atbilstoši šā likuma 8. vai 9. pantam, ja attiecīgo daļu kopējā paredzamā līgumcena ir mazāka par 20 procentiem no visu daļu kopējās paredzamās līgumcenas. Ja šādu daļu kopējā paredzamā līgumcena ir mazāka par 10 000 euro, pasūtītājs attiecībā uz šādām daļām ir tiesīgs nepiemērot šo likumu.
+(7) Ja paredz iepirkt līdzīgas preces, nosaka kopējo līgumcenu visām daļām. Pasūtītājs piemēro likuma prasības katrai daļai, ja kopējā summa ir vienāda ar likumā minētajām robežvērtībām vai lielāka.
 
 (8) Paredzamo līgumcenu publiskiem piegādes līgumiem, kas paredz nomu, nomu ar izpirkuma tiesībām vai nomaksas pirkumu, nosaka šādi:
 
-1) iepirkuma līgumiem, kuriem ir noteikts termiņš:
-
+1) iepirkuma līgumiem ar noteiktu termiņu:
 a) ja termiņš ir 12 mēneši vai īsāks, — kā kopējo līgumcenu iepirkuma līguma darbības laikā,
-
 b) ja termiņš ir garāks par 12 mēnešiem, — kā kopējo līgumcenu iepirkuma līguma darbības laikā, ņemot vērā atlikušo vērtību;
 
 2) beztermiņa iepirkuma līgumiem vai iepirkuma līgumiem, kuriem nevar noteikt termiņu, — kā paredzamo mēneša maksājumu, kas reizināts ar 48.
 
-(9) Ja tiek slēgti regulāri publiski piegādes vai publiski pakalpojuma līgumi vai noteiktā laikposmā iepirkuma līguma termiņš tiek pagarināts, paredzamo līgumcenu nosaka:
-
+(9) Ja tiek slēgti regulāri publiski piegādes vai pakalpojuma līgumi, paredzamo līgumcenu nosaka:
 1) kā kopējo iepriekšējos 12 mēnešos vai iepriekšējā finanšu gadā citu citam sekojošo viena veida iepirkuma līgumu reālo vērtību, ņemot vērā iespējamās apjomu un vērtības izmaiņas turpmākajos 12 mēnešos;
-
-2) kā kopējo nākamajos 12 mēnešos pēc pirmās piegādes vai nākamajā finanšu gadā (ja tas ir garāks par 12 mēnešiem) citu citam sekojošo viena veida iepirkuma līgumu paredzamo vērtību.
+2) kā kopējo nākamajos 12 mēnešos pēc pirmās piegādes vai nākamajā finanšu gadā citu citam sekojošo viena veida iepirkuma līgumu paredzamo vērtību.
 
 (10) Paredzamo līgumcenu pakalpojumiem nosaka:
-
 1) apdrošināšanas pakalpojumiem — kā maksājamo apdrošināšanas prēmiju un citu atlīdzības veidu kopējo summu;
-
 2) banku un citiem finanšu pakalpojumiem — kā maksas par pakalpojumiem, komisijas maksas, maksājamo procentu un citu atlīdzības veidu kopējo summu;
-
 3) publiskiem pakalpojuma līgumiem, kas ietver konstruēšanu, arhitektūras vai inženierbūvju projektēšanu un modelēšanu, — kā maksas par pakalpojumiem, komisijas maksas un citu atlīdzības veidu kopējo summu.
 
 (11) Ja publiskiem pakalpojuma līgumiem nenorāda kopējo līgumcenu, paredzamo līgumcenu nosaka šādi:
-
-1) iepirkuma līgumiem, kuriem ir noteikts termiņš, kas ir 48 mēneši vai īsāks, — kā kopējo līgumcenu iepirkuma līguma darbības laikā;
-
+1) iepirkuma līgumiem ar noteiktu termiņu, kas ir 48 mēneši vai īsāks, — kā kopējo līgumcenu iepirkuma līguma darbības laikā;
 2) beztermiņa iepirkuma līgumiem vai iepirkuma līgumiem, kuru termiņš pārsniedz 48 mēnešus, — kā paredzamo mēneša maksājumu, kas reizināts ar 48.
 
 (12) Paredzamā līgumcena vispārīgās vienošanās gadījumā un dinamiskajai iepirkumu sistēmai ir visu paredzamo iepirkuma līgumu kopējā līgumcena vispārīgās vienošanās vai dinamiskās iepirkumu sistēmas darbības laikā.
@@ -538,8 +483,6 @@ b) ja termiņš ir garāks par 12 mēnešiem, — kā kopējo līgumcenu iepirku
 (13) Paredzamā līgumcena inovācijas partnerības procedūras gadījumā ir visu pētniecības un izstrādes darbību maksimālā paredzamā vērtība visos procedūras posmos un visu to piegāžu, pakalpojumu vai būvdarbu paredzamā maksimālā līgumcena, kurus paredzēts izstrādāt procedūras laikā un pēc tam iepirkt.
 
 (14) Ja metu konkursu plāno kā iepirkuma procedūras sastāvdaļu, kuras rezultātā tiek piešķirtas publiska pakalpojuma līguma slēgšanas tiesības, paredzamo līgumcenu nosaka, ņemot vērā godalgu vai maksājumu kopējo apjomu un noslēdzamā publiskā pakalpojuma līguma paredzamo līgumcenu.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 14.02.2019. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 12. pants. Līgumcenu robežvērtības
 
@@ -637,8 +580,6 @@ Sagatavošanās iepirkumam, iepirkuma procedūras dokumentu sagatavošana un teh
 
 (4) Ja kandidāts vai pretendents, vai juridiskā persona, kas ir saistīta ar kandidātu vai pretendentu, konsultēja pasūtītāju vai citādi iesaistījās iepirkuma sagatavošanā, pasūtītājs nodrošina, ka attiecīgā kandidāta vai pretendenta dalības dēļ iepirkumā netiek ierobežota konkurence, paziņojot citiem kandidātiem un pretendentiem būtisku informāciju, kura tika sniegta, kandidātam vai pretendentam iesaistoties iepirkuma sagatavošanā, vai kura izriet no šādas iesaistīšanās, un nosakot atbilstošu termiņu attiecīgi pieteikumu vai piedāvājumu iesniegšanai.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 19. pants. Zaļais publiskais iepirkums
 
 (1) Pasūtītājs, sagatavojot iepirkumu, ņem vērā saskaņā ar šā panta otro daļu noteiktās prasības. Ja tādas nav noteiktas, pasūtītājs pēc iespējas dod priekšroku tādām tehnisko specifikāciju prasībām, piedāvājuma izvērtēšanas kritērijiem un iepirkuma līguma izpildes noteikumiem, kas nodrošina iepirkuma atbilstību zaļā publiskā iepirkuma principiem, ievērojot samērīguma principu un balstoties uz objektīviem iemesliem.
@@ -701,8 +642,6 @@ Sagatavošanās iepirkumam, iepirkuma procedūras dokumentu sagatavošana un teh
 
 (4) Ja piegādātājam no tā neatkarīgu iemeslu dēļ nebija iespējams līdz piedāvājuma iesniegšanas dienai iegūt pasūtītāja norādīto marķējumu vai līdzvērtīgu marķējumu, pasūtītājs pieņem citus atbilstošus pierādījumus, tai skaitā ražotāja tehnisko dokumentāciju, kas pamato būvdarbu, piegāžu vai pakalpojumu atbilstību pasūtītāja norādītā marķējuma prasībām.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
-
 22. pants. Testēšanas pārskati, specifikācijas un citi pierādījumi
 
 (1) Pasūtītājs var prasīt, lai piegādātājs iesniedz Eiropas Parlamenta un Padomes 2008. gada 9. jūlija regulā (EK) Nr. 765/2008, ar ko nosaka akreditācijas un tirgus uzraudzības prasības attiecībā uz produktu tirdzniecību un atceļ regulu (EEK) Nr. 339/93 noteiktajā kārtībā akreditētas atbilstības novērtēšanas institūcijas testēšanas pārskatu un protokolus vai sertifikātu un tādējādi pierāda atbilstību tehniskajā specifikācijā noteiktajām prasībām vai kritērijiem, piedāvājuma izvērtēšanas kritērijiem vai iepirkuma līguma izpildes noteikumiem. Ja pasūtītājs pieprasa iesniegt konkrētas atbilstības novērtēšanas institūcijas izdotus sertifikātus, tas pieņem arī citu līdzvērtīgu atbilstības novērtēšanas institūciju izdotus sertifikātus.
@@ -719,8 +658,6 @@ Sagatavošanās iepirkumam, iepirkuma procedūras dokumentu sagatavošana un teh
 
 (4) Ja iepirkuma procedūrās paredzēts noslēgt publisku piegādes vai publisku pakalpojuma līgumu un pasūtītājs ir atļāvis iesniegt piedāvājumu variantus, tas nenoraida piedāvājuma variantu, pamatojoties tikai uz to, ka piedāvājuma izvēles gadījumā publiska piegādes līguma vietā tiks noslēgts publisks pakalpojuma līgums vai publiska pakalpojuma līguma vietā — publisks piegādes līgums.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 III nodaļa
 Iepirkuma komisija
 24. pants. Iepirkuma komisijas izveide
@@ -730,8 +667,6 @@ Iepirkuma komisija
 (2) Iepirkuma komisiju izveido katram iepirkumam atsevišķi vai uz noteiktu laikposmu. Izveidojot iepirkuma komisiju, pasūtītājs nodrošina, lai šī komisija būtu kompetenta jomā, kurā tiks slēgts iepirkuma līgums. Iepirkuma komisija, pildot savus pienākumus, ir tiesīga pieaicināt ekspertus un iepirkuma komisijas sekretāru.
 
 (3) Pasūtītājs izveido iepirkuma komisiju vismaz triju locekļu sastāvā. Ja iepirkuma paredzamā līgumcena ir lielāka par 1 000 000 euro, pasūtītājs izveido iepirkuma komisiju vismaz piecu locekļu sastāvā.
-
-(Ar grozījumiem, kas izdarīti ar 05.12.2019. un 24.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
 25. pants. Iepirkuma komisijas darbības pamatprincipi
 
@@ -756,8 +691,6 @@ Iepirkuma komisija
 (5) Iepirkuma komisija atlasa kandidātus un vērtē pretendentus un to iesniegtos piedāvājumus saskaņā ar šo likumu, iepirkuma procedūras dokumentiem, šā likuma 9. un 10. pantā minēto iepirkumu dokumentiem, kā arī citiem normatīvajiem aktiem. Iepirkuma komisijas lēmums ir saistošs pasūtītājam, ja tiek slēgts iepirkuma līgums.
 
 (6) Iepirkuma komisijas priekšsēdētājs organizē un vada komisijas darbu, nosaka komisijas sēžu vietu, laiku un kārtību, sasauc un vada komisijas sēdes, kā arī nodrošina šā panta trešajā daļā minēto apliecinājumu parakstīšanu.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 03.03.2022. un 24.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
 26. pants. Iepirkuma komisijas lēmumu pieņemšanas kārtība
 
@@ -795,15 +728,11 @@ Ja pasūtītājs rīko apspriedi atbilstoši šā likuma 18. panta 2.1 daļai, t
 
 (2) Brīvprātīgs paziņojums par iepirkuma rezultātiem tiek publicēts tādēļ, lai ieinteresētās personas varētu apstrīdēt tāda iepirkuma pamatotību, kas pasūtītāja kļūdas dēļ veikts, nepiemērojot atbilstošu iepirkuma procedūru un nepublicējot paziņojumu par līgumu, un vienlaikus lai novērstu šā likuma 75. pantā minētās sekas.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
-
 31. pants. Paziņojums par metu konkursu un metu konkursa rezultātiem
 
 (1) Pasūtītājs, kurš organizē metu konkursu, publicē paziņojumu par metu konkursu.
 
 (2) Pasūtītājs 10 darbdienu laikā pēc metu konkursa dalībnieku informēšanas publicē paziņojumu par metu konkursa rezultātiem.
-
-(Ar grozījumiem, kas izdarīti ar 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 32. pants. Paziņojums attiecībā uz sociālajiem un citiem īpašiem pakalpojumiem
 
@@ -835,8 +764,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 
 (4) Pasūtītājs, paziņojot iepirkuma rezultātus, ir tiesīgs paziņojumā nepublicēt tādu informāciju, kuras publiskošana varētu kavēt normatīvo aktu piemērošanu vai būtu pretrunā ar sabiedrības interesēm, vai ierobežotu piegādātāju konkurenci, vai kaitētu piegādātāju pamatotām komerciālajām interesēm (publiskām vai privātām).
 
-(Ar grozījumiem, kas izdarīti ar 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 35. pants. Pieteikumu vai piedāvājumu iesniegšanas termiņi
 
 (1) Pasūtītājs, nosakot pieteikumu vai piedāvājumu iesniegšanas termiņus, ņem vērā iespējamā iepirkuma līguma sarežģītības pakāpi un laiku, kāds nepieciešams piedāvājumu sagatavošanai, kā arī Ministru kabineta noteiktos minimālos pieteikumu un piedāvājumu iesniegšanas termiņus.
@@ -847,8 +774,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 
 (4) Pasūtītājs ir tiesīgs pagarināt noteiktos pieteikumu un piedāvājumu iesniegšanas termiņus, atkārtoti publicējot paziņojumu, ar kuru izsludināta iepirkuma procedūra. Ja paziņojums ir nosūtāms Eiropas Savienības Publikāciju birojam publicēšanai Eiropas Savienības Oficiālajā Vēstnesī, minimālais termiņš, par kuru pasūtītājs ir tiesīgs pagarināt pieteikumu vai piedāvājumu iesniegšanas termiņu, ir septiņas dienas pēc dienas, kad paziņojums nosūtīts Eiropas Savienības Publikāciju birojam publicēšanai Eiropas Savienības Oficiālajā Vēstnesī. Šāda termiņu pagarināšana nav uzskatāma par grozījumiem iepirkuma procedūras dokumentos šā panta trešās daļas izpratnē.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
-
 36. pants. Piekļuve iepirkuma procedūras dokumentiem, to izsniegšana un papildu informācijas sniegšana
 
 (1) Pasūtītājs savā pircēja profilā nodrošina brīvu un tiešu elektronisku piekļuvi iepirkuma procedūras dokumentiem un visiem papildus nepieciešamajiem dokumentiem, kā arī iespēju piegādātājiem iepazīties uz vietas ar iepirkuma papildu dokumentiem, kam tehnisku iemeslu dēļ vai tajos iekļautās informācijas vai komerciālu interešu aizsardzības dēļ nav nodrošināma brīva un tieša elektroniska piekļuve, sākot ar attiecīgā iepirkuma izsludināšanas brīdi. Ja piegādātājs pieprasa izsniegt iepirkuma procedūras dokumentus drukātā veidā, pasūtītājs tos izsniedz triju darbdienu laikā pēc tam, kad saņemts šo dokumentu pieprasījums, ievērojot nosacījumu, ka dokumentu pieprasījums iesniegts laikus pirms piedāvājumu iesniegšanas termiņa beigām. Par iepirkuma procedūras dokumentu izsniegšanu drukātā veidā pasūtītājs var prasīt samaksu, kas nepārsniedz faktiskos dokumentu pavairošanas un nosūtīšanas izdevumus.
@@ -858,8 +783,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 (3) Papildu informāciju pasūtītājs nosūta piegādātājam vai kandidātam, kas uzdevis jautājumu, un vienlaikus ievieto šo informāciju pircēja profilā, kur ir pieejami iepirkuma procedūras dokumenti, norādot arī uzdoto jautājumu.
 
 (4) Ja pasūtītājs izdarījis grozījumus iepirkuma procedūras dokumentos, tas ievieto informāciju par grozījumiem pircēja profilā, kur ir pieejami šie dokumenti, ne vēlāk kā dienā, kad atkārtoti publicēts paziņojums, ar kuru izsludināta iepirkuma procedūra.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 37. pants. Kārtība, kādā kandidāti un pretendenti informējami par rezultātiem
 
@@ -880,8 +803,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 (5) Pasūtītājs, informējot par rezultātiem, saglabā pierādījumus par informācijas nosūtīšanas vai nodošanas datumu un veidu.
 
 (6) Pasūtītājs ir tiesīgs neatklāt šā panta pirmajā un otrajā daļā minēto informāciju, kuras atklāšana varētu kavēt normatīvo aktu piemērošanu vai būtu pretrunā ar sabiedrības interesēm, vai ierobežotu piegādātāju konkurenci, vai kaitētu piegādātāju pamatotām komerciālajām interesēm.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. likumu, kas stājas spēkā 01.06.2018.)
 
 38. pants. Informācijas apmaiņa
 
@@ -937,8 +858,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 
 (5) Šā panta noteikumi attiecināmi arī uz metu konkursu, ja tajā paredzēta elektroniska metu vai devīžu atšifrējumu iesniegšana.
 
-(Ar grozījumiem, kas izdarīti ar 26.04.2018. un 24.03.2022. likumu, kas stājas spēkā 01.01.2023. Sk. pārejas noteikumu 22. punktu)
-
 40. pants. Iepirkuma procedūras dokumentēšana un iepirkuma procedūras dokumentu glabāšana
 
 (1) Pasūtītājs nodrošina katra iepirkuma procedūras posma dokumentēšanu un šā likuma 9. un 10. pantā minēto iepirkumu dokumentēšanu, kā arī dokumentē iepirkuma procedūru, kas noris, izmantojot elektroniskos līdzekļus.
@@ -950,8 +869,6 @@ Pasūtītājs, kurš izdarījis šā likuma 61. panta trešās daļas 2. un 3. p
 (4) Pasūtītājs nodrošina šā panta trešajā daļā minēto dokumentu izsniegšanu triju darbdienu laikā pēc attiecīga pieprasījuma saņemšanas dienas. Pasūtītājs neizsniedz protokolus, izņemot piedāvājumu atvēršanas sanāksmes protokolu, kamēr notiek pieteikumu vai piedāvājumu vērtēšana.
 
 (5) Pasūtītājs visus šā panta trešajā daļā minēto dokumentu oriģinālus, kā arī pieteikumu un piedāvājumu oriģinālus glabā 10 gadus pēc iepirkuma līguma noslēgšanas, vispārīgās vienošanās noslēgšanas vai dinamiskās iepirkumu sistēmas izveides.
-
-(Ar grozījumiem, kas izdarīti ar 24.03.2022. likumu, kas stājas spēkā 01.01.2023.)
 
 V nodaļa
 Kandidātu un pretendentu atlase un piedāvājuma izvēle
@@ -993,125 +910,36 @@ Kandidātu un pretendentu atlase un piedāvājuma izvēle
 
 (2) Kandidātu un pretendentu izslēgšanas iemesli ir šādi:
 
-1) kandidāts, pretendents vai persona, kura ir kandidāta vai pretendenta valdes vai padomes loceklis, pārstāvēttiesīgā persona, prokūrists vai persona, kura ir pilnvarota pārstāvēt kandidātu vai pretendentu darbībās, kas saistītas ar filiāli, ar tādu prokurora priekšrakstu par sodu vai tiesas spriedumu, kas stājies spēkā un kļuvis neapstrīdams un nepārsūdzams, ir atzīta par vainīgu vai tai ir piemērots piespiedu ietekmēšanas līdzeklis par jebkuru no šādiem noziedzīgiem nodarījumiem:
+1) Kandidāts, pretendents vai saistīta persona ir atzīta par vainīgu vai sodīta par noziedzīgiem nodarījumiem, piemēram, noziedzīgas organizācijas izveidošanu, kukuļošanu, krāpšanu, terorismu, cilvēku tirdzniecību, izvairīšanos no nodokļu maksājumiem.
+2) Kandidātam vai pretendentam ir neizpildītas saistības nodokļu jomā.
+3) Kandidāts vai pretendents ir ārzonā reģistrēta juridiskā persona.
+4) Kandidāta vai pretendenta maksātnespējas process ir pasludināts, saimnieciskā darbība apturēta vai likvidēta.
+5) Kandidāts vai pretendents ir atzīts par vainīgu konkurences tiesību pārkāpumā.
+6) Kandidāts vai pretendents ir sodīts par pārkāpumiem saistībā ar nodarbinātību bez nepieciešamās darba atļaujas vai rakstveida darba līguma.
+7) Kandidāts vai pretendents ir noslēdzis vienošanos ar citiem piegādātājiem, kas kavē konkurenci.
+8) Kandidāts vai pretendents ir pārkāpis vides, sociālo vai darba tiesību normatīvos aktus.
+9) Kandidāts vai pretendents ir pieļāvis būtiskus pārkāpumus profesionālajā darbībā.
+10) Kandidāts vai pretendents nav pildījis iepirkuma līgumu, un pasūtītājs ir vienpusēji atkāpies no līguma.
+11) Iepirkuma komisijas loceklis ir saistīts ar kandidātu vai pretendentu.
+12) Kandidāts vai pretendents ir iesaistījies iepirkuma procedūras sagatavošanā, radot konkurenci ierobežojošas priekšrocības.
+13) Kandidāts vai pretendents ir mēģinājis prettiesiski ietekmēt iepirkuma procedūru vai iegūt konfidenciālu informāciju.
+14) Kandidāts vai pretendents ir sniedzis nepatiesu informāciju vai nav sniedzis prasīto informāciju.
 
-a) noziedzīgas organizācijas izveidošanu, vadīšanu, iesaistīšanos tajā vai tās sastāvā ietilpstošā organizētā grupā vai citā noziedzīgā formējumā vai piedalīšanos šādas organizācijas izdarītos noziedzīgos nodarījumos,
+(3) Izslēgšanas iemesli attiecas arī uz personālsabiedrības biedru, norādīto personu, apakšuzņēmēju, personām ar izšķirošu ietekmi un patiesajiem labuma guvējiem.
 
-b) kukuļņemšanu, kukuļdošanu, kukuļa piesavināšanos, starpniecību kukuļošanā, neatļautu piedalīšanos mantiskos darījumos, neatļautu labumu pieņemšanu, komerciālu uzpirkšanu, prettiesiska labuma pieprasīšanu, pieņemšanu vai došanu, tirgošanos ar ietekmi,
+(4) Pasūtītājs neizslēdz kandidātu vai pretendentu, ja tas ir nodrošinājis uzticamību, vai ir pagājuši trīs gadi kopš tiesas sprieduma, prokurora priekšraksta vai kompetentas institūcijas lēmuma.
 
-c) krāpšanu, piesavināšanos vai noziedzīgi iegūtu līdzekļu legalizēšanu,
+(5) Pasūtītājs izslēdz kandidātu vai pretendentu, pamatojoties uz informāciju no Ministru kabineta noteiktās informācijas sistēmas, Iekšlietu ministrijas Informācijas centra, Uzņēmumu reģistra, Valsts ieņēmumu dienesta un Latvijas pašvaldībām.
 
-d) terorismu, terorisma finansēšanu, teroristu grupas izveidi vai organizēšanu, ceļošanu terorisma nolūkā, terorisma attaisnošanu, aicinājumu uz terorismu, terorisma draudiem vai personas vervēšanu vai apmācīšanu terora aktu veikšanai,
+(6) Pierādījumi par nodokļu parādu neesību ir izziņa no Valsts ieņēmumu dienesta elektroniskās deklarēšanas sistēmas, pašvaldības izziņa vai citi objektīvi pierādījumi.
 
-e) cilvēku tirdzniecību,
+(7) Pasūtītājs var izslēgt kandidātu vai pretendentu par konkurences tiesību pārkāpumu, ja ir pieejama informācija par kompetentās institūcijas lēmumu vai Konkurences padomes viedokli.
 
-f) izvairīšanos no nodokļu vai tiem pielīdzināto maksājumu samaksas;
+(8) Pasūtītājs var izslēgt kandidātu vai pretendentu par vides, sociālo vai darba tiesību pārkāpumiem, ja ir pietiekama un objektīva informācija.
 
-2) kandidātam pieteikumu un pretendentam piedāvājumu iesniegšanas termiņa pēdējā dienā vai dienā, kad pieņemts lēmums par iespējamu iepirkuma līguma slēgšanas tiesību piešķiršanu, Latvijā saskaņā ar likumu "Par nodokļiem un nodevām" vai valstī, kurā tas reģistrēts vai kurā atrodas tā pastāvīgā dzīvesvieta, saskaņā ar attiecīgās ārvalsts normatīvajiem aktiem ir neizpildītas saistības nodokļu (tai skaitā valsts sociālās apdrošināšanas) jomā;
+(9) Pasūtītājs izslēdz kandidātu vai pretendentu, ja konstatē izslēgšanas iemeslus saistībā ar iepirkuma komisijas locekļa saistību, konkurenci ierobežojošām priekšrocībām, prettiesisku ietekmēšanu vai nepatiesu informāciju.
 
-3) kandidāts vai pretendents ir ārzonā reģistrēta juridiskā persona vai personu apvienība vai arī Latvijā reģistrēta kandidāta vai pretendenta vairāk nekā 25 procentu kapitāla daļu (akciju) īpašnieks vai turētājs ir ārzonā reģistrēta juridiskā persona vai personu apvienība;
-
-4) ir pasludināts kandidāta vai pretendenta maksātnespējas process, apturēta kandidāta vai pretendenta saimnieciskā darbība, kandidāts vai pretendents tiek likvidēts;
-
-5) kandidāts vai pretendents ar tādu kompetentas institūcijas lēmumu vai tiesas spriedumu, kas stājies spēkā un kļuvis neapstrīdams un nepārsūdzams, ir atzīts par vainīgu vai atbild par naudas soda samaksu saistībā ar konkurences tiesību pārkāpumu, kas izpaužas kā horizontālā karteļa vienošanās, izņemot gadījumu, kad attiecīgā institūcija, konstatējot konkurences tiesību pārkāpumu, par sadarbību iecietības programmā kandidātu vai pretendentu ir atbrīvojusi no naudas soda vai naudas sodu ir samazinājusi;
-
-6) kandidāts vai pretendents ar kompetentas institūcijas lēmumu, tiesas spriedumu vai prokurora priekšrakstu par sodu, kas stājies spēkā un kļuvis neapstrīdams un nepārsūdzams, ir atzīts par vainīgu un sodīts par pārkāpumu, kurš izpaužas kā:
-
-a) vienas vai vairāku personu nodarbināšana, ja tām nav nepieciešamās darba atļaujas vai ja tās nav tiesīgas uzturēties Eiropas Savienības dalībvalstī,
-
-b) personas nodarbināšana bez rakstveidā noslēgta darba līguma, normatīvajos aktos par nodokļiem noteiktajā termiņā neiesniedzot par šo personu informatīvo deklarāciju, kas iesniedzama par personām, kuras uzsāk darbu;
-
-7) pasūtītāja rīcībā ir pietiekami pārliecinošas norādes, lai secinātu, ka kandidāts vai pretendents ir ar citiem piegādātājiem noslēdzis vienošanos, kas vērsta uz konkurences kavēšanu, ierobežošanu vai deformēšanu;
-
-8) pasūtītājs to ir norādījis paziņojumā par līgumu vai iepirkumu procedūras dokumentos un ar jebkādiem atbilstošiem līdzekļiem var pierādīt, ka kandidāts vai pretendents ir pārkāpis Latvijas vai Eiropas Savienības normatīvos aktus vides, sociālo vai darba tiesību jomā, darba koplīgumu, ģenerālvienošanos vai prasības, kas noteiktas šā likuma 3. pielikumā minētajās starptautiskajās konvencijās;
-
-9) pasūtītājs to ir norādījis paziņojumā par līgumu vai iepirkumu procedūras dokumentos un ar jebkādiem atbilstošiem līdzekļiem var pierādīt, ka kandidāts vai pretendents savā profesionālajā darbībā ir pieļāvis tādus būtiskus pārkāpumus, kuru dēļ ir pamatoti apšaubāma tā godprātība atbilstoši izpildīt iepirkuma līgumu vai vispārīgo vienošanos;
-
-10) kandidāts vai pretendents, tā dalībnieks vai biedrs (ja kandidāts vai pretendents ir piegādātāju apvienība vai personālsabiedrība) kā līgumslēdzēja puse vai līgumslēdzējas puses dalībnieks vai biedrs (ja līgumslēdzēja puse ir bijusi piegādātāju apvienība vai personālsabiedrība) nav pildījis ar pasūtītāju, sabiedrisko pakalpojumu sniedzēju, publisko partneri vai publiskā partnera pārstāvi noslēgtu iepirkuma līgumu, vispārīgo vienošanos, partnerības iepirkuma līgumu vai koncesijas līgumu un tādēļ pasūtītājs, sabiedrisko pakalpojumu sniedzējs, publiskais partneris vai publiskā partnera pārstāvis ir vienpusēji atkāpies no iepirkuma līguma, vispārīgās vienošanās, partnerības iepirkuma līguma vai koncesijas līguma;
-
-11) iepirkuma procedūras dokumentu sagatavotājs (pasūtītāja amatpersona vai darbinieks), iepirkuma komisijas loceklis, eksperts vai iepirkuma komisijas sekretārs ir saistīts ar kandidātu vai pretendentu šā likuma 25. panta pirmās vai otrās daļas izpratnē vai ir ieinteresēts kāda kandidāta vai pretendenta izvēlē, un pasūtītājam nav iespējams novērst šo situāciju ar kandidātu vai pretendentu mazāk ierobežojošiem pasākumiem;
-
-12) kandidātam vai pretendentam ir konkurenci ierobežojošas priekšrocības iepirkuma procedūrā, ja tas vai ar to saistīta juridiskā persona iesaistījās iepirkuma procedūras sagatavošanā saskaņā ar šā likuma 18. panta ceturto daļu un šīs priekšrocības nevar novērst ar mazāk ierobežojošiem pasākumiem, turklāt kandidāts vai pretendents nevar pierādīt, ka tā vai ar to saistītas juridiskās personas dalība iepirkuma procedūras sagatavošanā neierobežo konkurenci;
-
-13) kandidāts vai pretendents ir mēģinājis prettiesiski ietekmēt pasūtītāja vai iepirkuma komisijas, vai iepirkuma komisijas locekļa lēmumu attiecībā uz iepirkuma procedūru vai mēģinājis iegūt tādu konfidenciālu informāciju, kas tam sniegtu nepamatotas priekšrocības iepirkuma procedūrā, vai sniedzis maldinošu informāciju, kas varētu būtiski ietekmēt lēmumu par kandidāta vai pretendenta turpmāko dalību iepirkuma procedūrā vai iepirkuma līguma slēgšanas tiesību piešķiršanu;
-
-14) kandidāts vai pretendents ir sniedzis nepatiesu informāciju, lai apliecinātu atbilstību šā panta noteikumiem vai saskaņā ar šo likumu noteiktajām kandidātu un pretendentu kvalifikācijas prasībām, vai nav sniedzis prasīto informāciju.
-
-(3) Šā panta otrajā daļā minētie izslēgšanas iemesli attiecas arī uz jebkuru no šādām personām:
-
-1) uz personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība;
-
-2) uz kandidāta vai pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām;
-
-3) uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 000 euro;
-
-4) šā panta otrās daļas 1., 2. un 3. punkts — uz personām, kurām kandidātā vai pretendentā ir izšķirošā ietekme uz līdzdalības pamata normatīvo aktu par koncerniem izpratnē;
-
-5) šā panta otrās daļas 1., 2. un 11. punkts — uz kandidāta vai pretendenta patieso labuma guvēju.
-
-(4) Pasūtītājs tomēr neizslēdz kandidātu vai pretendentu no dalības iepirkuma procedūrā jebkurā no šādiem gadījumiem:
-
-1) kandidāts vai pretendents ir nodrošinājis uzticamību šā likuma 43. pantā noteiktajā kārtībā;
-
-2) šā panta otrās daļas 1., 5. un 6. punktā minētajā gadījumā no dienas, kad kļuvis neapstrīdams un nepārsūdzams tiesas spriedums, prokurora priekšraksts par sodu vai citas kompetentas institūcijas pieņemtais lēmums, līdz pieteikuma vai piedāvājuma iesniegšanas dienai ir pagājuši trīs gadi;
-
-3) šā panta otrās daļas 7. punktā minētajā gadījumā attiecībā uz kompetentās institūcijas konkurences jomā lēmumu no šā lēmuma spēkā stāšanās dienas un 8. un 9. punktā minētajā gadījumā no dienas, kad konstatēts attiecīgais pārkāpums, līdz pieteikuma vai piedāvājuma iesniegšanas dienai ir pagājuši trīs gadi;
-
-4) šā panta otrās daļas 10. punktā minētajā gadījumā no dienas, kad pasūtītājs, sabiedrisko pakalpojumu sniedzējs, publiskais partneris vai publiskā partnera pārstāvis vienpusēji atkāpies no iepirkuma līguma, vispārīgās vienošanās, partnerības iepirkuma līguma vai koncesijas līguma, līdz pieteikuma vai piedāvājuma iesniegšanas dienai ir pagājuši trīs gadi;
-
-5) piemērojot sarunu procedūru saskaņā ar šā likuma 8. panta septītās daļas 3. punktu, ja iepirkuma līguma noslēgšana ir būtiska sabiedrības interešu nodrošināšanai (piemēram, drošības, veselības vai vides aizsardzības nodrošināšanai);
-
-6) piemērojot sarunu procedūru saskaņā ar šā likuma 8. panta septītās daļas 7. punktu.
-
-(5) Pasūtītājs izslēdz kandidātu vai pretendentu no dalības iepirkuma procedūrā šā panta otrās daļas 1., 2., 3., 4., 5. vai 6. punktā minēto iemeslu dēļ, pamatojoties uz informāciju, kuru tas iegūst šādā kārtībā:
-
-1) saistībā ar Latvijā reģistrētu vai pastāvīgi dzīvojošu personu, kā arī šā panta otrās daļas 1., 2., 5. un 6. punktā minētajiem izslēgšanas iemesliem attiecībā uz ārvalstī reģistrētu vai pastāvīgi dzīvojošu personu izmanto Ministru kabineta noteikto informācijas sistēmu, ievērojot šādu kārtību un neprasot attiecīgo personu piekrišanu:
-
-a) informāciju par šā panta otrās daļas 1., 5. un 6. punktā minēto izslēgšanas iemeslu pasūtītājs, kā arī piegādātājs par sevi iegūst no Iekšlietu ministrijas Informācijas centra (Sodu reģistra),
-
-b) informāciju par šā panta otrās daļas 1. punktā minēto personu (valdes vai padomes loceklis, pārstāvēttiesīgā persona, prokūrists vai persona, kura ir pilnvarota pārstāvēt kandidātu vai pretendentu darbībās, kas saistītas ar filiāli) un šā panta trešās daļas 5. punktā minēto personu pasūtītājs iegūst no Uzņēmumu reģistra,
-
-c) informāciju par šā panta otrās daļas 2. punktā minēto izslēgšanas iemeslu pasūtītājs, kā arī piegādātājs par sevi iegūst no Valsts ieņēmumu dienesta un Latvijas pašvaldībām. Pasūtītājs ņem vērā informāciju, kas ievietota Ministru kabineta noteiktajā informācijas sistēmā Valsts ieņēmumu dienesta publiskās nodokļu parādnieku datubāzes un Nekustamā īpašuma nodokļa administrēšanas sistēmas pēdējās datu aktualizācijas datumā. Ja pasūtītājs konstatē, ka Ministru kabineta noteiktajā informācijas sistēmā saskaņā ar Valsts ieņēmumu dienesta publiskās nodokļu parādnieku datubāzes vai Nekustamā īpašuma nodokļa administrēšanas sistēmas pēdējās datu aktualizācijas datumā ievietoto informāciju kandidātam, pretendentam vai šā panta trešajā daļā minētajai personai pieteikumu vai piedāvājumu iesniegšanas termiņa pēdējā dienā vai dienā, kad pieņemts lēmums par iespējamu iepirkuma līguma slēgšanas tiesību piešķiršanu, ir neizpildītas saistības nodokļu jomā, pasūtītājs nosaka termiņu — trīs darbdienas pēc informācijas pieprasījuma nosūtīšanas dienas — šā panta sestajā daļā minēto pierādījumu iesniegšanai par to, ka kandidātam, pretendentam vai šā panta trešajā daļā minētajai personai attiecīgajā dienā nebija neizpildītu saistību nodokļu jomā,
-
-d) informāciju par šā panta otrās daļas 3. un 4. punktā minēto izslēgšanas iemeslu pasūtītājs, kā arī piegādātājs par sevi iegūst no Uzņēmumu reģistra. Ja dati attiecībā uz šā panta otrās daļas 3. punktā minēto izslēgšanas iemeslu nav pieejami Ministru kabineta noteiktajā informācijas sistēmā, pasūtītājs pieprasa apliecinājumu, ka uz kandidātu, pretendentu vai šā panta trešajā daļā minēto personu šis izslēgšanas iemesls neattiecas, nosakot termiņu apliecinājuma iesniegšanai — vismaz 10 dienas pēc informācijas pieprasījuma nosūtīšanas dienas,
-
-e) informāciju par ārvalstī reģistrētu vai pastāvīgi dzīvojošu personu, kā arī par šā panta trešās daļas 4. punktā minētajām personām pasūtītājs iegūst no kandidāta vai pretendenta;
-
-2) lai apliecinātu, ka uz ārvalstī reģistrētu vai pastāvīgi dzīvojošu personu, tostarp Latvijā reģistrēta kandidāta, pretendenta vai šā panta trešajā daļā minētās personas valdes vai padomes locekli, pārstāvēttiesīgo personu, prokūristu vai personu, kura ir pilnvarota pārstāvēt kandidātu vai pretendentu darbībās, kas saistītas ar filiāli, un kura pastāvīgi dzīvo ārvalstī, neattiecas šā panta otrajā daļā minētie izslēgšanas iemesli, pēc pasūtītāja pieprasījuma pasūtītāja noteiktajā termiņā, kas nevar būt īsāks par 10 darbdienām pēc pieprasījuma nosūtīšanas dienas, kandidāts vai pretendents iesniedz:
-
-a) saistībā ar šā panta otrās daļas 1., 2., 4., 5. un 6. punktā minētajiem izslēgšanas iemesliem — attiecīgās ārvalsts kompetentās institūcijas izziņu vai citu dokumentu, kas apliecina izslēgšanas iemesla neesību. Attiecīgo ārvalsts kompetentās iestādes izziņu var aizstāt ar skaidrojumu, ja atbilstoši kandidāta, pretendenta vai šā panta trešajā daļā minētās personas reģistrācijas valsts normatīvajiem aktiem par valdes vai padomes locekli, pārstāvēttiesīgo personu, prokūristu vai personu, kura ir pilnvarota pārstāvēt kandidātu vai pretendentu darbībās, kas saistītas ar filiāli, nevar būt persona, uz kuru ir attiecināmi šā panta otrās daļas 1. punktā noteiktie izslēgšanas iemesli,
-
-b) saistībā ar šā panta otrās daļas 3. punktā minēto izslēgšanas iemeslu — apliecinājumu, ka uz kandidātu, pretendentu vai šā panta trešajā daļā minēto personu izslēgšanas iemesls neattiecas. Apliecinājumam pievieno katras personas reģistrācijas valsti apliecinošu dokumentu,
-
-c) ja attiecīgajā ārvalstī šā punkta "a" apakšpunktā minētās kompetentās institūcijas izziņas vai citi dokumenti netiek izsniegti vai ar tiem nepietiek, lai apliecinātu, ka uz kandidātu, pretendentu vai šā panta trešajā daļā minēto personu neattiecas šā panta otrajā daļā minētie izslēgšanas iemesli, šīs izziņas vai citus dokumentus var aizstāt ar zvērestu vai, ja zvēresta došanu attiecīgās valsts normatīvie akti neparedz, par šā panta otrās daļas 1., 2. vai 4. punktā minēto izslēgšanas iemeslu — ar paša kandidāta, pretendenta vai citas šā panta otrajā vai trešajā daļā minētās personas apliecinājumu kompetentai izpildvaras vai tiesu varas iestādei, zvērinātam notāram vai kompetentai attiecīgās nozares organizācijai to reģistrācijas vai pastāvīgās dzīvesvietas valstī, bet par šā panta otrās daļas 5. vai 6. punktā minēto izslēgšanas iemeslu — ar paša kandidāta, pretendenta vai trešajā daļā minētās personas apliecinājumu pasūtītājam.
-
-(6) Šā panta piektās daļas 1. punkta "c" apakšpunktā minētie pierādījumi, ar kuriem var apliecināt, ka kandidātam, pretendentam vai šā panta trešajā daļā minētajai personai attiecīgajā dienā nebija neizpildītu saistību nodokļu jomā, ir šādi:
-
-1) izziņa no Valsts ieņēmumu dienesta elektroniskās deklarēšanas sistēmas;
-
-2) pašvaldības izdota izziņa par to, ka attiecīgajai personai nebija nekustamā īpašuma nodokļa parādu;
-
-3) citi objektīvi pierādījumi par nodokļu parādu neesību vai nodokļu saistību izpildi.
-
-(7) Pasūtītājs var izslēgt kandidātu vai pretendentu šā panta otrās daļas 7. punktā minētā izslēgšanas iemesla dēļ jebkurā no šādiem gadījumiem:
-
-1) ir pieejama informācija par kompetentās institūcijas konkurences jomā lēmumu, ar kuru kandidāts vai pretendents ir atzīts par vainīgu konkurences tiesību pārkāpumā, kas izpaužas kā horizontālā karteļa vienošanās, izņemot gadījumu, kad attiecīgā institūcija, konstatējot konkurences tiesību pārkāpumu, par sadarbību iecietības programmas ietvaros kandidātu vai pretendentu ir atbrīvojusi no naudas soda vai naudas sodu samazinājusi;
-
-2) izvērtējot pieteikumu, piedāvājumu vai citu pieejamo informāciju, ir konstatētas norādes, kas var liecināt par tādas vienošanās esību, kas vērsta uz konkurences kavēšanu, ierobežošanu vai deformēšanu konkrētajā iepirkuma procedūrā un ir saņemts Konkurences padomes viedoklis, ka pasūtītāja konstatētās norādes var liecināt par attiecīgas vienošanās esību. Konkurences padome viedokli sniedz 10 darbdienu laikā no attiecīga pasūtītāja pieprasījuma saņemšanas dienas.
-
-(8) Pasūtītājs var izslēgt kandidātu vai pretendentu šā panta otrās daļas 8., 9. un 10. punktā minētā izslēgšanas iemesla dēļ, ja tā rīcībā ir tāda pietiekama un objektīva informācija, ar kuru ir pierādāms, ka pastāv attiecīgais izslēgšanas iemesls. Latvijā reģistrētu kandidātu vai pretendentu var izslēgt šā panta otrās daļas 8. un 9. punktā minēto iemeslu dēļ, ja pasūtītāja rīcībā ir kompetentās iestādes lēmums, ar kuru konstatēts attiecīgais pārkāpums. Ja pasūtītājam, izvērtējot tā rīcībā esošo informāciju, ir pamatotas šaubas par pierādījumu pietiekamību vai arī konkrētās personas pieļautie pārkāpumi ir maznozīmīgi, pasūtītājs neizslēdz kandidātu vai pretendentu no turpmākās dalības iepirkuma procedūrā.
-
-(9) Pasūtītājs izslēdz kandidātu vai pretendentu no dalības iepirkuma procedūrā, ja pasūtītājs konstatē šā panta otrās daļas 11., 12., 13. vai 14. punktā minētos izslēgšanas iemeslus.
-
-(10) Pasūtītājs pārbaudi par šā panta otrajā daļā noteikto kandidātu un pretendentu izslēgšanas iemesliem veic:
-
-1) atklātā konkursā — attiecībā uz katru pretendentu, kuram atbilstoši citām paziņojumā par līgumu un iepirkuma procedūras dokumentos noteiktajām prasībām un izraudzītajiem piedāvājuma izvērtēšanas kritērijiem būtu piešķiramas līguma slēgšanas tiesības;
-
-2) slēgtā konkursā, konkursa dialogā, inovāciju partnerības procedūrā un konkursa procedūrā ar sarunām — attiecībā uz katru kandidātu, kurš atbilst citām paziņojumā par līgumu un kandidātu atlases nolikumā noteiktajām prasībām un būtu uzaicināms iesniegt piedāvājumu. Ja tas paredzēts iepirkumu dokumentos, pārbaudi var veikt attiecībā uz pretendentu, kuram atbilstoši citām paziņojumā par līgumu un iepirkuma procedūras dokumentos noteiktajām prasībām un izraudzītajiem piedāvājuma izvērtēšanas kritērijiem būtu piešķiramas iepirkuma līguma slēgšanas tiesības, savukārt, ja pasūtītājs piemēro kandidātu skaita samazināšanu, pasūtītājs minēto pārbaudi veic pirms kandidātu skaita samazināšanas. Pasūtītājs pārbaudi par šā panta otrās daļas 2. punktā minēto izslēgšanas iemeslu veic attiecībā uz katru pretendentu, kuram atbilstoši citām paziņojumā par līgumu un iepirkuma procedūras dokumentos noteiktajām prasībām un izraudzītajiem piedāvājuma izvērtēšanas kritērijiem būtu piešķiramas iepirkuma līguma slēgšanas tiesības;
-
-3) šā likuma 10. pantā minētajā iepirkumā (ja pasūtītājs iepirkuma procedūras dokumentos paredzējis piemērot šā panta otrajā daļā minētos izslēgšanas iemeslus) un sarunu procedūrā — attiecībā uz katru pretendentu, kuram būtu piešķiramas iepirkuma līguma slēgšanas tiesības;
-
-4) konkursa procedūrā ar sarunām šā likuma 8. panta sestās daļas 5. punktā minētajā gadījumā — ja uzaicina piedalīties sarunās tikai visus tos pretendentus, kuri iepriekš izsludinātajā attiecīgajā iepirkuma procedūrā nav izslēgti saskaņā ar šā panta noteikumiem un atbilst izvirzītajām kvalifikācijas prasībām. Ja konkursa procedūra ar sarunām tiek piemērota pēc atklāta konkursa izbeigšanas, pasūtītājs pārbaudi veic attiecībā uz katru pretendentu, kas iesniedzis piedāvājumu atklātā konkursā un ir uzaicināts uz sarunu procedūru. Šo pārbaudi veic pirms sarunu uzsākšanas.
+(10) Pasūtītājs veic pārbaudi par izslēgšanas iemesliem atklātā konkursā, slēgtā konkursā, konkursa dialogā, inovāciju partnerības procedūrā, konkursa procedūrā ar sarunām, iepirkumā un sarunu procedūrā.
 
 43. pants. Uzticamības nodrošināšana
 
@@ -1269,41 +1097,21 @@ b) kvalitātes kontroles institūcijas (kuras kompetence ir atzīta) sertifikāt
 
 51. pants. Piedāvājuma izvērtēšanas kritēriji
 
-(1) Pasūtītājs iepirkuma līguma slēgšanas tiesības piešķir pretendentam, kura piedāvājums novērtēts kā saimnieciski visizdevīgākais.
+(1) Pasūtītājs piešķir iepirkuma līguma slēgšanas tiesības pretendentam ar saimnieciski visizdevīgāko piedāvājumu.
 
-(2) Saimnieciski visizdevīgāko piedāvājumu nosaka pēc:
+(2) Saimnieciski visizdevīgāko piedāvājumu nosaka pēc cenas, izmaksām vai kvalitātes kritērijiem, piemēram, kvalitātes, tehniskajām priekšrocībām, estētiskajām un funkcionālajām īpašībām, piekļūstamības, atbilstības universālajam dizainam, sociālās un vides aizsardzības prasībām, inovatīvajiem raksturlielumiem, pārdošanas nosacījumiem, iepirkuma līguma izpildes vadības struktūru, iesaistītā personāla kvalifikāciju un pieredzi, pēcpārdošanas pakalpojumiem, tehnisko palīdzību, piegādes noteikumiem.
 
-1) cenas. Šādā gadījumā vērtē preču, pakalpojumu vai būvdarbu iegādes cenu;
+(3) Kvalitātes kritēriji ir saistīti ar iepirkuma līguma priekšmetu, ja tie attiecas uz jebkuru aprites cikla posmu, piemēram, vides aizsardzības prasību vai sociālo kritēriju ievērošanu.
 
-2) izmaksām. Šādā gadījumā izmanto efektivitātes pieeju, piemēram, vērtējot aprites cikla izmaksas;
+(31) Pasūtītājs nevar izmantot tikai cenu, ja iepirkuma līgums tiek slēgts par projektēšanu, apvienoto projektēšanu un būvdarbiem, elektroenerģiju patērējošām precēm vai produktiem, autotransporta līdzekļiem.
 
-3) šīs daļas 1. punktā minētās cenas vai 2. punktā minētajām izmaksām un ar iepirkuma līguma priekšmetu saistītiem kvalitātes kritērijiem. Ja cena vai izmaksas saskaņā ar tiesību aktiem ir fiksētas, pasūtītājs vērtē tikai kvalitātes kritērijus. Nosakot ar iepirkuma līguma priekšmetu saistītus kvalitātes kritērijus, ņem vērā, piemēram:
+(4) Izņemot 3.1 daļā minētos gadījumus, pasūtītājs var izmantot tikai cenu, ja iepirkums tiek veikts 9. vai 10. pantā noteiktajā kārtībā vai ja tehniskā specifikācija ir detalizēta.
 
-a) kvalitāti, tai skaitā tehniskās priekšrocības, estētiskās un funkcionālās īpašības, piekļūstamību, atbilstību universālajam dizainam, sociālās un vides aizsardzības prasības, inovatīvos raksturlielumus un pārdošanas nosacījumus,
+(5) Pasūtītājs nosaka konkurenci neierobežojošus un objektīvi salīdzināmus piedāvājuma izvērtēšanas kritērijus.
 
-b) iepirkuma līguma izpildes vadības struktūru un iesaistītā personāla kvalifikāciju un pieredzi, ja iepirkuma līguma izpildes kvalitāti var būtiski ietekmēt iesaistītā personāla kvalifikācija un pieredze,
+(6) Pasūtītājs iepirkuma procedūras dokumentos norāda visus piedāvājuma izvērtēšanas kritērijus to nozīmīguma secībā, kritēriju vērtības, vērtību diapazonus, piedāvājuma izvēles algoritmu un apraksta, kā tiks piemērots katrs kritērijs.
 
-c) pēcpārdošanas pakalpojumus un tehnisko palīdzību, piegādes noteikumus (piemēram, piegādes datumu, piegādes procesu un piegādes periodu vai piegādes pabeigšanas periodu).
-
-(3) Kvalitātes kritēriji ir saistīti ar iepirkuma līguma priekšmetu, ja tie attiecas uz jebkuru būvdarbu, piegādes vai pakalpojuma aprites cikla posmu, kā arī uz faktoriem, kas saistīti ar būvdarbu veikšanas, preču ražošanas vai pārdošanas vai pakalpojumu sniegšanas procesu vai kādu citu procesu aprites cikla posmā, pat ja šādi faktori nav tieši saistīti ar iepirkuma līguma priekšmetu (piemēram, vides aizsardzības prasību vai sociālo kritēriju ievērošana pakalpojuma sniegšanas, produkta ražošanas vai būvdarbu veikšanas laikā).
-
-(31) Pasūtītājs nav tiesīgs piedāvājumu salīdzināšanai un izvērtēšanai izmantot tikai cenu, ja iepirkuma līgums tiek slēgts par:
-
-1) projektēšanu. Šādā gadījumā papildus cenai pasūtītājs izvērtē vismaz tos kritērijus, kas saistīti ar vadošā personāla kvalifikāciju un pieredzi, ja nav izvirzītas šādas kvalifikācijas prasības, vai būvniecības informācijas modelēšanas izmantošanu, vai piedāvāto risinājumu energoefektivitāti;
-
-2) apvienoto projektēšanu un būvdarbiem. Šādā gadījumā papildus cenai pasūtītājs izvērtē vismaz tos kritērijus, kas saistīti ar vadošā personāla kvalifikāciju un pieredzi, ja nav izvirzītas šādas kvalifikācijas prasības, vai būvniecības informācijas modelēšanas izmantošanu, vai piedāvāto risinājumu energoefektivitāti;
-
-3) elektroenerģiju patērējošām precēm vai produktiem (publiskā piegādes līgumā). Šādā gadījumā papildus cenai pasūtītājs izvērtē vismaz tos kritērijus, kas saistīti ar preču vai produktu elektroenerģijas patēriņu to paredzamajā lietošanas laikā;
-
-4) autotransporta līdzekļiem. Šādā gadījumā papildus cenai pasūtītājs ņem vērā vismaz šā likuma 54. panta nosacījumus, izņemot gadījumu, kad pasūtītājs iepērk autotransporta līdzekli šā likuma 54. panta ceturtajā daļā noteikto mērķu sasniegšanai.
-
-(4) Izņemot šā panta 3.1 daļā minētos gadījumus, pasūtītājs ir tiesīgs piedāvājumu salīdzināšanai un izvērtēšanai izmantot tikai cenu, ja iepirkums tiek veikts šā likuma 9. vai 10. pantā noteiktajā kārtībā vai ja sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē.
-
-(5) Pasūtītājs nosaka konkurenci neierobežojošus un objektīvi salīdzināmus vai izvērtējamus piedāvājuma izvērtēšanas kritērijus.
-
-(6) Pasūtītājs iepirkuma procedūras dokumentos norāda visus piedāvājuma izvērtēšanas kritērijus to nozīmīguma secībā, kritēriju vērtības un, ja attiecināms, vērtību diapazonus, kā arī piedāvājuma izvēles algoritmu saskaņā ar šiem kritērijiem un apraksta, kā tiks piemērots katrs no norādītajiem izvērtēšanas kritērijiem.
-
-(7) Pasūtītājs iepirkuma procedūras dokumentos norāda izšķirošo piedāvājuma izvēles kritēriju, atbilstoši kuram izvēlēsies piedāvājumu, ja pirms tam, kad pieņems lēmumu par iepirkuma līguma slēgšanas tiesību piešķiršanu, konstatēs, ka vismaz divu piedāvājumu novērtējums ir vienāds. Pasūtītājam ir tiesības par izšķirošo piedāvājuma izvēles kritēriju noteikt tādu kritēriju, kas raksturo piegādātāja atbilstību sociālās aizsardzības prasībām, tai skaitā to, ka izraudzīto piedāvājumu iesniedzis piegādātājs, kas ir nacionāla līmeņa darba devēju organizācijas biedrs un ir noslēdzis koplīgumu ar arodbiedrību, kas ir nacionāla līmeņa arodbiedrības biedre (ja piedāvājumu iesniegusi personālsabiedrība vai personu apvienība, koplīgumam jābūt noslēgtam ar katru personālsabiedrības biedru un katru personu apvienības dalībnieku).
+(7) Pasūtītājs norāda izšķirošo piedāvājuma izvēles kritēriju, ja vismaz divu piedāvājumu novērtējums ir vienāds. Izšķirošais kritērijs var būt piegādātāja atbilstība sociālās aizsardzības prasībām, piemēram, nacionāla līmeņa darba devēju organizācijas biedrs ar koplīgumu ar nacionāla līmeņa arodbiedrību.
 
 52. pants. Aprites cikla izmaksas
 
@@ -1507,73 +1315,27 @@ VII nodaļa
 Iepirkuma līguma noslēgšana un izpilde
 60. pants. Iepirkuma līgums
 
-(1) Iepirkuma līgums nosaka tiesiskās attiecības starp pasūtītāju vai pasūtītājiem un piegādātāju vai piegādātājiem. Iepirkuma līgums var noteikt tiesiskās attiecības starp pasūtītāju vai pasūtītājiem un piegādātāju vai piegādātājiem, un apakšuzņēmējiem.
+(1) Iepirkuma līgums nosaka tiesiskās attiecības starp pasūtītāju un piegādātāju, kā arī apakšuzņēmējiem.
 
-(2) Pasūtītājs, sagatavojot iepirkuma līgumu, ņem vērā normatīvo aktu prasības attiecībā uz iepirkuma priekšmetā iekļautajiem būvdarbiem, piegādēm un pakalpojumiem un iepirkuma līgumā norāda:
+(2) Iepirkuma līgumā norāda pasūtītāja un piegādātāja nosaukumu, iepirkuma priekšmetu, līgumcenu, izpildes termiņu, vietu, nosacījumus, pušu atbildību, apakšuzņēmēju nomaiņas kārtību, līguma grozīšanas kārtību, elektronisko rēķinu nosacījumus un citus noteikumus.
 
-1) pasūtītāja nosaukumu;
+(3) Pasūtītājs var paredzēt speciālus izpildes noteikumus saistībā ar ekonomiskiem, sociāliem apstākļiem, inovācijām vai vides aizsardzību, ievērojot ES tiesību aktus.
 
-2) piegādātāja nosaukumu;
+(4) Iepirkuma līgumu slēdz uz laiku līdz pieciem gadiem, izņēmuma gadījumos ilgāk, ja tas ir būtiski nepieciešams.
 
-3) iepirkuma priekšmetu, tā apjomu, kvalitātes prasības un citu nepieciešamo informāciju;
+(5) Pasūtītājs paziņojumā par līgumu norāda pamatojumu ilgākam līguma termiņam.
 
-4) līgumcenu un tās samaksas kārtību, kā arī, ja pasūtītājs paredzējis, maksājumu kārtību apakšuzņēmējiem šā likuma 63. pantā minētajā gadījumā;
+(6) Iepirkuma līgumu slēdz pēc nogaidīšanas termiņa beigām, ja nav iesniegts iesniegums par procedūras pārkāpumiem.
 
-5) iepirkuma līguma izpildes termiņu, vietu un nosacījumus;
+(7) Nogaidīšanas termiņš ir 10 vai 15 dienas atkarībā no informācijas nosūtīšanas veida.
 
-6) līgumslēdzēju pušu atbildību par radītajiem zaudējumiem un iepirkuma līguma neizpildīšanu;
+(8) Ja nogaidīšanas termiņa pēdējā diena ir sestdiena, svētdiena vai svētku diena, termiņš pagarināms par vienu darbdienu.
 
-7) piedāvājumā norādīto apakšuzņēmēju un personāla nomaiņas un jaunu apakšuzņēmēju un personāla piesaistes kārtību atbilstoši šā likuma 62. panta noteikumiem;
+(9) Līgumu var slēgt, neievērojot nogaidīšanas termiņu, ja ir vienīgais pretendents, neparedzami ārkārtas apstākļi, sarunu procedūra, vispārīgā vienošanās vai dinamiskā iepirkumu sistēma.
 
-8) iepirkuma līguma grozīšanas kārtību un kārtību, kādā pieļaujama atkāpšanās no iepirkuma līguma;
+(10) Pasūtītājs 10 darbdienu laikā pēc līguma stāšanās spēkā ievieto līgumu savā pircēja profilā, ievērojot komercnoslēpuma aizsardzības prasības.
 
-81) nosacījumu, ka tad, ja piegādātājs vai — ja pasūtītājs ir paredzējis tiešos maksājumus apakšuzņēmējiem saskaņā ar šā likuma 63. panta piekto daļu — apakšuzņēmējs iesniedz elektronisko rēķinu, tas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību. Iepirkuma līgumā atbilstoši normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību var paredzēt papildu pamatelementus, kas obligāti norādāmi elektroniskajā rēķinā;
-
-9) citus noteikumus.
-
-(3) Pasūtītājs ir tiesīgs paredzēt speciālus iepirkuma līguma izpildes noteikumus galvenokārt saistībā ar ekonomiskiem un sociāliem apstākļiem, inovācijām vai vides aizsardzības prasībām, ievērojot nosacījumu, ka šie noteikumi nav pretrunā ar Eiropas Savienības tieši piemērojamiem tiesību aktiem minētajās jomās un ir norādīti tehniskajās specifikācijās vai paziņojumā par līgumu, vai iepirkuma procedūras dokumentos un ir saistīti ar attiecīgā iepirkuma līguma priekšmetu. Pasūtītājs iepirkuma līguma sagatavošanā var izmantot nozaru ekspertu vai organizāciju izstrādātas vadlīnijas iepirkumu veikšanai un līgumu slēgšanai, kā arī standartlīgumus. Slēdzot iepirkuma līgumu, tiek nodrošināta samērīga līgumslēdzēju pušu tiesību un tiesisko interešu ievērošana.
-
-(4) Iepirkuma līgumu slēdz uz laiku, ne ilgāku par pieciem gadiem. Pasūtītājs ir tiesīgs noslēgt iepirkuma līgumu uz ilgāku laiku, ja pastāv kāds no šādiem nosacījumiem:
-
-1) tas ir paredzēts citā likumā;
-
-2) tas ir būtiski nepieciešams iepirkuma līguma izpildes nodrošināšanai ar iepirkuma līguma priekšmetu tieši saistītu tehnisku vai ekonomisku apstākļu dēļ. Šajā gadījumā pirms iepirkuma uzsākšanas pasūtītājam, kas ir tiešās pārvaldes iestāde, nepieciešams saņemt Ministru kabineta atļauju, bet pasūtītājam, kas ir pastarpinātās pārvaldes iestāde, — attiecīgās atvasinātās publiskās personas orgāna atļauju.
-
-(5) Šā panta ceturtajā daļā minētajos gadījumos pasūtītājs paziņojumā par līgumu, paziņojumā par līgumu attiecībā uz sociālajiem un citiem īpašiem pakalpojumiem vai paziņojumā par plānoto līgumu norāda pamatojumu tādu apstākļu esībai, kuri dod tiesības iepirkuma līgumu noslēgt uz ilgāku laiku.
-
-(6) Iepirkuma līgumu vai vispārīgo vienošanos slēdz ne agrāk kā nākamajā darbdienā pēc nogaidīšanas termiņa beigām, ja Iepirkumu uzraudzības birojam nav šā likuma 68. pantā noteiktajā kārtībā iesniegts iesniegums par iepirkuma procedūras pārkāpumiem.
-
-(7) Šā panta sestajā daļā minētais nogaidīšanas termiņš ir:
-
-1) 10 dienas pēc dienas, kad šā likuma 37. panta otrajā daļā minētā informācija nosūtīta visiem pretendentiem elektroniski, izmantojot drošu elektronisko parakstu vai pievienojot elektroniskajam pastam skenētu dokumentu, pa faksu vai nodota personiski, un papildus viena darbdiena;
-
-2) 15 dienas pēc šā likuma 37. panta otrajā daļā minētās informācijas nosūtīšanas dienas, ja kaut vienam pretendentam tā nosūtīta pa pastu, un papildus viena darbdiena.
-
-(8) Ja šā panta septītās daļas 1. punktā minētā desmitā diena un 2. punktā minētā piecpadsmitā diena ir sestdiena, svētdiena vai likumā noteikta svētku diena, nogaidīšanas termiņš pagarināms par vienu darbdienu.
-
-(9) Iepirkuma līgumu vai vispārīgo vienošanos var slēgt, neievērojot šā panta sesto daļu, ja:
-
-1) vienīgajam pretendentam ir piešķirtas iepirkuma līguma slēgšanas tiesības un nav kandidātu, kas būtu tiesīgi iesniegt iesniegumu šā likuma 68. panta otrajā daļā noteiktajā kārtībā;
-
-2) tiek rīkots šā likuma 2. pielikumā noteikto sociālo un citu īpašu pakalpojumu iepirkums pasūtītājam neparedzamu ārkārtas apstākļu dēļ;
-
-3) tiek piemērota sarunu procedūra;
-
-4) līgumu slēdz vispārīgās vienošanās ietvaros saskaņā ar šā likuma 56. vai 59. pantu;
-
-5) līgumu slēdz dinamiskās iepirkumu sistēmas ietvaros saskaņā ar šā likuma 57. pantu.
-
-(10) Pasūtītājs ne vēlāk kā 10 darbdienu laikā pēc dienas, kad stājas spēkā iepirkuma līgums, vispārīgā vienošanās vai to grozījumi, savā pircēja profilā, ievērojot normatīvajos aktos noteiktās komercnoslēpuma aizsardzības prasības un nodrošinot pieejamību visā iepirkuma līguma vai vispārīgās vienošanās darbības laikā, bet ne mazāku par šā likuma 40. panta piektajā daļā iepirkuma dokumentācijai noteikto glabāšanas laiku, ievieto:
-
-1) iepirkuma līgumu vai vispārīgo vienošanos;
-
-2) uz vispārīgās vienošanās pamata vai dinamiskās iepirkumu sistēmas ietvaros noslēgtu iepirkuma līgumu. Ja iepirkuma līgumi vispārīgās vienošanās vai dinamiskās iepirkumu sistēmas ietvaros slēgti elektroniskā vidē saskaņā ar dinamiskās iepirkumu sistēmas izveidošanas vai vispārīgās vienošanās noteikumiem un glabājas valsts elektroniskās informācijas sistēmā, iepirkuma līgumu vai tā grozījumus var neievietot pircēja profilā;
-
-3) ja iepirkuma līgumu veido publiski pieejami un ar autortiesībām aizsargāti tipveida līguma noteikumi, — norādi uz šiem tipveida līguma noteikumiem, kā arī dokumentus, kuri ir iepirkuma līguma sastāvdaļa un ar kuriem groza vai papildina attiecīgos tipveida līguma noteikumus;
-
-4) šīs daļas 1., 2. un 3. punktā minēto dokumentu grozījumus un šā likuma 61. panta otrajā un trešajā daļā minēto grozījumu pamatojumu.
-
-(11) Ja iepirkumu veic centralizēto iepirkumu institūcija, tā vienojas ar pasūtītājiem, kuru vajadzībām tiek veikts iepirkums, par to, kurš savā pircēja profilā ievieto šā panta desmitajā daļā minētos dokumentus. Ja pasūtītāji nevienojas ar centralizēto iepirkumu institūciju, šā panta desmitajā daļā minētos dokumentus savā pircēja profilā ievieto centralizēto iepirkumu institūcija.
+(11) Centralizēto iepirkumu institūcija vienojas ar pasūtītājiem par dokumentu ievietošanu pircēja profilā.
 
 60.1 pants. Līgumu reģistrs
 
@@ -1581,47 +1343,34 @@ Iepirkumu uzraudzības birojs vienas darbdienas laikā pēc tam, kad publicēts 
 
 61. pants. Iepirkuma līguma vai vispārīgās vienošanās grozīšana
 
-(1) Iepirkuma līguma vai vispārīgās vienošanās grozījumi ir pieļaujami, ja tie nemaina iepirkuma līguma vai vispārīgās vienošanās vispārējo raksturu (veidu un iepirkuma procedūras dokumentos noteikto mērķi) un atbilst vienam no šādiem gadījumiem:
-
+(1) Iepirkuma līguma vai vispārīgās vienošanās grozījumi ir pieļaujami, ja tie nemaina līguma vispārējo raksturu un atbilst vienam no šādiem gadījumiem:
 1) grozījumi ir nebūtiski;
-
 2) grozījumi ir būtiski un tiek izdarīti tikai šā panta trešajā daļā minētajos gadījumos;
+3) grozījumi tiek izdarīti šā panta piektajā daļā minētajā gadījumā.
 
-3) grozījumi tiek izdarīti šā panta piektajā daļā minētajā gadījumā neatkarīgi no tā, vai tie ir būtiski vai nebūtiski.
+(2) Grozījumi ir būtiski, ja:
+1) tie pieļautu atšķirīgu piedāvājumu iesniegšanu vai citu kandidātu dalību;
+2) ekonomiskais līdzsvars tiek mainīts pretendenta interesēs;
+3) līguma priekšmetā ietver piegādes, pakalpojumus vai būvdarbus, ko neparedz sākotnējais līgums;
+4) pretendentu aizstāj ar citu piegādātāju.
 
-(2) Iepirkuma līguma vai vispārīgās vienošanās grozījumi ir būtiski jebkurā no šādiem gadījumiem:
+(3) Būtiski grozījumi ir pieļaujami, ja:
+1) dokumenti skaidri paredz grozījumu iespēju;
+2) nepieciešami papildu darbi, pakalpojumi vai piegādes, un piegādātāja maiņa radītu būtisku izmaksu pieaugumu;
+3) grozījumi ir nepieciešami neparedzētu iemeslu dēļ;
+4) pretendentu aizstāj ar citu piegādātāju atbilstoši komerctiesību normatīviem.
 
-1) grozītie iepirkuma līguma vai vispārīgās vienošanās noteikumi, ja tie būtu bijuši paredzēti iepirkuma procedūras dokumentos, pieļautu atšķirīgu piedāvājumu iesniegšanu vai citu kandidātu vai pretendentu dalību vai izvēli iepirkuma procedūrā;
+(4) Līgumcenas pieaugums nevar pārsniegt 50% no sākotnējās līgumcenas attiecībā uz katru gadījumu, kas minēts trešās daļas 2. un 3. punktā.
 
-2) ekonomiskais līdzsvars (piemēram, risku sadalījums un tos kompensējošie līdzekļi), ko paredz iepirkuma līgums vai vispārīgā vienošanās, tiek mainīts iepirkuma procedūrā izraudzītā pretendenta interesēs;
-
-3) iepirkuma līguma priekšmetā ietver piegādes, pakalpojumus vai būvdarbus, ko neparedz sākotnēji noslēgtais iepirkuma līgums vai vispārīgā vienošanās;
-
-4) iepirkuma procedūrā izraudzīto pretendentu (līgumslēdzēju pusi) aizstāj ar citu piegādātāju.
-
-(3) Būtiski iepirkuma līguma vai vispārīgās vienošanās grozījumi ir pieļaujami šādos gadījumos:
-
-1) iepirkuma procedūras dokumenti un iepirkuma līgums vai vispārīgā vienošanās skaidri un nepārprotami paredz grozījumu iespēju, nosacījumus, ar kādiem grozījumi ir pieļaujami, grozījumu apjomu un būtību. Šādi noteikumi par grozījumiem var attiekties uz līgumcenas pārskatīšanu, izvēles iespēju izmantošanu, kā arī uz citiem iepirkuma līguma vai vispārīgās vienošanās izpildes aspektiem;
-
-2) pasūtītājam  sākotnējā iepirkuma līguma vai vispārīgās vienošanās izpildei ir nepieciešami papildu būvdarbi, pakalpojumi vai piegādes, kas nebija iekļauti sākotnējā iepirkumā, un piegādātāja maiņa radītu būtisku izmaksu pieaugumu, un to nevar veikt tādu ekonomisku vai tehnisku iemeslu dēļ kā aizvietojamība vai savietojamība ar jau sākotnējā iepirkumā iegādāto aprīkojumu, pakalpojumiem vai iekārtām, vai piegādātāja maiņa radītu ievērojamas grūtības;
-
-3) iepirkuma līguma grozījumi ir nepieciešami tādu iemeslu dēļ, kurus pasūtītājs iepriekš nevarēja paredzēt;
-
-4) iepirkuma procedūrā izraudzīto pretendentu (līgumslēdzēju pusi) aizstāj ar citu piegādātāju atbilstoši komerctiesību jomas normatīvo aktu noteikumiem par komersantu reorganizāciju un uzņēmuma pāreju, un šis piegādātājs atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām kvalifikācijas prasībām, un uz to neattiecas šā likuma 42. panta otrajā daļā paredzētie izslēgšanas iemesli.
-
-(4) Līgumcenas pieaugums, ko noteic kā visu secīgi veikto grozījumu naudas vērtības summu, nevar pārsniegt 50 procentus no sākotnējās iepirkuma līguma līgumcenas attiecībā uz katru gadījumu, kas minēts šā panta trešās daļas 2. un 3. punktā.
-
-(5) Iepirkuma līguma vai vispārīgās vienošanās grozījumi ir pieļaujami, ja iepirkuma līguma vai vispārīgās vienošanās grozījumu vērtība, ko noteic kā visu secīgi veikto grozījumu naudas vērtību summu (neņemot vērā to grozījumu vērtību, kuri izdarīti saskaņā ar šā panta trešās daļas 1., 2. un 3. punktu), vienlaikus nesasniedz:
-
+(5) Grozījumi ir pieļaujami, ja to vērtība nesasniedz:
 1) Ministru kabineta noteiktās līgumcenu robežvērtības;
+2) 10% no sākotnējās līgumcenas publiska piegādes un pakalpojuma līguma gadījumā un 15% no būvdarbu līguma gadījumā.
 
-2) 10 procentus no sākotnējās iepirkuma līguma vai vispārīgās vienošanās līgumcenas publiska piegādes un publiska pakalpojuma līguma gadījumā un 15 procentus no sākotnējās iepirkuma līguma vai vispārīgās vienošanās līgumcenas publiska būvdarbu līguma gadījumā.
+(6) Ja līgumā ir paredzēta līgumcenas indeksācija, sākotnējā līgumcena ir indeksēta.
 
-(6) Ja iepirkuma līgumā ir paredzēta līgumcenas indeksācija, šā panta ceturtajā un piektajā daļā minētā sākotnējā iepirkuma līguma līgumcena ir līgumcena, kas indeksēta.
+(7) Pasūtītājs publicē paziņojumu par izmaiņām līguma darbības laikā.
 
-(7) Pasūtītājs publicē paziņojumu par izmaiņām līguma darbības laikā saskaņā ar šā likuma 33. pantu.
-
-(8) Iepirkuma līguma un vispārīgās vienošanās grozījumiem, kas nav atbilstoši šā panta pirmajā daļā minētajiem gadījumiem, piemērojamas šajā likumā noteiktās iepirkuma procedūras.
+(8) Grozījumiem, kas nav atbilstoši pirmajā daļā minētajiem gadījumiem, piemērojamas iepirkuma procedūras.
 
 62. pants. Iepirkuma līguma izpildē iesaistītā personāla un apakšuzņēmēju nomaiņa un jauna personāla un apakšuzņēmēju piesaiste
 
@@ -1784,8 +1533,6 @@ Kārtība, kādā izskatāmi iesniegumi par iepirkuma procedūras pārkāpumiem
 (8) Ja tiek iesniegts iesniegums par pasūtītāja darbību attiecībā uz iepirkuma procedūras likumību un iesniegumu par to pašu iepirkuma procedūru jau ir iesniedzis cits iesniedzējs, bet tas vēl nav izskatīts, šos iesniegumus var apvienot un izskatīt kopā.
 
 (9) Iesnieguma iesniedzējs ir tiesīgs rakstveidā atsaukt iesniegto iesniegumu jebkurā brīdī, kamēr komisija nav pieņēmusi lēmumu par attiecīgo iesniegumu.
-
-(Ar grozījumiem, kas izdarīti ar 26.04.2018., 24.03.2022. un 05.10.2023. likumu, kas stājas spēkā 25.10.2023.)
 
 69. pants. Iesnieguma atstāšana bez izskatīšanas
 
@@ -2381,39 +2128,26 @@ būvkonstrukciju montāžas vai demontāžas iekārtu
 (bez vadītāja) noma, sk. 71.32
 
 45500000
-Publisko iepirkumu likuma
+
 2. pielikums
-Sociālie un citi īpaši pakalpojumi
-Nr.
-p. k.	Apraksts	CPV kods
-1.	Veselības, sociālie un saistītie pakalpojumi	75200000-8, 75231200-6, 75231240-8, 79611000-0, 79622000-0 (mājsaimniecību personāla nodrošināšanas pakalpojumi),
-79624000-4 (aprūpes personāla nodrošināšanas pakalpojumi), 79625000-1 (medicīniskā personāla nodrošināšanas pakalpojumi), no 85000000-9 līdz 85323000-9, 98133100-5, 98133000-4, 98200000-5, 98500000-8 (privātas mājsaimniecības ar nodarbinātām personām), no 98513000-2 līdz 98514000-9 (darbaspēka pakalpojumi mājsaimniecībām, aģentūru personāla pakalpojumi mājsaimniecībām, kalpotāju pakalpojumi mājsaimniecībām, pagaidu personāls mājsaimniecībām, mājas palīdzības pakalpojumi un mājas apkopes pakalpojumi)
-
-2.	Administratīvie, sociālie, izglītības, veselības aprūpes un kultūras pakalpojumi	85321000-5, 85322000-2, 75000000-6 (pārvaldes, aizsardzības un sociālā nodrošinājuma pakalpojumi),
-75121000-0, 75122000-7, 75124000-1, no 79995000-5 līdz 79995200-7, no 80000000-4 (izglītības un mācību pakalpojumi) līdz 80660000-8, no 92000000-1 līdz 92700000-8,
-
-79950000-8 (izstāžu, gadatirgu un kongresu organizēšanas pakalpojumi), 79951000-5 (semināru organizēšanas pakalpojumi), 79952000-2 (pasākumu organizēšanas pakalpojumi), 79952100-3 (kultūras pasākumu organizēšanas pakalpojumi), 79953000-9 (festivālu organizēšanas pakalpojumi), 79954000-6 (sarīkojumu organizēšanas pakalpojumi), 79955000-3 (modes skašu organizēšanas pakalpojumi), 79956000-0 (gadatirgu un izstāžu organizēšanas pakalpojumi)
-
-3.	Obligātās sociālās nodrošināšanas pakalpojumi	75300000-9
-4.	Pabalstu pakalpojumi	75310000-2, 75311000-9, 75312000-6, 75313000-3, 75313100-4, 75314000-0, 75320000-5, 75330000-8, 75340000-1
-5.	Citi kopienas, sociālie un personālie pakalpojumi, tostarp arodbiedrību, politisko organizāciju, jauniešu biedrību sniegtie pakalpojumi, un citi biedru organizāciju pakalpojumi	98000000-3, 98120000-0, 98132000-7, 98133110-8, 98130000-3
-6.	Reliģiskie pakalpojumi	98131000-0
-7.	Viesnīcu un restorānu pakalpojumi	No 55100000-1 līdz 55410000-7, no 55521000-8 līdz 55521200-0,
-55521000-8 (ēdināšanas pakalpojumi privātajām mājsaimniecībām),
-
-55521100-9 (ēdienu piegādes pakalpojumi veciem un slimiem cilvēkiem), 55521200-0 (ēdienu piegādes pakalpojumi), 55520000-1 (ēdināšanas pakalpojumi), 55522000-5 (ēdināšanas pakalpojumi transporta uzņēmumiem), 55523000-2 (ēdināšanas pakalpojumi citiem uzņēmumiem vai citām iestādēm), 55524000-9 (skolas ēdināšanas pakalpojumi); 55510000-8 (ēdnīcu pakalpojumi), 55511000-5 (ēdnīcu un citu slēgta veida kafetēriju pakalpojumi), 55512000-2 (ēdnīcu vadības pakalpojumi), 55523100-3 (skolas ēdināšanas nodrošināšanas pakalpojumi)
-
-8.	Juridiskie pakalpojumi	No 79100000-5 līdz 79140000-7, 75231100-5
-9.	Citi administratīvie pakalpojumi un valdības pakalpojumi	No 75100000-7 līdz 75120000-3, 75123000-4, no 75125000-8 līdz 75131000-3
+Sociālie un citi īpaši pakalpojumi (p.)
+Nr.	Apraksts	CPV kods
+1.	Veselības, sociālie un saistītie p.	75200000-8, 75231200-6, 75231240-8, 79611000-0, 79622000-0 (mājsaimniecību personāla nodrošināšana), 79624000-4 (aprūpes personāla nodrošināšana), 79625000-1 (medicīniskā personāla nodrošināšana), no 85000000-9 līdz 85323000-9, 98133100-5, 98133000-4, 98200000-5, 98500000-8 (privātas mājsaimniecības ar nodarbinātām personām), no 98513000-2 līdz 98514000-9 (darbaspēks mājsaimniecībām, aģentūru personāls mājsaimniecībām, kalpotāji mājsaimniecībām, pagaidu personāls mājsaimniecībām, mājas palīdzība un mājas apkope)
+2.	Administratīvie, sociālie, izglītības, veselības aprūpes un kultūras p.	85321000-5, 85322000-2, 75000000-6 (pārvaldes, aizsardzības un sociālā nodrošinājuma p.), 75121000-0, 75122000-7, 75124000-1, no 79995000-5 līdz 79995200-7, no 80000000-4 (izglītības un mācību p.) līdz 80660000-8, no 92000000-1 līdz 92700000-8, 79950000-8 (izstāžu, gadatirgu un kongresu organizēšana), 79951000-5 (semināru organizēšana), 79952000-2 (pasākumu organizēšana), 79952100-3 (kultūras pasākumu organizēšana), 79953000-9 (festivālu organizēšana), 79954000-6 (sarīkojumu organizēšana), 79955000-3 (modes skašu organizēšana), 79956000-0 (gadatirgu un izstāžu organizēšana)
+3.	Obligātās sociālās nodrošināšanas p.	75300000-9
+4.	Pabalstu p.	75310000-2, 75311000-9, 75312000-6, 75313000-3, 75313100-4, 75314000-0, 75320000-5, 75330000-8, 75340000-1
+5.	Citi kopienas, sociālie un personālie p., tostarp arodbiedrību, politisko organizāciju, jauniešu biedrību sniegtie p., un citi biedru organizāciju p.	98000000-3, 98120000-0, 98132000-7, 98133110-8, 98130000-3
+6.	Reliģiskie p.	98131000-0
+7.	Viesnīcu un restorānu p.	No 55100000-1 līdz 55410000-7, no 55521000-8 līdz 55521200-0, 55521000-8 (ēdināšana privātajām mājsaimniecībām), 55521100-9 (ēdienu piegāde veciem un slimiem cilvēkiem), 55521200-0 (ēdienu piegāde), 55520000-1 (ēdināšana), 55522000-5 (ēdināšana transporta uzņēmumiem), 55523000-2 (ēdināšana citiem uzņēmumiem vai citām iestādēm), 55524000-9 (skolas ēdināšana); 55510000-8 (ēdnīcu p.), 55511000-5 (ēdnīcu un citu slēgta veida kafetēriju p.), 55512000-2 (ēdnīcu vadība), 55523100-3 (skolas ēdināšanas nodrošināšana)
+8.	Juridiskie p.	No 79100000-5 līdz 79140000-7, 75231100-5
+9.	Citi administratīvie p. un valdības p.	No 75100000-7 līdz 75120000-3, 75123000-4, no 75125000-8 līdz 75131000-3
 10.	Pakalpojumu sniegšana sabiedrībai	No 75200000-8 līdz 75231000-4
-11.	Ar cietumiem saistīti pakalpojumi, sabiedriskās drošības un glābšanas pakalpojumi, ja tie nav izslēgti saskaņā ar šā likuma 3. panta pirmās daļas 10. punktu	No 75231210-9 līdz 75231230-5, no 75240000-0 līdz 75252000-7, 794300000-7, 98113100-9
-12.	Izmeklēšanas un apsardzes pakalpojumi	No 79700000-1 līdz 79721000-4 (izmeklēšanas un apsardzes pakalpojumi, apsardzes pakalpojumi, signalizācijas uzraudzības pakalpojumi, apsargu pakalpojumi, novērošanas pakalpojumi, izsekošanas sistēmas pakalpojumi, bēgļu izsekošanas pakalpojumi, patrulēšanas pakalpojumi, identifikācijas kartes piegādes pakalpojumi, izmeklēšanas pakalpojumi un detektīvu aģentūras pakalpojumi), 79722000-1 (grafoloģijas pakalpojumi), 79723000-8 (atkritumu analīzes pakalpojumi)
-13.	Starptautiskie pakalpojumi	98900000-2 (ārpusteritoriālo organizāciju un institūciju sniegtie pakalpojumi), 98910000-5 (starptautiskām organizācijām un struktūrām raksturīgi pakalpojumi)
-14.	Pasta pakalpojumi	64000000-6 (pasta un telekomunikāciju pakalpojumi), 64100000-7 (pasta un kurjeru pakalpojumi), 64110000-0 (pasta pakalpojumi), 64111000-7 (pasta pakalpojumi, kas saistīti ar avīzēm un periodiskajiem izdevumiem), 64112000-4 (pasta pakalpojumi, kas saistīti ar vēstulēm), 64113000-1 (pasta pakalpojumi, kas saistīti ar pakām), 64114000-8 (pasta iestādes pakalpojumi), 64115000-5 (pastkastīšu noma), 64116000-2 (pasta pakalpojumi sūtījumiem pēc pieprasījuma),
-64122000-7 (biroja iekšējā pasta un kurjera pakalpojumi)
+11.	Ar cietumiem saistīti p., sabiedriskās drošība un glābšana, ja tie nav izslēgti saskaņā ar šā likuma 3. panta pirmās daļas 10. punktu	No 75231210-9 līdz 75231230-5, no 75240000-0 līdz 75252000-7, 794300000-7, 98113100-9
+12.	Izmeklēšanas un apsardzes p.	No 79700000-1 līdz 79721000-4 (izmeklēšanas un apsardzes p., apsardzes p., signalizācijas uzraudzība, apsargu p., novērošana, izsekošanas sistēmas p., bēgļu izsekošana, patrulēšana, identifikācijas kartes piegāde, izmeklēšanas un detektīvu aģentūras p.), 79722000-1 (grafoloģija), 79723000-8 (atkritumu analīze)
+13.	Starptautiskie p.	98900000-2 (ārpusteritoriālo organizāciju un institūciju sniegtie p.), 98910000-5 (starptautiskām organizācijām un struktūrām raksturīgi p.)
+14.	Pasta p.	64000000-6 (pasta un telekomunikāciju p.), 64100000-7 (pasta un kurjeru p.), 64110000-0 (pasta p.), 64111000-7 (pasta p., kas saistīti ar avīzēm un periodiskajiem izdevumiem), 64112000-4 (pasta p., kas saistīti ar vēstulēm), 64113000-1 (pasta p., kas saistīti ar pakām), 64114000-8 (pasta iestādes p.), 64115000-5 (pastkastīšu noma), 64116000-2 (pasta p. sūtījumiem pēc pieprasījuma), 64122000-7 (biroja iekšējā pasta un kurjera p.)
+15.	Dažādi p.	50116510-9 (riepu vulkanizēšana), 71550000-8 (kalēja p.)
 
-15.	Dažādi pakalpojumi	50116510-9 (riepu vulkanizēšanas pakalpojumi), 71550000-8 (kalēja pakalpojumi)
-Publisko iepirkumu likuma
 3. pielikums
 Starptautiskās konvencijas sociālajā un vides jomā
 

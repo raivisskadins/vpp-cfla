@@ -7,7 +7,7 @@ from llama_index.vector_stores.faiss import FaissVectorStore
 import faiss
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-
+import openai
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core import  VectorStoreIndex, StorageContext, Document, Settings
 from llama_index.core.schema import TextNode, MetadataMode, NodeWithScore
@@ -237,7 +237,7 @@ class QnAEngine:
         newprompt = str(response)
         newprompt = re.sub(r'The summarized text is( as follows)?:','',newprompt).strip()
         print(f"Old size:{len(prompt)} New size:{len(newprompt)}")
-        #print(f"NEW PROMPT:\n{newprompt}")
+        print(f"NEW PROMPT:\n{newprompt}\n--------------")
         self.compressed_txt[prompt] = newprompt
         return newprompt
         
@@ -264,8 +264,24 @@ class QnAEngine:
                 self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
                 
+            except openai.BadRequestError as e:
+                print(f"Q: {q}")
+                print(f"{e.code} {e.args[0]}")
+                return ''
+            except openai.APITimeoutError as e:
+                print("Request timed out")
+                return ''
+            except openai.APIError as e:
+                print("API error")
+                return ''
+            except openai.APIConnectionError as e:
+                print("Open API connection error")
+                return ''
+            except openai.RateLimitError as e:
+                print("Open API rate limit error")
+                return ''
             except Exception as error:
-                print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
+                print(f"An exception in askQuestion: {type(error).__name__} {error.args[0]}")
                 return ''
         else:
             try:
@@ -282,21 +298,27 @@ class QnAEngine:
         numitemsinidx=self.newindex.vector_store.client.ntotal
         
         if numitemsinidx < n:              
-                n=numitemsinidx
-        try:
+            n=numitemsinidx
+        if True:
             retriever = self.newindex.as_retriever(similarity_top_k=n)   
             retrieved_nodes = retriever.retrieve(q)
-            result = []
+            #result = []
+            texts = []
+            scores = []
+            metadata = []
             
             for item in  retrieved_nodes:
                 tmpdict={keys:values for keys, values in item.metadata.items() if values is not None}
-                result.append({"text": item.get_content(), "score": str(item.get_score()), "metadata": tmpdict})
+                texts.append(item.get_content())
+                scores.append(item.get_score())
+                metadata.append(tmpdict)
+                #result.append({"text": item.get_content(), "score": str(item.get_score()), "metadata": tmpdict})
                 
-            return (result)
+            return ({"text":texts, "score":scores, "metadata":metadata})
             
-        except Exception as error:
-            print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
-            return []   
+        #except Exception as error:
+        #    print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
+        #    return []   
 
         
     
