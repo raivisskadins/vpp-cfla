@@ -40,7 +40,8 @@ class Extractor:
         filetxt = re.sub(r"(\n[\*a-z\d]+[\.\)][^\n]+[;\.] *\r?\n) *([A-ZĀĒĪŪĶĻŅČŽŠĢ])", r"\1\n\2", filetxt) # inserting empty line after bulleted line
         filetxt = re.sub(r"([a-zāēīū''kļņčžšģ]\.) +([A-ZĀĒĪŪĶĻŅČŽŠĢ][a-zāēīū''kļņčžšģ ]+ [–-] )", r"\1\n\n\2", filetxt) # term list, insert newline 'ssdf. Asdfsdf - ' 
         filetxt = re.sub(r"([a-zāēīū''kļņčžšģ]\.) +(\d+\. [A-ZĀĒĪŪĶĻŅČŽŠĢ]+)", r"\1\n\n\2", filetxt) # new title, insert newline 'ssdf. 2. ASASF'     
-        filetxt = re.sub(r" ([a-zāēīū]+)([A-ZĀĒĪŪĶĻŅČŽŠĢ]+)", r" \1 \2", filetxt) # words togeather 'izglītībaAIC'     
+        filetxt = re.sub(r" ([a-zāēīū]+)([A-ZĀĒĪŪĶĻŅČŽŠĢ]+)", r" \1 \2", filetxt) # words togeather 'izglītībaAIC'  
+        filetxt = re.sub(r"([A-ZĀĒĪŪĶĻŅČŽŠĢ]+)\*\*([ĀĒĪŪĶĻŅČŽŠĢ]+)\*\*([A-ZĀĒĪŪĶĻŅČŽŠĢ]+)", r" \1\2\3", filetxt) # diacritic letters in ** ** 'APDROŠIN**Ā**T**Ā**JS' 
         filetxt = re.sub(r"\n-----\n", r"", filetxt)
         
         while re.search(r"( *\r\n *\r\n)( *\r\n *\r\n)+", filetxt):
