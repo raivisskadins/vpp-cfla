@@ -6,6 +6,7 @@ import pymupdf4llm
 from io import BytesIO
 import mammoth
 from markdownify import markdownify as md
+import docx2txt
 
 class Extractor:
 
@@ -13,7 +14,7 @@ class Extractor:
 
         filetxt = re.sub(r"^ *\d+ *\r?\n", "", filetxt) # page numbers
         filetxt = re.sub(r"\n *\d+ *\r?\n ", "\n", filetxt) # page numbers
-        filetxt = re.sub(r"([a-zāēīūķļņčžšģ\d] *)(\r?\n)+ ?([a-zāēīūķļņčžšģ\(]{2,})", r"\1 \3", filetxt) #line divided, merge it
+        filetxt = re.sub(r"([a-zāēīūķļņčžšģ,\d] *)(\r?\n)+ ?([a-zāēīūķļņčžšģ\(]{2,})", r"\1 \3", filetxt) #line divided, merge it
         filetxt = re.sub(r"([‒-])\r?\n", r"\1", filetxt) #hyphen at the end or line, merge with the next line
         filetxt = re.sub(r"(\([^\n\(\)]+)\r?\n([^\n\)\(]+\))", r"\1\2", filetxt) # line divided '(' on first line, merge it
         filetxt = re.sub(r"([„“][^\n„“”]+)\r?\n([^\n„“”]+”)", r"\1\2", filetxt) # line divided '„' on first line, merge it
@@ -129,13 +130,21 @@ class Extractor:
             content = f.read()
 
         return content
-             
+
+    def useDocx2txt(self, file_path):
+        try:
+            doc = docx2txt.process(file_path)
+            return doc
+        except:
+            return ''
+            
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
             return(self.usePymupdf4llm(file_path))                                    
         elif re.match(r".+\.docx$", file_path):
-            return(self.useMammothMarkdownify(file_path))
+            #return(self.useMammothMarkdownify(file_path))
+            return(self.useDocx2txt(file_path))
         elif re.match(r".+\.html$", file_path):
             return(self.useMarkdownify(file_path))
         elif re.match(r".+\.(txt|md|csv)$", file_path):

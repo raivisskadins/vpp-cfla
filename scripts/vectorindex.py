@@ -111,11 +111,11 @@ class QnAEngine:
                                 docs.append(Document(text=txt2add, extra_info=newmeta))
                                 segmentlines.clear()
                             segmentlines.append(currline[4:])                                            
-                    elif len(txt2add)>1000 and (currline.strip().endswith(":") or currline.strip().endswith("?")) and currline[0].isupper():
-                        newmeta={**metalist, **othermeta}
-                        docs.append(Document(text=txt2add, extra_info=newmeta))
-                        segmentlines.clear()
-                        segmentlines.append(currline)
+                    #elif len(txt2add)>1000 and (currline.strip().endswith(":") or currline.strip().endswith("?")) and currline[0].isupper():
+                    #    newmeta={**metalist, **othermeta}
+                    #    docs.append(Document(text=txt2add, extra_info=newmeta))
+                    #    segmentlines.clear()
+                    #    segmentlines.append(currline)
                     else:
                         found = re.search(rf"^\*\*(\d+\.)(\d+\.)?\*\* \*\*([^*\n]+)\*\*$",currline)
                         if found:
