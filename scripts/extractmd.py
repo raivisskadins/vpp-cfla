@@ -143,8 +143,8 @@ class Extractor:
         if re.match(r".+\.pdf$", file_path):
             return(self.usePymupdf4llm(file_path))                                    
         elif re.match(r".+\.docx$", file_path):
-            #return(self.useMammothMarkdownify(file_path))
-            return(self.useDocx2txt(file_path))
+            return(self.useMammothMarkdownify(file_path))
+            #return(self.useDocx2txt(file_path))
         elif re.match(r".+\.html$", file_path):
             return(self.useMarkdownify(file_path))
         elif re.match(r".+\.(txt|md|csv)$", file_path):

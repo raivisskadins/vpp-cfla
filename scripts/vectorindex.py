@@ -309,7 +309,7 @@ class QnAEngine:
             
             for item in  retrieved_nodes:
                 tmpdict={keys:values for keys, values in item.metadata.items() if values is not None}
-                texts.append(item.get_content())
+                texts.append(item.get_content().replace(r'\\n',r'\n'))
                 scores.append(item.get_score())
                 metadata.append(tmpdict)
                 #result.append({"text": item.get_content(), "score": str(item.get_score()), "metadata": tmpdict})
