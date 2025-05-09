@@ -14,14 +14,14 @@
   PIL:
    - chapter: 11
 - nr: 4
-  question0: "Vai iepirkuma priekšmets ir nesadalīts daļās, t.i., vai iepirkuma priekšmetam ir viena daļa?"
+  question0: "Vai iepirkuma priekšmetam ir tikai viena daļa?"
   question: "Vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai un tas objektīvi pamato iepirkuma priekšmeta nesadalīšanu?"
   MK107:
    - chapter: 196
 - nr: 5
   question: "Iepirkumam atbilstoši būvdarbu, preču grupu un pakalpojumu kategorijām ir piešķirts CPV kods un tas pēc būtības atbilst iepirkuma priekšmetam un tas ir norādīts Elektronisko iepirkumu sistēmā (EIS) E-konkursu apakšsistēmā, paziņojumā par plānoto līgumu un pārējā iepirkuma dokumentācijā pēc būtības atbilst iepirkuma priekšmeta saturam"
 - nr: 6
-  question0: "Vai iepirkuma līguma priekšmets satur vairākus iepirkuma veidus (būvdarbus, pakalpojumus vai piegādes)?"
+  question0: "Vai iepirkuma līguma priekšmets satur vairākus no šādiem iepirkuma veidiem - būvdarbu, piegādes vai pakalpojuma iepirkumi?"
   question: "Iepirkuma līguma priekšmets ir klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
 - nr: 7
   question0: "Vai iepirkuma līguma priekšmets daļēji ietver PIL 2. pielikumā minētos pakalpojumus un citus pakalpojumus vai daļēji pakalpojumus un daļēji piegādes?"
