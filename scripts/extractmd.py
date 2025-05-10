@@ -7,6 +7,9 @@ from io import BytesIO
 import mammoth
 from markdownify import markdownify as md
 import docx2txt
+from marker.converters.pdf import PdfConverter
+from marker.models import create_model_dict
+from marker.output import text_from_rendered
 
 class Extractor:
 
@@ -137,11 +140,21 @@ class Extractor:
             return doc
         except:
             return ''
+
+    def useMarkerPDF(self, file_path):
+        try:
+            converter = PdfConverter(artifact_dict=create_model_dict(),)
+            rendered = converter(file_path)
+            text, _, images = text_from_rendered(rendered)
+            return text
+        except:
+            return ''
             
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
-            return(self.usePymupdf4llm(file_path))                                    
+            #return(self.usePymupdf4llm(file_path))    
+            return(self.useMarkerPDF(file_path))   
         elif re.match(r".+\.docx$", file_path):
             return(self.useMammothMarkdownify(file_path))
             #return(self.useDocx2txt(file_path))
