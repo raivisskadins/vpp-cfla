@@ -19,3 +19,4 @@ playwright==1.46.0
 einops==0.8.1
 doc2text==0.2.4
 marker-pdf==1.6.1
+FlagEmbedding
