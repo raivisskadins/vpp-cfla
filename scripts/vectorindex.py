@@ -21,6 +21,7 @@ from llama_index.core.llms.llm import LLM
 from llama_index.core.utilities.token_counting import TokenCounter
 from tqdm import tqdm
 import json
+from FlagEmbedding import FlagReranker
 
 import nest_asyncio
 nest_asyncio.apply()
@@ -51,6 +52,8 @@ class QnAEngine:
         self._token_counter = TokenCounter()
         self.token_limit = self.llm.metadata.context_window * 0.5
         self.compressed_txt = {}
+        self.alltext = ""
+        self.reranker = FlagReranker('BAAI/bge-reranker-v2-m3', use_fp16=True)
             
     def load_md(self,text) -> List[Document]:
         docs = []
@@ -214,6 +217,7 @@ class QnAEngine:
                 
     async def createIndex(self,file_content,filetype,chunk_size=1024,chunk_overlap=0):
         try:
+            self.alltext = file_content
             documents = self.load_md(file_content)
             nodes = await self.get_nodes(documents,filetype,chunk_size,chunk_overlap)
             with open ("tmp2.md", 'w',encoding='utf-8') as ofile:
@@ -241,7 +245,7 @@ class QnAEngine:
         self.compressed_txt[prompt] = newprompt
         return newprompt
         
-    def askQuestion(self,query_prompt,q,usecontext=True,n=4):
+    def askQuestion(self,query_prompt,q,usecontext=True,n=4,n4rerank=0):
 
         if (query_prompt,q) in self.chached_responses:
             return self.chached_responses[(query_prompt,q)]
@@ -250,17 +254,20 @@ class QnAEngine:
             numitemsinidx=self.newindex.vector_store.client.ntotal
             
             if numitemsinidx < n:              
-                    n=numitemsinidx
-    
-            retriever = self.newindex.as_retriever(similarity_top_k=n)                    
-            try:    
-                query_engine = RetrieverQueryEngine.from_args(
-                    retriever=retriever, 
-                    llm=self.llm,
-                    text_qa_template = PromptTemplate(query_prompt+'\n'+text_qa_template_str)
-                )
-                
-                result = query_engine.query(q)
+                n=numitemsinidx
+                n4rerank=0
+            try: 
+                if n4rerank > 0:
+                    nodelist = self.getRerankedNodes(q,n4rerank, n) #[.., .., ..]
+             
+                else:
+                    nodedict = self.getSimilarNodes(q,n) #{"text":texts, "score":scores, "metadata":metadata}
+                    nodelist = [fragment for fragment in nodedict['text']] #[.., .., ..]
+                    
+                newquery = PromptTemplate(query_prompt+'\n'+text_qa_template_str).format(context_str = '\n'.join(nodelist), query_str = q)
+                    
+                result = self.llm.complete(newquery)
+                    
                 self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
                 
@@ -285,7 +292,8 @@ class QnAEngine:
                 return ''
         else:
             try:
-                result = self.llm.complete(query_prompt + '\n\n' + q)
+                fullquery = PromptTemplate(query_prompt+'\n'+text_qa_template_str).format(context_str = self.alltext, query_str = q)
+                result = self.llm.complete(fullquery)
                 self.chached_responses[(query_prompt,q)] = str(result)
                 return(str(result))
                 
@@ -293,6 +301,19 @@ class QnAEngine:
                 print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
                 return ''
 
+    def getRerankedNodes(self,q,n4rerank, n):
+
+        similarnodes = self.getSimilarNodes(q,n4rerank) #{"text":texts, "score":scores, "metadata":metadata}
+        to_rerank = [[q, fragment] for fragment in similarnodes['text']]
+
+        scores = self.reranker.compute_score(to_rerank, normalize=True) #higher scores are better
+
+        sortedlist = sorted(zip(scores, to_rerank), key=lambda x: x[0], reverse=True)
+        topnodes = [text[1] for _, text in sortedlist[:n]]
+
+        return topnodes
+        
+    
     def getSimilarNodes(self,q,n=4):
 
         numitemsinidx=self.newindex.vector_store.client.ntotal

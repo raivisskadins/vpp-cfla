@@ -82,8 +82,8 @@ class Extractor:
     
             for i, match in enumerate(image_pattern.finditer(markdown_content)):
     
-                placeholder = f"<figure>![](figures/{i})</figure>"
-                updated_content = updated_content.replace(match.group(0), placeholder, 1)
+                #placeholder = f"<figure>![](figures/{i})</figure>"
+                updated_content = updated_content.replace(match.group(0), '', 1)
             updated_content = re.sub(r"\n\*\*([IVX]+ NODAĻA)\*\*(\r?\n)", r"\n## \1 \2", updated_content) 
             updated_content = re.sub(r"\n(\d+\.) \*\*([^*]+)\*\*(\r?\n)", r"\n### \1 \2 \3", updated_content) 
           
