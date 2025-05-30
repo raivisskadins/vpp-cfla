@@ -57,8 +57,7 @@
 - nr: 21
   answer: "n/a"
 - nr: 22
-  answer0: "nē" # pilnīgs tukšums
-  answer: "n/a"
+  answer: "?" # Nebija atbildes
 - nr: 23
   answer0: "nē"
   answer: "n/a"
@@ -66,6 +65,7 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 25
+  answer0: "jā"
   answer: "jā"
 - nr: 26
   answer: "jā"
@@ -76,15 +76,19 @@
 - nr: 29
   answer: "jā"
 - nr: 30
+  answer0: "nē"
   answer: "n/a"
 - nr: 31
+  answer0: "nē"
   answer: "n/a"
 - nr: 32
+  answer0: "jā"
   answer: "jā"
 - nr: 33
   answer0: "nē"
   answer: "n/a"
 - nr: 34
+  answer0: "nē"
   answer: "n/a"
 - nr: 35
   answer0: "jā"
@@ -115,6 +119,7 @@
   - nr: 37.1
     answer: "jā"
   - nr: 37.2
+    answer0: "nē"
     answer: "n/a"
   - nr: 37.3
     answer: "jā"
@@ -337,7 +342,7 @@
 - nr: 59
   answer: "jā"
 - nr: 60
-  answer0: "nē" # Kāpēc šeit answer0, ja nav "ja"
+  answer0: "nē"
   answer: "n/a"
 - nr: 61
   answer0: "nē"
