@@ -1,6 +1,9 @@
 import re
 import os
+import json
+import yaml
 import urllib.parse
+from pathlib import Path
 from llama_index.readers.web import ReadabilityWebPageReader
 from llama_index.core import Document
 
@@ -137,7 +140,7 @@ def extract_chapters(text, pattern):
 
     return(chapters)
 
-def encodeUrlFileName(url):
+def encode_url_file_name(url):
     filename=os.path.basename(url)
     encodedfilename=urllib.parse.quote(filename)
     newurl=url.replace(filename,encodedfilename)
@@ -148,9 +151,121 @@ async def text_from_url(url):
     try:
         loader = ReadabilityWebPageReader()
         loop = asyncio.get_event_loop()
-        documents = loop.run_until_complete(loader.async_load_data(url=encodeUrlFileName(url)))
+        documents = loop.run_until_complete(loader.async_load_data(url=encode_url_file_name(url)))
         print(documents[0])
         return(documents)
     except Exception as error:
         print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
-        return([Document(text="404: Not Found")]) 
+        return([Document(text="404: Not Found")])
+
+def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, expectedanswer=''):
+    result = qnaengine.askQuestion(prompt, 
+                                   question, 
+                                   usecontext=embedding_conf["use_similar_chunks"],
+                                   n=embedding_conf["top_similar"],
+                                   n4rerank=embedding_conf["n4rerank"],
+                                   prevnext=embedding_conf["prevnext"])
+    result = re.sub(r'\n\n+',r'\n',result).strip()
+
+    answer = re.search(r'\{[^\{\}]+\}',result, re.IGNORECASE)
+    if answer:
+        try:
+            jsonanswer=json.loads(answer.group(1))
+            llmanswer = jsonanswer.get('answer','')
+            record = [nr, llmanswer, expectedanswer, result]
+            return record
+        except:
+            pass
+            
+    answer = re.search(r'\[\**(jā|nē|kontekstā nav informācijas|n/a)\**\]',result, re.IGNORECASE)
+    
+    if answer:
+        llmanswer=answer.group(1)
+        #result = result.replace(f"[{llmanswer}]","").replace(f"Atbilde:","")
+        record = [nr, llmanswer, expectedanswer, result]
+    else:
+        answer = re.search(r"'?(jā|nē|kontekstā nav informācijas|n/a)'?", result, re.IGNORECASE)
+        if not answer:
+            answer = re.search(r'\[(ja|ne)\]', result, re.IGNORECASE)
+        if answer:
+            record = [nr, answer.group(1).lower(), expectedanswer, result]
+        else:
+            record = [nr, '', expectedanswer, result] 
+    return record
+
+# TODO needs a more logical name, more info seems to be similar
+def get_supplementary_info():
+    # Determine the directory containing this script, then go up one level to find 'supplementary_info'
+    base_dir = Path(__file__).parent.parent / 'supplementary_info'
+
+    pil_path = base_dir / 'PIL.txt'
+    with open(pil_path, 'r', encoding='utf-8') as file:
+        piltxt = file.read().strip()
+    pattern = r'^(?P<key>(\d+\.\s+(pants|pielikums))|Pārejas noteikumi)'
+    pilchapters = extract_chapters(piltxt, pattern)
+
+    mk107_path = base_dir / 'MK107.md'
+    with open(mk107_path, 'r', encoding='utf-8') as file:
+        mk107txt = file.read().strip()
+    pattern = r'^(?P<key>[# ]*\d+)\.\s+'
+    mk107chapters = extract_chapters(mk107txt, pattern)
+
+    nsl_path = base_dir / 'S_LR_NSL.txt'
+    with open(nsl_path, 'r', encoding='utf-8') as file:
+        nsltxt = file.read().strip()
+    pattern = r'^(?P<key>(\d+\.(\d+)?\s+pants))'
+    nslchapters = extract_chapters(nsltxt, pattern)
+
+    mki3_path = base_dir / 'MK_I3.txt'
+    with open(mki3_path, 'r', encoding='utf-8') as file:
+        mki3txt = file.read().strip()
+    pattern = r'^\*\* (?P<key>\d+(\.\d+)?)\.\s+'
+    mki3chapters = extract_chapters(mki3txt, pattern)
+
+    return pilchapters, mk107chapters, nslchapters, mki3chapters
+
+def get_prompt_dict(prompt_file):
+    promptdict = {}
+    with open(prompt_file,'r',encoding='utf-8') as file:
+        for line in file:
+            lineparts = line.strip().split('\t')
+            if len(lineparts)==2:
+                for q in lineparts[1].split(','):
+                    promptdict[str(q)] = lineparts[0] 
+
+    return promptdict
+
+def get_questions(question_file_path):
+    try:
+        with open(question_file_path, 'r', encoding='utf-8') as file:
+            question_dictonary = yaml.load(file, Loader=yaml.BaseLoader)
+            print("Questions loaded")
+    except FileNotFoundError:
+        print(f"Error: File '{question_file_path}' not found.")
+        exit
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file: {e}")
+        exit
+    return question_dictonary
+
+def get_answers(answer_file_path):
+    try:
+        with open(answer_file_path, 'r', encoding='utf-8') as file:
+            answer_dictonary = yaml.load(file, Loader=yaml.BaseLoader)
+    except FileNotFoundError:
+        print(f"Error: File '{answer_file_path}' not found.")
+        exit
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file: {e}")
+        exit
+    return answer_dictonary
+
+def get_procurement_content(extractor, procurement_file, agreement_file):
+    procurement_content = extractor.convert2markdown(procurement_file)
+    if len(agreement_file) > 0: # If agreement file was added
+        agreement_content = extractor.convert2markdown(agreement_file)
+        procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
+        with open("tmp3.md", 'w', encoding='utf-8') as fout:
+            print(procurement_content,file=fout)
+
+    return procurement_content
