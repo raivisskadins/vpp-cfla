@@ -3,6 +3,7 @@ import os
 import json
 import yaml
 import urllib.parse
+import configparser
 from pathlib import Path
 from llama_index.readers.web import ReadabilityWebPageReader
 from llama_index.core import Document
@@ -259,6 +260,24 @@ def get_answers(answer_file_path):
         print(f"Error parsing YAML file: {e}")
         exit
     return answer_dictonary
+
+def get_config_data(configfile, procurement_file_dir, answer_file_dir):
+    config = configparser.ConfigParser()
+    config.read(configfile)
+    # EIS_URL = config.get('Procurement', 'EIS_URL')
+    procurement_id = config.get('Procurement', 'procurement_id')
+    procurement_file_name = config.get('Procurement', 'procurement_file_name')
+    answer_file_name = config.get('Procurement', 'answer_file_name')
+    procurement_file = str(procurement_file_dir / procurement_file_name)
+    answer_file = str(answer_file_dir / answer_file_name)
+
+    if 'agreement_file' in config['Procurement']:
+        agreement_file_name = (config.get('Procurement', 'agreement_file_name'))
+        agreement_file = str(procurement_file_dir / agreement_file_name)
+    else:
+        agreement_file = ''
+
+    return procurement_id, procurement_file, agreement_file, answer_file
 
 def get_procurement_content(extractor, procurement_file, agreement_file):
     procurement_content = extractor.convert2markdown(procurement_file)

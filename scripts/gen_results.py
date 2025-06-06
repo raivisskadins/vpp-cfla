@@ -82,7 +82,7 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answe
                         results_table.append(ask_question_save_answer(qnaengine,
                                                                     embedding_conf,
                                                                     promptdict[str(listq['nr'])] + extrainfo, 
-                                                                    listq['question'], # TODO
+                                                                    listq['question'],
                                                                     str(listq['nr']), 
                                                                     lista['answer']))
                         if results_table[-1][1] != results_table[-1][2]:
