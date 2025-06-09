@@ -220,7 +220,7 @@ class QnAEngine:
 
         print(f"{len(nodes)} segments created and vectorized.")
         return nodes    
-                
+    # TODO would be good if all functions had the same case snake or camel case for consitency             
     async def createIndex(self,file_content,filetype,chunk_size=1024,chunk_overlap=0):
         try:
             self.alltext = file_content
@@ -230,9 +230,11 @@ class QnAEngine:
                 for node in nodes:
                     print(f"ChunkNr:{node.metadata['ChunkNr']}\n{node.text}", file = ofile)
             self.newindex = VectorStoreIndex(nodes, show_progress=False, use_async=True, storage_context=self.storage_context, embed_model=self.embeddingobject)
+            print("Index is ready.")
             return True
             
         except Exception as error:
+            print("**Failed to create index!**")
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return False
 
