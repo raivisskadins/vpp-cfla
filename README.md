@@ -1,13 +1,12 @@
 # vpp-cfla
+https://www.python.org/downloads/  
+install python 3.10  
 
-https://www.python.org/downloads/
+start jupyterlab with the command:  
+jupyter lab   
+ 
+## Virutal env
 
-install python 3.10
-
-pip install jupyterlab
-
-pip install -r requirements.txt
-
-start jupyterlab with the command:
-
-jupyter lab
+python3 -m venv .venv  
+source .venv/bin/activate  
+pip install -r requirements.txt  
