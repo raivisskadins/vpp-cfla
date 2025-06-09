@@ -176,12 +176,18 @@ class QnAEngine:
             if len(doc.text)>0:
 
                 doc.extra_info['FileType']=filetype   
-                cur_text_chunks = node_parser.split_text(doc.text)
+                currtext = doc.text.replace(r'\\n',r'\n')
+                cur_text_chunks = node_parser.split_text(currtext)
                      
                 for idx,chunk in enumerate(cur_text_chunks):
                     alltexts.append(chunk)
                     node = TextNode(text=chunk, metadata=doc.metadata)                        
                     node.metadata['ChunkNr']=str(n)
+
+                    if n>0 and nodes[-1].metadata.get('H1','')==node.metadata.get('H1','') and nodes[-1].metadata.get('H2','')==node.metadata.get('H2','') and nodes[-1].metadata.get('H3','')==node.metadata.get('H3',''):
+                        node.metadata['PrevNodeTxt']=nodes[-1].text
+                        nodes[-1].metadata['NextNodeTxt']=chunk
+                        
                     if 'excerpt' in node.metadata:
                         node.metadata.pop('excerpt')
                     n = n + 1 
@@ -214,7 +220,7 @@ class QnAEngine:
 
         print(f"{len(nodes)} segments created and vectorized.")
         return nodes    
-                
+    # TODO would be good if all functions had the same case snake or camel case for consitency             
     async def createIndex(self,file_content,filetype,chunk_size=1024,chunk_overlap=0):
         try:
             self.alltext = file_content
@@ -224,9 +230,11 @@ class QnAEngine:
                 for node in nodes:
                     print(f"ChunkNr:{node.metadata['ChunkNr']}\n{node.text}", file = ofile)
             self.newindex = VectorStoreIndex(nodes, show_progress=False, use_async=True, storage_context=self.storage_context, embed_model=self.embeddingobject)
+            print("Index is ready.")
             return True
             
         except Exception as error:
+            print("**Failed to create index!**")
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
             return False
 
@@ -245,7 +253,7 @@ class QnAEngine:
         self.compressed_txt[prompt] = newprompt
         return newprompt
         
-    def askQuestion(self,query_prompt,q,usecontext=True,n=4,n4rerank=0):
+    def askQuestion(self,query_prompt,q,usecontext=True,n=4,n4rerank=0,prevnext=False):
 
         if (query_prompt,q) in self.chached_responses:
             return self.chached_responses[(query_prompt,q)]
@@ -258,10 +266,11 @@ class QnAEngine:
                 n4rerank=0
             try: 
                 if n4rerank > 0:
-                    nodelist = self.getRerankedNodes(q,n4rerank, n) #[.., .., ..]
+                    nodelist = self.getRerankedNodes(q,n4rerank, n,prevnext) #[.., .., ..]
              
                 else:
-                    nodedict = self.getSimilarNodes(q,n) #{"text":texts, "score":scores, "metadata":metadata}
+                    nodedict = self.getSimilarNodes(q,n,prevnext) #{"text":texts, "score":scores, "metadata":metadata}
+                                     
                     nodelist = [fragment for fragment in nodedict['text']] #[.., .., ..]
                     
                 newquery = PromptTemplate(query_prompt+'\n'+text_qa_template_str).format(context_str = '\n'.join(nodelist), query_str = q)
@@ -301,10 +310,11 @@ class QnAEngine:
                 print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
                 return ''
 
-    def getRerankedNodes(self,q,n4rerank, n):
+    def getRerankedNodes(self,q,n4rerank, n, prevnext=False):
 
         similarnodes = self.getSimilarNodes(q,n4rerank) #{"text":texts, "score":scores, "metadata":metadata}
-        to_rerank = [[q, fragment] for fragment in similarnodes['text']]
+
+        to_rerank = [[q, fragment] for fragment in similarnodes['text']]                                 
 
         scores = self.reranker.compute_score(to_rerank, normalize=True) #higher scores are better
 
@@ -314,32 +324,55 @@ class QnAEngine:
         return topnodes
         
     
-    def getSimilarNodes(self,q,n=4):
+    def getSimilarNodes(self,q,n=4,prevnext=False):
 
         numitemsinidx=self.newindex.vector_store.client.ntotal
         
         if numitemsinidx < n:              
             n=numitemsinidx
-        if True:
+        try:
             retriever = self.newindex.as_retriever(similarity_top_k=n)   
             retrieved_nodes = retriever.retrieve(q)
             #result = []
             texts = []
             scores = []
             metadata = []
-            
+
             for item in  retrieved_nodes:
                 tmpdict={keys:values for keys, values in item.metadata.items() if values is not None}
-                texts.append(item.get_content().replace(r'\\n',r'\n'))
-                scores.append(item.get_score())
-                metadata.append(tmpdict)
+
+                if prevnext==True:
+                    if 'PrevNodeTxt' in tmpdict and tmpdict['PrevNodeTxt'] not in texts:
+                        texts.append(tmpdict['PrevNodeTxt'])
+                        scores.append(item.get_score()) #use same score as for the next chunk
+                        newtmpdict = tmpdict.copy()
+                        newtmpdict.pop('NextNodeTxt', None)
+                        newtmpdict.pop('PrevNodeTxt', None)
+                        newtmpdict['ChunkNr'] = str(int(tmpdict['ChunkNr'])-1)
+                        metadata.append(newtmpdict)
+
+                if item.get_content() not in texts:
+                    texts.append(item.get_content())
+                    scores.append(item.get_score())
+                    metadata.append(tmpdict)
+
+                if prevnext==True:
+                    if 'NextNodeTxt' in tmpdict and tmpdict['NextNodeTxt'] not in texts:
+                        texts.append(tmpdict['NextNodeTxt'])
+                        scores.append(item.get_score()) #use same score as for the previouse chunk
+                        newtmpdict = tmpdict.copy()
+                        newtmpdict.pop('NextNodeTxt', None)
+                        newtmpdict.pop('PrevNodeTxt', None)
+                        newtmpdict['ChunkNr'] = str(int(tmpdict['ChunkNr'])+1)
+                        metadata.append(newtmpdict)
+                                     
                 #result.append({"text": item.get_content(), "score": str(item.get_score()), "metadata": tmpdict})
                 
             return ({"text":texts, "score":scores, "metadata":metadata})
             
-        #except Exception as error:
-        #    print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
-        #    return []   
+        except Exception as error:
+            print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
+            return []   
 
         
     
