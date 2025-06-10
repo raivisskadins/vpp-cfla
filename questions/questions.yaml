@@ -22,8 +22,8 @@
    - chapter: 196
 - nr: 5
   question: "Iepirkumam atbilstoši būvdarbu, preču grupu un pakalpojumu kategorijām ir piešķirts CPV kods un tas pēc būtības atbilst iepirkuma priekšmetam un tas ir norādīts Elektronisko iepirkumu sistēmā (EIS) E-konkursu apakšsistēmā, paziņojumā par plānoto līgumu un pārējā iepirkuma dokumentācijā pēc būtības atbilst iepirkuma priekšmeta saturam"
-- check: "IUB, EIS"
-  nr: 6
+  check: "IUB, EIS"
+- nr: 6
   question0: "Vai iepirkuma līguma priekšmets satur vairākus no šādiem iepirkuma veidiem - būvdarbu, piegādes vai pakalpojuma iepirkumi?"
   question: "Iepirkuma līguma priekšmets ir klasificēts atbilstoši tam līguma veidam, kurš ir attiecīgā iepirkuma līguma galvenais priekšmets"
 - nr: 7
@@ -33,8 +33,8 @@
    - appendix: 2
 - nr: 8
   question: "Vienlaicīgi ar procedūras izsludināšanas dienu (diena, kad paziņojums par iepirkumu publicēts IUB tīmekļvietnē) pasūtītājs ir nodrošinājis pircēja profilā EIS E-konkursu apakšsistēmā brīvu un tiešu elektronisku piekļuvi iepirkuma procedūras dokumentācijai"
-- check: "IUB, EIS" 
-  nr: 9
+  check: "IUB, EIS" 
+- nr: 9
   question0: "Vai iepirkuma līgums tiek slēgts par veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas CPV kodi 75121000-0, 75122000-7, 75123000-4, 79622000-0, 79624000-4, 79625000-1, 80110000-8, 80300000-7, 80420000-4, 80430000-7, 80511000-9, 80520000-5, 80590000-6, no 85000000-9 līdz 85323000-9, 92500000-6, 92600000-7, 98133000-4, 98133110-8?"
   questions:
   - nr: 9.1
@@ -57,17 +57,17 @@
   question: "Pasūtītājs ir nodrošinājis iespēju piegādātājiem iepazīties uz vietas ar iepirkuma papildu dokumentiem, kam tehnisku iemeslu dēļ vai tajos iekļautās informācijas vai komerciālu interešu aizsardzības dēļ nav nodrošināma brīva un tieša elektroniska piekļuve, sākot ar attiecīgā iepirkuma izsludināšanas brīdi"
 - nr: 11
   question: "IUB tīmekļa vietnē ir publicēts paziņojums par izmaiņām vai papildu informācija (t.sk., ja grozījumi nosaukti par precizējumiem, tomēr pēc būtības groza nolikuma saturu)"
-- check: "IUB"
-  nr: 12
+  check: "IUB"
+- nr: 12
   question: "Grozījumi un grozītie iepirkuma procedūras dokumenti ir pieejami elektroniski pircēja profilā EIS E-konkursu apakšsistēmā ne vēlāk kā dienu pēc tam, kad paziņojums par izmaiņām vai papildu informāciju iesniegts IUB publicēšanai"
-- check: "EIS"
-  nr: 13
+  check: "EIS"
+- nr: 13
   question0: "Vai pasūtītājs ir veicis izmaiņas/precizējumus iepirkuma dokumentācijā vai sniedzis atbildes uz jautājumiem?"
   question: "Veiktās izmaiņas/precizējumi vai sniegtās atbildes ir vērtējamas tikai kā iepirkuma dokumentācijas precizējumi vai skaidrojumi par iepirkuma dokumentāciju (t.i., pēc būtības negroza iepirkuma dokumentācijā noteiktās prasības)"
-- check: "EIS"
+  check: "EIS"
 - nr: 14
   question: "Veiktie grozījumi būtiski nemaina kvalifikācijas vai citas iepriekš izvirzītās prasības, nemaina iepirkuma priekšmetu vai būtisku daļu no tā (t.i., netiek veikti grozījumi, kas varētu mainīt ieinteresēto piegādātāju loku tādējādi, ka iepirkumā varētu piedalīties piegādātāji pavisam no cita tirgus segmenta (jomas/nozares))"
-- check: "other"
+  check: "other"
   PIL:
    - chapter: 35
      pt:
@@ -227,8 +227,8 @@
   questions:
   - nr: 37.1
     question: "Iepirkuma priekšmeta apraksts atbilst SAM MK noteikumu prasībām"
-  - check: "SAMMKN"
-    nr: 37.2
+    check: "SAMMKN"
+  - nr: 37.2
     question0: "Vai projekta iesniegumā ir plānoti zaļā publiskā iepirkuma kritēriji un par to piemērošanu piešķirti  punkti?"
     question: "Iepirkuma nolikumā vai tehniskajā specifikācijā iepirkuma priekšmetam piemēroti zaļā publiskā iepirkuma kritēriji"
   - nr: 37.3
@@ -255,8 +255,8 @@
     question: "Pasūtītājs nav uzlicis par pienākumu pretendentam iekļaut piedāvājumā finanšu rezervi konkrētā apmērā, kuras izmantošana nav iepriekš detalizēti noregulēta"
   - nr: 37.8
     question: "Pasūtītājs iepirkuma priekšmetam ir izvirzījis tikai tādas prasības, kas ir nepieciešamas līguma izpildei"
-  - check: "other"
-    nr: 37.9
+    check: "other"
+  - nr: 37.9
     question0: "Vai ir paredzēta iespēja iesniegt piedāvājumu variantus?"
     question: "Vai pasūtītājs iepirkuma procedūras dokumentos ir noteicis minimālās prasības attiecībā uz variantiem un specifiskās prasības variantu iesniegšanai"
     PIL:
@@ -285,8 +285,8 @@
      - chapter: 19
   - nr: 37.12
     question: "Pasūtītājs nav noteicis, ka piedāvājuma sastāvā jābūt iekļautam konkrētajam iepirkumam sagatavotam darbam, kas ir autortiesību objekts vai uzskatāms par daļēju pakalpojuma izpildi (piemēram, nav prasīts iesniegt vizualizāciju/metu)"
-  - check: "other"
-    nr: 37.13
+    check: "other"
+  - nr: 37.13
     question: "Iepirkuma dokumentācijā pasūtītājs nav noteicis konkrētu piegādātāja peļņas vai virsizdevumu procentu likmi. Konkrētu  cenu  veidojošo  faktoru  ierobežojums  varētu  tikt  atzīts  par  pamatotu izņēmuma gadījumos, piemēram, ja Ministru kabineta noteikumi par attiecīgo darbības programmas specifisko atbalsta mērķi uzliek šādu ierobežojumu attiecībā uz izdevumu attiecināšanu noteiktā apmērā."
 - nr: 38
   questions:
@@ -576,8 +576,8 @@
   question: "Vai iepirkuma procedūras dokumentos ir norādīts izšķirošais piedāvājuma izvēles kritērijs, atbilstoši kuram pasūtītājs izvēlēsies piedāvājumu, ja pirms tam, kad tiks pieņemts lēmums par iepirkuma līguma slēgšanas tiesību piešķiršanu, tiks konstatēts, ka vismaz divu piedāvājumu novērtējums ir vienāds?"
 - nr: 49
   question: "Nav citi konstatējumi saistībā ar piedāvājuma izvērtēšanas kritērija neatbilstību"
-- check: "other"
-  nr: 50
+  check: "other"
+- nr: 50
   question0: "Vai tiek vērtētas aprites cikla izmaksas?"
   question: "Iepirkuma procedūras dokumentos ir norādīta aprites cikla izmaksu aprēķina metodika un aprēķina veikšanai nepieciešamie dati, ko iesniegs pretendenti"
 - nr: 51
@@ -592,8 +592,8 @@
   - nr: 51.3
     question0: "Vai iepirkumu veic tiešās pārvaldes iestāde?"
     question: "Iepirkuma līguma projektā ir paredzēts nosacījums, ka tad, ja piegādātājs vai - ja pasūtītājs ir paredzējis tiešos maksājumus apakšuzņēmējiem saskaņā ar PIL 63.panta piekto daļu - apakšuzņēmējs iesniedz elektronisko rēķinu, tas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību"
-  - check: "other"
-    nr: 51.4
+    check: "other"
+  - nr: 51.4
     question: "Iepirkuma līguma projektā nav ietverta pretrunīga informācija"
 - nr: 52
   question: "Iepirkuma līguma projektā noteiktais līguma izpildes/ spēkā esamības termiņš nepārsniedz piecus gadus"
@@ -630,8 +630,8 @@
    - chapter: 2
 - nr: 59
   question: "Paziņojumā par līgumu elektroniskajā informācijas sistēmā un nolikumā ietvertā informācija ir savstarpēji saskaņota (piemēram, vai piedāvājumu iesniegšanas datums, piedāvājumu derīguma termiņš ir noteikts vienāds; ja nolikumā ir izvirzītas noteiktas prasības, vai nolikuma pielikumos ietvertajā dokumentācijā – veidnēs/ formās/ CV veidnēs u.tml., kuras pretendentam jāiesniedz kopā ar piedāvājumu, ietvertās prasības atbilst nolikumā izvirzītajām prasībām)"
-- check: "EIS, IUB"
-  nr: 60
+  check: "EIS, IUB"
+- nr: 60
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
   question: "Pasūtītājs ir ievērojis PIL paredzētās iepirkuma procedūras visās stadijās līdz pat līgumu noslēgšanai vispārīgās vienošanās ietvaros"
   PIL:
