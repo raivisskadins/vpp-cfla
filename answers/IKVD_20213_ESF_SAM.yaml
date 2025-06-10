@@ -15,6 +15,7 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 7 # Nebija dok.
+  answer0: "?"
   answer: "?"
 - nr: 8
   answer: "jā"
@@ -46,6 +47,7 @@
   answer0: "jā"
   answer: "jā"
 - nr: 18
+  answer0: "?"
   answer: "?"
 - nr: 19
   answer0: "jā"
