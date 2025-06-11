@@ -16,6 +16,10 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answe
               )
         
         for singleq, singlea in zip(question_dictonary,answer_dictonary):
+            
+            if 'check' in singleq:
+                continue
+                
             print(singleq['nr'],end=' ')
             bcontinue = True
             extrainfo = get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapters)    
@@ -31,6 +35,7 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answe
                 results_table.append(result0)
                 if results_table[-1][1] != results_table[-1][2]:
                     nodes = qnaengine.getSimilarNodes(singleq['question0'],embedding_conf["top_similar"])
+                    print(nodes)
                     print(f"\nQ: {singleq['nr']}-0\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}",file=ofile) 
         
                 if result0[1] == 'nē':

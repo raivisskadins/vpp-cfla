@@ -171,7 +171,7 @@ class QnAEngine:
         
         for doc in documents:
                     
-            doc.text=doc.text.strip()
+            #doc.text=doc.text.strip()
 
             if len(doc.text)>0:
 
