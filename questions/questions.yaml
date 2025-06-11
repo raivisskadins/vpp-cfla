@@ -91,11 +91,11 @@
   question: "Pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā (bet ne vēlāk kā sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām)"
 - nr: 20
   question: "Pasūtītājs ir izvērtējis piegādātāju uzdotos jautājumus un ir atbildējis uz visiem uzdotajiem jautājumiem konkrēti un pēc būtības"
-- other: "EIS"
-  nr: 21
+  check: "EIS"
+- nr: 21
   question: "Papildu informācija tika nosūtīta piegādātājam, kas uzdeva jautājumu, un šī informācija tika ievietota pircēja profilā EIS E-konkursu apakšsistēmā, kurā ir pieejami iepirkuma procedūras dokumenti, norādot arī uzdoto jautājumu"
-- other: "EIS"
-  nr: 22
+  check: "EIS"
+- nr: 22
   question0: "Vai tiek noteikta pretendentu/ kandidātu informēšana par rezultātiem?"
   question: "Pretendentu/ kandidātu informēšana par rezultātiem ir noteikta atbilstoši PIL 37. panta regulējumam"
   PIL:
@@ -111,6 +111,7 @@
 - nr: 25
   question0: "Vai Nolikumā ir norādīts identifikācijas numurs?"
   question: "Nolikumā norādītais identifikācijas numurs ir tāds pats kā publikācijā IUB tīmekļa vietnē"
+  check: "IUB"
 - nr: 26
   question: "Vai ir pareizi norādīts pasūtītāja nosaukums, adrese un rekvizīti (ja nepieciešams)?"
 - nr: 27
@@ -122,8 +123,8 @@
 - nr: 30
   question0: "Konkurss var būt slēgts vai atklāts. Vai šis konkurss ir slēgts?"
   question: "Slēgtā konkursā piedāvājumu iesniegšanas termiņš, kā arī konkursa procedūrā ar sarunām sākotnējo piedāvājumu iesniegšanas termiņš ir vismaz 20 dienas pēc dienas, kad kandidātiem nosūtīts uzaicinājums iesniegt piedāvājumus"
-- other: "EIS"
-  nr: 31
+  check: "EIS"
+- nr: 31
   question0: "Vai tiesa, ka konkursa procedūra ir vai nu konkursa procedūras ar sarunām vai konkursa dialogs, bet nav slēgts vai atklāts konkurss?"
   question: "Piedāvājumi tiek atvērti pēc to iesniegšanas termiņa beigām"
 - nr: 32
