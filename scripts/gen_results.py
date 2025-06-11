@@ -18,6 +18,10 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answe
               )
         
         for singleq, singlea in zip(question_dictonary,answer_dictonary):
+            
+            if 'check' in singleq:
+                continue
+                
             print(singleq['nr'],end=' ')
             bcontinue = True
             extrainfo = get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapters)    

@@ -271,7 +271,7 @@ def get_config_data(configfile, procurement_file_dir, answer_file_dir):
     procurement_file = str(procurement_file_dir / procurement_file_name)
     answer_file = str(answer_file_dir / answer_file_name)
 
-    if 'agreement_file' in config['Procurement']:
+    if 'agreement_file_name' in config['Procurement']:
         agreement_file_name = (config.get('Procurement', 'agreement_file_name'))
         agreement_file = str(procurement_file_dir / agreement_file_name)
     else:
