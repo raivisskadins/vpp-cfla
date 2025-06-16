@@ -36,6 +36,7 @@
 - nr: 12
   answer: "n/a"
 - nr: 13
+  answer0: "?"
   answer: "?" # šāds jautājums nav dokumentā
 - nr: 14
   answer: "n/a"
@@ -296,8 +297,10 @@
 - nr: 41
   answer: "?" # Nebija šie jautājumi
 - nr: 42
+  answer0: "?"
   answer: "?"
 - nr: 43
+  answer0: "?"
   answer: "?"
 - nr: 44
   answer0: "jā"
@@ -323,6 +326,7 @@
   - nr: 51.2
     answer: "?"
   - nr: 51.3
+    answer0: "?"
     answer: "?"
   - nr: 51.4
     answer: "?"
