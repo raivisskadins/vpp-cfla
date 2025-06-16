@@ -1,7 +1,5 @@
 from .utilities import ask_question_save_answer, get_extra_info, get_supplementary_info
 
-
-
 # TODO refactor this function so it's more readable
 def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answer_dictonary, promptdict):
     results_table = []
