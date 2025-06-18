@@ -1,0 +1,2266 @@
+Iepirkuma ID,Nr,Atbilde,Sagaidāmā atbilde,Pamatojums
+APP DI 2020/2/ERAF_AK,2-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkums tiek veikts kā atklāts konkurss: 'Atklāts konkurss “Būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve” (identifikācijas Nr. APP DI 2020/2/ERAF_AK) (turpmāk – Konkurss) tiek veikts saskaņā ar Publisko iepirkumu likumu.' Nav minēts, ka tiktu piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra.""
+}
+```"
+APP DI 2020/2/ERAF_AK,2,n/a,n/a,
+APP DI 2020/2/ERAF_AK,4-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka 'Iepirkuma priekšmets nav sadalīts daļās. Pretendentam piedāvājums ir jāiesniedz par visu apjomu. Iepirkuma līgums tiks slēgts ar vienu piegādātāju.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,4,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai. Lai atbildētu uz šo jautājumu, būtu nepieciešams konkrēts fragments no iepirkuma dokumentiem, kurā šāds skaidrojums ir sniegts, kā arī izvērtējums par tā objektivitāti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,6-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma līguma priekšmets ietver būvprojekta izstrādi (pakalpojums), autoruzraudzību (pakalpojums) un siltumnīcu kompleksa ar palīgtelpām pārbūvi (būvdarbi). Tādējādi iepirkuma līguma priekšmets aptver gan būvdarbu, gan pakalpojumu iepirkumus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma priekšmets ir būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve. Galvenais priekšmets ir klasificēts ar CPV kodu 45000000-7 – celtniecības darbi, kas atbilst iepirkuma līguma veidam. Papildus priekšmeti ir klasificēti ar CPV kodiem 71000000-8 un 71248000-8, kas attiecas uz arhitektūras, būvniecības, inženiertehniskajiem un pārbaudes pakalpojumiem, kā arī projekta un dokumentācijas uzraudzību.""
+}
+```"
+APP DI 2020/2/ERAF_AK,7-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līguma priekšmets ietver būvprojekta izstrādi, autoruzraudzību un siltumnīcu kompleksa pārbūvi, kas atbilst PIL 2. pielikuma 1. punktā minētajiem pakalpojumiem, piemēram, 'veselības, sociālie un saistītie pakalpojumi' (CPV kodi no 85000000-9 līdz 85323000-9). Turklāt, līguma priekšmets ietver arī būvniecības darbus, kas nav tieši minēti PIL 2. pielikumā, tādējādi ietverot gan minētos pakalpojumus, gan citus pakalpojumus un darbus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,7,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Publisko iepirkumu likuma (PIL) noteikumi paredz, ka galvenais priekšmets un piemērojamā iepirkuma procedūra tiek noteikta pēc tā, kuru pakalpojumu vai piegāžu paredzamā līgumcena ir visaugstākā. Šis princips ir piemērojams, lai noteiktu iepirkuma priekšmeta klasifikāciju un attiecīgi piemērojamo procedūru.""
+}
+```"
+APP DI 2020/2/ERAF_AK,9-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka iepirkuma priekšmets ir būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve. CPV kodi, kas attiecas uz šo iepirkumu, ir 45000000-7, 71000000-8 un 71248000-8, kas saistīti ar celtniecības darbiem un arhitektūras, būvniecības, inženiertehniskajiem un pārbaudes pakalpojumiem. Tie neatbilst lietotāja minētajiem CPV kodiem, kas attiecas uz veselības, sociālās un kultūras jomas pakalpojumiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,9.1,n/a,n/a,
+APP DI 2020/2/ERAF_AK,9.2,n/a,n/a,
+APP DI 2020/2/ERAF_AK,9.3,n/a,n/a,
+APP DI 2020/2/ERAF_AK,10,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājumi jāiesniedz Elektronisko iepirkumu sistēmas e-konkursu apakšsistēmā, un nav minēts, ka papildu dokumentiem nav nodrošināta brīva un tieša elektroniska piekļuve. Turklāt kontekstā nav informācijas par iespēju iepazīties ar dokumentiem uz vietas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,15,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājums jāiesniedz Elektronisko iepirkumu sistēmas e-konkursu apakšsistēmā, kas ir pieejama tiešsaistē (<https://www.eis.gov.lv/EKEIS/Procurement/Edit/33462>). Turklāt sistēma nodrošina piedāvājumu pirmā līmeņa šifrēšanu, un pretendenti var izmantot papildu šifrēšanu, kas liecina par drošu un pieejamu informācijas apmaiņas veidu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,16,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā un likuma izvilkumos nav minēts MK noteikumu 231. punkts vai kādi konkrēti gadījumi, kad pasūtītājam nav pienākuma izmantot elektroniskās informācijas sistēmas. Likuma 39. pants nosaka, ka pasūtītājs iepirkumos paredz elektronisku pieteikumu un piedāvājumu iesniegšanu, izņemot Ministru kabineta noteiktos gadījumus, taču konkrēti MK noteikumi vai to punkti nav norādīti. Kontekstā arī nav atsauces uz MK noteikumu 231. punktu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,17-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikuma 1.1. punktā ir skaidri norādīts, ka piedāvājums jāiesniedz Elektronisko iepirkumu sistēmas e-konkursu apakšsistēmā. Turklāt 1.1.3. punktā ir precizēts, ka iesniedzamos dokumentus pretendents ir tiesīgs iesniegt elektroniskā formā, gan parakstot ar Elektronisko iepirkumu sistēmas piedāvāto elektronisko parakstu, gan parakstot ar drošu elektronisko parakstu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,17,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka piedāvājums jāiesniedz Elektronisko iepirkumu sistēmas e-konkursu apakšsistēmā, un piedāvājumi, kas iesniegti ārpus šīs sistēmas, tiek atzīti par neatbilstošiem un netiek izskatīti. Nav prasības iesniegt rakstveida piedāvājumu papildus elektroniskajam piedāvājumam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,18-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka būtu noteikta maksa par iepirkuma dokumentācijas izsniegšanu. Turklāt ir norādīts, ka iepirkuma dokumentācija ir pieejama Elektronisko iepirkumu sistēmas e-konkursu apakšsistēmā, kas liecina, ka dokumentācija ir pieejama bez maksas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,18,n/a,n/a,
+APP DI 2020/2/ERAF_AK,19-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka, ja ieinteresētais piegādātājs ir laikus pieprasījis papildu informāciju, iepirkuma komisija to sniedz 5 (piecu) darba dienu laikā, bet ne vēlāk kā 6 (sešas) dienas pirms piedāvājumu iesniegšanas termiņa beigām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,19,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai Pasūtītājs (Iepirkumu komisija) sniedz papildu informāciju par iepirkumu dokumentos iekļautajām prasībām 5 darbdienu laikā vai sešas dienas pirms piedāvājumu iesniegšanas termiņa beigām. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta atsauce uz šādu prasību vai noteikumu iepirkuma nolikumā vai citos saistītos dokumentos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,22-0,jā,?,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar Publisko iepirkumu likuma 37. pantu, pasūtītājam ir pienākums triju darbdienu laikā pēc lēmuma pieņemšanas vienlaikus informēt visus kandidātus vai pretendentus par pieņemto lēmumu attiecībā uz kandidātu atlases rezultātiem, iepirkuma līguma slēgšanu vai iepirkuma procedūras izbeigšanu. Informācija tiek nosūtīta pa pastu, faksu vai elektroniski, un pasūtītājam ir jānodrošina pierādījumi par informācijas nosūtīšanas datumu un veidu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,22,jā,?,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""PIL 37. pants detalizēti nosaka kārtību, kādā pasūtītājs informē kandidātus un pretendentus par iepirkuma rezultātiem, un kontekstā ir norādīts, ka iepirkums tiek veikts saskaņā ar Publisko iepirkumu likumu. Tādējādi var secināt, ka pretendentu/kandidātu informēšana par rezultātiem ir noteikta atbilstoši PIL 37. panta regulējumam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,23-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta ieinteresēto piegādātāju sanāksme vai tās organizēšana. Visi norādījumi par iepirkuma procedūru, kontaktpersonām un objekta apsekošanu ir detalizēti aprakstīti, bet sanāksme nav pieminēta.""
+}
+```"
+APP DI 2020/2/ERAF_AK,23,n/a,n/a,
+APP DI 2020/2/ERAF_AK,24-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> 68. panta pirmo daļu, personai, kura ir vai ir bijusi ieinteresēta iegūt tiesības noslēgt iepirkuma līgumu vai vispārīgo vienošanos, ir tiesības iesniegt iesniegumu par kandidātu vai pretendentu atlases noteikumiem, tehniskajām specifikācijām un citām prasībām, kas attiecas uz konkrēto iepirkuma procedūru, vai par pasūtītāja vai iepirkuma komisijas darbību iepirkuma procedūras laikā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,24,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Publisko iepirkumu likuma (PIL) 68. pants nosaka, ka persona, kura ir vai ir bijusi ieinteresēta iegūt tiesības noslēgt iepirkuma līgumu un uzskata, ka tās tiesības ir aizskartas vai var tikt aizskartas, ir tiesīga iesniegt iesniegumu par iepirkuma procedūras pārkāpumiem. Kontekstā ir norādīts, ka pretendenti ir piegādātāji, kuri iesniedz piedāvājumus atbilstoši konkursa nolikuma noteikumiem, un šīs nodaļas prasības ir obligātas visiem kandidātiem, kas vēlas iegūt līguma slēgšanas tiesības. Tādējādi pretendenti atbilst PIL 68. pantā noteiktajām tiesībām iesniegt iesniegumu Iepirkumu uzraudzības birojam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,26,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts pasūtītāja nosaukums, reģistrācijas numurs un adrese. Pasūtītājs ir APP 'Dārzkopības institūts', reģistrācijas numurs 90002127692, un adrese ir Graudu iela 1, Ceriņi, Krimūnu pagasts, Dobeles novads."",
+  ""name"": ""APP 'Dārzkopības institūts'"",
+  ""address"": ""Graudu iela 1, Ceriņi, Krimūnu pagasts, Dobeles novads"",
+  ""requisites"": ""Reģistrācijas numurs: 90002127692""
+}
+```"
+APP DI 2020/2/ERAF_AK,27,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīta piedāvājuma iesniegšanas vieta (Elektronisko iepirkumu sistēmas e-konkursu apakšsistēma), datums un laiks (2020. gada 27. marts, plkst. 13:00), kā arī piedāvājuma atvēršanas kārtība (tūlīt pēc iesniegšanas termiņa beigām, ar iespēju sekot līdzi tiešsaistē vai klātienē)."",
+  ""place"": ""Elektronisko iepirkumu sistēmas e-konkursu apakšsistēma <https://www.eis.gov.lv/EKEIS/Procurement/Edit/33462>"",
+  ""date_time"": ""2020-03-27T13:00:00"",
+  ""order"": ""Piedāvājumi tiek atvērti tūlīt pēc iesniegšanas termiņa beigām. Procesam var sekot tiešsaistē EIS e-konkursu apakšsistēmā vai klātienē, iepriekš piesakoties pie kontaktpersonas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,28,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts līguma izpildes termiņš un vieta. Līguma izpildes termiņš ir 13 mēneši no līguma noslēgšanas dienas, un izpildes vieta ir Graudu iela 1, Ceriņi, Krimūnu pagasts, Dobeles novads, LV-3701."",
+  ""time"": ""13 mēneši no līguma noslēgšanas dienas"",
+  ""place"": ""Graudu iela 1, Ceriņi, Krimūnu pagasts, Dobeles novads, LV-3701""
+}
+```"
+APP DI 2020/2/ERAF_AK,29,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts piedāvājumu iesniegšanas termiņš (2020. gada 27. marts plkst. 13:00), taču nav sniegta informācija par to, vai šis termiņš sakrīt ar paziņojumā par līgumu norādīto termiņu. Lai atbildētu uz šo jautājumu, būtu nepieciešams piekļūt paziņojumam par līgumu un salīdzināt termiņus."",
+  ""procurement_type"": ""atklāts konkurss""
+}
+```"
+APP DI 2020/2/ERAF_AK,31-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā skaidri norādīts, ka iepirkuma procedūra ir atklāts konkurss. Piemēram, kontekstā teikts: 'Atklāts konkurss “Būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve” (identifikācijas Nr. APP DI 2020/2/ERAF_AK)'.""
+}
+```"
+APP DI 2020/2/ERAF_AK,31,n/a,n/a,
+APP DI 2020/2/ERAF_AK,32-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkums tiek veikts atklāta konkursa veidā: 'Atklāts konkurss “Būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve” (identifikācijas Nr. APP DI 2020/2/ERAF_AK)'. Nav minētas citas procedūras, piemēram, konkursa dialogs vai procedūra ar sarunām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,32,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Piedāvājumu atvēršanas process notiek tiešsaistes režīmā EIS e-konkursu apakšsistēmā, un, ja pretendents vēlas piedalīties klātienē, tas ir jāpiesaka iepriekš. Tomēr piedāvājumu vērtēšana notiek slēgtās sēdēs, kas norāda, ka piedāvājumu atvēršanas sanāksme nav pilnībā atklāta."",
+  ""procurement_type"": ""atklāts konkurss""
+}
+```"
+APP DI 2020/2/ERAF_AK,33-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkums tiek veikts atklāta konkursa veidā. Piemēram, kontekstā teikts: 'Atklāts konkurss “Būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve”'.""
+}
+```"
+APP DI 2020/2/ERAF_AK,33,n/a,n/a,
+APP DI 2020/2/ERAF_AK,34-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkums tiek veikts kā atklāts konkurss. Piemēram, kontekstā teikts: 'Atklāts konkurss “Būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve” (identifikācijas Nr. APP DI 2020/2/ERAF_AK)'. Nav minēts, ka tiktu piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs.""
+}
+```"
+APP DI 2020/2/ERAF_AK,34,n/a,n/a,
+APP DI 2020/2/ERAF_AK,35-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikuma 4. un 5. punktā ir norādīts, ka piedāvājuma nodrošinājums EUR 7500,00 apmērā jāiesniedz bankas garantijas vai apdrošināšanas polises veidā. Turklāt 9.10. un 9.11. punktos ir minēts, ka saistību izpildes nodrošinājums (līguma izpildes garantija) 5% apmērā no iepirkuma līgumcenas un garantijas laika garantija ir jānodrošina, ja pretendentam tiks piešķirtas līguma slēgšanas tiesības.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.1,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts piedāvājuma nodrošinājuma apmērs (EUR 7500,00), taču nav sniegta informācija par paredzamo līgumcenu (bez PVN), kas nepieciešama, lai aprēķinātu, vai piedāvājuma nodrošinājums nepārsniedz 2% no tās. Lai atbildētu uz jautājumu, būtu nepieciešama informācija par paredzamo līgumcenu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.2-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts: 'Iepirkuma priekšmets nav sadalīts daļās. Pretendentam piedāvājums ir jāiesniedz par visu apjomu.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.2,n/a,nē,
+APP DI 2020/2/ERAF_AK,35.3,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka piedāvājuma nodrošinājumu un saistību izpildes nodrošinājumu var iesniegt tikai noteiktos veidos. Piedāvājuma nodrošinājumu var iesniegt kā bankas garantiju vai apdrošināšanas polisi (kopā ar maksājuma dokumentu, kas apliecina apmaksu). Saistību izpildes nodrošinājums ir jāiesniedz kā kredītiestādes vai apdrošināšanas sabiedrības apliecinājums. Tādējādi piegādātāja tiesības izvēlēties veidu ir ierobežotas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.4,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma nodrošinājumam ir jābūt spēkā ne vēlāk kā no piedāvājumu iesniegšanas termiņa beigām līdz īsākajam no šādiem termiņiem: 6 mēneši no piedāvājumu atvēršanas dienas, līdz saistību izpildes nodrošinājuma iesniegšanai vai līdz iepirkuma līguma noslēgšanai. Tas atbilst PIL prasībām, kas nosaka, ka piedāvājuma nodrošinājuma termiņš nedrīkst pārsniegt 6 mēnešus no piedāvājumu atvēršanas dienas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.5,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma nodrošinājumam ir jābūt spēkā ne vēlāk kā no piedāvājumu iesniegšanas termiņa beigām līdz īsākajam no šādiem termiņiem: 6 mēneši no piedāvājumu atvēršanas dienas, līdz dienai, kad izraudzītais pretendents iesniedz saistību izpildes nodrošinājumu, vai līdz iepirkuma līguma noslēgšanai. Šie termiņi atbilst PIL 50. panta 5. daļā noteiktajiem nosacījumiem. Turklāt, ja līguma nodrošinājums tiek iesniegts pēc līguma noslēgšanas, piedāvājuma nodrošinājums ir spēkā līdz šī nodrošinājuma iesniegšanai, kas atbilst PIL 50. panta 7. daļai.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.6-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law> 7. punktu un <context> konteksta informāciju, iepirkuma procedūras dokumentos ir noteikts, ka pretendents, kura piedāvājums izraudzīts, iesniedz līguma nodrošinājumu pēc līguma noslēgšanas. Tas ir norādīts arī kontekstā, kur teikts, ka piedāvājuma nodrošinājums ir spēkā līdz dienai, kad pretendents iesniedz saistību izpildes nodrošinājumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma nodrošinājumam jābūt spēkā līdz īsākajam no šādiem termiņiem: 6 mēneši no piedāvājumu atvēršanas dienas, līdz iepirkuma līguma noslēgšanai vai līdz dienai, kad izraudzītais pretendents iesniedz saistību izpildes nodrošinājumu. Tas atbilst arī <law>PIL</law> 7. punktā noteiktajam, ka piedāvājuma nodrošinājums ir spēkā līdz dienai, kad pretendents iesniedz līguma nodrošinājumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.7,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendents piedāvājuma nodrošinājumu ir tiesīgs iesniegt kā bankas garantiju vai apdrošināšanas polisi. Nav minēts, ka būtu obligāti jāizmanto konkrēta piedāvājuma nodrošinājuma forma (veidlapa).""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.8-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikuma 11. punktā ir noteikti gadījumi, kad nodrošinājuma devējs izmaksā pasūtītājam piedāvājuma nodrošinājuma summu: 1) ja pretendents atsauc savu piedāvājumu, kamēr ir spēkā piedāvājuma nodrošinājums; 2) ja pretendents, kuram piešķirtas līguma slēgšanas tiesības, pasūtītāja noteiktajā termiņā nav iesniedzis tam iepirkuma procedūras dokumentos un iepirkuma līgumā paredzēto saistību izpildes nodrošinājumu; 3) ja pretendents, kuram piešķirtas iepirkuma līguma slēgšanas tiesības, neparaksta iepirkuma līgumu pasūtītāja noteiktajā termiņā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,35.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma nodrošinājuma devējs izmaksā pasūtītājam piedāvājuma nodrošinājuma summu šādos gadījumos: 1) pretendents atsauc savu piedāvājumu, kamēr ir spēkā piedāvājuma nodrošinājums; 2) pretendents, kuram piešķirtas līguma slēgšanas tiesības, pasūtītāja noteiktajā termiņā nav iesniedzis tam iepirkuma procedūras dokumentos un iepirkuma līgumā paredzēto saistību izpildes nodrošinājumu; 3) pretendents, kuram piešķirtas iepirkuma līguma slēgšanas tiesības, neparaksta iepirkuma līgumu pasūtītāja noteiktajā termiņā. Šie gadījumi pilnībā atbilst PIL 50. panta 6. daļā noteiktajam, kas paredz identiskus nosacījumus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,36,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādītas prasības attiecībā uz piedāvājuma/pieteikuma noformējumu un iesniegšanu, kā arī finanšu piedāvājuma formu. Piemēram, kontekstā ir minēts, ka piedāvājuma pieteikuma veidlapa, tehniskais un finanšu piedāvājums jāaizpilda elektroniski, un finanšu piedāvājums jāiesniedz atbilstoši nolikumam pievienotajai finanšu piedāvājuma veidnei (9. pielikums – koptāme).""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.1,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkums tiek veikts saskaņā ar Ministru kabineta 2016. gada 16. augusta noteikumiem Nr. 562, kas attiecas uz specifiskā atbalsta mērķa īstenošanu. Tomēr nav sniegta konkrēta informācija vai salīdzinājums, kas ļautu tieši secināt, ka iepirkuma priekšmeta apraksts pilnībā atbilst šo noteikumu prasībām. Lai atbildētu uz jautājumu, būtu nepieciešams detalizēts šo noteikumu prasību un iepirkuma priekšmeta apraksta salīdzinājums.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.2-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentam jāievēro 2017. gada 1. jūlija MK noteikumu Nr. 353 'Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība' 1.2. apakšpunktā noteiktās prasības, kas ir aprakstītas 1. pielikuma 6. punktā (Iekštelpu apgaismojums). Tomēr nav minēts, ka par zaļā publiskā iepirkuma kritēriju piemērošanu tiktu piešķirti punkti vai ka šādi kritēriji tiktu vērtēti punktu sistēmā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.2,n/a,nē,
+APP DI 2020/2/ERAF_AK,37.3,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas, kas apliecinātu vai noliegtu, ka tehniskajā specifikācijā ir nodrošinātas vienādas iespējas visiem pretendentiem un ka tā nerada konkurences ierobežojumus vai diskrimināciju. Lai atbildētu uz šo jautājumu, būtu nepieciešams detalizēti izvērtēt tehniskās specifikācijas saturu un salīdzināt to ar Publisko iepirkumu likuma prasībām, piemēram, vai specifikācijas ir objektīvas un neierobežo konkurenci.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.4-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tieši norādīts, ka iepirkuma dokumentācijā būtu minēti konkrēti zīmoli, specifiska izcelsme, īpaši procesi, patenti vai specifiski preču veidi. Tomēr dokumentācijā ir atsauces uz normatīvajiem aktiem un tehniskajām prasībām, kas var ietvert standartus. Lai sniegtu precīzāku atbildi, būtu nepieciešams detalizēti pārskatīt tehnisko specifikāciju un citus pielikumus, kas nav pilnībā iekļauti šajā kontekstā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.4,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai iepirkuma dokumentācijā ir norādīti konkrēti zīmoli, specifiska izcelsme, īpaši procesi, patenti vai specifiski preču veidi, kā arī standarti, un vai tiem ir pievienota norāde 'vai ekvivalents'. Lai atbildētu uz šo jautājumu, būtu nepieciešams iepazīties ar konkrēto iepirkuma dokumentāciju vai nolikuma punktiem, kas attiecas uz šādiem nosacījumiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.5-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentam jāievēro 2017. gada 1. jūlija MK noteikumos Nr.353 'Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība' 1.2. apakšpunktā noteiktās prasības, kas ir aprakstītas 1. pielikuma 6. punktā (Iekštelpu apgaismojums). Šī prasība atbilst īpaša marķējuma pieprasījumam, kas apliecina atbilstību noteiktām vides aizsardzības prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.5,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai pasūtītājs ir pieprasījis īpašu marķējumu kā pierādījumu būvdarbu, pakalpojumu vai piegāžu atbilstībai noteiktajām prasībām, kā arī nav norādīts, vai šāds pieprasījums atbilst PIL 21. pantā ietvertajiem nosacījumiem. Lai atbildētu uz šo jautājumu, nepieciešama informācija par konkrēto iepirkuma dokumentāciju un tajā ietvertajām prasībām attiecībā uz marķējumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minētas prasības, ka piedāvātajiem materiāliem, iekārtām vai izstrādājumiem ir jābūt sertificētiem Latvijas Republikā, reģistrētiem konkrētā reģistrā vai ražotiem Eiropas Savienībā. Tāpat nav norādīts, ka tiek ierobežotas piegādātāju tiesības piedāvāt ārvalstīs sertificētus un reģistrētus materiālus/iekārtas/izstrādājumus, ja tie atbilst attiecīgo normatīvo aktu prasībām. Kontekstā galvenokārt tiek regulētas prasības attiecībā uz būvdarbu izpildītājiem, speciālistiem un dokumentāciju, nevis konkrētiem materiāliem vai iekārtām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.7,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs būtu uzlicis par pienākumu pretendentam iekļaut piedāvājumā finanšu rezervi konkrētā apmērā, kuras izmantošana nav iepriekš detalizēti noregulēta. Visi finanšu piedāvājuma aprēķini un prasības ir skaidri definētas, piemēram, līgumcenā jāietver visi nodokļi, nodevas un maksājumi, un visas saprātīgi paredzamās izmaksas, izņemot PVN, bet finanšu rezerve nav pieminēta.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka visas prasības, kas izvirzītas pretendentiem, ir saistītas ar līguma izpildi. Piemēram, tiek prasīts, lai pretendenti nodrošinātu speciālistus ar atbilstošu kvalifikāciju un pieredzi, garantijas saistību izpildei, apdrošināšanu, kā arī finanšu apgrozījuma atbilstību. Šīs prasības ir tieši saistītas ar līguma izpildes nodrošināšanu un kvalitāti. Turklāt kontekstā nav minētas prasības, kas būtu acīmredzami nesamērīgas vai neatbilstošas līguma izpildei.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.9-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai piedāvājumu variantu iesniegšana ir paredzēta vai atļauta. Saskaņā ar Publisko iepirkumu likuma 23. pantu, pasūtītājam paziņojumā par līgumu ir jānorāda, vai piedāvājumu variantu iesniegšana ir obligāta, pieļaujama vai nav atļauta. Šāda informācija kontekstā nav sniegta.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.9,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai pasūtītājs ir noteicis minimālās prasības attiecībā uz variantiem un specifiskās prasības variantu iesniegšanai. Lai atbildētu uz šo jautājumu, būtu nepieciešams iepazīties ar iepirkuma procedūras dokumentiem, kuros šādas prasības varētu būt norādītas, kā to paredz Publisko iepirkumu likuma 23. pants.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.10-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka iepirkuma priekšmets ietver autotransporta līdzekļu iepirkumu. Iepirkuma priekšmets ir būvprojekta izstrāde, autoruzraudzība un Dārzkopības institūta siltumnīcu kompleksa ar palīgtelpām pārbūve.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.10,n/a,nē,
+APP DI 2020/2/ERAF_AK,37.11,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentam jāievēro 2017. gada 1. jūlija MK noteikumi Nr. 353 'Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība', kas ir saistīti ar PIL 19. pantu. Turklāt PIL 19. pants nosaka, ka pasūtītājam jāņem vērā zaļā publiskā iepirkuma prasības, ja tās ir noteiktas, un kontekstā ir atsauce uz šīm prasībām attiecībā uz iekštelpu apgaismojumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.12,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka piedāvājuma sastāvā būtu jāiekļauj konkrētajam iepirkumam sagatavots darbs, kas ir autortiesību objekts vai uzskatāms par daļēju pakalpojuma izpildi, piemēram, vizualizācija vai mets. Piedāvājuma dokumentu prasības ir saistītas ar finanšu apgrozījuma apliecinājumiem, veikto darbu sarakstiem, speciālistu pieredzi un citiem dokumentiem, bet nav minēta prasība iesniegt vizualizāciju vai metu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,37.13,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs būtu noteicis konkrētu piegādātāja peļņas vai virsizdevumu procentu likmi. Turklāt kontekstā ir norādīts, ka izmaiņu vērtība tiek noteikta, ievērojot analogu vai līdzīgu darbu/materiālu izcenojumus, kas izriet no līguma dokumentiem vai tirgus cenām, nevis konkrētiem procentu ierobežojumiem. Tādējādi lietotāja apgalvojums ir patiess.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Publisko iepirkumu likuma (PIL) 42. pantā norādītie izslēgšanas nosacījumi ir korekti ietverti kontekstā. Kontekstā ir minēts, ka uz pretendentu neattiecas PIL 42. panta pirmās daļas 1.-8. punktā uzskaitītie izslēgšanas nosacījumi, un ir precizēts, ka šie nosacījumi attiecas arī uz personālsabiedrības biedriem, apakšuzņēmējiem un citām saistītām personām, kā to paredz PIL 42. panta trešā daļa. Turklāt kontekstā ir norādīts, ka pretendents nedrīkst būt ārzonā reģistrēta juridiska persona, kas atbilst PIL 42. panta otrās daļas 3. punktam. Tādējādi izslēgšanas nosacījumi ir saskaņoti ar likumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.2-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma komisija pārbauda kandidātu un pretendentu atbilstību izslēgšanas nosacījumiem saskaņā ar Publisko iepirkumu likuma 42. pantā noteikto kārtību. Turklāt, pasūtītājs veic pārbaudi, izmantojot informāciju no Ministru kabineta noteiktās informācijas sistēmas, Iekšlietu ministrijas Informācijas centra, Uzņēmumu reģistra, Valsts ieņēmumu dienesta un Latvijas pašvaldībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.2,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma komisija pārbauda kandidātu un pretendentu atbilstību izslēgšanas nosacījumiem atbilstoši Publisko iepirkumu likuma 42. pantā noteiktajai kārtībai. Turklāt, pasūtītājs veic pārbaudi, izmantojot informāciju no Ministru kabineta noteiktās informācijas sistēmas, Iekšlietu ministrijas Informācijas centra, Uzņēmumu reģistra, Valsts ieņēmumu dienesta un Latvijas pašvaldībām, kā noteikts PIL 42. panta piektajā daļā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.3,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka obligātie izslēgšanas nosacījumi papildus pretendentam ir attiecināti uz šādām personām: 1) pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu, piegāžu vai sniedzamo pakalpojumu vērtība ir vismaz 10 % no kopējās publiska būvdarbu, piegādes vai pakalpojumu līguma vērtības (attiecināmi 42.panta 1.daļas 2. - 7.punktā minētie nosacījumi); 2) personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība (attiecināmi 42.panta 1.daļas 1. - 7.punktā minētie nosacījumi); 3) pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām (attiecināmi 42.panta 1.daļas 1.- 7.punktā minētie nosacījumi). Šī informācija ir tieši minēta kontekstā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.4,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka uz personālsabiedrības biedriem, ja pretendents ir personālsabiedrība, neattiecas PIL 42. panta pirmās daļas 1., 2., 3., 4., 5., 6., 7. punktā uzskaitītie izslēgšanas nosacījumi. Tāpat uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai pakalpojumu vērtība ir vismaz 10 procenti no kopējās iepirkuma līguma vērtības, neattiecas PIL 42. panta pirmās daļas 2., 3., 4., 5., 6., 7. punktā uzskaitītie izslēgšanas nosacījumi. Uz kandidāta vai pretendenta norādīto personu, uz kuras iespējām pretendents balstās, neattiecas PIL 42. panta pirmās daļas 1., 2., 3., 4., 5., 6., 7. punktā uzskaitītie izslēgšanas nosacījumi. Lietotāja apgalvojums neatbilst kontekstā sniegtajai informācijai.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.5-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā ir atsauce uz Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētajiem izslēgšanas noteikumiem. Kontekstā ir norādīts, ka pasūtītājs pārbauda, vai pretendentam vai ar to saistītajām personām ir noteiktas starptautiskās vai nacionālās sankcijas, kas var kavēt līguma izpildi, un šādos gadījumos pretendents ir izslēdzams no dalības līguma slēgšanas tiesību piešķiršanas procedūrā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.5,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu, Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumi ir skaidri definēti. Tie paredz, ka pasūtītājs pārbauda, vai pretendentam vai ar to saistītajām personām ir noteiktas sankcijas, kas varētu kavēt līguma izpildi. Ja šādas sankcijas ir konstatētas, pretendents ir izslēdzams no dalības līguma slēgšanas tiesību piešķiršanas procedūrā. Turklāt, ja pretendents norāda apakšuzņēmēju, uz kuru attiecas sankcijas, un 10 darbdienu laikā to nenomaina, tas arī ir izslēdzams. Šie noteikumi ir atbilstoši un saskan ar likuma prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma komisija izslēdz pretendentu no dalības iepirkuma procedūrā tikai tad, ja tas atbilst Publisko iepirkumu likuma 42. panta pirmajā daļā noteiktajiem izslēgšanas gadījumiem vai neatbilst nolikumā noteiktajām prasībām. Turklāt, ja pretendents nodrošina uzticamību atbilstoši Publisko iepirkumu likuma 43. panta noteikumiem, tas netiek izslēgts. Tas norāda, ka izslēgšanas nosacījumi netiek nepamatoti paplašināti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.7,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka piegādātājs tiek automātiski noraidīts, ja tas vai tā darbinieks ir piedalījies iepriekšējos iepirkuma projekta posmos vai dokumentu izstrādē. Turklāt Publisko iepirkumu likuma 42. panta noteikumi paredz, ka pretendents var pierādīt savu uzticamību, ja ir apstākļi, kas varētu radīt šaubas par tā priekšrocībām vai ietekmi uz iepirkuma procedūru.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.8-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs ir noteicis līgumcenu kā piedāvājuma atbilstības prasību vai ka piedāvājums tiktu noraidīts, ja pretendenta piedāvātā līgumcena pārsniedz pasūtītāja norādīto līgumcenu. Lai atbildētu uz šo jautājumu, būtu nepieciešama informācija par konkrētu iepirkuma procedūras dokumentu, kurā šāda prasība būtu norādīta.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.8,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka iepirkuma dokumentācijā ir norādīta konkrēta līgumcena vai ka pretendenta piedāvājums tiks noraidīts, ja tā piedāvātā līgumcena pārsniegs iepirkuma dokumentācijā norādīto līgumcenu. Tiek norādīts, ka piedāvājumi tiek vērtēti pēc saimnieciski visizdevīgākā piedāvājuma kritērija, ņemot vērā viszemāko cenu, bet nav minēts konkrēts limits vai nosacījums par noraidīšanu šāda iemesla dēļ.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.9-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs atklātā vai slēgtā konkursā paredzētu noraidīt pretendenta piedāvājumu, ja piedāvātā līgumcena pārsniedz 150 procentus no iepirkuma procedūras dokumentos norādītās paredzamās līgumcenas. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par šādu nosacījumu esamību iepirkuma procedūras dokumentos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,38.9,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā nav norādīta konkrēta iepirkuma paredzamā līgumcena. Kontekstā ir minēts, ka līgumcena tiks noteikta līguma noslēgšanas brīdī, un tās sadalījums ir norādīts, bet konkrēta paredzamā līgumcena nav sniegta.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā un izvilkumos no likumiem nav norādītas prasības, kas diskriminētu pretendentus pēc nacionalitātes, ģeogrāfiskā izvietojuma vai pieredzes konkrētā teritorijā. Piemēram, <law> 13. pants (1) norāda, ka pasūtītājs nenoraida kandidātu, ja tas ir tiesīgs veikt būvdarbus atbilstoši tās ES dalībvalsts normatīvajiem aktiem, kurā tas dibināts. Turklāt kontekstā ir uzsvērts, ka pretendents var būt reģistrēts ārvalstīs, ja tas atbilst attiecīgās valsts normatīvajiem aktiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.2,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka būtu aizliegts piesaistīt apakšuzņēmējus vai ka būtu noteikts maksimālais procentuālais darbu apjoms, kas var tikt nodots apakšuzņēmējiem. Gluži pretēji, kontekstā ir norādīts, ka pretendentam jānorāda visi apakšuzņēmēji, kuru veicamo darbu vērtība ir 10% no kopējās iepirkuma līguma vērtības vai lielāka, un jāievēro Publisko iepirkumu likuma prasības. Tas liecina, ka apakšuzņēmēju piesaiste ir atļauta, ievērojot noteiktos nosacījumus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.3,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumiem (MK107 2.15., 26.12., 63.11., 104.11., 139.10.), nolikumā ir jāiekļauj noteikumi, kā piegādātāju apvienībām ir jāizpilda prasības attiecībā uz saimniecisko un finansiālo stāvokli vai tehniskajām un profesionālajām spējām. Kontekstā ir norādīts, ka šādas prasības ir obligātas visiem kandidātiem, kas vēlas iegūt līguma slēgšanas tiesības, un ir detalizēti aprakstītas, piemēram, attiecībā uz speciālistu kvalifikāciju, finanšu apgrozījumu un citiem aspektiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.4,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka konkrētas kvalifikācijas prasības attiecas arī uz personām, uz kuru iespējām pretendents balstās, kā arī uz piegādātāju apvienības dalībniekiem. Piemēram, kontekstā teikts: 'Pretendents, personālsabiedrības biedrs, personu apvienības dalībnieks (ja piedāvājumu iesniedz personālsabiedrība vai personu apvienība) vai apakšuzņēmējs (ja pretendents plāno piesaistīt apakšuzņēmēju), kas veiks būvniecību, ir reģistrēts Būvkomersantu reģistrā vai attiecīgā profesionālā reģistrā ārvalstīs.' Tas norāda, ka kvalifikācijas prasības attiecas arī uz šīm personām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.5,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pasūtītājs pieprasa, lai pretendents norāda visus apakšuzņēmējus, kuru veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka, un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu. Nav minēts izņēmums, ka šī prasība neattiecas uz gadījumiem, kad tiek pirkti tikai būvdarbi (bez projektēšanas).""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentiem ir jānorāda, vai uzņēmums atbilst mazā vai vidējā uzņēmuma statusam. Tas ir minēts sadaļā 'Pieteikums dalībai atklātā konkursā', kur pretendenta statuss ir jānorāda, ja uzņēmums atbilst mazā vai vidējā uzņēmuma statusam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.7,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka prasības attiecībā uz piegādātāja finansiālo stāvokli attiecas uz visiem piegādātāju apvienības dalībniekiem, ne tikai uz tiem, uz kuru finansiālajām spējām izpildītājs balstās. Piemēram, teikts: 'Ja piedāvājumu iesniedz piegādātāju apvienība vai personālsabiedrība, jāiesniedz apliecinājums par piegādātāju apvienībā vai personālsabiedrība iekļauto piegādātāju kopējo vidējo gada finanšu apgrozījumu būvniecībā pēdējo 3 (trīs) gadu periodā.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pēc iepirkuma līguma slēgšanas tiesību piešķiršanas, bet ne vēlāk kā uzsākot iepirkuma līguma izpildi, pretendentam būs jāiesniedz iepirkuma līguma izpildē iesaistīto apakšuzņēmēju saraksts, kurā norāda apakšuzņēmēja nosaukumu, kontaktinformāciju un to pārstāvēttiesīgo personu, ciktāl minētā informācija ir zināma. Šī prasība attiecas arī uz apakšuzņēmēju apakšuzņēmējiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.9-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka pasūtītājs iepirkuma procedūras dokumentos būtu paredzējis maksājumus par apakšuzņēmēja sniegtajiem pakalpojumiem, piegādēm vai būvdarbiem veikt tieši apakšuzņēmējam. Lai atbildētu 'jā' vai 'nē', būtu nepieciešama konkrēta informācija par šādu noteikumu esamību iepirkuma dokumentos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.9,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""PIL 63. panta piektajā daļā noteikts, ka pasūtītājs var paredzēt maksājumus apakšuzņēmējam, ja piegādātājs kavē maksājumu, un šāda kārtība ir atrunāta iepirkuma līgumā. Kontekstā ir norādīts, ka pasūtītājs uz apakšuzņēmēja iesniegta rēķina pamata var veikt maksājumus tieši apakšuzņēmējam, informējot piegādātāju un ļaujot tam izteikt viedokli par pieprasījuma pamatotību. Šī kārtība ir paredzēta iepirkuma līgumā, kas atbilst PIL 63. panta piektās daļas prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.10,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu no Publisko iepirkumu likuma (PIL), pasūtītājs nav tiesīgs izvirzīt prasību piegādātāju apvienībām organizēties noteiktā juridiskā statusā, lai iesniegtu piedāvājumu vai pieteikumu par piedalīšanos iepirkuma procedūrā. Tomēr pasūtītājs var prasīt, lai apvienība, attiecībā uz kuru pieņemts lēmums slēgt iepirkuma līgumu, izveidojas noteiktā juridiskā statusā vai noslēdz sabiedrības līgumu, ja tas nepieciešams līguma izpildei. Kontekstā ir norādīts, ka piegādātāju apvienībai, iesniedzot piedāvājumu, jāiesniedz visu dalībnieku parakstīts līgums (vienošanās) par dalību iepirkumā, kas ietver informāciju par dalībnieku atbildību, tiesībām un pienākumiem. Tādējādi apgalvojums, ka nav izvirzītas prasības par sabiedrības līguma noslēgšanu, ir nepatiess.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.11,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka piegādātāju apvienībai, attiecībā uz kuru pieņemts lēmums slēgt iepirkuma līgumu, būtu obligāti jāizveido pilnsabiedrība vai jāiegūst kāds cits konkrēts juridisks statuss. Tā vietā ir noteikts, ka piegādātāju apvienībai jāiesniedz apliecinājums, ka tā reģistrēsies Būvkomersantu reģistrā līdz līguma slēgšanas dienai, ja tā tiks atzīta par uzvarētāju. Tas ļauj piegādātāju apvienībai noslēgt sabiedrības līgumu, neizveidojot pilnsabiedrību vai citu juridisku statusu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.12,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendents, personālsabiedrības biedrs, personu apvienības dalībnieks vai apakšuzņēmējs, kas veiks būvniecību, ir reģistrēts Būvkomersantu reģistrā vai attiecīgā profesionālā reģistrā ārvalstīs, vai tam ir kompetentas institūcijas izsniegta licence, sertifikāts vai cits līdzvērtīgs dokuments, ja attiecīgās valsts normatīvie tiesību akti paredz profesionālo reģistrāciju, licences, sertifikāta vai citu līdzvērtīgu dokumentu izsniegšanu. Tas nozīmē, ka pretendenta dalība iepirkumā ir ierobežota ar šo nosacījumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.13,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka, ja pretendents līguma izpildei plāno piesaistīt speciālistu, kuram profesionālā kvalifikācija ir iegūta ārvalstīs, tad papildus dokumentiem, kas apliecina speciālista pieredzi, jāiesniedz arī dokumenti, kas pierāda, ka speciālists ir atbilstoši kvalificēts ārvalstī, kur tas ir reģistrēts. Turklāt ir jāiesniedz rakstveida apliecinājums, ka speciālists ne vēlāk kā 5 darba dienu laikā pēc līguma noslēgšanas iesniegs Latvijas atzīšanas institūcijai deklarāciju par īslaicīgu profesionālo pakalpojumu sniegšanu Latvijas Republikā reglamentētā profesijā. Tas nozīmē, ka uz piedāvājumu iesniegšanas brīdi nav prasības iesniegt jau Latvijā atzītus dokumentus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.14,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pieredzes prasības ir saistītas ar nacionālo normatīvo regulējumu. Piemēram, atbildīgajam būvdarbu vadītājam un būvprojekta vadītājam ir jābūt pieredzei, kas atbilst Ministru kabineta 19.08.2014. noteikumu Nr.500 'Vispārīgie būvnoteikumi' 1. pielikumā noteiktajām II un III grupas ēku klasifikācijas pazīmēm. Tas skaidri norāda uz prasību atbilstību konkrētam nacionālajam regulējumam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.15,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar Publisko iepirkumu likuma (PIL) 4. punktu: 'Pasūtītājs nenosaka prasības attiecībā uz minimālo laiku kopš piegādātāja reģistrēšanas, licencēšanas vai pilnvarošanas, vai kļūšanas par noteiktas organizācijas biedru.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.16,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendenta vidējais finanšu apgrozījums būvniecībā iepriekšējo trīs gadu periodā ir jāapliecina, un, ja pretendents ir dibināts vēlāk, tad finanšu apgrozījums jāapliecina attiecīgi īsākā periodā. Citāts no konteksta: 'Ja pretendents ir dibināts vēlāk, tad pretendenta finanšu apgrozījumam jāatbilst iepriekš minētajai prasībai attiecīgi īsākā periodā.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.17,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendenta vidējais finanšu apgrozījums būvniecībā iepriekšējo trīs gadu periodā (2017., 2018. un 2019. g.) ir ne mazāks kā EUR 830 000.00 gadā. Šī summa nepārsniedz divas paredzamo līgumcenu vērtības, kas būtu EUR 1 660 000.00, ja pieņemam, ka viena paredzamā līgumcena ir EUR 830 000.00.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.18-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts: 'Iepirkuma priekšmets nav sadalīts daļās. Pretendentam piedāvājums ir jāiesniedz par visu apjomu. Iepirkuma līgums tiks slēgts ar vienu piegādātāju.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.18,n/a,nē,
+APP DI 2020/2/ERAF_AK,39.19,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta vidējais finanšu apgrozījums būvniecībā iepriekšējo trīs gadu periodā (2017., 2018. un 2019. g.) ir jāapliecina. Vidējā finanšu apgrozījuma aprēķins tiek veikts, summējot iepriekšējo 3 finanšu gadu apgrozījumus un dalot ar 3. Ja pretendents ir dibināts vēlāk, tad finanšu apgrozījums jāapliecina par īsāku periodu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.20-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādītas prasības par pretendenta vidējo finanšu apgrozījumu būvniecībā, bet nav minētas nekādas prasības attiecībā uz apgrozāmo līdzekļu koeficientu vai citiem finanšu rādītājiem, kas saistīti ar likviditāti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.20,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība, ka pretendenta apgrozāmo līdzekļu koeficientam (jeb likviditātes koeficientam) obligāti jābūt lielākam nekā '1'. Tiek norādītas citas finanšu prasības, piemēram, vidējais finanšu apgrozījums būvniecībā, bet likviditātes koeficients nav pieminēts.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.21,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka nepieciešamā pieredze jāapliecina par konkrētiem periodiem. Piemēram, būvprojekta izstrādes pieredze jāapliecina par iepriekšējiem 5 gadiem (2015., 2016., 2017., 2018., 2019. gads un 2020. gads līdz piedāvājumu iesniegšanas termiņa beigām). Tāpat atbildīgā būvdarbu vadītāja pieredze jāapliecina par pēdējiem 5 gadiem, un atbildīgā būvprojekta vadītāja pieredze jāapliecina par pēdējiem 3 gadiem (2017., 2018., 2019. gads un 2020. gads līdz piedāvājumu iesniegšanas termiņa beigām).""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.22,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu, pasūtītājs var noteikt pieredzes apliecināšanas termiņu līdz pieciem gadiem, ja tas atbilst iepirkuma vajadzībām. Kontekstā norādītais periods (2015.–2020. gads) atbilst šim piecu gadu termiņam, un nav norāžu, ka tas būtu nepamatoti saīsināts.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.23,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendentiem un piesaistītajiem speciālistiem ir jābūt konkrētai pieredzei noteiktā jomā. Piemēram, tehniskajā piedāvājumā ir prasība, ka atbildīgajam būvprojekta vadītājam iepriekšējo 3 gadu laikā (2017., 2018., 2019. gads un 2020. gads līdz piedāvājumu iesniegšanas termiņa beigām) ir jābūt vadītam vismaz vienam II vai III grupas ēkas pārbūves vai jaunbūves būvprojektam un vismaz vienam siltumnīcas jaunbūves vai pārbūves būvprojektam. Tāpat arī citiem speciālistiem ir jābūt pieredzei kā būvprojekta attiecīgās daļas vadītājam vismaz vienā siltumnīcas jaunbūves vai pārbūves būvprojekta izstrādē pēdējo 3 gadu laikā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.24,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Gan kontekstā, gan likumā ir skaidri norādīts, ka, ja piegādātājs balstās uz citas personas tehniskajām un profesionālajām spējām, ir prasība par solidāras atbildības esamību. Kontekstā teikts: 'Pretendents balstās uz citu personu finanšu iespējām, tas pierāda pasūtītājam, ka tā rīcībā būs nepieciešamie resursi, iesniedzot vienošanos, kas apliecina šīs personas sadarbību konkrētā līguma izpildei, norādot, ka pretendents un attiecīgā persona būs solidāri atbildīgi iepirkuma līguma izpildē.' Līdzīgi arī likumā (PIL 8. punkts) norādīts: 'Pasūtītājs var prasīt, lai piegādātājs un persona, uz kuras saimnieciskajām un finansiālajām iespējām tas balstās, ir solidāri atbildīgi par iepirkuma līguma izpildi.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.25-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs ir noteicis konkrētas prasības attiecībā uz pieredzi objektos. Piemēram, pretendentam iepriekšējo 5 gadu laikā jābūt izpildījušam vismaz 2 ēku pārbūves vai jaunbūves būvdarbu līgumus (8.5. punkts), kā arī vismaz 2 būvprojekta izstrādes līgumus, no kuriem viens ietver siltumnīcas jaunbūves vai pārbūves projektēšanu (8.6. punkts).""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.25,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka papildus pieredzei konkrēta skaita objektos tiek prasīta arī konkrētu gadu pieredze attiecīgajā jomā. Piemēram, atbildīgajam būvdarbu vadītājam ir jābūt pieredzei vismaz 2 (divu) ēku pārbūves vai jaunbūves būvdarbu līgumu vadīšanā pēdējo 5 (piecu) gadu laikā (2015., 2016., 2017., 2018. un 2019. g., kā arī 2020. g. līdz piedāvājumu iesniegšanas termiņa beigām).""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.26,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādītās prasības attiecībā uz pieredzi un kvalifikāciju ir detalizētas un saistītas ar līguma priekšmetu. Piemēram, tiek prasīta pieredze II vai III grupas ēku pārbūves vai jaunbūves būvprojektu izstrādē, kā arī siltumnīcu būvprojektu izstrādē, kas ietver specifiskas sistēmas, piemēram, ūdensapgādes, ventilācijas un elektroapgādes sistēmas. Šīs prasības ir tieši saistītas ar būvniecības un projektēšanas darbiem, kas ir līguma priekšmets. Turklāt prasības nav pārmērīgas, jo tiek pieprasīti tikai divi pieredzes līgumi un specifiskas kvalifikācijas, kas ir nepieciešamas līguma izpildei.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.27,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība, ka pretendentam vai tā speciālistiem būtu jābūt pieredzei līguma izpildē saskaņā ar Starptautiskās Inženierkonsultantu Federācijas (FIDIC) noteikumiem. Tiek izvirzītas citas prasības, piemēram, pieredze būvprojektu izstrādē un būvdarbu vadīšanā, bet FIDIC noteikumi nav pieminēti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.28,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība, ka līguma izpildei nepieciešamajai pieredzei jābūt gūtai tieši ES struktūrfondu vai citu ārvalstu finanšu instrumentu īstenoto projektu ietvaros. Prasības attiecas uz konkrētu pieredzi būvprojektu izstrādē, būvdarbu vadīšanā un citiem tehniskiem aspektiem, bet nav norādīts, ka šī pieredze obligāti jābūt saistīta ar ES fondu vai ārvalstu finanšu instrumentu projektiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.29,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka speciālista kvalifikāciju apliecinošajam sertifikātam jābūt konkrēti minētas institūcijas izdotam. Tā vietā tiek prasīts, lai sertifikāts būtu spēkā esošs un atbilstošs normatīvajiem aktiem, kas nozīmē, ka to var izdot jebkura kompetenta institūcija, kas atbilst normatīvo aktu prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.30,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka pretendenta vai speciālista pieredze būtu ierobežota tikai ar publisko vai privāto sektoru. Nav minētas prasības, kas noteiktu, ka pieredze tiek atzīta tikai vienā no šiem sektoriem. Tādējādi apgalvojums ir patiess.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.31,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav prasības, ka pretendentam jau uz piedāvājumu iesniegšanas brīdi jābūt noslēgtam līgumam par konkrētu darbu veikšanu vai speciālistu piesaisti. Tā vietā tiek pieprasīts iesniegt apliecinājumus, ka nepieciešamie resursi un speciālisti būs pieejami līguma izpildes laikā. Piemēram, kontekstā norādīts: 'Pretendents iesniedz apliecinājumu saskaņā ar 8. pielikumu un vienošanos ar personu, uz kuras iespējām pretendents balstās, lai apliecinātu savu atbilstību tehniskajām un profesionālajām spējām, kas pierāda: 1. ka pretendentam rīcībā būs nepieciešamie resursi, uz kuriem viņš balstījies, iesniedzot piedāvājumu un, 2. ka šie resursi pretendentam būs pieejami visu iepirkuma līguma izpildes laiku.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.32,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tieši norādīts, vai pretendenta piesaistītajiem apakšuzņēmējiem vai speciālistiem ir vai nav atļauts piedalīties arī citos piedāvājumos tā paša iepirkuma ietvaros. Lai atbildētu uz šo jautājumu, būtu nepieciešama papildu informācija vai atsauce uz konkrētiem normatīvajiem aktiem vai nolikuma punktiem, kas regulē šādu situāciju.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.33,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minētas nesamērīgas prasības attiecībā uz piegādātāja saimniecisko un finansiālo stāvokli. Priekšapmaksa un starpmaksājumi ir paredzēti, un nav izvirzīta prasība par lieliem brīvajiem finanšu resursiem. Turklāt ir noteikts, ka avansa maksājumi tiek dzēsti no gala maksājumiem, un maksājumi tiek veikti proporcionāli paveiktajam darbam, kas liecina par samērīgu pieeju.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.34,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav noteikts, ka pretendents savu pieredzi var apliecināt tikai ar atsauksmēm no dažādiem pasūtītājiem. Prasība ir iesniegt pozitīvas pasūtītāju atsauksmes par veikto darbu sarakstā norādītajiem līgumiem, taču nav specifiski norādīts, ka šīm atsauksmēm jābūt no dažādiem pasūtītājiem. Piemēram, kontekstā teikts: 'pozitīvas Pasūtītāju atsauksmes par veikto darbu sarakstā norādītajiem līgumiem, kas apliecina pretendenta atbilstību nolikuma 8.5. punkta prasībām.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.35,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ārvalstī reģistrētam pretendentam jāiesniedz kompetentas attiecīgās valsts institūcijas izsniegts dokuments, kas apliecina, ka pretendents ir reģistrēts atbilstoši tās valsts normatīvo aktu prasībām. Tāpat, ja pretendents līguma izpildei plāno piesaistīt speciālistu, kuram profesionālā kvalifikācija ir iegūta ārvalstīs, jāiesniedz dokumenti, kas pierāda, ka speciālists ir atbilstoši kvalificēts ārvalstī, kur tas ir reģistrēts, vai kurā ieguvis izglītību, ja speciālistu reģistrāciju konkrētajā ārvalstī neparedz normatīvie akti. Šie dokumenti tiek atzīti kā alternatīvi (ekvivalenti) Latvijas prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.36,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka pretendenti obligāti iesniedz tikai un vienīgi auditētu finanšu pārskatu. Tā vietā ir minēts, ka pretendents var iesniegt izziņu par vidējo finanšu apgrozījumu (2. pielikums), un Pasūtītājs pārbaudīs informāciju publiski pieejamā Būvniecības informācijas sistēmā (BIS).""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.37,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par prasībām attiecībā uz kvalitātes vadības standartiem vai vides vadības standartiem, piemēram, ISO vai EMAS, un to, vai tiek pieņemti citu ES dalībvalstu akreditēto institūciju izdotie sertifikāti. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par šādām prasībām iepirkuma dokumentācijā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.38,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par iepirkumiem, kuru paredzamā līgumcena ir mazāka par Ministru kabineta noteiktajām līgumcenu robežvērtībām, un nav minētas prasības par kvalitātes vadības standartiem un vides vadības standartiem. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par šādiem iepirkumiem un attiecīgajiem normatīvajiem aktiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.39,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība par darba drošības standartu ievērošanu vai atbilstoša sertifikāta (piemēram, OHSAS 18001:2007 vai ekvivalenta) iesniegšanu. Tāpat nav prasības par specifisku vadības sistēmu, piemēram, būvdarbu vadības sistēmas, esamību pretendenta uzņēmumā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,39.40,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir sniegta informācija par kvalifikācijas prasībām un to pārbaudes kārtību, taču nav konkrētas informācijas par to, vai ir vai nav citi konstatējumi saistībā ar kvalifikācijas prasību neatbilstību. Lai sniegtu precīzu atbildi, būtu nepieciešama informācija par konkrēto piedāvājumu un tā atbilstību nolikuma prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri noteikta kandidātu un pretendentu izslēgšanas kārtība. Piemēram, tiek minēts, ka pretendents tiek izslēgts, ja tas atbilst Publisko iepirkumu likuma 42. panta pirmajā daļā noteiktajiem izslēgšanas gadījumiem, nav iesniedzis nepieciešamos dokumentus, neatbilst kvalifikācijas prasībām vai piedāvājuma nodrošinājums neatbilst nolikuma prasībām. Turklāt ir norādīts, ka izslēgšanas gadījumi tiek pārbaudīti Publisko iepirkumu likuma 42. pantā noteiktajā kārtībā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.1-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā ir norādīts, ka iepirkuma komisija pārbauda izslēgšanas nosacījumus saskaņā ar Publisko iepirkumu likuma 42. pantu. Konkrēti, <context> sadaļā ir minēts: 'Iepirkumu komisija izslēdz pretendentu no dalības iepirkuma procedūrā jebkurā no šādiem gadījumiem: Pretendents atbilst kādam no Publisko iepirkumu likuma 42. panta pirmajā daļā noteiktajiem pretendentu izslēgšanas gadījumiem.' Turklāt, tiek norādīts, ka izslēgšanas gadījumi tiek pārbaudīti Publisko iepirkumu likuma 42. pantā noteiktajā kārtībā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma komisija pārbauda izslēgšanas nosacījumus atbilstoši Publisko iepirkumu likuma (PIL) 42. pantā noteiktajai kārtībai. Piemēram, teikts: 'Iepirkumu komisija izslēdz pretendentu no dalības iepirkuma procedūrā jebkurā no šādiem gadījumiem: Pretendents atbilst kādam no Publisko iepirkumu likuma 42. panta pirmajā daļā noteiktajiem pretendentu izslēgšanas gadījumiem.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.2,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai izziņu, kas apliecina PIL 42. panta 1. daļā un 2. daļas 2. punktā minēto izslēgšanas nosacījumu neattiecināmību, ir prasīts iesniegt tikai attiecībā uz ārvalstīs reģistrētām vai dzīvojošām personām, vai arī uz Latvijā reģistrētiem kandidātiem vai pretendentiem. Lai sniegtu precīzu atbildi, būtu nepieciešama papildu informācija par konkrētajām prasībām attiecībā uz izziņu iesniegšanu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.3,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta konkrēta informācija par izziņu un apliecinājumu iesniegšanas laiku, kas būtu saistīts ar 10 darbdienu termiņu. Lai atbildētu uz šo jautājumu, būtu nepieciešama papildu informācija vai atsauce uz konkrētu līguma punktu vai normatīvo aktu, kas regulē šo jautājumu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.4-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law> (3) punktu, Latvijas kompetento institūciju izsniegtās izziņas un dokumenti tiek pieņemti un atzīti, ja tie izdoti ne agrāk kā vienu mēnesi pirms iesniegšanas dienas, bet ārvalstu kompetento institūciju izsniegtās izziņas un dokumenti tiek pieņemti un atzīti, ja tie izdoti ne agrāk kā sešus mēnešus pirms iesniegšanas dienas, ja vien izziņas vai dokumenta izdevējs nav norādījis īsāku derīguma termiņu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.4,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL regulējumu: 'Izziņas un citus dokumentus, kurus šajā likumā noteiktajos gadījumos izsniedz Latvijas kompetentās institūcijas, pasūtītājs pieņem un atzīst, ja tie izdoti ne agrāk kā vienu mēnesi pirms iesniegšanas dienas, bet ārvalstu kompetento institūciju izsniegtās izziņas un citus dokumentus pasūtītājs pieņem un atzīst, ja tie izdoti ne agrāk kā sešus mēnešus pirms iesniegšanas dienas, ja izziņas vai dokumenta izdevējs nav norādījis īsāku tā derīguma termiņu.' Šeit nav noteikts, ka derīguma termiņš ir 'ne ilgāks un ne īsāks' par konkrēto periodu, bet gan, ka izziņas jābūt izdotām ne agrāk kā noteiktajā laika posmā pirms iesniegšanas dienas. Tādējādi lietotāja apgalvojums ir nepareizs.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.5,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendents ir tiesīgs apliecināt visus piedāvājumā esošos atvasinātos dokumentus un tulkojumus, iesniedzot vienu kopēju apliecinājumu, kas attiecas uz visiem atvasinātajiem dokumentiem un tulkojumiem. Turklāt, ja pasūtītājam rodas šaubas par dokumenta kopijas autentiskumu, tas var pieprasīt dokumenta oriģinālu vai apliecinātu kopiju, kā noteikts Publisko iepirkumu likuma 5. punktā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ārvalstī reģistrētam pretendentam jāiesniedz kompetentas attiecīgās valsts institūcijas izsniegts dokuments, kas apliecina, ka pretendents ir reģistrēts atbilstoši tās valsts normatīvo aktu prasībām. Tas nozīmē, ka ārvalstu piegādātājiem ir pieļauts iesniegt alternatīvus dokumentus, kas apliecina viņu kvalifikāciju, ja tie nav reģistrēti Latvijā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.7,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pasūtītājs pieņem Eiropas vienoto iepirkuma procedūras dokumentu kā sākotnējo pierādījumu kvalifikācijas prasībām, un ir tiesīgs jebkurā iepirkuma procedūras stadijā pieprasīt kvalifikāciju apliecinošus dokumentus, dodot termiņu to iesniegšanai. Turklāt, ja nepieciešamo informāciju iespējams iegūt Publisko iepirkumu likuma 41. pantā noteiktajā kārtībā, trūkstošie dokumenti var tikt pieprasīti. Tādējādi alternatīvu dokumentu iesniegšana ir pieļaujama, ja tie pēc būtības apliecina nepieciešamo kvalifikāciju.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs pieprasa informāciju un dokumentus, kas nepieciešami pretendenta kvalifikācijas un piedāvājumu atbilstības pārbaudei, kā arī piedāvājuma izvēlei. Piemēram, 1. punktā ir minēts, ka pasūtītājs pieņem Eiropas vienoto iepirkuma procedūras dokumentu kā sākotnējo pierādījumu kvalifikācijas prasībām, un ir tiesīgs pieprasīt kvalifikāciju apliecinošus dokumentus jebkurā iepirkuma procedūras stadijā. Tāpat ir norādīts, ka komisija pārbauda piedāvājumu noformējuma un piedāvājuma nodrošinājuma atbilstību nolikumā noteiktajām prasībām, kā arī izvērtē tehniskos un finanšu piedāvājumus atbilstoši nolikuma prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.9-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar Publisko iepirkumu likuma 43. panta 3. daļu, pasūtītājs izvērtē kandidāta vai pretendenta iesniegto skaidrojumu un pierādījumus, ņemot vērā pārkāpuma smagumu un konkrētos apstākļus. Pasūtītājs var pieprasīt kompetento institūciju atzinumus par iesniegto pierādījumu pietiekamību uzticamības atjaunošanai.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.9,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""PIL 43. pants detalizēti regulē uzticamības nodrošināšanai iesniegto pierādījumu vērtēšanas procesu. Tas nosaka, ka pasūtītājs izvērtē kandidāta vai pretendenta iesniegtos skaidrojumus un pierādījumus, ņemot vērā pārkāpuma smagumu un konkrētos apstākļus. Turklāt pasūtītājs var pieprasīt kompetento institūciju atzinumus par veiktajiem pasākumiem, ja nepieciešams. Šis regulējums ir attiecināms uz uzticamības nodrošināšanas procesu, kā norādīts kontekstā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.10,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Gan likuma izvilkumā, gan kontekstā ir skaidri norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments tiek pieņemts kā sākotnējais pierādījums atbilstībai paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām. Piemēram, <law> norāda: 'Pasūtītājs pieņem Eiropas vienoto iepirkuma procedūras dokumentu kā sākotnējo pierādījumu atbilstībai paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām pretendentu un kandidātu atlases prasībām.' Līdzīgi <context> apstiprina šo pašu principu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.11,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka Eiropas vienotā iepirkuma procedūras dokumenta veidlapa ir pieejama Eiropas Komisijas tīmekļa vietnē (<https://ec.europa.eu/tools/espd>) un Iepirkumu uzraudzības biroja tīmekļa vietnē (<http://www.iub.gov.lv/lv/node/587>). Tāpat ir norādīts, ka pretendentam Eiropas vienotā iepirkuma procedūras dokumenta III daļas D sadaļā jānorāda, vai uz to attiecas Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā noteiktie izslēgšanas gadījumi.""
+}
+```"
+APP DI 2020/2/ERAF_AK,40.12,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts: 'Ja pretendents izvēlējies iesniegt Eiropas vienoto iepirkuma procedūras dokumentu, lai apliecinātu, ka tas atbilst iepirkuma procedūras dokumentos noteiktajām kvalifikācijas prasībām, tas iesniedz šo dokumentu arī par katru personu, uz kuras iespējām tas balstās, lai apliecinātu, ka tā kvalifikācija atbilst iepirkuma procedūras dokumentos noteiktajām prasībām, un par tā norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no iepirkuma līguma vērtības. Piegādātāju apvienība vai personālsabiedrība iesniedz atsevišķu Eiropas vienoto iepirkuma procedūras dokumentu par katru tās dalībnieku.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,41,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta kvalifikācija un pieredze tiek vērtēta. Piemēram, sadaļā 'Pretendentu kvalifikācijas prasības' ir noteikts, ka pretendents ir reģistrēts atbilstošos reģistros, tam ir jāatbilst finanšu apgrozījuma prasībām, un jāiesniedz dokumenti, kas apliecina profesionālo pieredzi un resursu pieejamību. Turklāt, pretendenta tehniskais piedāvājums tiek vērtēts, lai pārliecinātos par atbilstību nolikuma prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,43-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka personāla kvalifikācija un pieredze ir prasīta kā kvalifikācijas prasība. Piemēram, atbildīgajam būvdarbu vadītājam jābūt spēkā esošam būvprakses sertifikātam un pieredzei vismaz divu ēku pārbūves vai jaunbūves būvdarbu vadīšanā pēdējo piecu gadu laikā. Tāpat atbildīgajam būvprojekta vadītājam jābūt arhitekta prakses sertifikātam un pieredzei konkrētu būvprojektu vadīšanā. Šīs prasības ir obligātas visiem kandidātiem, kas vēlas iegūt līguma slēgšanas tiesības.""
+}
+```"
+APP DI 2020/2/ERAF_AK,43,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> 51. panta 1. un 2. daļu, piedāvājuma izvērtēšanas kritēriji ir saimnieciski visizdevīgākā piedāvājuma noteikšana, kas balstās uz cenu, izmaksām vai kvalitātes kritērijiem. Savukārt atlases prasības, kā norādīts <context>, ietver pretendenta kvalifikācijas, dokumentu atbilstības un citu prasību pārbaudi, piemēram, vai pretendents atbilst Publisko iepirkumu likuma 42. panta prasībām. Tādējādi atlases prasības un piedāvājuma izvērtēšanas kritēriji ir atšķirīgi un netiek vērtēti tie paši aspekti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,44-0,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma izvēles kritērijs ir saimnieciski visizdevīgākais piedāvājums, kuru nosaka, ņemot vērā viszemāko cenu saskaņā ar Finanšu piedāvājumā norādīto piedāvājuma kopējo cenu (EUR bez PVN). Tas nozīmē, ka cena ir galvenais kritērijs, bet ne vienīgais, jo tiek vērtēta arī atbilstība tehniskajām un finanšu prasībām, kā arī citi aspekti, piemēram, piedāvājuma atbilstība nolikuma prasībām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,44,n/a,jā,
+APP DI 2020/2/ERAF_AK,46,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma izvēles kritērijs ir saimnieciski visizdevīgākais piedāvājums, kuru nosaka, ņemot vērā viszemāko cenu saskaņā ar Finanšu piedāvājumā norādīto piedāvājuma kopējo cenu (EUR bez PVN). Ir aprakstīts, kā tiks piemērots šis kritērijs, un ir norādīts, ka tiek izvērtēti tikai tie piedāvājumi, kas atbilst tehniskā un finanšu piedāvājuma prasībām. Tādējādi tiek izpildītas <law> norādītās prasības par kritēriju, vērtību un algoritma norādīšanu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,47,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka piedāvājuma izvērtēšanas kritēriji ir noteikti saskaņā ar PIL 19. pantu. Kontekstā ir minēts, ka piedāvājuma izvēles kritērijs ir saimnieciski visizdevīgākais piedāvājums, ņemot vērā viszemāko cenu, un nav tiešas atsauces uz zaļā publiskā iepirkuma principu piemērošanu vai PIL 19. pantu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,48,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka, ja pretendentu piedāvātās cenas ir vienādas, par uzvarētāju tiek noteikts pretendents, kas ir nacionāla līmeņa darba devēju organizācijas biedrs un ir noslēdzis koplīgumu ar arodbiedrību, kas ir nacionāla līmeņa arodbiedrības biedre. Ja arī pēc šī kritērija vērtējums ir vienāds, komisija rīko sēdi, kurā veic izlozi, pieaicinot pretendentu pārstāvjus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,50-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka tiktu vērtētas aprites cikla izmaksas. Informācija par iepirkuma priekšmetu, piedāvājuma nodrošinājumu un līguma nosacījumiem neietver atsauces uz aprites cikla izmaksu vērtēšanu. Lai atbildētu precīzāk, būtu nepieciešama informācija par iepirkuma vērtēšanas kritērijiem vai specifisku atsauci uz aprites cikla izmaksām.""
+}
+```"
+APP DI 2020/2/ERAF_AK,50,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta aprites cikla izmaksu aprēķina metodika vai norādījumi par aprēķina veikšanai nepieciešamajiem datiem, ko iesniegs pretendenti. Tiek aprakstītas citas prasības, piemēram, piedāvājuma sagatavošana, iesniegšana un vērtēšana, bet aprites cikla izmaksu aprēķins nav pieminēts.""
+}
+```"
+APP DI 2020/2/ERAF_AK,51-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ar izraudzīto pretendentu tiek slēgts iepirkuma līgums, atbilstoši iepirkuma nolikuma 11. pielikumam (iepirkuma līguma projekts).""
+}
+```"
+APP DI 2020/2/ERAF_AK,51.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līguma projektā ir skaidri noteikts, ka kopējais iepirkuma priekšmeta izpildes termiņš ir 13 mēneši no iepirkuma līguma noslēgšanas dienas, kas atbilst iepirkuma līguma projektā norādītajam. Tas ir saskaņā ar kontekstā sniegto informāciju par darbu izpildes termiņiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,51.2,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājam ir tiesības vienpusēji izbeigt līgumu, ja līgumu nav iespējams izpildīt Starptautisko un Latvijas Republikas nacionālo sankciju likumā minētajos gadījumos. Šis nosacījums ir minēts sadaļā 'LĪGUMA IZBEIGŠANA UN DARBU APTURĒŠANA', konkrēti 1.2.7. punktā.""
+}
+```"
+APP DI 2020/2/ERAF_AK,51.3-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka iepirkumu veic atvasināta publiska persona “Dārzkopības institūts”, nevis tiešās pārvaldes iestāde. Tiešās pārvaldes iestādes ir valsts pārvaldes iestādes, kas darbojas tieši valsts vārdā, savukārt atvasinātas publiskas personas ir juridiskas personas, kurām ir piešķirta noteikta autonomija.""
+}
+```"
+APP DI 2020/2/ERAF_AK,51.3,n/a,nē,
+APP DI 2020/2/ERAF_AK,51.4,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka, ja Konkursa nolikumā tiek konstatētas pretrunas ar publisko iepirkumu procedūru regulējošo tiesību aktu prasībām, piemēro publisko iepirkumu regulējošo tiesību aktu nosacījumus. Tas nozīmē, ka pretrunīgas informācijas gadījumā tiek piemēroti augstāka līmeņa normatīvie akti, un šāda situācija ir paredzēta un atrisināta. Tādējādi var secināt, ka iepirkuma līguma projektā nav neatrisinātas pretrunīgas informācijas.""
+}
+```"
+APP DI 2020/2/ERAF_AK,52,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar konteksta informāciju, kopējais iepirkuma priekšmeta izpildes termiņš ir 13 mēneši no iepirkuma līguma noslēgšanas. Tas nepārsniedz piecus gadus, kā noteikts PIL 60. panta 4. daļā, kurā teikts, ka iepirkuma līgumu slēdz uz laiku līdz pieciem gadiem, izņemot izņēmuma gadījumus.""
+}
+```"
+APP DI 2020/2/ERAF_AK,53,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Līguma projektā ir detalizēti atrunāti iespējamie līguma grozījumi, piemēram, par izmaiņu veikšanu, to noformēšanu, vērtības noteikšanu un ietekmi uz līgumcenu. Turklāt līguma projektā ir norādīts, ka izmaiņas ir pieļaujamas tikai normatīvo aktu ietvaros, kas atbilst PIL 61. pantā noteiktajam regulējumam par līguma grozījumiem.""
+}
+```"
+APP DI 2020/2/ERAF_AK,54-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tieši norādīts, ka iepirkuma līguma izpildes noteikumi ir saistīti ar ekonomiskiem un sociāliem apstākļiem, inovācijām vai vides aizsardzības prasībām. Lai gan <law> norāda, ka pasūtītājs var paredzēt šādus noteikumus, kontekstā nav konkrētu piemēru vai prasību, kas to apliecinātu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,54,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentam jāievēro 2017. gada 1. jūlija MK noteikumos Nr.353 'Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība' 1.2. apakšpunktā noteiktās prasības, kas ir aprakstītas 1. pielikuma 6. punktā (Iekštelpu apgaismojums). Šīs prasības ir saistītas ar vides aizsardzību un attiecas uz iepirkuma līguma priekšmetu.""
+}
+```"
+APP DI 2020/2/ERAF_AK,56,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma līguma izpildes laikā pretendentam būs jāpaziņo pasūtītājam par jebkurām minētās informācijas izmaiņām, kā arī jāpapildina saraksts ar informāciju par apakšuzņēmēju, kas tiek vēlāk iesaistīts iepirkuma līguma izpildē. Šis pienākums ir skaidri aprakstīts šādā fragmentā: 'Iepirkuma līguma izpildes laikā pretendentam būs jāpaziņo pasūtītājam par jebkurām minētās informācijas izmaiņām, kā arī jāpapildina saraksts ar informāciju par apakšuzņēmēju, kas tiek vēlāk iesaistīts iepirkuma līguma izpildē, ievērojot Publisko iepirkumu likuma prasības.'""
+}
+```"
+APP DI 2020/2/ERAF_AK,57,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma līgumprojektā ir atrunāta piedāvājumā norādīto apakšuzņēmēju un personāla nomaiņas un jaunu apakšuzņēmēju un personāla piesaistes kārtība. Piemēram, kontekstā teikts: 'Uzņēmēja speciālistus un apakšuzņēmējus var nomainīt (t.sk. aizvietot uz prombūtnes laiku) tikai ar iepriekšēju Pasūtītāja piekrišanu un ar tādas pašas vai augstākas kvalifikācijas un pieredzes speciālistiem un apakšuzņēmējiem.' Tas atbilst PIL 62. panta prasībām, kas regulē personāla un apakšuzņēmēju nomaiņu un jaunu piesaisti.""
+}
+```"
+APP DI 2020/2/ERAF_AK,58-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka finansējuma saņēmējs ir APP “Dārzkopības institūts”, kas ir atvasināta publiska persona, nevis tiešās valsts pārvaldes iestāde. Tiešās valsts pārvaldes iestādes ir ministrijas un to padotībā esošās iestādes, savukārt atvasinātas publiskas personas darbojas ar noteiktu autonomiju.""
+}
+```"
+APP DI 2020/2/ERAF_AK,58,n/a,n/a,
+APP DI 2020/2/ERAF_AK,60-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka tiktu plānots slēgt vispārīgo vienošanos. Tā vietā tiek aprakstīti iepirkuma līguma noslēgšanas nosacījumi un procedūras, kas norāda uz konkrēta līguma slēgšanu, nevis vispārīgo vienošanos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,60,n/a,n/a,
+APP DI 2020/2/ERAF_AK,61-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ar izraudzīto pretendentu tiek slēgts iepirkuma līgums, nevis vispārīgā vienošanās. Piemēram, teikts: 'Ar izraudzīto pretendentu tiek slēgts iepirkuma līgums, atbilstoši iepirkuma nolikuma 11. pielikumam (iepirkuma līguma projekts)'.""
+}
+```"
+APP DI 2020/2/ERAF_AK,61,n/a,n/a,
+APP DI 2020/2/ERAF_AK,62-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka tiktu plānots slēgt vispārīgo vienošanos. Tā vietā tiek aprakstīti iepirkuma līguma noslēgšanas nosacījumi un procedūras, kas norāda uz konkrēta līguma slēgšanu, nevis vispārīgo vienošanos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,62,n/a,n/a,
+APP DI 2020/2/ERAF_AK,63-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka tiktu plānots slēgt vispārīgo vienošanos. Sniegtā informācija attiecas uz konkrēta iepirkuma līguma nosacījumiem, nevis vispārīgo vienošanos.""
+}
+```"
+APP DI 2020/2/ERAF_AK,63,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu: 'Vispārīgo vienošanos slēdz uz laiku līdz četriem gadiem, izņemot gadījumus, kad objektīvu iemeslu dēļ (it sevišķi, ja to prasa iepirkuma līguma priekšmets) nepieciešams ilgāks termiņš.' Apgalvojums atbilst šim noteikumam.""
+}
+```"
+APP DI 2020/2/ERAF_AK,65-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai ir plānots slēgt vispārīgo vienošanos. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par iepirkuma procedūras veidu un mērķi.""
+}
+```"
+APP DI 2020/2/ERAF_AK,65,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs ir atrunājis kārtību, kādā vispārīgās vienošanās piegādātāji tiks uzaicināti iesniegt piedāvājumus, lai izvēlētos ar kuru no piegādātājiem slēgt konkrēto līgumu. Šī kārtība atbilst PIL 56. panta 5., 6. un 7. daļas noteikumiem, jo kontekstā ir detalizēti aprakstītas procedūras, kas atbilst likumā noteiktajām prasībām, piemēram, piedāvājumu atkārtota izvērtēšana, konsultācijas ar piegādātājiem un piedāvājumu iesniegšanas termiņu noteikšana.""
+}
+```"
+DND 2020/6,2-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra, kā arī nav norādīts, ka netiek piemērots atklāts vai slēgts konkurss. Lai atbildētu uz šo jautājumu, būtu nepieciešama informācija par iepirkuma procedūras veidu, kas nav sniegta dotajā kontekstā.""
+}
+```"
+DND 2020/6,2,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL 6. punktu konkursa procedūru ar sarunām un konkursa dialogu var piemērot, ja nepieciešami pielāgojumi tirgū pieejamiem risinājumiem, iepirkuma līgums ietver projektēšanu vai inovatīvus risinājumus, nepieciešamas iepriekšējas sarunas īpašu apstākļu dēļ, tehniskās specifikācijas nevar precīzi sagatavot vai piedāvājumi neatbilst prasībām vai pārsniedz paredzamo līgumcenu. Kontekstā ir norādīts, ka iepirkuma priekšmets ir būvdarbi, kas var ietvert projektēšanu un specifiskas tehniskās prasības, kas atbilst šiem nosacījumiem."",
+  ""procurement_type"": ""konkursa procedūra ar sarunām""
+}
+```"
+DND 2020/6,4-0,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai iepirkuma priekšmetam ir tikai viena daļa. Lai atbildētu uz šo jautājumu, būtu nepieciešams iepirkuma dokumentos skaidri norādīts, ka iepirkums ir sadalīts vai nav sadalīts daļās. Tomēr <law>MK107</law> 196. punkts nosaka, ka pasūtītājam ir jāsniedz skaidrojums, ja iepirkums netiek dalīts daļās. Šāda skaidrojuma esamība vai neesamība kontekstā nav minēta.""
+}
+```"
+DND 2020/6,4,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai iepirkuma procedūras dokumentos ir iekļauts skaidrojums par iemesliem iepirkuma priekšmeta nesadalīšanai. Lai atbildētu uz šo jautājumu, būtu nepieciešams konkrēts fragments no iepirkuma dokumentiem, kurā šāds skaidrojums ir ietverts, kā to pieprasa <law>MK107</law> 196. punkts.""
+}
+```"
+DND 2020/6,6-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līguma priekšmets ir norādīts kā 'Būvdarbi lauku sētas “Slutišķi 2” 2 ēku atjaunošanai'. Kontekstā nav minēts, ka iepirkuma līguma priekšmets ietver piegādes vai pakalpojumu iepirkumus.""
+}
+```"
+DND 2020/6,6,n/a,n/a,
+DND 2020/6,7-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma līguma priekšmets ir 'Būvdarbi lauku sētas “Slutišķi 2” 2 ēku atjaunošanai', taču nav skaidri norādīts, vai tas ietver PIL 2. pielikumā minētos pakalpojumus, citus pakalpojumus vai piegādes. Lai atbildētu uz šo jautājumu, būtu nepieciešama detalizēta informācija par iepirkuma tehnisko specifikāciju un līguma priekšmeta sadalījumu.""
+}
+```"
+DND 2020/6,7,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai galvenais priekšmets un piemērojamā iepirkuma procedūra tiek noteikta pēc tā, kuru pakalpojumu vai piegāžu paredzamā līgumcena ir visaugstākā. Lai atbildētu uz šo jautājumu, būtu nepieciešama papildu informācija no Publisko iepirkumu likuma vai citiem normatīvajiem aktiem, kas regulē iepirkuma procedūru noteikšanu.""
+}
+```"
+DND 2020/6,9-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma priekšmets ir būvdarbi lauku sētas 'Slutišķi 2' atjaunošanai, kas atbilst CPV kodam 45000000-7 (Celtniecības darbi). Tas nav saistīts ar veselības, sociālās un kultūras jomas pakalpojumiem, uz kuriem attiecas norādītie CPV kodi.""
+}
+```"
+DND 2020/6,9.1,n/a,n/a,
+DND 2020/6,9.2,n/a,n/a,
+DND 2020/6,9.3,n/a,n/a,
+DND 2020/6,10,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka Pasūtītājs ievieto informāciju par grozījumiem un iepirkuma procedūras dokumentiem EIS e-konkursu apakšsistēmā, kurā ir pieejami iepirkuma procedūras dokumenti. Nav minēts, ka piegādātājiem būtu nodrošināta iespēja iepazīties ar papildu dokumentiem uz vietas, ja tiem nav nodrošināma brīva un tieša elektroniska piekļuve.""
+}
+```"
+DND 2020/6,15,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka informācijas apmaiņa starp pasūtītāju un pretendentiem notiek valsts valodā rakstiski pa pastu, faksu vai elektroniski. Turklāt iepirkuma nolikums ar visiem pielikumiem ir brīvi pieejams EIS e-konkursu apakšsistēmā, un ieinteresēto piegādātāju pienākums ir sekot līdzi aktuālajai informācijai šajā sistēmā. Šie nosacījumi nodrošina vispārpieejamu un neapgrūtinošu piekļuvi iepirkumam.""
+}
+```"
+DND 2020/6,16,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā un likuma izvilkumos nav minēts MK noteikumu 231. punkts vai tā saturs. Tomēr ir skaidri noteikts, ka pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu EIS e-konkursu apakšsistēmā, un izņēmumi ir saistīti ar Ministru kabineta noteiktajiem gadījumiem, kas nav detalizēti aprakstīti šajā kontekstā. Tādējādi apgalvojums par konkrēto MK noteikumu punktu nav pamatots ar sniegto informāciju.""
+}
+```"
+DND 2020/6,17-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikuma 1. sadaļā skaidri norādīts, ka piedāvājumu iesniegšanas veids ir elektronisks: 'Piedāvājumu iesniegšanas veids – elektroniski.' Turklāt piedāvājumi jāiesniedz, augšupielādējot tos EIS e-konkursu apakšsistēmā.""
+}
+```"
+DND 2020/6,17,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā skaidri norādīts, ka piedāvājums jāiesniedz elektroniski EIS e-konkursu apakšsistēmā, un ārpus šīs sistēmas iesniegtie piedāvājumi tiks atzīti par neatbilstošiem. Nav prasības iesniegt rakstveida piedāvājumu. Atsauce: 'Piedāvājumu iesniegšanas veids – elektroniski' un 'Ārpus EIS e-konkursu apakšsistēmas iesniegtie piedāvājumi tiks atzīti par neatbilstošiem Nolikuma prasībām.'""
+}
+```"
+DND 2020/6,18-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta informācija par maksu par iepirkuma dokumentācijas izsniegšanu. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par šādu maksu, ja tāda ir noteikta.""
+}
+```"
+DND 2020/6,18,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par maksu par iepirkuma dokumentācijas izsniegšanu vai tās ierobežojumiem attiecībā uz dokumentu pavairošanas un nosūtīšanas faktiskajiem izdevumiem. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija no normatīvajiem aktiem vai iepirkuma nolikuma, kas regulē šādu maksu noteikšanu.""
+}
+```"
+DND 2020/6,19-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka papildu informācija jāpieprasa laikus, lai komisija varētu to sniegt ne vēlāk kā 6 (sešas) dienas pirms piedāvājumu iesniegšanas termiņa beigām, atbilstoši PIL 36. panta otrajā daļā noteiktajam termiņa ierobežojumam.""
+}
+```"
+DND 2020/6,19,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka papildu informācija jāpieprasa laikus, lai komisija varētu to sniegt ne vēlāk kā 6 (sešas) dienas pirms piedāvājumu iesniegšanas termiņa beigām, bet nav minēts, ka informācija tiek sniegta 5 darbdienu laikā. Precīzs termiņš, cik dienu laikā informācija tiek sniegta, nav norādīts.""
+}
+```"
+DND 2020/6,22-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Gan <law> izvilkumā, gan <context> fragmentā ir skaidri noteikts, ka pasūtītājam vai iepirkuma komisijai ir pienākums informēt visus pretendentus vai kandidātus par pieņemto lēmumu attiecībā uz iepirkuma procedūras rezultātiem. Piemēram, <law> 37. panta 1. un 2. daļā un <context> 6. punktā ir norādīts, ka informācija jānosūta triju darbdienu laikā pēc lēmuma pieņemšanas, norādot noraidīšanas iemeslus vai izraudzītā piedāvājuma raksturojumu un priekšrocības.""
+}
+```"
+DND 2020/6,22,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""PIL 37. pants skaidri nosaka kārtību, kādā pasūtītājs informē kandidātus un pretendentus par rezultātiem. Kontekstā ir norādīts, ka pasūtītājs informē visus pretendentus vai kandidātus par pieņemto lēmumu, ievērojot PIL 37. panta prasības, tostarp par noraidīšanas iemesliem, izraudzītā piedāvājuma raksturojumu un termiņiem iesniegumu iesniegšanai Iepirkumu uzraudzības birojam.""
+}
+```"
+DND 2020/6,23-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ieinteresēto piegādātāju sanāksme tiek rīkota, ja ne vēlāk kā 10 dienas pirms piedāvājumu atvēršanas dienas ir saņemti vismaz divu ieinteresēto piegādātāju priekšlikumi. Tomēr nav sniegta informācija, vai šādi priekšlikumi ir saņemti, tāpēc nav iespējams noteikt, vai sanāksme tiek paredzēta.""
+}
+```"
+DND 2020/6,23,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikumā ir norādīts, ka ieinteresēto piegādātāju sanāksme tiek rīkota tikai tad, ja ne vēlāk kā 10 dienas pirms piedāvājumu atvēršanas dienas ir saņemti vismaz divu ieinteresēto piegādātāju priekšlikumi rīkot sanāksmi. Sanāksme tiek rīkota ne vēlāk kā 5 dienas pirms piedāvājumu atvēršanas, un informācija par sanāksmi tiek ievietota EIS e-konkursu apakšsistēmā vismaz 3 dienas pirms sanāksmes norises. Tomēr nolikumā nav norādīta precīza vieta, datums un laiks šādai sanāksmei, jo tās rīkošana ir atkarīga no piegādātāju priekšlikumiem.""
+}
+```"
+DND 2020/6,24-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL 68. panta pirmo daļu, persona, kura ir vai ir bijusi ieinteresēta iegūt tiesības noslēgt iepirkuma līgumu vai vispārīgo vienošanos, ir tiesīga iesniegt iesniegumu par kandidātu vai pretendentu atlases noteikumiem, tehniskajām specifikācijām un citām prasībām, kas attiecas uz konkrēto iepirkuma procedūru, vai par pasūtītāja vai iepirkuma komisijas darbību iepirkuma procedūras laikā. Turklāt kontekstā 38. punktā ir norādīts, ka pretendents ir tiesīgs iesniegt Iepirkumu uzraudzības birojam iesniegumu par pasūtītāja darbību saistībā ar konkursa likumību.""
+}
+```"
+DND 2020/6,24,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendentam ir tiesības iesniegt Iepirkumu uzraudzības birojam iesniegumu par pasūtītāja darbību saistībā ar konkursa likumību, ja tas uzskata, ka pasūtītājs vai iepirkuma komisija nav ievērojuši iepirkuma regulējošo normatīvo aktu prasības un tādējādi pārkāpuši iesnieguma iesniedzēja likumīgās tiesības un intereses. Tas atbilst PIL 68. panta 1. daļas nosacījumiem, kas nosaka, ka persona, kuras tiesības ir aizskartas vai var tikt aizskartas, ir tiesīga iesniegt iesniegumu par iepirkuma procedūras pārkāpumiem.""
+}
+```"
+DND 2020/6,26,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts pasūtītāja nosaukums, adrese un rekvizīti. Pasūtītājs ir Daugavpils novada dome, reģistrācijas numurs 90009117568, juridiskā adrese: Rīgas iela 2, Daugavpils, LV-5401."",
+  ""name"": ""Daugavpils novada dome"",
+  ""address"": ""Rīgas iela 2, Daugavpils, LV-5401"",
+  ""requisites"": ""Reģistrācijas numurs: 90009117568""
+}
+```"
+DND 2020/6,27,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīta piedāvājuma iesniegšanas un atvēršanas vieta, datums, laiks un atvēršanas kārtība. Piedāvājumi jāiesniedz elektroniski līdz 2020. gada 11. maija plkst. 11.00 EIS e-konkursu apakšsistēmā, un tie tiks atvērti tūlīt pēc iesniegšanas termiņa beigām. Atvēršana notiek Daugavpils novada domē, Daugavpilī, Rīgas ielā 2, izmantojot EIS e-konkursu apakšsistēmas rīkus, un piedāvājumi tiek atvērti to iesniegšanas secībā."",
+  ""place"": ""Daugavpils novada dome, Daugavpils, Rīgas iela 2"",
+  ""date_time"": ""2020-05-11T11:00:00"",
+  ""order"": ""Piedāvājumi tiek atvērti to iesniegšanas secībā, nosaucot pretendentu, iesniegšanas datumu, laiku un piedāvātās cenas.""
+}
+```"
+DND 2020/6,28,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Līguma izpildes termiņš ir norādīts kā 12 mēneši no līguma noslēgšanas dienas, un izpildes vieta ir lauku sēta 'Slutišķi 2', kas minēta kontekstā."",
+  ""time"": ""12 mēneši no līguma noslēgšanas dienas"",
+  ""place"": ""lauku sēta 'Slutišķi 2'""
+}
+```"
+DND 2020/6,29,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka piedāvājumu iesniegšanas termiņš ir 2020. gada 11. maijs plkst. 11.00, un tas ir saskaņots ar iepirkuma dokumentācijā norādīto informāciju. Nav pretrunu starp dokumentāciju un paziņojumu par līgumu."",
+  ""procurement_type"": ""atklāts konkurss""
+}
+```"
+DND 2020/6,31-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā skaidri norādīts, ka konkursa procedūra ir 'atklāts konkurss'. Piemēram, vairākkārt tiek minēts 'Atklātam konkursam “Būvdarbi lauku sētas “Slutišķi 2” 2 ēku atjaunošanai...”. Tādējādi konkursa procedūra nav konkursa procedūra ar sarunām vai konkursa dialogs.""
+}
+```"
+DND 2020/6,31,n/a,n/a,
+DND 2020/6,32-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma procedūra ir atklāts konkurss, piemērojot zaļā publiskā iepirkuma principus. Nav minētas citas procedūras, piemēram, konkursa dialogs vai procedūra ar sarunām.""
+}
+```"
+DND 2020/6,32,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar kontekstu, piedāvājumu atvēršanas sanāksmē var piedalīties jebkura ieinteresētā persona, un iesniegto piedāvājumu atvēršanas procesam var sekot līdzi tiešsaistes režīmā EIS e-konkursu apakšsistēmā. Tas norāda, ka piedāvājumu atvēršanas sanāksme ir atklāta."",
+  ""procurement_type"": ""atklāts konkurss""
+}
+```"
+DND 2020/6,33-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma procedūra ir atklāts konkurss: 'Iepirkuma procedūra – atklāts konkurss'. Nav minēts, ka tiktu piemērots slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs.""
+}
+```"
+DND 2020/6,33,n/a,n/a,
+DND 2020/6,34-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma procedūra ir atklāts konkurss. Piemēram, sadaļā 'VISPĀRĪGĀ INFORMĀCIJA' ir norādīts: 'Iepirkuma procedūra – atklāts konkurss'. Tādējādi slēgts konkurss, konkursa procedūra ar sarunām vai konkursa dialogs netiek piemēroti.""
+}
+```"
+DND 2020/6,34,n/a,n/a,
+DND 2020/6,35-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Nolikuma 2. nodaļas 5. punktā ir norādīts, ka piedāvājums jāsagatavo tā, lai nekādā veidā netiktu apdraudēta EIS e-konkursu apakšsistēmas darbība un nebūtu ierobežota piekļuve pieteikumā ietvertajai informācijai. Turklāt 2. nodaļas 5. apakšpunktā ir minēts, ka piedāvājums nedrīkst saturēt datorvīrusus un citas kaitīgas programmatūras vai to ģeneratorus, pretējā gadījumā tas netiks izskatīts. Papildus tam, 2. nodaļas 5. apakšpunktā ir minēts, ka piedāvājuma dokumenti jāparaksta ar drošu elektronisko parakstu un laika zīmogu, kas arī ir saistību izpildes nodrošinājums. Tāpat 2. nodaļas 5. apakšpunktā ir noteikts, ka pretendents pilnībā piekrīt visiem nolikuma noteikumiem, iesniedzot piedāvājumu.""
+}
+```"
+DND 2020/6,35.1,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka piedāvājuma nodrošinājuma apmērs ir 3% no līguma summas bez PVN, nevis 2%. Precīzs fragments: 'Būvuzņēmējs 7 (septiņu) darba dienu laikā pēc Līguma parakstīšanas iesniedz Pasūtītājam no Būvuzņēmēja puses neatsaucamu bankas izsniegtu garantijas vai apdrošināšanas sabiedrības garantijas oriģinālu Līguma nodrošinājumam 3% apmērā no Līguma summas bez PVN.'""
+}
+```"
+DND 2020/6,35.2-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai iepirkuma priekšmets ir sadalīts daļās. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par iepirkuma priekšmeta struktūru, kas nav ietverta dotajā nolikuma fragmentā.""
+}
+```"
+DND 2020/6,35.2,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka piedāvājuma nodrošinājums ir 3% no līguma summas bez PVN, nevis 2%. Piemēram, 2. APDROŠINĀŠANA UN NODROŠINĀJUMI, 3. punkts: 'Būvuzņēmējs 7 (septiņu) darba dienu laikā pēc Līguma parakstīšanas iesniedz Pasūtītājam no Būvuzņēmēja puses neatsaucamu bankas izsniegtu garantijas vai apdrošināšanas sabiedrības garantijas oriģinālu Līguma nodrošinājumam 3% apmērā no Līguma summas bez PVN.'""
+}
+```"
+DND 2020/6,35.3,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka piedāvājuma nodrošinājums un saistību izpildes nodrošinājums ir jāiesniedz konkrētā veidā. Piemēram, garantijas saistības jānodrošina bankas garantijas vai apdrošināšanas polises veidā (skatīt 57. punktu). Tādējādi piegādātāja tiesības izvēlēties veidu ir ierobežotas.""
+}
+```"
+DND 2020/6,35.4,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta konkrēta informācija par piedāvājuma nodrošinājuma termiņu, tādēļ nav iespējams apstiprināt vai noliegt, ka tas ir noteikts samērīgi un nepārsniedz 6 mēnešus, kā to nosaka PIL. Lai atbildētu uz šo jautājumu, būtu nepieciešama informācija par konkrēto piedāvājuma nodrošinājuma termiņu, kas nav ietverta dotajā kontekstā.""
+}
+```"
+DND 2020/6,35.5,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Piedāvājuma nodrošinājuma spēkā esamības termiņš ir noteikts atbilstoši PIL 50. panta 5. vai 7. daļai, jo kontekstā ir norādīts, ka piedāvājuma nodrošinājums ir spēkā līdz vienam no šādiem termiņiem: iepirkuma procedūras dokumentos noteiktajam minimālajam termiņam, līdz saistību izpildes nodrošinājuma iesniegšanai vai līdz iepirkuma līguma noslēgšanai (PIL 50. panta 5. daļa). Tāpat, ja līguma nodrošinājums tiek iesniegts pēc līguma noslēgšanas, piedāvājuma nodrošinājums ir spēkā līdz šī nodrošinājuma iesniegšanai (PIL 50. panta 7. daļa).""
+}
+```"
+DND 2020/6,35.6-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law> 7. punktu un <context> kontekstā sniegto informāciju, nolikuma 11. pielikumā 'Būvdarbu līgums' ir noteikts, ka pretendents 7 (septiņu) darba dienu laikā pēc līguma parakstīšanas iesniedz Pasūtītājam garantiju līguma izpildes nodrošinājumam. Tas atbilst prasībai, ka līguma nodrošinājums tiek iesniegts pēc līguma noslēgšanas.""
+}
+```"
+DND 2020/6,35.6,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law> 7. punktu: 'Ja iepirkuma procedūras dokumentos un iepirkuma līgumā ir noteikts, ka pretendents, kura piedāvājums izraudzīts saskaņā ar piedāvājuma izvēles kritēriju, iesniedz līguma nodrošinājumu pēc līguma noslēgšanas, attiecībā uz šo personu piedāvājuma nodrošinājums ir spēkā līdz dienai, kad tā iesniedz šādu līguma nodrošinājumu.'""
+}
+```"
+DND 2020/6,35.7,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka Pasūtītājs ir paredzējis konkrētu piedāvājuma nodrošinājuma formu (veidlapu), kura obligāti ir izmantojama. Piedāvājuma noformēšanā ir norādītas vairākas iespējas, piemēram, aizpildīt formas EIS e-konkursu apakšsistēmā vai sagatavot dokumentus ārpus sistēmas un augšupielādēt tos PDF formātā. Tādējādi nav noteikta viena obligāta veidlapa.""
+}
+```"
+DND 2020/6,35.8-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law>, nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu šādos gadījumos: 1) pretendents atsauc savu piedāvājumu, kamēr ir spēkā piedāvājuma nodrošinājums; 2) pretendents, kuram piešķirtas iepirkuma līguma slēgšanas tiesības, pasūtītāja noteiktajā termiņā nav iesniedzis tam iepirkuma procedūras dokumentos un iepirkuma līgumā paredzēto saistību izpildes nodrošinājumu; 3) pretendents, kuram piešķirtas iepirkuma līguma slēgšanas tiesības, neparaksta iepirkuma līgumu vai vispārīgo vienošanos pasūtītāja noteiktajā termiņā.""
+}
+```"
+DND 2020/6,35.8,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir sniegta informācija par gadījumiem, kad nodrošinājuma devējs izmaksā pasūtītājam vai pasūtītājs ietur pretendenta iemaksāto piedāvājuma nodrošinājuma summu, taču nav atsauces uz PIL 50. panta 6. daļu. Lai sniegtu precīzu atbildi, būtu nepieciešams PIL 50. panta 6. daļas teksts, lai salīdzinātu to ar kontekstā sniegto informāciju.""
+}
+```"
+DND 2020/6,36,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādītas prasības attiecībā uz piedāvājuma un pieteikuma noformējumu un iesniegšanu, kā arī finanšu piedāvājuma formu. Piemēram, 2. nodaļā ir detalizēti aprakstīts, kā jānoformē un jāiesniedz piedāvājums, tostarp elektroniskā formātā, un 13. nodaļā ir norādītas prasības finanšu piedāvājuma sagatavošanai, piemēram, ka cenai jābūt izteiktai eiro ar precizitāti divi cipari aiz komata.""
+}
+```"
+DND 2020/6,37.1,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir sniegta informācija par iepirkuma priekšmetu un tehniskajām prasībām, kā arī atsauce uz Ministru kabineta noteikumiem Nr. 353 par zaļo publisko iepirkumu. Tomēr nav tiešas norādes vai salīdzinājuma, kas apliecinātu, ka iepirkuma priekšmeta apraksts pilnībā atbilst SAM MK noteikumu prasībām. Lai sniegtu precīzu atbildi, būtu nepieciešams piekļūt konkrētajiem SAM MK noteikumiem un veikt detalizētu salīdzinājumu ar iepirkuma dokumentāciju.""
+}
+```"
+DND 2020/6,37.2-0,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma procedūra tiek veikta, piemērojot zaļā publiskā iepirkuma principus, taču piedāvājuma izvērtēšanas kritērijs ir tikai cena, un citiem kritērijiem, tostarp zaļā publiskā iepirkuma kritērijiem, nav piešķirti punkti. Fragments: 'Piedāvājuma izvērtēšanas kritērijs ir saimnieciski visizdevīgākais piedāvājums, kuru nosaka, ņemot vērā tikai cenu.'""
+}
+```"
+DND 2020/6,37.2,n/a,jā,
+DND 2020/6,37.3,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL (1) punktu, tehniskās specifikācijas tiek ietvertas iepirkuma procedūras dokumentos un nodrošina vienādas iespējas visiem pretendentiem, neradot nepamatotus ierobežojumus konkurencei. Turklāt kontekstā norādīts, ka pretendents ir tiesīgs piedāvāt tehniskajā specifikācijā norādīto materiālu vai ekvivalentu, iesniedzot pierādījumus par materiālu atbilstību noteiktiem standartiem un testiem. Tas apliecina, ka tehniskajā specifikācijā ir nodrošinātas vienādas iespējas visiem pretendentiem.""
+}
+```"
+DND 2020/6,37.4-0,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tieši norādīti konkrēti zīmoli, specifiska izcelsme, patenti vai specifiski preču veidi. Tomēr ir minētas prasības ievērot noteiktus normatīvos aktus, piemēram, Ministru kabineta noteikumus Nr. 353 un Nr. 388, kā arī vadlīnijas, piemēram, 'ZPI vadlīnijas iekštelpu apgaismojumam'. Šīs prasības var netieši ietekmēt izvēlēto preču vai procesu specifiku, taču konkrēti zīmoli vai patenti nav pieminēti.""
+}
+```"
+DND 2020/6,37.4,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar konteksta 22.2. punktu, pretendents ir tiesīgs piedāvāt tehniskajā specifikācijā norādīto materiālu vai ekvivalentu, iesniedzot pierādījumus par materiālu atbilstību noteiktiem standartiem un testiem. Tas nozīmē, ka norāde 'vai ekvivalents' attiecas uz visām specifikācijām, tostarp zīmoliem, specifisku izcelsmi, īpašiem procesiem, patentiem vai specifiskiem preču veidiem, ja vien tiek pierādīta atbilstība izvirzītajām prasībām.""
+}
+```"
+DND 2020/6,37.5-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs pieprasa ievērot Ministru kabineta 2017. gada 20. jūnija noteikumu Nr. 353 “Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība” 1. pielikuma 6.3. sadaļā iekļautās prasības, kas ietver arī apkārtējās vides aizsardzības pasākumus un atkritumu reģenerāciju. Šīs prasības var tikt uzskatītas par īpašu marķējumu vai līdzvērtīgu pierādījumu, kas apliecina atbilstību noteiktajām prasībām.""
+}
+```"
+DND 2020/6,37.5,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""PIL 21. pantā noteiktie nosacījumi par īpaša marķējuma pieprasīšanu ir ievēroti, jo kontekstā norādīts, ka marķējuma prasības attiecas uz iepirkuma priekšmetu, ir objektīvas, nediskriminējošas un pieejamas visām ieinteresētajām personām. Turklāt marķējuma prasības nosaka neatkarīga persona, uz kuru piegādātājam nav izšķirošas ietekmes. Šie nosacījumi atbilst PIL 21. pantā izvirzītajām prasībām.""
+}
+```"
+DND 2020/6,37.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendents ir tiesīgs piedāvāt tehniskajā specifikācijā norādītos materiālus vai ekvivalentus, iesniedzot pierādījumus par materiālu atbilstību noteiktiem standartiem un testiem. Nav prasības, ka materiāliem/iekārtām/izstrādājumiem obligāti jābūt sertificētiem Latvijas Republikā vai ražotiem Eiropas Savienībā. Tāpat ir pieļaujami ārvalstīs sertificēti materiāli, ja tiek iesniegti atbilstoši pierādījumi par to atbilstību tehniskajām prasībām.""
+}
+```"
+DND 2020/6,37.7,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka Pasūtītājs būtu uzlicis par pienākumu Pretendentam iekļaut piedāvājumā finanšu rezervi konkrētā apmērā. Tā vietā ir norādīts, ka ieekonomētie līdzekļi, kas rodas būvdarbu apjoma samazinājuma dēļ, tiek noteikti kā Pasūtītāja rezerve un var tikt izmantoti papildus darbu veikšanai pēc Pasūtītāja norādījumiem. Šī rezerve nav Pretendenta piedāvājuma sastāvdaļa, un tās izmantošana ir detalizēti noregulēta līguma ietvaros.""
+}
+```"
+DND 2020/6,37.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs izvirza prasības, kas ir saistītas ar iepirkuma līguma izpildi, piemēram, pretendenta kvalifikācijas prasības, būvdarbu kvalitātes prasības, apakšuzņēmēju iesaistīšanas nosacījumi un garantijas saistības. Šīs prasības ir tieši saistītas ar līguma izpildes nodrošināšanu un kvalitāti, kā arī atbilstību normatīvajiem aktiem. Piemēram, 11.1. punktā ir noteikts, ka būvizstrādājumiem jābūt jauniem un atbilstošiem tehniskajām un normatīvajām prasībām, un 11.4. punktā ir detalizēti aprakstīti būvdarbu vadītāja pienākumi, kas nodrošina kvalitatīvu būvdarbu veikšanu.""
+}
+```"
+DND 2020/6,37.9-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts: 'Pretendents var iesniegt tikai vienu piedāvājuma variantu par visu iepirkuma apjomu. Ja tiek iesniegti vairāki piedāvājuma varianti, tad netiek vērtēts neviens no tiem.'""
+}
+```"
+DND 2020/6,37.9,n/a,nē,
+DND 2020/6,37.10-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka būtu paredzēts autotransporta līdzekļu iepirkums. Sniegtā informācija attiecas uz būvdarbiem, apgaismojuma sistēmām un citiem saistītiem aspektiem, bet ne uz autotransporta līdzekļu iepirkumiem.""
+}
+```"
+DND 2020/6,37.10,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai pasūtītājs ir ņēmis vērā PIL 54. panta un MK 28.02.2017. noteikumos Nr. 106 noteiktās prasības. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta informācija par iepirkuma priekšmetu, piemēram, vai tas attiecas uz autotransporta līdzekļu iepirkumiem, un vai ir veikta ekspluatācijas izmaksu aprēķināšana un prasību ievērošana, kā noteikts minētajos normatīvajos aktos.""
+}
+```"
+DND 2020/6,37.11,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL 19. pantu, pasūtītājam, sagatavojot iepirkumu, jāņem vērā zaļā publiskā iepirkuma prasības, ja tās ir noteiktas. Kontekstā ir norādīts, ka tehniskās specifikācijas un piedāvājumu sagatavošana ietver zaļā publiskā iepirkuma prasības, piemēram, atsauces uz Ministru kabineta noteikumiem Nr. 353 un vadlīnijām par zaļo publisko iepirkumu. Tādējādi tehniskās specifikācijas ir noteiktas saskaņā ar PIL 19. pantu, ja tas ir attiecināms.""
+}
+```"
+DND 2020/6,37.12,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka piedāvājuma sastāvā būtu jāiekļauj konkrētajam iepirkumam sagatavots darbs, kas ir autortiesību objekts vai uzskatāms par daļēju pakalpojuma izpildi, piemēram, vizualizācija vai mets. Piedāvājuma sastāvdaļas ir norādītas, un tās ietver pieteikumu, kvalifikācijas dokumentus, tehnisko piedāvājumu un finanšu piedāvājumu, bet ne šādus specifiskus autortiesību objektus.""
+}
+```"
+DND 2020/6,37.13,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs būtu noteicis konkrētu piegādātāja peļņas vai virsizdevumu procentu likmi. Turklāt kontekstā nav norāžu uz Ministru kabineta noteikumiem, kas uzliktu šādu ierobežojumu attiecībā uz izdevumu attiecināšanu noteiktā apmērā. Tādējādi lietotāja apgalvojums ir patiess.""
+}
+```"
+DND 2020/6,38.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Izslēgšanas nosacījumi, kas minēti kontekstā, atbilst PIL 42. pantā norādītajiem izslēgšanas iemesliem. Piemēram, kontekstā ir minēti nosacījumi par kandidāta vai pretendenta maksātnespēju, nepatiesas informācijas sniegšanu, konkurences tiesību pārkāpumiem, kā arī citi nosacījumi, kas ir tieši norādīti PIL 42. pantā. Turklāt kontekstā ir norādīts, ka pasūtītājs veic pārbaudi par izslēgšanas iemesliem, kas atbilst likuma prasībām.""
+}
+```"
+DND 2020/6,38.2-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā ir noteikts, ka iepirkuma komisija veic pārbaudi par izslēgšanas nosacījumiem, pamatojoties uz PIL 42. panta noteikumiem. Pārbaude tiek veikta, izmantojot informāciju no publiski pieejamiem reģistriem, kā arī pieprasot nepieciešamos dokumentus no pretendenta, ja informācija nav pieejama publiskajās datubāzēs. Turklāt, iepirkuma komisija veic pārbaudi par Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 pantā minētajiem izslēgšanas gadījumiem.""
+}
+```"
+DND 2020/6,38.2,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka kandidātu un pretendentu pārbaudes veikšanas veids attiecībā uz izslēgšanas nosacījumiem ir noteikts atbilstoši PIL 42. pantam. Piemēram, XVI sadaļā ir teikts: 'Pirms lēmuma pieņemšanas par līguma slēgšanas tiesību piešķiršanu, iepirkuma komisija attiecībā uz Pretendentu, kuram būtu piešķiramas līguma slēgšanas tiesības, veic pārbaudi par PIL 42. panta pirmajā daļā minēto pretendentu izslēgšanas gadījuma esamību PIL 42. pantā noteiktajā kārtībā.'""
+}
+```"
+DND 2020/6,38.3,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL 42. panta 3. daļu, izslēgšanas iemesli ir attiecināmi ne tikai uz lietotāja minētajām personām, bet arī uz personām ar izšķirošu ietekmi un patiesajiem labuma guvējiem. Tādējādi lietotāja apgalvojums ir nepilnīgs un nepareizs.""
+}
+```"
+DND 2020/6,38.4,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka izvēles izslēgšanas nosacījumi papildus pretendentam vai kandidātam ir attiecināti uz šādām personām: 1) uz personālsabiedrības biedru, ja pretendents ir personālsabiedrība, ir attiecināmi PIL 42.panta otrās daļas 2. punkta nosacījumi; 2) uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no kopējās līguma vērtības, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi; 3) uz pretendenta norādīto personu, uz kuras iespējām pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst iepirkuma procedūras dokumentos noteiktajām prasībām, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi. Šī informācija ir atrodama konteksta sadaļā 'XVI. PRETENDENTA PĀRBAUDE PIRMS LĒMUMA PIEŅEMŠANAS PAR LĪGUMA SLĒGŠANU'.""
+}
+```"
+DND 2020/6,38.5-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pirms lēmuma pieņemšanas par līguma slēgšanas tiesību piešķiršanu iepirkuma komisija veic pārbaudi par Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 pantā minēto izslēgšanas gadījumu esamību, ievērojot šajā pantā noteikto kārtību.""
+}
+```"
+DND 2020/6,38.5,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta pirmajā un otrajā daļā minētie izslēgšanas noteikumi ir skaidri noteikti kontekstā. Tie paredz, ka pasūtītājs pārbauda, vai pretendentam vai ar to saistītajām personām nav piemērotas sankcijas, kas varētu kavēt līguma izpildi. Ja šādas sankcijas ir piemērotas, pretendents ir izslēdzams no dalības līguma slēgšanas tiesību piešķiršanas procedūrā. Šī prasība ir detalizēti aprakstīta gan likuma izvilkumā, gan kontekstā.""
+}
+```"
+DND 2020/6,38.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīti pretendenta izslēgšanas nosacījumi, kas balstīti uz Publisko iepirkumu likuma (PIL) prasībām un iepirkuma nolikuma noteikumiem. Tie ietver konkrētus gadījumus, piemēram, nepatiesas informācijas sniegšanu, dokumentu trūkumu, neatbilstību kvalifikācijas prasībām, kā arī citus objektīvus kritērijus. Nav norāžu, ka šie nosacījumi būtu paplašināti ārpus likumā vai nolikumā noteiktā regulējuma.""
+}
+```"
+DND 2020/6,38.7,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka piegādātājs tiktu automātiski noraidīts, ja tas, tā darbinieks vai norādītā persona ir piedalījusies iepriekšējos projekta posmos vai dokumentu izstrādē. Turklāt, saskaņā ar Publisko iepirkumu likuma (PIL) regulējumu, šādos gadījumos piegādātājam ir tiesības pierādīt, ka šie apstākļi tam nedod nekādas priekšrocības konkrētajā iepirkuma procedūrā.""
+}
+```"
+DND 2020/6,38.8-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar konteksta 53.6. punktu, pretendenta piedāvājums tiek noraidīts, ja pretendenta piedāvātā līgumcena pārsniedz nolikuma 10. punktā norādīto līgumcenu. Tas norāda, ka pasūtītājs ir paredzējis šādu noraidīšanas iespēju.""
+}
+```"
+DND 2020/6,38.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta piedāvājums tiks noraidīts, ja tā piedāvātā līgumcena pārsniegs nolikuma 10. punktā norādīto līgumcenu. Šis noteikums ir minēts 19. punktā un 53.6. apakšpunktā: 'Pretendenta piedāvājums tiek noraidīts, ja saskaņā ar Publisko iepirkumu likuma 41. panta vienpadsmitās daļas pirmo punktu, ja pretendenta piedāvātā līgumcena pārsniegs nolikuma 10. punktā norādīto līgumcenu.'""
+}
+```"
+DND 2020/6,38.9-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta piedāvājums tiek noraidīts, ja piedāvātā līgumcena pārsniedz nolikuma 10. punktā norādīto līgumcenu (53.6. punkts un 19. punkts). Tomēr nav minēts, ka piedāvājums tiktu noraidīts, ja tas pārsniedz 150 procentus no paredzamās līgumcenas. Šāds nosacījums kontekstā nav ietverts.""
+}
+```"
+DND 2020/6,38.9,n/a,nē,
+DND 2020/6,39.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendents var būt jebkura fiziskā vai juridiskā persona, kā arī personu apvienība neatkarīgi no tās reģistrācijas un darbības vietas, ja tā atbilst nolikuma prasībām. Turklāt PIL 13. pants nosaka, ka pasūtītājs nenoraida kandidātu vai pretendentu, ja tas ir tiesīgs veikt būvdarbus, piegādāt preces vai sniegt pakalpojumus atbilstoši tās valsts normatīvajiem aktiem, kurā tas dibināts. Tādējādi diskriminējošas prasības attiecībā uz nacionalitāti vai ģeogrāfisko izvietojumu nav norādītas.""
+}
+```"
+DND 2020/6,39.2,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka apakšuzņēmēju dalība iepirkumā nav aizliegta, un nav noteikts maksimālais procentuālais darbu apjoms, kas var tikt nodots apakšuzņēmējiem. Tomēr ir noteikts, ka apakšuzņēmēji, kuru veicamo darbu vērtība ir 10% vai lielāka no kopējās līguma vērtības, ir jānorāda piedāvājumā (7. punkts). Tāpat ir noteikts, ka Būvuzņēmējs nav tiesīgs nodot visu būvdarbu izpildi kopumā apakšuzņēmējam (11.10. punkts).""
+}
+```"
+DND 2020/6,39.3,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumiem (piemēram, MK107 2.15., 26.12., 63.11., 104.11., 139.10.), nolikumā ir jāiekļauj noteikumi, kā piegādātāju apvienībām ir jāizpilda prasības attiecībā uz saimniecisko un finansiālo stāvokli vai tehniskajām un profesionālajām spējām. Kontekstā šāda informācija nav tieši citēta, bet, ņemot vērā likuma prasības, var secināt, ka šādi noteikumi ir iekļauti nolikumā.""
+}
+```"
+DND 2020/6,39.4,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta kvalifikācijas prasības attiecas arī uz personām, uz kuru iespējām pretendents balstās, kā arī uz piegādātāju apvienības dalībniekiem. Piemēram, kontekstā teikts: 'Prasība attiecas arī uz pretendenta norādīto personu, uz kuras iespējām pretendents balstās, lai apliecinātu, ka tās kvalifikācija atbilst prasībām, kas noteiktas iepirkuma nolikumā, kā arī uz personālsabiedrības biedru, ja pretendents ir personālsabiedrība, kā arī uz visiem personu apvienības dalībniekiem (ja piedāvājumu iesniedz personu apvienība).'""
+}
+```"
+DND 2020/6,39.5,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka Pasūtītājs pieprasa, lai pretendents savā piedāvājumā norāda visus apakšuzņēmējus, kuru veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka, un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu. Šī prasība attiecas uz visa veida līgumiem, tostarp būvdarbiem. Nav minēts, ka būvdarbu gadījumā šī prasība nebūtu jāievēro. Piemēram, kontekstā teikts: 'Pretendentam piedāvājumā jānorāda visi Pretendenta apakšuzņēmēji, kā arī apakšuzņēmēju apakšuzņēmēji, kuru veicamo Darbu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka, un katram no tiem izpildei nododamo Darbu daļu, norādot izpildāmo Darbu apjomu naudas izteiksmē un procentos.'""
+}
+```"
+DND 2020/6,39.6,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pretendentiem būtu pienākums savā piedāvājumā iekļaut informāciju par to, vai pretendenta uzņēmums vai tā piesaistītā apakšuzņēmēja uzņēmums atbilst mazā vai vidējā uzņēmuma statusam. Lai atbildētu uz šo jautājumu ar 'jā' vai 'nē', būtu nepieciešama konkrēta norāde nolikumā vai citos saistītos dokumentos par šādu prasību.""
+}
+```"
+DND 2020/6,39.7,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka prasības attiecībā uz piegādātāja finansiālo stāvokli būtu attiecinātas tikai uz tiem piegādātāju apvienības dalībniekiem un personām, uz kuru finansiālajām spējām izpildītājs balstās. Kontekstā ir minēts, ka, ja pretendents balstās uz citas personas saimnieciskajām un finansiālajām iespējām, tad šīm personām un pretendentam jābūt solidāri atbildīgiem par iepirkuma līguma izpildi (11. punkts). Tomēr nav teikts, ka prasības attiecas tikai uz šīm personām, un nav izslēgts, ka prasības var attiekties arī uz citiem apvienības dalībniekiem.""
+}
+```"
+DND 2020/6,39.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar konteksta punktu 2.1.4, būvuzņēmējam pirms būvdarbu uzsākšanas ir jāiesniedz būvdarbos vai pakalpojumu sniegšanā iesaistīto apakšuzņēmēju (ieskaitot apakšuzņēmēju apakšuzņēmējus) saraksts, kurā norādīts apakšuzņēmēja nosaukums, kontaktinformācija un to pārstāvēttiesīgā persona, ciktāl minētā informācija ir zināma.""
+}
+```"
+DND 2020/6,39.9-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs iepirkuma procedūras dokumentos ir paredzējis, ka pēc apakšuzņēmēja pieprasījuma maksājumus par apakšuzņēmēja sniegtajiem pakalpojumiem, piegādēm vai būvdarbiem, kurus izpildītājs ir pieņēmis un kuru apmaksas termiņš tiek kavēts, pasūtītājs uz apakšuzņēmēja iesniegta rēķina pamata pārskaita tieši apakšuzņēmējam. Šī kārtība ir aprakstīta konteksta punktā 7.4.7 un atbilst <law>PIL</law> 5. punktā noteiktajam.""
+}
+```"
+DND 2020/6,39.9,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas atsauces uz PIL 63.panta piektās daļas nosacījumiem vai to ievērošanu. Lai atbildētu uz šo jautājumu, būtu nepieciešams precīzs PIL 63.panta piektās daļas teksts un informācija par to, kā šie nosacījumi tiek piemēroti konkrētajā iepirkuma procedūrā.""
+}
+```"
+DND 2020/6,39.10,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu: 'Pasūtītājs nav tiesīgs izvirzīt prasību šīm apvienībām organizēties noteiktā juridiskā statusā, lai tās kā pretendents iesniegtu piedāvājumu vai kā kandidāts — pieteikumu par piedalīšanos iepirkuma procedūrā.' Turklāt <context> norāda, ka personu apvienībai jāiesniedz apliecinājums, ka uzvaras gadījumā līdz būvdarbu līguma noslēgšanai tā vai nu noslēgs sabiedrības līgumu, vai nodibinās personālsabiedrību, bet šī prasība neattiecas uz piedāvājuma iesniegšanas brīdi.""
+}
+```"
+DND 2020/6,39.11,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri noteikts, ka piegādātāju apvienībai, attiecībā uz kuru pieņemts lēmums slēgt iepirkuma līgumu, ir iespēja izvēlēties starp sabiedrības līguma noslēgšanu vai pilnsabiedrības izveidošanu. Tas ir norādīts šādi: 'Ja piedāvājumu iesniedz personu apvienība, jāiesniedz apliecinājums, ka uzvaras gadījumā līdz Būvdarbu līguma noslēgšanai personu apvienība vai noslēgs sabiedrības līgumu, vienojoties par apvienības dalībnieku atbildības sadalījumu, vai nodibinās personālsabiedrību.'""
+}
+```"
+DND 2020/6,39.12,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendents, kas uz piedāvājuma iesniegšanas brīdi nav reģistrēts, licencēts vai sertificēts atbilstoši Latvijas Republikas normatīvajiem aktiem, var piedalīties iepirkumā, ja tas iesniedz apliecinājumu, ka gadījumā, ja tiks atzīts par uzvarētāju, tas reģistrēsies atbilstoši Latvijas Republikas likumdošanai Būvkomersantu reģistrā līdz būvdarbu uzsākšanas brīdim. Tādējādi pasūtītājs nav ierobežojis pretendenta tiesības dalībai iepirkumā ar šādu nosacījumu.""
+}
+```"
+DND 2020/6,39.13,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ārvalstu speciālistiem uz piedāvājuma iesniegšanas brīdi nav obligāti jāiesniedz Latvijas tiesību aktiem atbilstoši atzīti kvalifikāciju un izglītību apliecinoši dokumenti. Tā vietā pretendents iesniedz apliecinājumu, ka gadījumā, ja ar viņu tiks noslēgts iepirkuma līgums, tas iesniegs nepieciešamos dokumentus normatīvajos aktos noteiktajā kārtībā un termiņā. (Skatīt: 'Attiecībā uz speciālistiem, kuriem profesionālā kvalifikācija ir iegūta ārzemēs, pretendents iesniedz apliecinājumu, ka gadījumā, ja ar pretendentu tiks noslēgts iepirkuma līgums, tas iesniegs Nolikuma 66. punktā noteiktos dokumentus, šajā punktā noteiktajā kārtībā un termiņā.')""
+}
+```"
+DND 2020/6,39.14,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka pasūtītājs būtu noteicis pieredzes prasības, kas atsaucas uz konkrētu nacionālo normatīvo regulējumu, piemēram, Ministru kabineta noteikumiem. Prasības attiecībā uz pieredzi ir vispārīgas un nav saistītas ar konkrēta normatīvā akta regulējumu.""
+}
+```"
+DND 2020/6,39.15,,jā,
+DND 2020/6,39.16,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā 58. punktā ir norādīts: 'Pretendenta vidējais finanšu apgrozījums par 3 (trīs) iepriekšējiem auditēto (ja to nosaka normatīvo aktu prasības) un apstiprināto gada pārskatu gadiem (ciktāl informācija par apgrozījumu ir pieejama, ņemot vērā pretendenta dibināšanas vai darbības uzsākšanas laiku) ir vismaz 170 000,00 eiro bez PVN.' Turklāt, 'Ja pretendents savu darbību uzsācis vēlāk, tad prasība ir attiecināma uz pretendenta nostrādāto periodu.' Šī informācija apstiprina lietotāja apgalvojumu.""
+}
+```"
+DND 2020/6,39.17,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendenta vidējam finanšu apgrozījumam par trīs iepriekšējiem gadiem jābūt vismaz 170 000,00 eiro bez PVN. Tomēr kontekstā nav informācijas par paredzamo līgumcenu vērtību, kas nepieciešama, lai salīdzinātu, vai gada minimālais finanšu apgrozījums ir mazāks vai lielāks par divām paredzamo līgumcenu vērtībām.""
+}
+```"
+DND 2020/6,39.18-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendents var iesniegt tikai vienu piedāvājuma variantu par visu iepirkuma apjomu. Nav minēts, ka iepirkums būtu dalīts daļās.""
+}
+```"
+DND 2020/6,39.18,n/a,nē,
+DND 2020/6,39.19,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta vidējam finanšu apgrozījumam par 3 (trīs) iepriekšējiem auditēto un apstiprināto gada pārskatu gadiem jābūt vismaz 170 000,00 eiro bez PVN. Šī prasība ir apliecināma, iesniedzot 10. pielikumu, kurā jānorāda vidējais un atsevišķi katra gada apgrozījums.""
+}
+```"
+DND 2020/6,39.20-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minētas prasības attiecībā uz pretendenta apgrozāmo līdzekļu koeficientu. Ir norādītas prasības par vidējo finanšu apgrozījumu pēdējo trīs gadu laikā (vismaz 170 000,00 eiro bez PVN), bet specifiskas prasības apgrozāmo līdzekļu koeficientam nav izvirzītas.""
+}
+```"
+DND 2020/6,39.20,n/a,nē,
+DND 2020/6,39.21,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka nepieciešamā pieredze jāapliecina par konkrētiem periodiem. Piemēram, 59. punktā teikts, ka pretendents iepriekšējo 5 gadu laikā (2015.–2020. gads) ir veicis vismaz vienu koka guļbaļķu ēkas atjaunošanas un restaurācijas vai pārbūves un restaurācijas būvdarbu. Tāpat 61. punktā ir noteikts, ka restaurācijas būvdarbu vadītājam pieredze jāapliecina par pieciem iepriekšējiem gadiem (2015.–2020. gads), bet elektroietaišu izbūves darbu vadītājam – par iepriekšējiem trim gadiem (2017.–2020. gads).""
+}
+```"
+DND 2020/6,39.22,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu, pieredzes apliecināšanas termiņš ir noteikts ne vairāk kā piecos iepriekšējos gados, ja vien pasūtītājs konkurences veicināšanai nenosaka garāku termiņu. Kontekstā (59. punkts) ir norādīts, ka pieredze tiek prasīta par pieciem gadiem, kas atbilst normatīvajam regulējumam un nav nepamatoti saīsināts.""
+}
+```"
+DND 2020/6,39.23,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādītas prasības attiecībā uz konkrētu gadu pieredzi noteiktās jomās. Piemēram, 59. punktā teikts, ka pretendents iepriekšējo 5 (piecu) gadu laikā ir veicis vismaz vienas koka guļbaļķu ēkas atjaunošanas un restaurācijas vai pārbūves un restaurācijas būvdarbus ēkā, kura ir arhitektūras piemineklis. Tāpat 61. punktā ir prasība, ka restaurācijas būvdarbu vadītājam piecos iepriekšējos gados jābūt vadījušam līdzīgus darbus. Šīs prasības pierāda, ka konkrētu gadu pieredze ir prasīta.""
+}
+```"
+DND 2020/6,39.24,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Gan kontekstā, gan likumā ir skaidri norādīts, ka gadījumā, ja piegādātājs balstās uz citas personas tehniskajām un profesionālajām spējām, piegādātājam un šai personai ir jābūt solidāri atbildīgiem par iepirkuma līguma izpildi. <law>PIL</law> norāda: 'Pasūtītājs var prasīt, lai piegādātājs un persona, uz kuras saimnieciskajām un finansiālajām iespējām tas balstās, ir solidāri atbildīgi par iepirkuma līguma izpildi.' Kontekstā tas ir apstiprināts ar līdzīgu prasību: 'Ja Pretendents balstās uz citas personas saimnieciskajām un finansiālajām iespējām, tad Pretendentam un personai, uz kura iespējām Pretendents balstās, jābūt solidāri atbildīgiem par iepirkuma līguma izpildi.'""
+}
+```"
+DND 2020/6,39.25-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar nolikuma 59. punktu, pretendentam iepriekšējo 5 gadu laikā ir jābūt veikušam vismaz 1 (vienas) koka guļbaļķu ēkas atjaunošanas un restaurācijas vai pārbūves un restaurācijas būvdarbus ēkā, kura ir arhitektūras piemineklis vai atbilst citiem noteiktajiem kritērijiem.""
+}
+```"
+DND 2020/6,39.25,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka papildus pieredzei konkrēta skaita objektos tiek prasīta arī konkrētu gadu pieredze attiecīgajā jomā. Piemēram, 61. punktā teikts, ka 'Pretendenta iepirkuma līguma izpildei piedāvātais restaurācijas (atbildīgais būvdarbu vadītājs) būvdarbu vadītājs piecos iepriekšējos gados ir vadījis vismaz 1 (vienas) koka guļbaļķu ēkas atjaunošanas un restaurācijas vai pārbūves un restaurācijas būvdarbus'.""
+}
+```"
+DND 2020/6,39.26,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pieredzei un kvalifikācijai noteiktās prasības ir tieši saistītas ar līguma izpildi. Piemēram, 61. punkts nosaka, ka restaurācijas būvdarbu vadītājam jābūt pieredzei koka guļbaļķu ēku restaurācijā, kas ir arhitektūras pieminekļi, un elektroietaišu speciālistiem jābūt pieredzei apgaismojuma sistēmu uzstādīšanā vai atbilstošai kvalifikācijai. Šīs prasības ir specifiskas, bet tās ir tieši saistītas ar līguma priekšmetu un nepieciešamas tā izpildei. Turklāt nolikumā nav norādītas pārmērīgas vai nesamērīgas prasības, piemēram, pārāk liels pieredzes līgumu skaits vai prasības, kas nav saistītas ar būvdarbu veikšanu.""
+}
+```"
+DND 2020/6,39.27,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība, ka pretendentam vai tā speciālistiem būtu jābūt pieredzei līguma izpildē saskaņā ar Starptautiskās Inženierkonsultantu Federācijas (FIDIC) noteikumiem. Prasības attiecas uz citiem kvalifikācijas un pieredzes aspektiem, piemēram, būvdarbu vadīšanu, restaurācijas darbu pieredzi un sertifikātiem.""
+}
+```"
+DND 2020/6,39.28,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība, ka līguma izpildei nepieciešamajai pieredzei jābūt gūtai tieši ES struktūrfondu vai citu ārvalstu finanšu instrumentu īstenoto projektu ietvaros. Prasības attiecas uz konkrētu pieredzi, piemēram, koka guļbaļķu ēku restaurācijā vai elektroietaišu izbūvē, bet nav norādīts, ka šī pieredze jāiegūst ES fondu vai ārvalstu finanšu instrumentu projektu ietvaros.""
+}
+```"
+DND 2020/6,39.29,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka speciālista kvalifikāciju apliecinošajam sertifikātam jābūt konkrēti minētas institūcijas izdotam. Piemēram, 60. punktā ir teikts, ka pasūtītājs patstāvīgi pārbaudīs speciālistu būvprakses sertifikātu esamības faktu publiskajā datu bāzē, bet nav noteikts, ka sertifikātam jābūt izdotam konkrētai institūcijai. Turklāt attiecībā uz speciālistiem, kuriem kvalifikācija iegūta ārzemēs, ir prasība iesniegt apliecinājumu par atbilstību reglamentētās profesijas prasībām, bet arī šeit nav minēta konkrēta institūcija.""
+}
+```"
+DND 2020/6,39.30,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka pretendenta vai speciālista pieredze būtu ierobežota tikai ar publisko vai privāto sektoru. Prasības attiecas uz konkrētu pieredzi, piemēram, koka guļbaļķu ēku restaurācijā, neatkarīgi no tā, vai tā iegūta publiskajā vai privātajā sektorā. Nav minēts, ka šāda sektoru specifika būtu noteikta kā obligāta prasība.""
+}
+```"
+DND 2020/6,39.31,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav prasības, ka pretendentam jau uz piedāvājumu iesniegšanas brīdi jābūt noslēgtam līgumam par konkrētu darbu veikšanu vai speciālistu piesaisti. Tā vietā ir noteikts, ka pretendents var balstīties uz citu personu tehniskajām un profesionālajām iespējām, iesniedzot apliecinājumus vai vienošanās par resursu nodošanu, un šos apliecinājumus var aizstāt ar citiem dokumentiem, kas pierāda resursu pieejamību līguma izpildes laikā. Turklāt, ja pretendents uzvar, tam ir noteikts termiņš (piemēram, 7 dienas) pēc uzaicinājuma parakstīt līgumu, lai iesniegtu pierādījumus par resursu pieejamību.""
+}
+```"
+DND 2020/6,39.32,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts ierobežojums, kas liegtu pretendenta piesaistītajiem apakšuzņēmējiem vai speciālistiem piedalīties arī citos piedāvājumos tā paša iepirkuma ietvaros. Nav atrasta neviena atsauce uz šādu aizliegumu vai ierobežojumu.""
+}
+```"
+DND 2020/6,39.33,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par prasībām attiecībā uz piegādātāja saimniecisko un finansiālo stāvokli, kā arī nav minēts, vai pasūtītājs paredz priekšapmaksu un starpmaksājumus vai kādas konkrētas prasības par pretendenta brīvajiem finanšu resursiem. Lai atbildētu uz šo jautājumu, būtu nepieciešama informācija par iepirkuma nolikuma sadaļu, kas regulē priekšapmaksu, starpmaksājumus un prasības attiecībā uz pretendenta finanšu resursiem.""
+}
+```"
+DND 2020/6,39.34,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav norādīts, ka pretendents savu pieredzi var apliecināt tikai ar atsauksmēm no dažādiem pasūtītājiem. Konkrēti, 59. punkts nosaka, ka pretendents pieredzi apliecina, iesniedzot aizpildītu un parakstītu nolikuma 6. pielikumu 'Pretendenta pieredzes apliecinājums', pievienojot pozitīvu atsauksmi(-es) no 6. pielikumā norādītā(-ajiem) pasūtītāja(-iem). Nav minēts, ka atsauksmes obligāti jābūt no dažādiem pasūtītājiem.""
+}
+```"
+DND 2020/6,39.35,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ārvalstīs reģistrētiem pretendentiem un personām, uz kuru iespējām pretendents balstās, ir pieļauta iespēja iesniegt alternatīvus dokumentus, lai apliecinātu savu kvalifikāciju. Piemēram, ārvalstīs reģistrēts pretendents var iesniegt tulkotu un apliecinātu dokumenta kopiju, kas apliecina reģistrācijas faktu, vai citu dokumentu, ja kompetentās institūcijas izziņas netiek izdotas. Tāpat ir pieļauts iesniegt apliecinājumu par atbilstību Latvijas normatīvajiem aktiem, ja pretendents vēl nav reģistrēts Latvijas Būvkomersantu reģistrā.""
+}
+```"
+DND 2020/6,39.36,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendenta vidējais finanšu apgrozījums par 3 iepriekšējiem gadiem jānorāda, ja tas ir pieejams, ņemot vērā pretendenta dibināšanas vai darbības uzsākšanas laiku. Turklāt, ja auditēts pārskats ir nepieciešams, tas tiek pieprasīts tikai tad, ja to nosaka normatīvo aktu prasības. Tādējādi nav pieprasīts iesniegt tikai un vienīgi auditētu finanšu pārskatu.""
+}
+```"
+DND 2020/6,39.37,kontekstā nav informācijas,n/a,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tiešas informācijas par to, vai pasūtītājs pieņem citu ES dalībvalstu normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas izdotus sertifikātus attiecībā uz kvalitātes vadības standartiem vai vides vadības standartiem (piem., ISO, EMAS). Lai sniegtu precīzu atbildi, būtu nepieciešama konkrēta informācija par šādu prasību vai noteikumu iekļaušanu nolikumā vai citos saistītos dokumentos.""
+}
+```"
+DND 2020/6,39.38,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par iepirkumiem, kuru paredzamā līgumcena ir mazāka par Ministru kabineta noteiktajām līgumcenu robežvērtībām, un nav minētas prasības par kvalitātes vadības standartiem un vides vadības standartiem šādos gadījumos. Lai atbildētu uz šo jautājumu, būtu nepieciešama konkrēta atsauce uz normatīvajiem aktiem vai iepirkuma nolikuma punktiem, kas regulē šādas situācijas.""
+}
+```"
+DND 2020/6,39.39,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēta prasība par darba drošības standartu ievērošanu un atbilstoša sertifikāta (piemēram, OHSAS 18001:2007 vai ekvivalenta) iesniegšanu, kā arī nav prasības par specifisku vadības sistēmu esamību pretendenta uzņēmumā, piemēram, būvdarbu vadības sistēmu.""
+}
+```"
+DND 2020/6,39.40,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā ir sniegta informācija par kvalifikācijas prasībām un to pārbaudes kārtību, kā arī par gadījumiem, kad pretendents var tikt izslēgts vai noraidīts. Tomēr nav konkrētas informācijas, kas apstiprinātu vai noliegtu, ka nav citu konstatējumu saistībā ar kvalifikācijas prasību neatbilstību. Lai sniegtu precīzu atbildi, būtu nepieciešama informācija par konkrētā pretendenta kvalifikācijas pārbaudes rezultātiem.""
+}
+```"
+DND 2020/6,40-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri noteikta kārtība, kādos gadījumos iepirkuma komisija izslēdz vai noraida pretendentus no turpmākās dalības iepirkuma procedūrā. Šie gadījumi ir uzskaitīti 42. punktā, piemēram, ja pretendents sniedzis nepatiesu informāciju, nav iesniedzis prasītos dokumentus, vai neatbilst noteiktajām kvalifikācijas prasībām.""
+}
+```"
+DND 2020/6,40.1-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā ir iekļauta izslēgšanas nosacījumu pārbaudes kārtība. Kā norādīts kontekstā, iepirkuma komisija veic pārbaudi par PIL 42. pantā minētajiem izslēgšanas nosacījumiem, ievērojot arī PIL 43. pantā noteikto regulējumu. Turklāt, kā minēts, pasūtītājs veic pārbaudi, izmantojot informāciju no dažādām valsts institūcijām un publiskajām datubāzēm, kā arī pieprasa papildu dokumentus, ja nepieciešams.""
+}
+```"
+DND 2020/6,40.1,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma komisija veic pārbaudi par PIL 42.panta pirmajā un otrajā daļā minēto pretendentu izslēgšanas gadījumu esamību PIL 42.pantā noteiktajā kārtībā. Tas atbilst PIL 42.panta regulējumam, kas nosaka izslēgšanas iemeslus un to piemērošanas kārtību.""
+}
+```"
+DND 2020/6,40.2,kontekstā nav informācijas,jā,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""vidēja"",
+  ""explanation"": ""Kontekstā nav tieši norādīts, ka izziņu, kas apliecina PIL 42.panta 1.daļā un 2.daļas 2.punktā minēto izslēgšanas nosacījumu neattiecināmību, iesniegšana ir prasīta tikai attiecībā uz konkrētajām personām, kas minētas lietotāja apgalvojumā. Lai sniegtu precīzu atbildi, būtu nepieciešama papildu informācija vai atsauce uz konkrētu nolikuma punktu, kurā šāda prasība ir noteikta.""
+}
+```"
+DND 2020/6,40.3,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīti vairāki termiņi izziņu un apliecinājumu iesniegšanai, kas ir īsāki par 10 darbdienām. Piemēram, izraudzītajam Pretendentam 7 (septiņu) darba dienu laikā no brīža, kad Pasūtītājs uzaicinājis Pretendentu parakstīt līgumu, jāiesniedz pierādījumi par resursiem (12. punkts, 2. apakšpunkts).""
+}
+```"
+DND 2020/6,40.4-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law>, kompetento institūciju izsniegto izziņu derīguma termiņš ir noteikts: Latvijas kompetento institūciju izsniegtās izziņas ir derīgas, ja tās izsniegtas ne agrāk kā vienu mēnesi pirms iesniegšanas dienas, savukārt ārvalstu kompetento institūciju izsniegtās izziņas ir derīgas, ja tās izsniegtas ne agrāk kā sešus mēnešus pirms iesniegšanas dienas, ja vien izziņas izdevējs nav norādījis īsāku derīguma termiņu.""
+}
+```"
+DND 2020/6,40.4,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar PIL regulējumu, izziņas un citus dokumentus, kurus izsniedz Latvijas kompetentās institūcijas, pasūtītājs pieņem un atzīst, ja tie izdoti ne agrāk kā vienu mēnesi pirms iesniegšanas dienas. Savukārt ārvalstu kompetento institūciju izsniegtās izziņas un citus dokumentus pasūtītājs pieņem un atzīst, ja tie izdoti ne agrāk kā sešus mēnešus pirms iesniegšanas dienas. Nav minēts, ka derīguma termiņš būtu 'ne ilgāks un ne īsāks', kā arī nav norādes, ka tas attiektos uz citu dienu, nevis iesniegšanas dienu.""
+}
+```"
+DND 2020/6,40.5,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs pieņem dokumentu kopijas, ja tās ir apliecinātas, un tikai šaubu gadījumā var pieprasīt dokumentu oriģinālus. Piemēram, <law> norāda, ka pasūtītājs var pieprasīt dokumenta oriģinālu vai apliecinātu kopiju, ja rodas šaubas par kopijas autentiskumu. Turklāt <context> norāda, ka pilnvaras var iesniegt kā skenētu dokumenta oriģinālu PDF formātā, un ārvalstīs reģistrēti pretendenti var iesniegt apliecinātas dokumentu kopijas.""
+}
+```"
+DND 2020/6,40.6,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka ārvalstīs reģistrēts pretendents var iesniegt alternatīvus dokumentus, kas apliecina reģistrācijas/licencēšanas/sertificēšanas faktus, ja attiecīgās valsts normatīvie akti tādu pieprasa. Piemēram, ja kompetentās institūcijas izziņas netiek izdotas, pretendents var iesniegt publiskā reģistra izdruku, kas apliecina reģistrācijas faktu. Turklāt, ja profesionālā kvalifikācija iegūta ārzemēs, pretendents var iesniegt apliecinājumu par tiesībām sniegt konkrētos pakalpojumus.""
+}
+```"
+DND 2020/6,40.7,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pretendents var iesniegt alternatīvus dokumentus, kas apliecina nepieciešamo kvalifikāciju, ja piegādātājam nav pieejami pasūtītāja prasītie dokumenti. Piemēram, 20.2.3.2. punktā ir teikts, ka, ja pretendents no tā neatkarīgu iemeslu dēļ nevar iegūt prasītos sertifikātus vai protokolus, tad var iesniegt ražotāja dokumentāciju vai citus pierādījumus, kas apliecina materiālu atbilstību tehniskajām specifikācijām. Tāpat 1. punktā ir norādīts, ka pretendents var pierādīt resursu pieejamību ar jebkuriem cita veida dokumentiem.""
+}
+```"
+DND 2020/6,40.8,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka Pasūtītājs pieprasa tikai tādus dokumentus un informāciju, kas nepieciešami pretendenta kvalifikācijas un piedāvājumu atbilstības pārbaudei, kā arī piedāvājuma izvēlei. Piemēram, 27. punktā teikts: 'Komisijai jebkurā iepirkuma procedūras stadijā ir tiesības prasīt, lai Pretendents vai kompetenta institūcija izskaidro vai papildina piedāvājuma dokumentos ietverto informāciju, kas apliecina pretendenta atbilstību iepirkuma procedūras dokumentos noteiktajām pretendentu atlases prasībām.' Tāpat 41. punktā norādīts, ka iepirkuma komisija veic kvalifikācijas atbilstības pārbaudi, vērtējot iesniegtos dokumentus un informāciju publiskajos reģistros, un izvēlas piedāvājumu saskaņā ar noteiktajiem kritērijiem.""
+}
+```"
+DND 2020/6,40.9-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma dokumentācijā ir norādīts, ka iepirkuma komisija veic pārbaudi par PIL 42. pantā minēto pretendentu izslēgšanas gadījumu esamību, ievērojot PIL 43. pantā par uzticamības nodrošināšanai iesniegto pierādījumu vērtēšanu noteikto regulējumu lēmuma pieņemšanā. (Skatīt <context> XVI. PRETENDENTA PĀRBAUDE PIRMS LĒMUMA PIEŅEMŠANAS PAR LĪGUMA SLĒGŠANU, 1. punkts).""
+}
+```"
+DND 2020/6,40.9,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma komisija, pirms lēmuma pieņemšanas par līguma slēgšanas tiesību piešķiršanu, veic pārbaudi par PIL 42.panta pirmajā daļā minēto pretendentu izslēgšanas gadījumu esamību, ievērojot PIL 43.pantā par uzticamības nodrošināšanai iesniegto pierādījumu vērtēšanu noteikto regulējumu. Tas apstiprina, ka PIL 43.panta regulējums ir attiecināms uz uzticamības nodrošināšanai iesniegto pierādījumu vērtēšanu.""
+}
+```"
+DND 2020/6,40.10,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Gan kontekstā, gan likumā ir skaidri norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments tiek pieņemts kā sākotnējais pierādījums atbilstībai paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām. Kontekstā teikts: 'Saskaņā ar PIL 49.pantu Pasūtītājs pieņem Eiropas vienoto iepirkuma procedūras dokumentu kā sākotnējo pierādījumu atbilstībai paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām pretendentu atlases prasībām.'""
+}
+```"
+DND 2020/6,40.11,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments ir pieejams aizpildīšanai Iepirkumu uzraudzības biroja tīmekļa vietnē (https://www.iub.gov.lv/lv/node/587). Tāpat ir norādīts, ka pretendents var iesniegt šo dokumentu kā sākotnējo pierādījumu atbilstībai pretendentu atlases prasībām, un ir aprakstīts, kādos gadījumos un par kādām personām tas jāiesniedz.""
+}
+```"
+DND 2020/6,40.12,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments ir jāiesniedz arī par katru piegādātāju apvienības dalībnieku, par katru personu, uz kuras iespējām pretendents balstās, lai apliecinātu kvalifikāciju, kā arī par katru apakšuzņēmēju, kura veicamo būvdarbu vērtība ir vismaz 10 procenti no iepirkuma līguma vērtības. Šis nosacījums ir minēts šajā fragmentā: 'Ja Pretendents izvēlējies iesniegt Eiropas vienoto iepirkuma procedūras dokumentu, tas iesniedz šo dokumentu arī par katru personu, uz kuras iespējām Pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, un par katru tā norādīto apakšuzņēmēju, kura veicamo būvdarbu vērtība ir vismaz 10 procenti no iepirkuma līguma vērtības. Personu apvienība iesniedz atsevišķu Eiropas vienoto iepirkuma procedūras dokumentu par katru tās dalībnieku.'""
+}
+```"
+DND 2020/6,41,nē,jā,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka pretendenta kvalifikācija un pieredze tiek vērtēta. Piemēram, 42. punktā ir minēts, ka pretendents tiek izslēgts, ja tā kvalifikācija vai pieredze neatbilst nolikuma prasībām (piemēram, 42.4., 42.5., 42.6. apakšpunkti). Turklāt 56. un 57. punktos ir prasības, kas attiecas uz pretendenta spēju nodrošināt garantijas un kvalifikāciju būvdarbu veikšanai.""
+}
+```"
+DND 2020/6,43-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka noteikta personāla kvalifikācija un pieredze ir prasīta kā kvalifikācijas prasība. Piemēram, 61. punktā ir prasība, ka atbildīgajam būvdarbu vadītājam jābūt vadījušam vismaz vienas koka guļbaļķu ēkas atjaunošanas un restaurācijas darbus, kas ir arhitektūras piemineklis, un elektroietaišu izbūves darbu vadītājiem jābūt ar pieredzi vai atbilstošu profesionālo kvalifikāciju. Šīs prasības ir saistītas ar pretendenta kvalifikācijas atbilstības pārbaudi.""
+}
+```"
+DND 2020/6,43,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> 51. panta 1. un 2. daļu, piedāvājuma izvērtēšanas kritēriji ir saimnieciski visizdevīgākā piedāvājuma noteikšana, kas balstās uz cenu, izmaksām vai kvalitātes kritērijiem. Savukārt atlases prasības, kā norādīts <context> 40. nodaļā, attiecas uz pretendenta kvalifikācijas atbilstības pārbaudi, piemēram, finanšu apgrozījumu, pieredzi, personāla kvalifikāciju un citiem aspektiem. Tādējādi piedāvājuma izvērtēšanas kritēriji un atlases prasības ir atšķirīgi un netiek vērtēti tie paši aspekti.""
+}
+```"
+DND 2020/6,44-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs piešķir līguma slēgšanas tiesības saimnieciski visizdevīgākajam piedāvājumam, kuru nosaka, ņemot vērā tikai cenu. Turklāt ir precizēts, ka par saimnieciski visizdevīgāko piedāvājumu tiks atzīts piedāvājums ar zemāko cenu, ņemot vērā, ka ir detalizēta tehniskā specifikācija un citiem kritērijiem nav būtiskas nozīmes.""
+}
+```"
+DND 2020/6,44,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law>PIL</law> (4) punktu, pasūtītājs var izmantot tikai cenu kā kritēriju, ja tehniskā specifikācija ir detalizēta. <context> sadaļā norādīts, ka tehniskā specifikācija ir detalizēta, jo tajā ir izvirzītas prasības attiecībā uz materiālu standartiem, testiem un specifisko izcelsmi, kas ir pamatotas ar būvprojekta izstrādātāja kontroltāmi. Tādējādi citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē.""
+}
+```"
+DND 2020/6,46,nē,n/a,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par piedāvājuma izvērtēšanas kritērijiem, to vērtībām, vērtību diapazoniem, izvēles algoritmu vai aprakstu par to, kā tiks piemērots katrs kritērijs. Lai gan ir minētas dažādas prasības un procedūras, šāda specifiska informācija par izvērtēšanas kritērijiem nav atrodama. Saskaņā ar PIL 6. punktu, šāda informācija būtu jānorāda iepirkuma procedūras dokumentos, taču tā nav ietverta dotajā kontekstā.""
+}
+```"
+DND 2020/6,47,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar <law> izvilkumu no PIL, pasūtītājam, sagatavojot iepirkumu, ir jāņem vērā zaļā publiskā iepirkuma principi, ievērojot samērīguma principu un balstoties uz objektīviem iemesliem. Kontekstā ir norādīts, ka piedāvājumu vērtēšanas gaitā tiek pārbaudīta atbilstība zaļā publiskā iepirkuma prasībām, un pretendenta piedāvājums tiek noraidīts, ja šīs prasības netiek ievērotas. Tādējādi apgalvojums ir patiess.""
+}
+```"
+DND 2020/6,48,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka, ja vismaz divu pretendentu piedāvātās līgumcenas ir vienādas, komisija izvēlas piedāvājumu, ko iesniedzis pretendents, kas ir nacionālā līmeņa darba devēju organizācijas biedrs un ir noslēdzis koplīgumu ar arodbiedrību, kas ir nacionāla līmeņa arodbiedrības biedre. (Skatīt 25. punktu).""
+}
+```"
+DND 2020/6,50-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka tiktu vērtētas aprites cikla izmaksas. Piedāvājuma izvērtēšanas kritērijs ir saimnieciski visizdevīgākais piedāvājums, kuru nosaka, ņemot vērā tikai cenu, un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē.""
+}
+```"
+DND 2020/6,50,n/a,n/a,
+DND 2020/6,51-0,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma procedūras dokumentācijai ir pievienots 11. pielikums ar nosaukumu 'Būvdarbu līgums (projekts)'.""
+}
+```"
+DND 2020/6,51.1,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līguma projektā ir noteikts, ka būvdarbi jāveic 12 (divpadsmit) mēnešu laikā no līguma noslēgšanas dienas, kā norādīts kontekstā: 'Būvuzņēmējs apņemas veikt visus Līgumā paredzētos Būvdarbus un pabeigt tos 12 (divpadsmit) mēnešu laikā no Līguma noslēgšanas dienas.'""
+}
+```"
+DND 2020/6,51.2,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka pasūtītājs vienpusēji izbeidz līgumu ar būvuzņēmēju, nemaksājot būvuzņēmējam līgumsodu, ja līgumu nav iespējams izpildīt tādēļ, ka līguma izpildes laikā ir piemērotas starptautiskās vai nacionālās sankcijas vai būtiskas finanšu un kapitāla tirgus intereses ietekmējošas Eiropas Savienības vai Ziemeļatlantijas līguma organizācijas dalībvalsts noteiktās sankcijas (atbilstoši Starptautisko un Latvijas Republikas nacionālo sankciju likuma 11.1 panta piektajai daļai).""
+}
+```"
+DND 2020/6,51.3-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka iepirkumu veic Daugavpils novada dome, kas ir pašvaldības iestāde, nevis tiešās pārvaldes iestāde. Tiešās pārvaldes iestādes ir valsts pārvaldes iestādes, kas darbojas tieši valsts vārdā, piemēram, ministrijas vai valsts aģentūras.""
+}
+```"
+DND 2020/6,51.3,n/a,nē,
+DND 2020/6,51.4,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līguma projektā nav konstatēta pretrunīga informācija. Visi noteikumi un prasības ir skaidri definēti, un nav norāžu uz savstarpēji izslēdzošiem vai pretrunīgiem punktiem.""
+}
+```"
+DND 2020/6,52,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Saskaņā ar kontekstu, iepirkuma līguma projektā noteiktais būvdarbu izpildes termiņš ir 12 mēneši no līguma noslēgšanas dienas. Turklāt PIL 60. panta 4. daļa nosaka, ka iepirkuma līgumu slēdz uz laiku līdz pieciem gadiem, izņēmuma gadījumos ilgāk. Kontekstā nav norāžu, ka līguma termiņš pārsniegtu piecus gadus.""
+}
+```"
+DND 2020/6,53,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Līguma projektā ir detalizēti atrunāti iespējamie līguma grozījumi, tostarp par darbu apjomu samazināšanu, palielināšanu un papildus darbiem, kā arī noteikts, ka grozījumi nedrīkst pārsniegt 15% no kopējās līguma summas bez PVN. Turklāt līgumā ir norādīts, ka grozījumi jāveic, ievērojot PIL 61. panta noteikumus. PIL 61. pants pieļauj grozījumus, ja tie atbilst noteiktiem kritērijiem, un līguma projektā minētie grozījumi atbilst šiem kritērijiem, piemēram, neparedzētu darbu veikšanai vai ekonomiski izdevīgu labojumu veikšanai.""
+}
+```"
+DND 2020/6,54-0,jā,nē,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma līguma izpildē ir jāievēro Ministru kabineta 2017. gada 20. jūnija noteikumu Nr. 353 “Prasības zaļajam publiskajam iepirkumam un to piemērošanas kārtība” 1. pielikuma 6.3. sadaļā iekļautās prasības, kas ietver apkārtējās vides aizsardzības pasākumus, piemēram, atkritumu samazināšanu un reģenerāciju. Tāpat ir prasības par energoefektivitāti un ilgtspējīgu resursu izmantošanu, kas saistītas ar vides aizsardzību un sociāliem aspektiem.""
+}
+```"
+DND 2020/6,54,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma procedūras dokumentos ir iekļautas prasības, kas saistītas ar vides aizsardzību un ir attiecināmas uz iepirkuma līguma priekšmetu. Piemēram, piegādātājam jāveic atbilstoši apkārtējās vides aizsardzības pasākumi, lai samazinātu un reģenerētu atkritumus, kas radušies apgaismojuma sistēmas uzstādīšanas laikā, kā arī jāievēro Ministru kabineta 2017. gada 20. jūnija noteikumu Nr. 353 prasības. Šīs prasības ir saistītas ar iepirkuma līguma priekšmetu un ir norādītas tehniskajās specifikācijās un iepirkuma dokumentos.""
+}
+```"
+DND 2020/6,56,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Līgumprojekta 2.1.4. punktā ir norādīts, ka Būvuzņēmējam pirms būvdarbu uzsākšanas ir pienākums iesniegt sarakstu ar būvdarbos vai pakalpojumu sniegšanā iesaistītajiem apakšuzņēmējiem, un sarakstā jānorāda arī apakšuzņēmēju apakšuzņēmēji. Turklāt 11.6. punktā ir noteikts, ka apakšuzņēmējus, kuru veicamo būvdarbu vai pakalpojumu vērtība ir 10% no kopējās līguma summas vai lielāka, drīkst mainīt tikai ar Pasūtītāja rakstveida piekrišanu. Šie punkti kopā apliecina, ka Būvuzņēmējam ir pienākums informēt Pasūtītāju par izmaiņām apakšuzņēmēju sarakstā un papildināt to ar informāciju par vēlāk iesaistītajiem apakšuzņēmējiem.""
+}
+```"
+DND 2020/6,57,jā,jā,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Iepirkuma līgumprojektā ir atrunāta piedāvājumā norādīto apakšuzņēmēju un personāla nomaiņas un jaunu apakšuzņēmēju un personāla piesaistes kārtība atbilstoši PIL 62. panta noteikumiem. Tas ir skaidri norādīts, piemēram, 11.6. punktā, kur teikts, ka apakšuzņēmējus un personālu drīkst mainīt tikai ar Pasūtītāja rakstveida piekrišanu PIL noteiktajā kārtībā, un 11.9. punktā, kur minēts, ka Pasūtītājs pieņem lēmumu par nomaiņu ne vēlāk kā piecu darbdienu laikā pēc visu nepieciešamo dokumentu saņemšanas, kas atbilst PIL 62. panta sestajai daļai.""
+}
+```"
+DND 2020/6,58-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā norādīts, ka pasūtītājs ir Daugavpils novada dome, kas ir pašvaldības iestāde, nevis tiešās valsts pārvaldes iestāde.""
+}
+```"
+DND 2020/6,58,n/a,n/a,
+DND 2020/6,60-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums, nevis vispārīgā vienošanās. Piemēram, 13. punktā teikts: 'Iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums.'""
+}
+```"
+DND 2020/6,60,n/a,n/a,
+DND 2020/6,61-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka iepirkuma procedūras rezultātā tiktu slēgta vispārīgā vienošanās. Tā vietā ir skaidri norādīts, ka iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums (13. punkts).""
+}
+```"
+DND 2020/6,61,n/a,n/a,
+DND 2020/6,62-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir skaidri norādīts, ka iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums, nevis vispārīgā vienošanās. Piemēram, 13. punktā teikts: 'Iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums.'""
+}
+```"
+DND 2020/6,62,n/a,n/a,
+DND 2020/6,63-0,nē,nē,"```json
+{
+  ""answer"": ""nē"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav minēts, ka iepirkuma procedūras rezultātā tiktu slēgta vispārīgā vienošanās. Tā vietā ir skaidri norādīts, ka iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums (skatīt konteksta punktu '13. Iepirkuma procedūras rezultātā tiks slēgts iepirkuma līgums').""
+}
+```"
+DND 2020/6,63,n/a,n/a,
+DND 2020/6,65-0,kontekstā nav informācijas,nē,"```json
+{
+  ""answer"": ""kontekstā nav informācijas"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā nav sniegta informācija par to, vai ir plānots slēgt vispārīgo vienošanos. Sniegtie izvilkumi no nolikuma un likumiem attiecas uz iepirkuma procedūru un līguma slēgšanas noteikumiem, bet nepiemin vispārīgās vienošanās plānošanu vai noslēgšanu.""
+}
+```"
+DND 2020/6,65,jā,n/a,"```json
+{
+  ""answer"": ""jā"",
+  ""rate"": ""augsta"",
+  ""explanation"": ""Kontekstā ir atrunāta kārtība, kādā vispārīgās vienošanās piegādātāji tiks uzaicināti iesniegt piedāvājumus, lai izvēlētos ar kuru no piegādātājiem slēgt konkrēto līgumu. Šī kārtība atbilst PIL 56. panta 5., 6. un 7. daļas noteikumiem, jo tiek detalizēti aprakstīti nosacījumi, kādos gadījumos piedāvājumi tiek izvērtēti atkārtoti vai netiek izvērtēti, kā arī procedūra, kā pasūtītājs konsultējas ar piegādātājiem un nosaka termiņus piedāvājumu iesniegšanai. Piemēram, PIL 56. panta 7. daļā noteikts, ka, ja vispārīgās vienošanās noteikumos nav paredzēti visi nepieciešamie nosacījumi, piedāvājumi jāizvērtē atkārtoti, un kontekstā ir aprakstīta šāda procedūra, tostarp termiņu noteikšana un piedāvājumu izvērtēšanas kritēriji.""
+}
+```"
