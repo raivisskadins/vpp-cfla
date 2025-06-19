@@ -1,6 +1,6 @@
 ---
 - nr: 1
-  answer: "nē"
+  answer: "jā"
 - nr: 2
   answer0: "nē"
   answer: "n/a"
@@ -31,7 +31,7 @@
 - nr: 10
   answer: "jā"
 - nr: 11
-  answer: "jā"
+  answer: "n/a"
 - nr: 12
   answer: "n/a"
 - nr: 13
@@ -44,8 +44,8 @@
 - nr: 16
   answer: "jā"
 - nr: 17
-  answer0: "nē"
-  answer: "n/a"
+  answer0: "jā"
+  answer: "jā"
 - nr: 18
   answer0: "nē"
   answer: "n/a"
@@ -53,12 +53,12 @@
   answer0: "jā"
   answer: "jā"
 - nr: 20
-  answer: "jā"
+  answer: "n/a"
 - nr: 21
-  answer: "jā"
+  answer: "n/a"
 - nr: 22
-  answer0: "jā"
-  answer: "jā"
+  answer0: "nē"
+  answer: "n/a"
 - nr: 23
   answer0: "nē"
   answer: "n/a"
@@ -120,8 +120,8 @@
   - nr: 37.1
     answer: "jā"
   - nr: 37.2
-    answer0: "jā"
-    answer: "jā"
+    answer0: "nē"
+    answer: "n/a"
   - nr: 37.3
     answer: "jā"
   - nr: 37.4
@@ -143,7 +143,7 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 37.11
-    answer: "jā"
+    answer: "n/a"
   - nr: 37.12
     answer: "n/a"
   - nr: 37.13
@@ -151,19 +151,19 @@
 - nr: 38
   answers:
   - nr: 38.1
-    answer: "nē"
+    answer: "jā"
   - nr: 38.2
     answer0: "jā"
     answer: "jā"
   - nr: 38.3
     answer: "jā"
   - nr: 38.4
-    answer: "nē"
+    answer: "jā"
   - nr: 38.5
     answer0: "jā"
     answer: "jā"
   - nr: 38.6
-    answer: "n/a"
+    answer: "jā"
   - nr: 38.7
     answer: "n/a"
   - nr: 38.8
@@ -181,7 +181,7 @@
   - nr: 39.3
     answer: "jā"
   - nr: 39.4
-    answer: "jā"
+    answer: "n/a"
   - nr: 39.5
     answer: "jā"
   - nr: 39.6
@@ -189,22 +189,22 @@
   - nr: 39.7
     answer: "jā"
   - nr: 39.8
-    answer: "jā"
+    answer: "nē"
   - nr: 39.9
     answer0: "nē"
     answer: "n/a"
   - nr: 39.10
-    answer: "jā"
+    answer: "n/a"
   - nr: 39.11
-    answer: "jā"
+    answer: "n/a"
   - nr: 39.12
-    answer: "jā"
+    answer: "n/a"
   - nr: 39.13
     answer: "n/a"
   - nr: 39.14
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.15
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.16
     answer: "jā"
   - nr: 39.17
@@ -218,9 +218,9 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 39.21
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.22
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.23
     answer: "n/a"
   - nr: 39.24
@@ -229,7 +229,7 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 39.26
-    answer: "jā"
+    answer: "n/a"
   - nr: 39.27
     answer: "n/a"
   - nr: 39.28
@@ -265,16 +265,16 @@
     answer0: "jā"
     answer: "jā"
   - nr: 40.2
-    answer: "jā"
+    answer: "n/a"
   - nr: 40.3
-    answer: "jā"
+    answer: "n/a"
   - nr: 40.4
-    answer0: "jā"
-    answer: "jā"
+    answer0: "nē"
+    answer: "n/a"
   - nr: 40.5
     answer: "n/a"
   - nr: 40.6
-    answer: "jā"
+    answer: "n/a"
   - nr: 40.7
     answer: "n/a"
   - nr: 40.8
@@ -325,9 +325,9 @@
   - nr: 51.4
     answer: "jā"
 - nr: 52
-  answer: "jā"
+  answer: "n/a"
 - nr: 53
-  answer: "jā"
+  answer: "nē"
 - nr: 54
   answer0: "nē"
   answer: "n/a"
