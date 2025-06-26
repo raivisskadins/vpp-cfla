@@ -1,5 +1,5 @@
 from .utilities import ask_question_save_answer, get_extra_info, get_supplementary_info
-
+from tqdm import tqdm
 # TODO refactor this function so it's more readable
 def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answer_dictonary, promptdict):
     results_table = []
@@ -14,9 +14,11 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictonary, answe
               chunk_overlap: {embedding_conf["chunk_overlap"]}""",
               file=ofile
               )
-        
-        for singleq, singlea in zip(question_dictonary,answer_dictonary):
-            
+        # TODO fix TQDM. It should display total questions and time it estimates to answer each question
+        for singleq, singlea in tqdm(zip(question_dictonary,answer_dictonary),
+                                     total=len(question_dictonary),
+                                     desc=f"Questions in {configfile}",
+                                     unit="q"):
             if 'check' in singleq:
                 continue
                 
