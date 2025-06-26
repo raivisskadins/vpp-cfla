@@ -1,18 +1,18 @@
 from .utilities import ask_question_save_answer, get_extra_info
 
-def skip_answer(singlea): 
+def is_skip_answer(singlea): 
     return ('answer' in singlea and '?' in singlea['answer']) or ('answer0' in singlea and '?' in singlea['answer0']) 
 
 def get_singleq_nodes(qnaengine, question_data, qtype, embedding_conf, ofile): 
     nodes = qnaengine.getSimilarNodes(question_data[qtype], embedding_conf["top_similar"]) 
-    q_nr = f"{question_data['nr']}-0" if qtype == 'question0' else question_data['nr'] 
+    q_nr = f"{question_data['nr']}-0" if qtype == 'question0' else question_data['nr']  
     print(f"\nQ: {q_nr}\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}", file=ofile) 
 
 def set_extra_info(question_data, pilchapters, mk107chapters, nslchapters, mki3chapters, qnaengine): 
-   print(question_data['nr'], end=' ')
-   info = get_extra_info(question_data, pilchapters, mk107chapters, nslchapters, mki3chapters) 
-   info = qnaengine.compressPrompt(info, 3000) 
-   return info 
+    print(question_data['nr'], end=' ')
+    info = get_extra_info(question_data, pilchapters, mk107chapters, nslchapters, mki3chapters) 
+    info = qnaengine.compressPrompt(info, 3000) 
+    return info 
 
 def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, ofile, results_table):
     bcontinue_main_question = True
@@ -46,7 +46,7 @@ def _process_single_question(question_data, answer_data, qnaengine, embedding_co
     bcontinue_main_question = True
  
     if 'question0' in question_data: 
-        if skip_answer(answer_data): 
+        if is_skip_answer(answer_data): 
             return True 
         results_table, bcontinue_main_question = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, ofile, results_table)
     
@@ -56,7 +56,7 @@ def _process_single_question(question_data, answer_data, qnaengine, embedding_co
         results_table.append([q_nr_to_add, 'n/a', answer_to_add, '']) 
 
     elif 'question' in question_data: 
-        if skip_answer(answer_data): 
+        if is_skip_answer(answer_data): 
             return False  
         results_table, bcontinue_main_question = add_result('question', qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, ofile, results_table)
     
@@ -82,7 +82,7 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answ
                     continue 
             
             elif 'questions' in singleq: 
-                if skip_answer(singlea): 
+                if is_skip_answer(singlea): 
                     continue 
     
                 for listq, lista in zip(singleq['questions'], singlea['answers']): 
@@ -90,4 +90,3 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answ
                                             pilchapters, mk107chapters, nslchapters, mki3chapters, ofile, results_table) 
  
     return results_table 
- 
