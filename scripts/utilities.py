@@ -7,7 +7,7 @@ import configparser
 from pathlib import Path
 from llama_index.readers.web import ReadabilityWebPageReader
 from llama_index.core import Document
-
+import pandas as pd
 import asyncio
 
 def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapters):
@@ -288,3 +288,17 @@ def get_procurement_content(extractor, procurement_file, agreement_file):
             print(procurement_content,file=fout)
 
     return procurement_content
+
+def get_ini_files(config_dir, overwrite, report_path_csv):
+    # Getting a list of ini files from a directory without extension
+    # If we are not overwritting we don't append already existing data to the report
+    ini_files = {p.stem for p in Path(config_dir).glob("*.ini")}
+    print(f"Found {len(ini_files)} config files in {config_dir}")
+    if not overwrite and report_path_csv.exists():
+        existing = pd.read_csv(report_path_csv, usecols=["Iepirkuma ID"], dtype=str)
+        done_ids = set(existing["Iepirkuma ID"].unique())
+        remaining = ini_files - done_ids
+        skipped = ini_files & done_ids
+        print(f"Skipping {len(skipped)} already-processed files: {sorted(skipped)}")
+        ini_files = remaining
+    return ini_files
