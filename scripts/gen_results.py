@@ -20,19 +20,20 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
 
     if qtype == 'question0':
         current_prompt = promptdict['0']
-        suffix = f"{question_data['nr']}-0", answer_data[f"answer0"]
+        question_nr, answer_data = f"{question_data['nr']}-0", answer_data["answer0"]
     else:
         current_prompt = promptdict[str(question_data['nr'])]
-        suffix = f"{question_data['nr']}", answer_data[f"answer"]
+        question_nr, answer_data = f"{question_data['nr']}", answer_data["answer"]
 
     result = ask_question_save_answer( 
         qnaengine, embedding_conf, current_prompt + extrainfo, 
-        question_data[qtype], {suffix}
+        question_data[qtype], question_nr, answer_data
     ) 
 
     if result[1] != result[2]:
         get_singleq_nodes(qnaengine, question_data, qtype, embedding_conf, ofile) 
 
+    result.append(current_prompt)
     result.append(nodes['text'])
     
     if qtype == 'question0' and result[1] == 'nē': 
