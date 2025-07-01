@@ -76,7 +76,7 @@ class Extractor:
                 
             markdown_content = md(result.value) 
                 
-            image_pattern = re.compile(r'!\[\]\(data:image/(\w+);base64,([a-zA-Z0-9+/=]+)\)')
+            image_pattern = re.compile(r'!\[[^\[\]]*\]\(data:image/(\w+);base64,([a-zA-Z0-9+/=]+)\)')
     
             updated_content = markdown_content
     
