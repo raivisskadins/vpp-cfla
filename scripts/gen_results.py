@@ -12,7 +12,7 @@ def get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile):
     # Serves only for logging? 
     nodes = qnaengine.getSimilarNodes(question_data[qtype], embedding_conf["top_similar"]) 
     q_nr = f"{question_data['nr']}-0" if qtype == 'question0' else question_data['nr']  
-    print(f"\nQ: {q_nr}\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}", file=ofile) 
+    print(f"\nQ: {q_nr}\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}", file=ofile)
 
 def set_extra_info(question_data, supplementary_info, qnaengine):
     # Gets extra information that can be attached to the question 
