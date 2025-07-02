@@ -301,4 +301,4 @@ def get_ini_files(config_dir, overwrite, report_path_csv):
         skipped = ini_files & done_ids
         print(f"Skipping {len(skipped)} already-processed files: {sorted(skipped)}")
         ini_files = remaining
-    return ini_files
+    return sorted(ini_files)
