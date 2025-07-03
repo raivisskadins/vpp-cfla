@@ -43,7 +43,9 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     if llm_answer != expected_answer: 
         get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile) 
     
-    answer_main_question = qtype == 'question0' and llm_answer == 'jā'
+    answer_main_question = None
+    if qtype == 'question0':
+        answer_main_question = llm_answer
          
     return results_table, answer_main_question
 
@@ -64,6 +66,23 @@ def questions_replace_w_na(questions_data, answers_data, results_table):
         if 'question' in q_data:
             question_replace_w_na(q_data, a_data, results_table)
 
+def question_replace_w_x(question_data, answer_data, results_table):
+    # Manually adds 'X' as answers to main questions where answer0 was "kontekstā nav informācijas"
+    q_nr = str(question_data['nr'])
+    ans  = answer_data['answer']
+    results_table.append([q_nr, 'X', ans, ''])
+
+def questions_replace_w_x(questions_data, answers_data, results_table):
+    # Goes through all child questions
+    for q_data, a_data in zip(questions_data, answers_data):
+        if 'question0' in q_data:
+            q_nr0 = f"{q_data['nr']}-0"
+            ans0  = a_data['answer0']
+            results_table.append([q_nr0, 'nē', ans0, ''])
+
+        if 'question' in q_data:
+            question_replace_w_x(q_data, a_data, results_table)
+
 
 def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table): 
     
@@ -73,13 +92,23 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
 
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
-        results_table, q0_true = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, ofile, results_table)
-        if not q0_true:
+        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, ofile, results_table)
+
+        if not q0_answer:
+            return
+        if q0_answer == 'nē':
             if 'question' in question_data:
                 question_replace_w_na(question_data, answer_data,
                                         results_table)
             if 'questions' in question_data:
                 questions_replace_w_na(question_data['questions'],answer_data.get('answers'),results_table)
+            return
+        if q0_answer == 'kontekstā nav informācijas':
+            if 'question' in question_data:
+                question_replace_w_x(question_data, answer_data,
+                                        results_table)
+            if 'questions' in question_data:
+                questions_replace_w_x(question_data['questions'],answer_data.get('answers'),results_table)
             return
 
     # Otherwise just handle questions normally
