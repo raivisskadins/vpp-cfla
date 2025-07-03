@@ -81,17 +81,23 @@ def generate_precision_report(input_csv: str) -> str:
     if not input_csv.exists():
         raise FileNotFoundError(f"Cannot find CSV at {input_csv}")
 
-    # Generating table data
     df = pd.read_csv(input_csv)
-    # Exclude rows that have no expected answer - "?"
+
+    # Normalize strings for consistent comparison
+    df['Atbilde'] = df['Atbilde'].astype(str).str.strip().str.lower()
+    df['Sagaidāmā atbilde'] = df['Sagaidāmā atbilde'].astype(str).str.strip().str.lower()
+
+    # Exclude rows that have no expected answer
     valid_mask = df['Sagaidāmā atbilde'] != "?"
-    # Create a new column that calculates correct answers
+
+    # Compare answers
     df['correct'] = (df['Atbilde'] == df['Sagaidāmā atbilde']) & valid_mask
-    # We have a messy string order so we capture the original one from the CSV
+
+    # Preserve original order
     original_order = df['Nr'].drop_duplicates().tolist()
 
     table_data = (
-        df[valid_mask]  
+        df[valid_mask]
         .groupby('Nr')
         .agg(
             total_asked=('correct', 'size'),
@@ -102,12 +108,10 @@ def generate_precision_report(input_csv: str) -> str:
         .reset_index()
     )
 
-    # Total precision
     total_asked = table_data['total_asked'].sum()
     total_correct = table_data['n_correct'].sum()
     total_precision = round(total_correct / total_asked, 2)
 
-    # Generating HTML
     table_html = table_data.to_html(index=False, classes="sortable")
     precison_report_html = generate_precision_report_html(table_html, total_precision)
 
