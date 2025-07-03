@@ -59,7 +59,7 @@ def questions_replace_w_na(questions_data, answers_data, results_table):
         if 'question0' in q_data:
             q_nr0 = f"{q_data['nr']}-0"
             ans0  = a_data['answer0']
-            results_table.append([q_nr0, 'n/a', ans0, ''])
+            results_table.append([q_nr0, 'nē', ans0, ''])
 
         if 'question' in q_data:
             question_replace_w_na(q_data, a_data, results_table)
