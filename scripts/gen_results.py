@@ -13,6 +13,7 @@ def get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile):
     nodes = qnaengine.getSimilarNodes(question_data[qtype], embedding_conf["top_similar"]) 
     q_nr = f"{question_data['nr']}-0" if qtype == 'question0' else question_data['nr']  
     print(f"\nQ: {q_nr}\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}", file=ofile)
+    return nodes
 
 def set_extra_info(question_data, supplementary_info, qnaengine):
     # Gets extra information that can be attached to the question 
@@ -33,15 +34,16 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     full_prompt = current_prompt + extrainfo
     answer_id = answer_data[f"answer{suffix}"]
 
+    nodes = get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile) 
     result = ask_question_save_answer(qnaengine, embedding_conf, full_prompt,
                                       question_data[qtype], question_id, answer_id)
+    result.append(nodes['text'])
+    result.append(current_prompt)
     results_table.append(result)
     
     llm_answer = result[1]
     expected_answer = result[2]
     # only logging if the answers are different, TODO get all similar nodes and add them to the CSV
-    if llm_answer != expected_answer: 
-        get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile) 
     
     answer_main_question = qtype == 'question0' and llm_answer == 'jā'
          
