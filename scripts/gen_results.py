@@ -43,7 +43,6 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     
     llm_answer = result[1]
     expected_answer = result[2]
-    # only logging if the answers are different, TODO get all similar nodes and add them to the CSV
     
     answer_main_question = None
     if qtype == 'question0':
@@ -60,6 +59,8 @@ def question_replace_w_na(question_data, answer_data, results_table):
 def questions_replace_w_na(questions_data, answers_data, results_table):
     # Goes through all child questions and accounts for questions_0
     for q_data, a_data in zip(questions_data, answers_data):
+        if is_skip_question(q_data, a_data): continue
+
         if 'question0' in q_data:
             q_nr0 = f"{q_data['nr']}-0"
             ans0  = a_data['answer0']
@@ -77,6 +78,8 @@ def question_replace_w_x(question_data, answer_data, results_table):
 def questions_replace_w_x(questions_data, answers_data, results_table):
     # Goes through all child questions
     for q_data, a_data in zip(questions_data, answers_data):
+        if is_skip_question(q_data, a_data): continue
+
         if 'question0' in q_data:
             q_nr0 = f"{q_data['nr']}-0"
             ans0  = a_data['answer0']
