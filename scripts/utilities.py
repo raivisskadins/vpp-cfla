@@ -302,3 +302,19 @@ def get_ini_files(config_dir, overwrite, report_path_csv):
         print(f"Skipping {len(skipped)} already-processed files: {sorted(skipped)}")
         ini_files = remaining
     return sorted(ini_files)
+
+def get_questions_without_q0(questions):
+    questions_wout_0q = []
+
+    for q in questions:
+        # If "question0" is not present, add this question's number
+        if 'question0' not in q:
+            if 'nr' in q:
+                questions_wout_0q.append(q['nr'])
+
+        # If it has nested questions, recurse into them
+        if 'questions' in q:
+            nested = get_questions_without_q0(q['questions'])
+            questions_wout_0q.extend(nested)
+
+    return questions_wout_0q
