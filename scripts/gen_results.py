@@ -89,7 +89,7 @@ def questions_replace_w_x(questions_data, answers_data, results_table):
             question_replace_w_x(q_data, a_data, results_table)
 
 
-def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table): 
+def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table, questions_to_process): 
     
     if is_skip_question(question_data, answer_data): return
         
@@ -125,9 +125,11 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
 
     if 'questions' in question_data:
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
-            process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info,ofile, results_table)
+            # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
+            if not questions_to_process or nested_question['nr'] in questions_to_process:
+                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info,ofile, results_table, questions_to_process)
 
-def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info): 
+def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process): 
     results_table = []  
     # Generating log file
     with open("nodes.log", 'a', encoding='utf-8') as ofile: 
@@ -140,5 +142,7 @@ def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answ
         )
         # TODO add tqdm; however you would need count all of the questions that will be answered - non trivial filtering
         for question, answer in zip(question_dictionary, answer_dictionary):
-            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table)
+            # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
+            if not questions_to_process or question['nr'] in questions_to_process:
+                process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table, questions_to_process)
     return results_table 
