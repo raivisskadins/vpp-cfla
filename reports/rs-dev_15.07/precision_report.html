@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Precision Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; cursor: pointer; position: relative; }
+
+        /* Default neutral sort indicator */
+        th::after {
+            content: " ▲▼";
+            font-size: 0.8em;
+            color: #999;
+            margin-left: 4px;
+        }
+
+        /* Sorted ascending */
+        th.asc::after {
+            content: " ▲";
+            color: black;
+        }
+
+        /* Sorted descending */
+        th.desc::after {
+            content: " ▼";
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Total model precision: 1.0</h1>
+    <h1>Total model precision for answered questions only: 1.0</h1>
+    <h1>Model Precision per Question</h1>
+    <table border="1" class="dataframe sortable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nr</th>
+      <th>total_asked</th>
+      <th>total_answered</th>
+      <th>n_correct</th>
+      <th>precision</th>
+      <th>answered_precision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('table.sortable th').forEach(headerCell => {
+            headerCell.addEventListener('click', () => {
+                const tableElement = headerCell.closest('table');
+                const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+                const isAscending = headerCell.classList.contains('asc');
+                const directionModifier = isAscending ? -1 : 1;
+                const rows = Array.from(tableElement.querySelectorAll('tbody tr'));
+
+                rows.sort((a, b) => {
+                    const aText = a.children[headerIndex].innerText.trim();
+                    const bText = b.children[headerIndex].innerText.trim();
+
+                    const aNum = parseFloat(aText);
+                    const bNum = parseFloat(bText);
+
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return (aNum - bNum) * directionModifier;
+                    }
+                    return aText.localeCompare(bText) * directionModifier;
+                });
+
+                while (tableElement.tBodies[0].firstChild) {
+                    tableElement.tBodies[0].removeChild(tableElement.tBodies[0].firstChild);
+                }
+
+                tableElement.tBodies[0].append(...rows);
+                tableElement.querySelectorAll('th').forEach(th => th.classList.remove('asc', 'desc'));
+                headerCell.classList.toggle('asc', !isAscending);
+                headerCell.classList.toggle('desc', isAscending);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
