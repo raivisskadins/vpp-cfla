@@ -75,7 +75,8 @@
 - nr: 15
   question: "Pasūtītājs ir noteicis informācijas apmaiņas veidu, kas ir vispārpieejams un neapgrūtina piegādātāja piekļuvi iepirkumam"
 - nr: 16
-  question: "Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu. VAI arī ir paskaidrots kāpēc nē ar atsauci uz  MK noteikumu 231.punktu."
+  question: "Ir atbilstoši noteiktas prasības elektroniskai pieteikumu un piedāvājumu saņemšanai.\n Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu EIS E-konkursu apakšsistēmā, izņemot MK noteikumu 231.punktā noteiktos gadījumus, kad pasūtītājam nav pienākuma pieteikumu un piedāvājumu vai tā sastāvdaļu saņemšanai izmantot elektroniskās informācijas sistēmas."
+#  question: "Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu. VAI arī ir paskaidrots kāpēc nē ar atsauci uz  MK noteikumu 231.punktu."
   PIL:
    - chapter: 39
   MK107:
