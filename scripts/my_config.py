@@ -13,6 +13,11 @@
 # - If it is not defined, the default value (`False` in this case) will be used.
 #
 # You can define any custom variable here that the notebook expects via `globals().get(...)`.
+#
+# ⚠️ In Jupyter, this script may be executed multiple times.
+# Commenting out a variable won't reset it if it was previously defined.
+# To revert to the default (e.g., via globals().get(...)), use:
+#     del my_variable
 # -----------------------------------------------------------------------------
 
 my_report_identifier = "rs-dev-bge-m3"
