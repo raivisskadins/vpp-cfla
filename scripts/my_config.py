@@ -14,14 +14,15 @@
 #
 # You can define any custom variable here that the notebook expects via `globals().get(...)`.
 #
-# ⚠️ In Jupyter, this script may be executed multiple times.
+#  In Jupyter, this script may be executed multiple times.
 # Commenting out a variable won't reset it if it was previously defined.
 # To revert to the default (e.g., via globals().get(...)), use:
 #     del my_variable 
 # -----------------------------------------------------------------------------
 
-my_report_identifier = "rs-dev-bge-m3"
-my_config_dir = "dev_config"
-my_overwrite = True
-my_embeddingmodel = "BAAI/bge-m3"
-#my_questions_to_process = ["16"]
+# my_report_identifier = "rs-experiments"
+# my_config_dir = "dev_config"
+# my_overwrite = True
+# my_embeddingmodel = "BAAI/bge-m3"
+# my_ini_files = ["KND-2020_07"]
+# my_questions_to_process = ["38.8"]
