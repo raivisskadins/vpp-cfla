@@ -182,4 +182,4 @@ tmp*
 # Note: If the file is deleted locally, it won't be restored by 'git pull'.
 # To manually restore it, run:
 #   git checkout origin/main -- scripts/my_config.py
-scripts/my_config.py
+# scripts/my_config.py
