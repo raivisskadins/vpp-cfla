@@ -1,0 +1,1 @@
+{"embeddingmodel": "C:\\Repos\\vpp-cfla\\paraphrase-multilingual-procurements", "chunk_size": 1536, "chunk_overlap": 0, "top_similar": 5, "n4rerank": 0, "use_similar_chunks": true, "prevnext": true, "model": "gpt-4o", "temperature": 0.0, "timeout": 120.0, "max_retries": 3}
