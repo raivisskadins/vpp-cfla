@@ -45,7 +45,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
             elif 'appendix' in item:
                 piltxtlist.append(pilchapters[f"{item['appendix']}. pielikums"])
                 
-    elif 'MK107' in singleq:
+    if 'MK107' in singleq:
         
         for item in singleq['MK107']:
             
@@ -65,7 +65,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                     chaptertxt = f"\n{pointslist[0]} {pointstxt}"
                     
                 mk107txtlist.append(chaptertxt)
-    elif 'MKI3' in singleq:
+    if 'MKI3' in singleq:
         
         for item in singleq['MKI3']:
             
@@ -85,7 +85,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                     chaptertxt = f"\n{pointslist[0]} {pointstxt}"
                     
                 mki3txtlist.append(chaptertxt)
-    elif 'NSL' in singleq:
+    if 'NSL' in singleq:
         
         for item in singleq['NSL']:
             
@@ -111,7 +111,6 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                 
     if len(piltxtlist) > 0:
         extrainfo += 'PIL\n' + ';\n'.join(piltxtlist) + '\n'
-
     if len(mk107txtlist) > 0:
         extrainfo += 'MK107\n' + ';\n'.join(mk107txtlist).replace(';;',';') + '\n'
     if len(mki3txtlist) > 0:
