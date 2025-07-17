@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Configuration file: my_config.py
+# Configuration file: my_config.py (see 'my_config_template.py' if you have not created your local version)
 # -----------------------------------------------------------------------------
 # This file is used to define **user-specific configuration parameters**
 # separately from the Jupyter notebook. It allows each user to set their own
@@ -20,9 +20,9 @@
 #     del my_variable 
 # -----------------------------------------------------------------------------
 
-# my_report_identifier = "rs-experiments"
-# my_config_dir = "dev_config"
-# my_overwrite = True
-# my_embeddingmodel = "BAAI/bge-m3"
-# my_ini_files = ["KND-2020_07"]
-# my_questions_to_process = ["38.8"]
+#my_report_identifier = "rs-experiments"
+#my_config_dir = "dev_config"
+#my_overwrite = True
+#my_embeddingmodel = "BAAI/bge-m3"
+#my_ini_files = ["SNP-2021_07_AK"]
+#my_questions_to_process = ["38", "38.8"]
