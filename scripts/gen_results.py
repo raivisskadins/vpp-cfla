@@ -31,14 +31,12 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     else:
         question_id = f"{question_data['nr']}{suffix}"
         current_prompt = promptdict[str(question_data['nr'])]
+
     full_prompt = current_prompt + extrainfo
     answer_id = answer_data[f"answer{suffix}"]
-
-    nodes = get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile) 
-    result = ask_question_save_answer(qnaengine, embedding_conf, full_prompt,
+    query, result = ask_question_save_answer(qnaengine, embedding_conf, full_prompt,
                                       question_data[qtype], question_id, answer_id)
-    result.append(nodes['text'])
-    result.append(current_prompt)
+    result.append(query)
     results_table.append(result)
     
     llm_answer = result[1]
