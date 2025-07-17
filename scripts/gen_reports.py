@@ -13,7 +13,7 @@ def generate_precision_report_html(
     <h2>Additional Model Evaluation Data</h2>
     <h3>Confusion Matrix</h3>
     {conf_matrix_html}
-    <p><strong>Total questions answered:</strong> {extra_data['total_q']}</p>
+    <p><strong>Total questions:</strong> {extra_data['total_q']}</p>
     <p><strong>Confident answers:</strong> {extra_data['confident_answers']}</p>
     <p><strong>Unanswerable questions (n/a without q0):</strong> {extra_data['unanswerable_count']}</p>
     <p><strong>Total 'jā' answers:</strong> {extra_data['total_yes']}</p>
