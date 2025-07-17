@@ -13,15 +13,15 @@ def generate_precision_report_html(
     <h2>Additional Model Evaluation Data</h2>
     <h3>Confusion Matrix</h3>
     {conf_matrix_html}
-    <p><strong>Total questions:</strong> {extra_data['total_q']}</p>
+    <p><strong>Total questions answered:</strong> {extra_data['total_q']}</p>
     <p><strong>Confident answers:</strong> {extra_data['confident_answers']}</p>
-    <p><strong>Unanswerable questions (model abstained):</strong> {extra_data['unanswerable_count']}</p>
-    <p><strong>Total 'Yes' answers:</strong> {extra_data['total_yes']}</p>
-    <p><strong>Total 'No' answers:</strong> {extra_data['total_no']}</p>
-    <p><strong>Total 'N/A' answers:</strong> {extra_data['total_na']}</p>
-    <p><strong>'Yes' answer accuracy:</strong> {round(extra_data['yes_accuracy'], 2)}%</p>
-    <p><strong>'No' answer accuracy:</strong> {round(extra_data['no_accuracy'], 2)}%</p>
-    <p><strong>'N/A' answer accuracy:</strong> {round(extra_data['na_accuracy'], 2)}%</p>
+    <p><strong>Unanswerable questions (n/a without q0):</strong> {extra_data['unanswerable_count']}</p>
+    <p><strong>Total 'jā' answers:</strong> {extra_data['total_yes']}</p>
+    <p><strong>Total 'nē' answers:</strong> {extra_data['total_no']}</p>
+    <p><strong>Total 'n/a' answers:</strong> {extra_data['total_na']}</p>
+    <p><strong>'jā' answer accuracy:</strong> {round(extra_data['yes_accuracy'], 2)}%</p>
+    <p><strong>'nē' answer accuracy:</strong> {round(extra_data['no_accuracy'], 2)}%</p>
+    <p><strong>'n/a' answer accuracy:</strong> {round(extra_data['na_accuracy'], 2)}%</p>
     """
 
     report_html = f"""<!DOCTYPE html>
