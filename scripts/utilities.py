@@ -166,7 +166,9 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
                                    n=embedding_conf["top_similar"],
                                    n4rerank=embedding_conf["n4rerank"],
                                    prevnext=embedding_conf["prevnext"])
-    result = re.sub(r'\n\n+',r'\n',result).strip()
+    
+    query = result["query"]
+    result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
 
     answer = re.search(r'\{[^\{\}]+\}',result, re.IGNORECASE)
     if answer:
@@ -192,7 +194,7 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
             record = [nr, answer.group(1).lower(), expectedanswer, result]
         else:
             record = [nr, '', expectedanswer, result] 
-    return record
+    return query, record
 
 # TODO needs a more logical name, more info seems to be similar
 def get_supplementary_info():
