@@ -20,9 +20,9 @@
 #     del my_variable 
 # -----------------------------------------------------------------------------
 
-my_report_identifier = "finetuned-paraphrase"
+my_report_identifier = "dev-bge-m3"
 my_config_dir = "dev_config"
 my_overwrite = True
-my_embeddingmodel = "C:\\Repos\\vpp-cfla\\paraphrase-multilingual-procurements"
+my_embeddingmodel = "BAAI/bge-m3"
 # my_ini_files = ["KND-2020_07"]
 # my_questions_to_process = ["38.8"]

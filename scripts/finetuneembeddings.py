@@ -234,9 +234,9 @@ def generate_qa_embedding_pairs(
 ##### END Modified version of llama_index\finetuning\embeddings\common.py
 
 embedding_conf = {
-    "embeddingmodel": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3",
-    "fine_tuned": "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
-    "fine_tuned_path": "../paraphrase-multilingual-procurements",
+    "embeddingmodel": "BAAI/bge-m3",  # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3",
+    "fine_tuned": "bge-m3-procurements",  # "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
+    "fine_tuned_path": "../bge-m3-procurements",  # "../paraphrase-multilingual-procurements",
     "chunk_size": 1536,
     "chunk_overlap": 0,
 }
@@ -398,7 +398,7 @@ async def train_only():
             "fine_tuned_path"
         ],  # Output directory for fine-tuned embeddings model
         val_dataset=val_dataset,  # Dataset to validate on
-        epochs=4,  # Number of Epochs to train for
+        epochs=10,  # Number of Epochs to train for
     )
 
     finetune_engine.finetune(resume_from_checkpoint=True, save_checkpoints=True)
