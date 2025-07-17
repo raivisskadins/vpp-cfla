@@ -9,7 +9,7 @@ def build_main_report_html(input_csv_path: Path) -> str:
     :param input_csv_path: Path to the CSV report file.
     :return: HTML string for the main report.
     """
-    df = pd.read_csv(input_csv_path, encoding="utf-8")
+    df = pd.read_csv(input_csv_path, keep_default_na=False, encoding="utf-8")
     html = [
         "<!DOCTYPE html>",
         "<html lang='en'>",
