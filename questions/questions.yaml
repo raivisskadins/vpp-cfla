@@ -76,6 +76,7 @@
   question: "Pasūtītājs ir noteicis informācijas apmaiņas veidu, kas ir vispārpieejams un neapgrūtina piegādātāja piekļuvi iepirkumam"
 - nr: 16
   question: "Ir atbilstoši noteiktas prasības elektroniskai pieteikumu un piedāvājumu saņemšanai.\n Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu EIS E-konkursu apakšsistēmā, izņemot MK noteikumu 231.punktā noteiktos gadījumus, kad pasūtītājam nav pienākuma pieteikumu un piedāvājumu vai tā sastāvdaļu saņemšanai izmantot elektroniskās informācijas sistēmas."
+#  question: "Pasūtītājs paredz elektronisku pieteikumu un piedāvājumu iesniegšanu. VAI arī ir paskaidrots kāpēc nē ar atsauci uz  MK noteikumu 231.punktu."
   PIL:
    - chapter: 39
   MK107:
@@ -517,7 +518,7 @@
     PIL:
      - chapter: 44
   - nr: 40.7
-    question: "Prasība attiecībā uz pretendenta/kandidāta vai tā speciālistu kvalifikācijas apliecināšanai iesniedzamajiem dokumentiem nav noteikta tādējādi, ka netiek pieļauta arī alternatīvu dokumentu iesniegšana, kas pēc būtības apliecina nepieciešamo kvalifikāciju, ja piegādātājam nav pieejami pasūtītāja prasītie dokumenti"
+    question: "Prasība attiecībā uz pretendenta/kandidāta vai tā speciālistu kvalifikācijas apliecināšanai iesniedzamajiem dokumentiem nav noteikta tādējādi, ka ir aizliegta alternatīvu dokumentu iesniegšana, kas pēc būtības apliecina nepieciešamo kvalifikāciju, ja piegādātājam nav pieejami pasūtītāja prasītie dokumenti"
   - nr: 40.8
     question: "Pasūtītājs ir pieprasījis tikai tādu informāciju un dokumentus, kas nepieciešami pretendenta/kandidāta kvalifikācijas un piedāvājumu atbilstības pārbaudei, kā arī piedāvājuma izvēlei saskaņā ar noteiktajiem piedāvājuma izvērtēšanas kritērijiem"
   - nr: 40.9
