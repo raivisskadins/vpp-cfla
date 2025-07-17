@@ -92,7 +92,6 @@ def create_question_details(row) -> str:
     answer = row["Atbilde"]
     expect = row["Sagaidāmā atbilde"]
     justification = row["Pamatojums"]
-    chunk = row["Chunk"]
     prompt = row["Prompt"]
 
     mismatch_class = "mismatch" if answer != expect else ""
@@ -102,7 +101,6 @@ def create_question_details(row) -> str:
         <summary>{qnum}: Answer="{answer}" vs Expected="{expect}"</summary>
         <div class='question-content'>
             <p><strong>Pamatojums:</strong> {justification}</p>
-            <p><strong>Chunk:</strong> {chunk}</p>
             <p><strong>Prompt:</strong> {prompt}</p>
         </div>
     </details>

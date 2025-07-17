@@ -350,10 +350,10 @@ class QnAEngine:
                 ).format(context_str="\n".join(nodelist), query_str=q)
 
                 result = self.llm.complete(newquery)
-
-                self.chached_responses[(query_prompt, q)] = str(result)
-                return str(result)
-
+                    
+                self.chached_responses[(query_prompt,q)] = str(result)
+                return {"query": newquery, "result": str(result)}
+                
             except openai.BadRequestError as e:
                 print(f"Q: {q}")
                 print(f"{e.code} {e.args[0]}")
@@ -381,9 +381,9 @@ class QnAEngine:
                     query_prompt + "\n" + text_qa_template_str
                 ).format(context_str=self.alltext, query_str=q)
                 result = self.llm.complete(fullquery)
-                self.chached_responses[(query_prompt, q)] = str(result)
-                return str(result)
-
+                self.chached_responses[(query_prompt,q)] = str(result)
+                return {"query": fullquery, "result": str(result)}
+                
             except Exception as error:
                 print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
                 return ""
