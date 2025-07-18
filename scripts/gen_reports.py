@@ -110,15 +110,18 @@ def generate_precision_report_html(
 
 
 
-def generate_precision_report(input_csv: str, questions_without_q0, extra_data) -> str:
+def generate_precision_report(input_csv: str, questions_without_q0) -> str:
     if not input_csv.exists():
         raise FileNotFoundError(f"Cannot find CSV at {input_csv}")
 
     df = pd.read_csv(input_csv, keep_default_na=False)
 
+    extra_data = {}
+
     # Normalize strings for consistent comparison
     df['Atbilde'] = df['Atbilde'].astype(str).str.strip().str.lower()
     df['Sagaidāmā atbilde'] = df['Sagaidāmā atbilde'].astype(str).str.strip().str.lower()
+    
 
     # Exclude rows that have no expected answer
     valid_mask = df['Sagaidāmā atbilde'] != "?"
@@ -127,7 +130,8 @@ def generate_precision_report(input_csv: str, questions_without_q0, extra_data) 
     df['answered'] = df['Atbilde'].isin(['jā', 'nē', 'n/a'])
 
     # Only keep questions that are answered and where expected answer is not n/a without q0
-    df['answered_wo_na'] = df['Atbilde'].isin(['jā', 'nē', 'n/a']) & ( ~((df['Nr'].isin(questions_without_q0)) & (df['Sagaidāmā atbilde'] == 'n/a')))
+    unanswerable_mask = (df['Nr'].isin(questions_without_q0)) & (df['Sagaidāmā atbilde'] == 'n/a')
+    df['answered_wo_na'] = df['Atbilde'].isin(['jā', 'nē', 'n/a']) & (~unanswerable_mask)
 
     # Compare answers
     df['correct'] = (df['Atbilde'] == df['Sagaidāmā atbilde']) & valid_mask
@@ -161,6 +165,42 @@ def generate_precision_report(input_csv: str, questions_without_q0, extra_data) 
     total_precision_answered = round(total_correct / total_answered, 2)
     total_precision_answered_wo_na = round(total_correct / total_answered_wo_na, 2)
 
+    # extra_data
+    extra_data['total_q'] = total_asked
+    extra_data['confident_answers'] = total_answered_wo_na
+    extra_data['unanswerable_count'] = unanswerable_mask.sum()
+
+    # Confusion matrix
+    df["Atbilde"] = df["Atbilde"].replace({
+        "x": "kontekstā nav informācijas",
+        "kontekstā nav informācijas": "kontekstā nav informācijas"
+    })
+
+    expected = ["jā", "nē", "n/a"]
+    actual = ["jā", "nē", "n/a", "kontekstā nav informācijas"]
+
+    conf_matrix = pd.crosstab(
+        df["Sagaidāmā atbilde"],
+        df["Atbilde"],
+        rownames=[None],
+        colnames=["Expected ↓ / Actual →"],
+        dropna=False
+    ).reindex(index=expected, columns=actual, fill_value=0)
+
+    extra_data['conf_matrix'] = conf_matrix
+
+    correct_yes = conf_matrix.loc["jā", "jā"]
+    extra_data['total_yes'] = conf_matrix.loc["jā"].sum()
+
+    correct_no = conf_matrix.loc["nē", "nē"]
+    extra_data['total_no'] = conf_matrix.loc["nē"].sum()
+
+    correct_na = conf_matrix.loc["n/a", "n/a"]
+    extra_data['total_na'] = conf_matrix.loc["n/a"].sum()
+
+    extra_data['yes_accuracy'] = (correct_yes / extra_data['total_yes']) * 100 if extra_data['total_yes'] > 0 else 0
+    extra_data['no_accuracy'] = (correct_no / extra_data['total_no']) * 100 if extra_data['total_no'] > 0 else 0
+    extra_data['na_accuracy'] = (correct_na / extra_data['total_na']) * 100 if extra_data['total_na'] > 0 else 0
 
     table_html = table_data.to_html(index=False, classes="sortable")
     precison_report_html = generate_precision_report_html(table_html, total_precision, total_precision_answered, total_precision_answered_wo_na, extra_data)
