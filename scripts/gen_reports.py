@@ -2,9 +2,6 @@ import pandas as pd
 
 def generate_precision_report_html(
     table_html: str,
-    total_precision: float,
-    total_precision_answered: float,
-    total_precision_answered_wo_na: float,
     extra_data
 ) -> str:
     conf_matrix_html = extra_data["conf_matrix"].to_html(border=1, classes="conf-matrix")
@@ -61,9 +58,6 @@ def generate_precision_report_html(
     </style>
 </head>
 <body>
-    <h1>Total model precision: {total_precision}</h1>
-    <h1>Total model precision for answered questions only: {total_precision_answered}</h1>
-    <h1>Total model precision for answered questions only and without unobtainable n/a: {total_precision_answered_wo_na}</h1>
     <h1>Model Precision per Question</h1>
     <div class="report-table">
         {table_html}
@@ -108,67 +102,12 @@ def generate_precision_report_html(
 </html>"""
     return report_html
 
-
-
-def generate_precision_report(input_csv: str, questions_without_q0) -> str:
-    if not input_csv.exists():
-        raise FileNotFoundError(f"Cannot find CSV at {input_csv}")
-
-    df = pd.read_csv(input_csv, keep_default_na=False)
-
+def get_extra_data(df, total_asked: int, total_answered_wo_na: int, total_unanswerable: int):
     extra_data = {}
-
-    # Normalize strings for consistent comparison
-    df['Atbilde'] = df['Atbilde'].astype(str).str.strip().str.lower()
-    df['Sagaidāmā atbilde'] = df['Sagaidāmā atbilde'].astype(str).str.strip().str.lower()
-    
-
-    # Exclude rows that have no expected answer
-    valid_mask = df['Sagaidāmā atbilde'] != "?"
-
-    # Also exclude rows with questions that were not answered
-    df['answered'] = df['Atbilde'].isin(['jā', 'nē', 'n/a'])
-
-    # Only keep questions that are answered and where expected answer is not n/a without q0
-    unanswerable_mask = (df['Nr'].isin(questions_without_q0)) & (df['Sagaidāmā atbilde'] == 'n/a')
-    df['answered_wo_na'] = df['Atbilde'].isin(['jā', 'nē', 'n/a']) & (~unanswerable_mask)
-
-    # Compare answers
-    df['correct'] = (df['Atbilde'] == df['Sagaidāmā atbilde']) & valid_mask
-
-
-
-    # Preserve original order
-    original_order = df['Nr'].drop_duplicates().tolist()
-
-    table_data = (
-        df[valid_mask]
-        .groupby('Nr')
-        .agg(
-            total_asked=('correct', 'size'),
-            total_answered=('answered', 'sum'),
-            total_answered_wo_na=('answered_wo_na', 'sum'),
-            n_correct=('correct', 'sum')
-        )
-        .assign(precision=lambda d: round(d['n_correct'] / d['total_asked'], 2))
-        .assign(precision_answered = lambda d: round(d['n_correct'] / d['total_answered'].clip(lower=1), 2))
-        .assign(precision_answered_wo_na = lambda d: round(d['n_correct'] / d['total_answered_wo_na'].clip(lower=1), 2))
-        .reindex(original_order)
-        .reset_index()
-    )
-
-    total_asked = table_data['total_asked'].sum()
-    total_answered = table_data['total_answered'].sum()
-    total_answered_wo_na = table_data['total_answered_wo_na'].sum()
-    total_correct = table_data['n_correct'].sum()
-    total_precision = round(total_correct / total_asked, 2)
-    total_precision_answered = round(total_correct / total_answered, 2)
-    total_precision_answered_wo_na = round(total_correct / total_answered_wo_na, 2)
-
     # extra_data
     extra_data['total_q'] = total_asked
     extra_data['confident_answers'] = total_answered_wo_na
-    extra_data['unanswerable_count'] = unanswerable_mask.sum()
+    extra_data['unanswerable_count'] = total_unanswerable
 
     # Confusion matrix
     df["Atbilde"] = df["Atbilde"].replace({
@@ -202,7 +141,57 @@ def generate_precision_report(input_csv: str, questions_without_q0) -> str:
     extra_data['no_accuracy'] = (correct_no / extra_data['total_no']) * 100 if extra_data['total_no'] > 0 else 0
     extra_data['na_accuracy'] = (correct_na / extra_data['total_na']) * 100 if extra_data['total_na'] > 0 else 0
 
+    return extra_data
+
+def generate_precision_report(input_csv: str, questions_without_q0) -> str:
+    if not input_csv.exists():
+        raise FileNotFoundError(f"Cannot find CSV at {input_csv}")
+
+    df = pd.read_csv(input_csv, keep_default_na=False)
+
+    # Normalize strings for consistent comparison
+    df['Atbilde'] = df['Atbilde'].astype(str).str.strip().str.lower()
+    df['Sagaidāmā atbilde'] = df['Sagaidāmā atbilde'].astype(str).str.strip().str.lower()
+    
+
+    # Exclude rows that have no expected answer
+    valid_mask = df['Sagaidāmā atbilde'] != "?"
+
+    # Also exclude rows with questions that were not answered
+    df['answered'] = df['Atbilde'].isin(['jā', 'nē', 'n/a'])
+
+    # Only keep questions that are answered and where expected answer is not n/a without q0
+    unanswerable_mask = (df['Nr'].isin(questions_without_q0)) & (df['Sagaidāmā atbilde'] == 'n/a')
+    df['answered_wo_na'] = df['Atbilde'].isin(['jā', 'nē', 'n/a']) & (~unanswerable_mask)
+
+    # Compare answers
+    df['correct'] = (df['Atbilde'] == df['Sagaidāmā atbilde']) & valid_mask
+
+    # Preserve original order
+    original_order = df['Nr'].drop_duplicates().tolist()
+
+    table_data = (
+        df[valid_mask]
+        .groupby('Nr')
+        .agg(
+            total_asked=('correct', 'size'),
+            total_answered=('answered', 'sum'),
+            total_answered_wo_na=('answered_wo_na', 'sum'),
+            n_correct=('correct', 'sum')
+        )
+        .assign(precision=lambda d: round(d['n_correct'] / d['total_asked'], 2))
+        .assign(precision_answered = lambda d: round(d['n_correct'] / d['total_answered'].clip(lower=1), 2))
+        .assign(precision_answered_wo_na = lambda d: round(d['n_correct'] / d['total_answered_wo_na'].clip(lower=1), 2))
+        .reindex(original_order)
+        .reset_index()
+    )
+
+    total_asked = table_data['total_asked'].sum()
+    total_answered_wo_na = table_data['total_answered_wo_na'].sum()
+
+    extra_data = get_extra_data(df, total_asked, total_answered_wo_na, unanswerable_mask.sum())
+
     table_html = table_data.to_html(index=False, classes="sortable")
-    precison_report_html = generate_precision_report_html(table_html, total_precision, total_precision_answered, total_precision_answered_wo_na, extra_data)
+    precison_report_html = generate_precision_report_html(table_html, extra_data)
 
     return precison_report_html
