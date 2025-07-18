@@ -45,7 +45,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
             elif 'appendix' in item:
                 piltxtlist.append(pilchapters[f"{item['appendix']}. pielikums"])
                 
-    elif 'MK107' in singleq:
+    if 'MK107' in singleq:
         
         for item in singleq['MK107']:
             
@@ -65,7 +65,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                     chaptertxt = f"\n{pointslist[0]} {pointstxt}"
                     
                 mk107txtlist.append(chaptertxt)
-    elif 'MKI3' in singleq:
+    if 'MKI3' in singleq:
         
         for item in singleq['MKI3']:
             
@@ -85,7 +85,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                     chaptertxt = f"\n{pointslist[0]} {pointstxt}"
                     
                 mki3txtlist.append(chaptertxt)
-    elif 'NSL' in singleq:
+    if 'NSL' in singleq:
         
         for item in singleq['NSL']:
             
@@ -111,7 +111,6 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
                 
     if len(piltxtlist) > 0:
         extrainfo += 'PIL\n' + ';\n'.join(piltxtlist) + '\n'
-
     if len(mk107txtlist) > 0:
         extrainfo += 'MK107\n' + ';\n'.join(mk107txtlist).replace(';;',';') + '\n'
     if len(mki3txtlist) > 0:
@@ -166,7 +165,9 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
                                    n=embedding_conf["top_similar"],
                                    n4rerank=embedding_conf["n4rerank"],
                                    prevnext=embedding_conf["prevnext"])
-    result = re.sub(r'\n\n+',r'\n',result).strip()
+    
+    query = result["query"]
+    result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
 
     answer = re.search(r'\{[^\{\}]+\}',result, re.IGNORECASE)
     if answer:
@@ -192,7 +193,7 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
             record = [nr, answer.group(1).lower(), expectedanswer, result]
         else:
             record = [nr, '', expectedanswer, result] 
-    return record
+    return query, record
 
 # TODO needs a more logical name, more info seems to be similar
 def get_supplementary_info():
