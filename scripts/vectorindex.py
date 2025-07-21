@@ -178,7 +178,10 @@ class QnAEngine:
                     Document(text="\n\n".join(segmentlines), extra_info=newmeta)
                 )
             elif len(segmentlines) == 1:
-                docs[-1].text = docs[-1].text + "\n" + segmentlines[0]
+                lastsegment = docs[-1].text + "\n" + segmentlines[0]
+                lastextra_info = docs[-1].extra_info
+                docs.pop()
+                docs.append(Document(text=lastsegment, extra_info=lastextra_info))
 
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
@@ -322,7 +325,11 @@ class QnAEngine:
         self, query_prompt, q, usecontext=True, n=4, n4rerank=0, prevnext=False
     ):
         if (query_prompt, q) in self.chached_responses:
-            return self.chached_responses[(query_prompt, q)]
+            cached = self.chached_responses[(query_prompt, q)]
+            if isinstance(cached, dict):
+                return cached
+            else:
+                return {"query": "", "result": cached}
 
         if usecontext == True:
             numitemsinidx = self.newindex.vector_store.client.ntotal
@@ -350,8 +357,7 @@ class QnAEngine:
                 ).format(context_str="\n".join(nodelist), query_str=q)
 
                 result = self.llm.complete(newquery)
-                    
-                self.chached_responses[(query_prompt,q)] = str(result)
+                self.chached_responses[(query_prompt, q)] = {"query": newquery,"result": str(result)}
                 return {"query": newquery, "result": str(result)}
                 
             except openai.BadRequestError as e:
@@ -381,7 +387,7 @@ class QnAEngine:
                     query_prompt + "\n" + text_qa_template_str
                 ).format(context_str=self.alltext, query_str=q)
                 result = self.llm.complete(fullquery)
-                self.chached_responses[(query_prompt,q)] = str(result)
+                self.chached_responses[(query_prompt, q)] = {"query": fullquery,"result": str(result)}
                 return {"query": fullquery, "result": str(result)}
                 
             except Exception as error:
