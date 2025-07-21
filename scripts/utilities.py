@@ -314,7 +314,7 @@ def get_questions_without_q0(questions):
                 questions_wout_0q.append(q['nr'])
 
         # If it has nested questions, recurse into them
-        if 'questions' in q:
+        if 'questions' in q and 'question0' not in q:
             nested = get_questions_without_q0(q['questions'])
             questions_wout_0q.extend(nested)
 
