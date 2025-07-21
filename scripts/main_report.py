@@ -101,7 +101,7 @@ def create_question_details(row) -> str:
         <summary>{qnum}: Answer="{answer}" vs Expected="{expect}"</summary>
         <div class='question-content'>
             <p><strong>Pamatojums:</strong> {justification}</p>
-            <p><strong>Prompt:</strong> {prompt}</p>
+            <p><strong>Uzvedne:</strong> {prompt}</p>
         </div>
     </details>
     """
