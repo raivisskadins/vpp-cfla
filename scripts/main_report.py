@@ -92,7 +92,7 @@ def create_question_details(row) -> str:
     answer = row["Atbilde"]
     expect = row["Sagaidāmā atbilde"]
     justification = row["Pamatojums"]
-    prompt = row["Prompt"]
+    prompt = row["Uzvedne"]
 
     mismatch_class = "mismatch" if answer != expect else ""
 

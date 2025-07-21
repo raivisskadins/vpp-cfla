@@ -178,7 +178,10 @@ class QnAEngine:
                     Document(text="\n\n".join(segmentlines), extra_info=newmeta)
                 )
             elif len(segmentlines) == 1:
-                docs[-1].text = docs[-1].text + "\n" + segmentlines[0]
+                lastsegment = docs[-1].text + "\n" + segmentlines[0]
+                lastextra_info = docs[-1].extra_info
+                docs.pop()
+                docs.append(Document(text=lastsegment, extra_info=lastextra_info))
 
         except Exception as error:
             print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
