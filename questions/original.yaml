@@ -507,7 +507,7 @@
        pt:
         - 3
   - nr: 40.5
-    question: "Pasūtītājs nav noteicis, ka visām minētajām izziņām/ iesniegtajiem dokumentiem jābūt oriģināliem, neparedzot iespēju iesniegt šo dokumentu kopijas"
+    question: "Pasūtītājs ir nenoteicis, ka visām minētajām izziņām/ iesniegtajiem dokumentiem jābūt oriģināliem, neparedzot iespēju iesniegt šo dokumentu kopijas"
     PIL:
      - chapter: 41
        pt:
