@@ -446,23 +446,23 @@
   - nr: 39.27
     question: "Būvdarbu iepirkumā pretendentam vai tā speciālistiem nav izvirzīta prasība par pieredzi līguma izpildē saskaņā ar Starptautiskās Inženierkonsultantu Federācijas noteikumiem (jeb FIDIC)"
   - nr: 39.28
-    question: "Nav izvirzīta prasība, ka līguma izpildei nepieciešamajai pieredzei jābūt gūtai tieši ES struktūrfondu vai citu ārvalstu finanšu instrumentu īstenoto projektu ietvaros, ja vien plānotais pakalpojums nav saistīts ar darbu ES fondu vai citu ārvalstu finanšu instrumentu īstenoto projektu  administrēšanā vai pasūtītājs nevar sniegt atbilstošu pamatojumu"
+    question: "Ir neizvirzīta prasība, ka līguma izpildei nepieciešamajai pieredzei jābūt gūtai tieši ES struktūrfondu vai citu ārvalstu finanšu instrumentu īstenoto projektu ietvaros, ja vien plānotais pakalpojums nav saistīts ar darbu ES fondu vai citu ārvalstu finanšu instrumentu īstenoto projektu  administrēšanā vai pasūtītājs nevar sniegt atbilstošu pamatojumu"
   - nr: 39.29
-    question: "Nav izvirzīta prasība, ka speciālista kvalifikāciju apliecinošajam sertifikātam jābūt konkrēti minētas institūcijas izdotam, ja nepieciešamo sertifikātu attiecīgajā jomā izdod vairākas kompetentās institūcijas"
+    question: "Ir neizvirzīta prasība, ka speciālista kvalifikāciju apliecinošajam sertifikātam jābūt konkrēti minētas institūcijas izdotam, ja nepieciešamo sertifikātu attiecīgajā jomā izdod vairākas kompetentās institūcijas"
   - nr: 39.30
-    question: "Nav noteikts, ka pretendenta/speciālista pieredze attiecīgo preču piegādē/pakalpojumu sniegšanā/būvdarbu veikšanā tiks atzīta, ja tā būs iegūta tieši un tikai publiskā vai tieši un tikai privātajā sektorā (piemēram, tikai valsts vai pašvaldību IT projektu realizācijā), ja vien šādai prasībai nav konstatējams objektīvs pamatojums"
+    question: "Ir nenoteikts, ka pretendenta/speciālista pieredze attiecīgo preču piegādē/pakalpojumu sniegšanā/būvdarbu veikšanā tiks atzīta, ja tā būs iegūta tieši un tikai publiskā vai tieši un tikai privātajā sektorā (piemēram, tikai valsts vai pašvaldību IT projektu realizācijā), ja vien šādai prasībai nav konstatējams objektīvs pamatojums"
   - nr: 39.31
-    question: "Nav izvirzītas prasības, kas rada nepamatotu administratīvo slogu pretendentam (piem., noteikts, ka pretendentam jau uz piedāvājumu iesniegšanas brīdi jābūt noslēgtam līgumam (darba līgumam, uzņēmumu līgumam) par konkrētu darbu veikšanu (piemēram, atkritumu izvešanu) vai speciālistu piesaisti, un šāds līgums jāiesniedz kopā ar piedāvājumu."
+    question: "Ir neizvirzītas prasības, kas rada nepamatotu administratīvo slogu pretendentam (piem., noteikts, ka pretendentam jau uz piedāvājumu iesniegšanas brīdi jābūt noslēgtam līgumam (darba līgumam, uzņēmumu līgumam) par konkrētu darbu veikšanu (piemēram, atkritumu izvešanu) vai speciālistu piesaisti, un šāds līgums jāiesniedz kopā ar piedāvājumu."
   - nr: 39.32
-    question: "Nav noteikts ierobežojums pretendenta piesaistītajiem apakšuzņēmējiem vai speciālistiem piedalīties arī citos piedāvājumos tā paša iepirkuma ietvaros"
+    question: "Ir nenoteikts ierobežojums pretendenta piesaistītajiem apakšuzņēmējiem vai speciālistiem piedalīties arī citos piedāvājumos tā paša iepirkuma ietvaros"
   - nr: 39.33
-    question: "Nav noteiktas nesamērīgas prasības attiecībā uz piegādātāja saimniecisko un finansiālo stāvokli (piemēram, ja pasūtītājs paredz priekšapmaksu un starpmaksājumus, nav izvirzīta prasība par pretendenta brīvajiem finanšu resursiem lielā apjomā (piemēram, gadījumā, ja priekšapmaksa un starpmaksājumi nosedz lielāko daļu no līgumsummas)"
+    question: "Ir nenoteiktas nesamērīgas prasības attiecībā uz piegādātāja saimniecisko un finansiālo stāvokli (piemēram, ja pasūtītājs paredz priekšapmaksu un starpmaksājumus, nav izvirzīta prasība par pretendenta brīvajiem finanšu resursiem lielā apjomā (piemēram, gadījumā, ja priekšapmaksa un starpmaksājumi nosedz lielāko daļu no līgumsummas)"
   - nr: 39.34
-    question: "Nav noteikts, ka pretendents savu pieredzi var apliecināt, iesniedzot atsauksmes no dažādiem pasūtītājiem (piemēram, pieredze par trim objektiem jāapliecina, iesniedzot atsauksmes no trim dažādiem pasūtītājiem)"
+    question: "Ir nenoteikts, ka pretendents savu pieredzi var apliecināt, iesniedzot atsauksmes no dažādiem pasūtītājiem (piemēram, pieredze par trim objektiem jāapliecina, iesniedzot atsauksmes no trim dažādiem pasūtītājiem)"
   - nr: 39.35
     question: "Ir pieļauta iespēja iesniegt un paredzēts atzīt alternatīvus (ekvivalentus) dokumentus ārvalstu piegādātājiem un personām uz kuras iespējām tie balstās, lai apliecinātu savu kvalifikāciju"
   - nr: 39.36
-    question: "Nav pieprasīts iesniegt tikai un vienīgi auditētu finanšu pārskatu"
+    question: "Ir nepieprasīts iesniegt tikai un vienīgi auditētu finanšu pārskatu"
   - nr: 39.37
     question: "Pasūtītājs, izvirzot prasības par kvalitātes vadības standartiem vai vides vadības standartiem (piem., ISO, EMAS), ir paredzējis pieņemt arī citu ES dalībvalstu normatīvajos aktos noteiktajā kārtībā akreditētas institūcijas izdotu sertifikātu"
     PIL:
@@ -475,7 +475,7 @@
   - nr: 39.38
     question: "Iepirkumos, kuru paredzamā līgumcena ir mazāka par Ministru kabineta noteiktajām līgumcenu robežvērtībām, nav izvirzītas prasības par kvalitātes vadības standartiem un vides vadības standartiem"
   - nr: 39.39
-    question: "Nav izvirzīta prasība par darba drošības standartu ievērošanu un atbilstoša sertifikāta (OHSAS 18001:2007 vai ekvivalenta) iesniegšanu/citu specifisku vadības sistēmu esamību pretendenta uzņēmumā (piem., būvdarbu vadības sistēma)"
+    question: "Ir neizvirzīta prasība par darba drošības standartu ievērošanu un atbilstoša sertifikāta (OHSAS 18001:2007 vai ekvivalenta) iesniegšanu/citu specifisku vadības sistēmu esamību pretendenta uzņēmumā (piem., būvdarbu vadības sistēma)"
   - nr: 39.40
     question: "Nav citi konstatējumi saistībā ar kvalifikācijas prasību neatbilstību"
     check: "other"
@@ -507,7 +507,7 @@
        pt:
         - 3
   - nr: 40.5
-    question: "Pasūtītājs nav noteicis, ka visām minētajām izziņām/ iesniegtajiem dokumentiem jābūt oriģināliem, neparedzot iespēju iesniegt šo dokumentu kopijas"
+    question: "Pasūtītājs ir nenoteicis, ka visām minētajām izziņām/ iesniegtajiem dokumentiem jābūt oriģināliem, neparedzot iespēju iesniegt šo dokumentu kopijas"
     PIL:
      - chapter: 41
        pt:

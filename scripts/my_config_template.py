@@ -20,9 +20,9 @@
 #     del my_variable 
 # -----------------------------------------------------------------------------
 
-#my_report_identifier = "rs-experiments"
+my_report_identifier = "bge-m3"
 #my_config_dir = "dev_config"
 #my_overwrite = True
-#my_embeddingmodel = "BAAI/bge-m3"
+my_embeddingmodel = "BAAI/bge-m3"
 #my_ini_files = ["SNP-2021_07_AK"]
 #my_questions_to_process = ["38", "38.8"]
