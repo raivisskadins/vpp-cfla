@@ -178,8 +178,8 @@ tmp*
 # Do not track local configuration files
 # The file is present in the repo and pulled on clone.
 # But any local modifications won’t be pushed or even noticed by git status
-# scripts/my_config.py is ignored to allow user-specific configuration
+# scripts/my_config_template.py is ignored to allow user-specific configuration
 # Note: If the file is deleted locally, it won't be restored by 'git pull'.
 # To manually restore it, run:
-#   git checkout origin/main -- scripts/my_config.py
-scripts/my_config.py
+#   git checkout origin/main -- scripts/my_config_template.py
+scripts/my_config_template.py

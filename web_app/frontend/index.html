@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Upload File</title>
+</head>
+<body>
+  <h1>Upload a File</h1>
+  <input type="file" id="fileInput" />
+  <button onclick="upload()">Upload</button>
+  <pre id="result"></pre>
+
+  <script>
+    async function upload() {
+      const file = document.getElementById("fileInput").files[0];
+      if (!file) return;
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await fetch("http://localhost:8080/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const out = await res.json();
+      document.getElementById("result").textContent = JSON.stringify(out, null, 2);
+    }
+  </script>
+</body>
+</html>
