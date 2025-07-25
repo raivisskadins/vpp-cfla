@@ -270,6 +270,11 @@ class QnAEngine:
         print(f"{len(nodes)} segments created and vectorized.")
         return nodes
 
+    async def load_text(self, file_content):
+        self.alltext = file_content
+        print("Using the entire file instead of the index.")
+        return True
+
     # TODO would be good if all functions had the same case snake or camel case for consitency
     async def createIndex(
         self, file_content, filetype, chunk_size=1024, chunk_overlap=0
