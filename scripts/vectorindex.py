@@ -322,7 +322,7 @@ class QnAEngine:
         self, query_prompt, q, usecontext=True, n=4, n4rerank=0, prevnext=False
     ):
         if (query_prompt, q) in self.chached_responses:
-            return self.chached_responses[(query_prompt, q)]
+            return {"query": "", "result": self.chached_responses[(query_prompt, q)]}
 
         if usecontext == True:
             numitemsinidx = self.newindex.vector_store.client.ntotal
@@ -348,7 +348,8 @@ class QnAEngine:
                 newquery = PromptTemplate(
                     query_prompt + "\n" + text_qa_template_str
                 ).format(context_str="\n".join(nodelist), query_str=q)
-
+                
+                print(newquery)
                 result = self.llm.complete(newquery)
                     
                 self.chached_responses[(query_prompt,q)] = str(result)
