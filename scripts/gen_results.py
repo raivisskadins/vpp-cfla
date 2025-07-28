@@ -93,6 +93,12 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
         
     extrainfo = set_extra_info(question_data, supplementary_info, qnaengine)
 
+    print(question_data['nr'], end=' ')
+    global qcounter
+    qcounter += 1
+    if qcounter % 20 == 0:
+        print("")
+
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
         results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, ofile, results_table)
@@ -121,12 +127,6 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
             question_data, answer_data, ofile, results_table
         )
     
-    print(question_data['nr'], end=' ')
-    global qcounter
-    qcounter += 1
-    if qcounter % 5 == 0:
-        print("\n")
-
     if 'questions' in question_data:
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
             # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
