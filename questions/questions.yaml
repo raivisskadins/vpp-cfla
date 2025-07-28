@@ -330,15 +330,20 @@
   - nr: 38.7
     question: "Nav paredzēts automātiski noraidīt piegādātāju, ja šis piegādātājs, tā darbinieks vai piegādātāja piedāvājumā norādītā persona ir piedalījusies kādā no iepriekšējiem attiecīgā iepirkuma projekta posmiem vai to dokumentu izstrādāšanā, liedzot tam iespēju pierādīt, ka minētie apstākļi šādam piegādātājam nedod nekādas priekšrocības konkrētajā iepirkuma procedūrā"
   - nr: 38.8
-    question0: "šis ir jautājums par nosacījumiem pretendenta dalībai konkursā, par piedāvājuma noraidīšanas iespējām. pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 1.punkta regulējumu?"
+    question0: "šis ir jautājums par nosacījumiem pretendenta dalībai konkursā, par piedāvājuma noraidīšanas iespējām. Pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 1.punkta regulējumu?"
     question: "šis ir jautājums par nosacījumiem pretendenta dalībai konkursā, par piedāvājuma noraidīšanas iespējām. Iepirkuma dokumentācijā ir norādīta līgumcena un noteikums, ka pretendenta piedāvājums tiks noraidīts, ja tā piedāvātā līgumcena pārsniegs iepirkuma dokumentācijā norādīto līgumcenu."
     PIL:
      - chapter: 41
        pt:
         - 11
   - nr: 38.9
-    question0: "Vai pasūtītājs atklātā vai slēgtā konkursā ir paredzējis noraidīt pretendenta piedāvājumu atklātā vai slēgtā konkursā, ja pretendenta piedāvātā līgumcena pārsniedz 150 procentus no iepirkuma procedūras dokumentos norādītās paredzamās līgumcenas?"
-    question: "Vai iepirkuma dokumentācijā ir norādīta iepirkuma paredzamā līgumcena?"
+    question0: "šis ir jautājums par nosacījumiem pretendenta dalībai konkursā, par piedāvājuma noraidīšanas iespējām. Pasūtītājs atklātā vai slēgtā konkursā ir paredzējis piemērot PIL 41.panta vienpadsmitās daļas 2.punkta regulējumu?"
+    question: "šis ir jautājums par nosacījumiem pretendenta dalībai konkursā, par piedāvājuma noraidīšanas iespējām. Vai iepirkuma dokumentācijā ir norādīta iepirkuma paredzamā līgumcena?"
+    PIL:
+     - chapter: 41
+       pt:
+        - 11
+
 - nr: 39
   questions:
   - nr: 39.1
