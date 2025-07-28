@@ -10,3 +10,6 @@ services:
       - .:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
+    env_file: 
+      - path: ./.env
+
