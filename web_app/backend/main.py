@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 import shutil
 import os
 
+
 app = FastAPI()
 
 UPLOAD_DIR = "/app/uploads"

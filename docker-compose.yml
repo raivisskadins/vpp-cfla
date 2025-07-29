@@ -1,15 +1,48 @@
-version: '3.8'
+version: '3.9'   
 
 services:
+
+  # 1. JupyterLab 
+  
   jupyter:
     build: .
     container_name: vpp-cfla-notebook
     ports:
       - "8888:8888"
     volumes:
-      - .:/home/jovyan/work
+      - .:/home/jovyan/work          # live-mount whole repo
     environment:
       - JUPYTER_ENABLE_LAB=yes
-    env_file: 
-      - path: ./.env
+    env_file:
+      - ./.env                     #  shared secrets / keys
 
+  # ------------------------------------------------------------
+  # 2. FastAPI / Flask backend
+  # ------------------------------------------------------------
+  backend:
+    build:
+      context: .                     # <— build from project root
+      dockerfile: web_app/backend/Dockerfile
+    container_name: web-backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./.env
+    volumes:
+      # live-reload source during dev
+      - ./web_app/backend:/app
+      # (optional) mount helpers if backend does: from scripts.foo import bar
+      - ./scripts:/app/scripts
+    command: >
+      uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+
+  # ------------------------------------------------------------
+  # 3. Static frontend served by Nginx
+  # ------------------------------------------------------------
+  frontend:
+    image: nginx:alpine
+    container_name: web-frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./web_app/frontend:/usr/share/nginx/html:ro
