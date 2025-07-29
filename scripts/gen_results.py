@@ -17,7 +17,6 @@ def get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile):
 
 def set_extra_info(question_data, supplementary_info, qnaengine):
     # Gets extra information that can be attached to the question 
-    print(question_data['nr'], end=' ')
     pilchapters, mk107chapters, nslchapters, mki3chapters = supplementary_info
     info = get_extra_info(question_data, pilchapters, mk107chapters, nslchapters, mki3chapters) 
     info = qnaengine.compressPrompt(info, 3000) 
@@ -27,7 +26,7 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     suffix = SUFFIX[qtype]
     if qtype == 'question0':
         question_id = f"{question_data['nr']}-{suffix}"
-        current_prompt = promptdict['0']
+        current_prompt = promptdict.get(question_data["nr"]+"-0",promptdict.get("0"))
     else:
         question_id = f"{question_data['nr']}{suffix}"
         current_prompt = promptdict[str(question_data['nr'])]
@@ -86,12 +85,19 @@ def questions_replace_w_x(questions_data, answers_data, results_table):
         if 'question' in q_data:
             question_replace_w_x(q_data, a_data, results_table)
 
+qcounter = 0
 
 def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table, questions_to_process): 
     
     if is_skip_question(question_data, answer_data): return
         
     extrainfo = set_extra_info(question_data, supplementary_info, qnaengine)
+
+    print(question_data['nr'], end=' ')
+    global qcounter
+    qcounter += 1
+    if qcounter % 20 == 0:
+        print("")
 
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
@@ -120,7 +126,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
             'question', qnaengine, embedding_conf, promptdict, extrainfo,
             question_data, answer_data, ofile, results_table
         )
-
+    
     if 'questions' in question_data:
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
             # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list

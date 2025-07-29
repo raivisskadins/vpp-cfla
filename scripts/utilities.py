@@ -24,7 +24,7 @@ def get_extra_info(singleq, pilchapters, mk107chapters, nslchapters, mki3chapter
             
             if 'chapter' in item:
                 chaptertxt = pilchapters[f"{item['chapter']}. pants"]
-                
+                piltxtlist.append(f"{item['chapter']}. pants.\n")
                 if 'pt' in item:
                     pointstxt = ''
                     
@@ -281,8 +281,10 @@ def get_config_data(configfile, procurement_file_dir, answer_file_dir):
     return procurement_id, procurement_file, agreement_file, answer_file
 
 def get_procurement_content(extractor, procurement_file, agreement_file):
+    print(f"Processing file: {procurement_file}")
     procurement_content = extractor.convert2markdown(procurement_file)
     if len(agreement_file) > 0: # If agreement file was added
+        print(f"Processing file: {procurement_file}")
         agreement_content = extractor.convert2markdown(agreement_file)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
         with open("tmp3.md", 'w', encoding='utf-8') as fout:
@@ -314,7 +316,7 @@ def get_questions_without_q0(questions):
                 questions_wout_0q.append(q['nr'])
 
         # If it has nested questions, recurse into them
-        if 'questions' in q:
+        if 'questions' in q and 'question0' not in q:
             nested = get_questions_without_q0(q['questions'])
             questions_wout_0q.extend(nested)
 
