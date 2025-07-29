@@ -97,7 +97,7 @@
   - nr: 35.1
     answer: "n/a"
   - nr: 35.2
-    answer0: "n/a"
+    answer0: "nē" #RS: fixed
     answer: "n/a"
   - nr: 35.3
     answer: "n/a"
@@ -106,12 +106,12 @@
   - nr: 35.5
     answer: "n/a"
   - nr: 35.6
-    answer0: "n/a"
+    answer0: "nē" #RS: fixed
     answer: "n/a"
   - nr: 35.7
     answer: "n/a"
   - nr: 35.8
-    answer0: "n/a"
+    answer0: "nē" #RS: fixed
     answer: "n/a"
 - nr: 36
   answer: "jā"
