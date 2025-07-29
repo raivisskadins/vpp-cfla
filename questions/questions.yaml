@@ -3,7 +3,7 @@
   question: "Iepirkuma dati atbilst apstiprinātajā iepirkuma plānā minētajam. Gadījumā, ja ir izmaiņas, tās nav uzskatāmas par būtiskām (izmaiņas neskar procedūras izvēli un līgumcenu)"
   check: "KPVISIP"
 - nr: 2
-  question0: "Vai nolikumā tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra un netiek piemērots atklāts vai slēgts konkurss?"
+  question0: "Vai nolikumā tiek piemērota konkursa procedūra ar sarunām, konkursa dialogs vai sarunu procedūra un netiek piemērots atklāts vai slēgts konkurss? Atbildi 'jā', ja visi nosacījumi izpildās, 'nē' ja kāds neizpildās."
   question: "Vai ir PIL regulējumam atbilstošs pamatojums konkursa procedūru piemērošanai?"
   PIL:
    - chapter: 8
@@ -544,7 +544,7 @@
   - nr: 40.12
     question: "Iepirkuma dokumentācijā ir norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments ir jāiesniedz arī par katru piegādātāju apvienības dalībnieku, par katru personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, kā arī par tā norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no iepirkuma līguma vērtības"
 - nr: 41
-  question: "Piedāvājuma izvērtēšanas kritēriju ietvaros nav vērtēta pretendenta kvalifikācija un pieredze"
+  question: "Piedāvājuma izvērtēšanas kritēriju ietvaros nav vērtēta pretendenta kvalifikācija un pieredze. Atbildi ar 'jā', ja nav vērtēta, 'nē' ja ir vērtēta."
 - nr: 42
   question0: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros ir paredzēts vērtēt personāla (speciālistu) kvalifikāciju vai pieredzi?"
   question: "Vai personāla (speciālistu) kvalifikāciju vai pieredzi ir pamatoti vērtēt (proti, personāla kvalifikācija vai pieredze ietekmē iepirkuma līguma izpildi)?"
@@ -553,12 +553,12 @@
    - chapter: 51
 - nr: 43
   question0: "Vai noteikta personāla kvalifikācija vai pieredze ir prasīta kā kvalifikācijas (atlases) prasība?"
-  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
+  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās? Atbildi ar 'jā', ja netiek vērtēti, 'nē' ja ir vērtēti"
   PIL:
    - chapter: 51
 - nr: 44
   question0: "Vai piedāvājumu salīdzināšanai un izvērtēšanai ir noteikta tikai cena?"
-  question: "Vai sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē?"
+  question: "Vai sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē? Atbildi ar 'jā', ja sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē, 'nē' - ja ir kā citādi"
   PIL:
    - chapter: 51
      pt:
@@ -605,13 +605,13 @@
     question: "Iepirkuma līguma projektā ir paredzēts nosacījums, ka tad, ja piegādātājs vai - ja pasūtītājs ir paredzējis tiešos maksājumus apakšuzņēmējiem saskaņā ar PIL 63.panta piekto daļu - apakšuzņēmējs iesniedz elektronisko rēķinu, tas atbilst normatīvajiem aktiem par piemērojamo elektroniskā rēķina standartu un tā pamatelementu izmantošanas specifikāciju un aprites kārtību"
     check: "other"
   - nr: 51.4
-    question: "Iepirkuma līguma projektā nav ietverta pretrunīga informācija"
+    question: "Iepirkuma līguma projektā nav ietverta pretrunīga informācija. Atbildi ar 'jā' ja nav, 'nē', ja ir."
 - nr: 52
-  question: "Iepirkuma līguma projektā noteiktais līguma izpildes/ spēkā esamības termiņš nepārsniedz piecus gadus"
+  question: "Iepirkuma līguma projektā noteiktais līguma izpildes/ spēkā esamības termiņš nepārsniedz piecus gadus. Atbildi ar 'jā' ja nepārsniedz, 'jā', ja pārsniedz."
   PIL:
    - chapter: 60
 - nr: 53
-  question: "Līguma projektā ir detalizēti atrunāti iespējamie līguma grozījumi un tie nav pretrunā ar PIL regulējumu"
+  question: "Līguma projektā ir detalizēti atrunāti iespējamie līguma grozījumi un tie saskan ar PIL regulējumu"
   PIL:
    - chapter: 61
 - nr: 54
@@ -651,7 +651,7 @@
       - 1
 - nr: 61
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
-  question: "Nav noteikts, ka vispārīgā vienošanās attiecas arī uz citiem pasūtītājiem un piegādātājiem, proti, ne tikai tiem, kuri kā dalībnieki noteikti vispārīgās vienošanās noteikumos tās noslēgšanas dienā"
+  question: "Nav noteikts, ka vispārīgā vienošanās attiecas arī uz citiem pasūtītājiem un piegādātājiem, proti, ne tikai tiem, kuri kā dalībnieki noteikti vispārīgās vienošanās noteikumos tās noslēgšanas dienā. Atbildi ar 'jā' ja nav noteikts, 'nē', ja ir noteikts."
 - nr: 62
   question0: "Vai ir plānots slēgt vispārīgo vienošanos?"
   question: "Pasūtītājs ir noteicis piedāvājuma izvērtēšanas kritērijus vispārīgās vienošanās dalībnieku noteikšanai"
