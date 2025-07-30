@@ -544,7 +544,7 @@
   - nr: 40.12
     question: "Iepirkuma dokumentācijā ir norādīts, ka Eiropas vienotais iepirkuma procedūras dokuments ir jāiesniedz arī par katru piegādātāju apvienības dalībnieku, par katru personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, kā arī par tā norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no iepirkuma līguma vērtības"
 - nr: 41
-  question: "Piedāvājuma izvērtēšanas kritēriju ietvaros nav vērtēta pretendenta kvalifikācija un pieredze. Atbildi ar 'jā', ja nav vērtēta, 'nē' ja ir vērtēta."
+  question: "Piedāvājuma izvērtēšanas kritēriju ietvaros nav vērtēta pretendenta kvalifikācija un pieredze. Šeit būtiski nošķirt kvalifikācijas prasības no izvērtēšanas kritērijiem, pieredzi drīkst prasīt, lai kvalificētos, bet pieredzi nedrīkst izmantot, vērtējot piedāvājumu, t.i., piešķirot vērtēšanas punktus."
 - nr: 42
   question0: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros ir paredzēts vērtēt personāla (speciālistu) kvalifikāciju vai pieredzi?"
   question: "Vai personāla (speciālistu) kvalifikāciju vai pieredzi ir pamatoti vērtēt (proti, personāla kvalifikācija vai pieredze ietekmē iepirkuma līguma izpildi)?"
@@ -553,7 +553,7 @@
    - chapter: 51
 - nr: 43
   question0: "Vai noteikta personāla kvalifikācija vai pieredze ir prasīta kā kvalifikācijas (atlases) prasība?"
-  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās? Atbildi ar 'jā', ja netiek vērtēti, 'nē' ja ir vērtēti"
+  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
   PIL:
    - chapter: 51
 - nr: 44
