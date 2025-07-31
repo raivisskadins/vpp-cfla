@@ -180,3 +180,6 @@ tmp*
 # But any local modifications won’t be pushed or even noticed by git status
 # scripts/my_config.py is ignored to allow user-specific configuration
 scripts/my_config.py
+
+#embedding cache
+embeddings_cache.db.*
