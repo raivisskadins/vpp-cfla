@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Upload File</title>
+  <title>Procurement processing</title>
   <style>
     table {
         width: 100%;
@@ -17,7 +17,7 @@
 </style>
 </head>
 <body>
-
+  <!-- TODO make frontned look nicer -->
   <!-- Form with text - Iepirkuma ID -->
   <div style="margin-bottom: 10pt;">
     <label>procurement file*</label>
@@ -29,15 +29,16 @@
     <input type="file" id="agreementFile" />
   </div>
 
-  <button type="button" onclick="upload()">Upload</button>
+  <button type="button" onclick="processProcurement()">Apstrādāt iepirkumu</button>
   <pre id="result"></pre>
 
   <script>
-    async function upload() {
+    async function processProcurement() {
         const procurementFile = document.getElementById("procurementFile").files[0];
         const agreementFile = document.getElementById("agreementFile").files[0];
         if (!procurementFile) return;
-        
+        // Get Iepirkuma ID
+
         // Send everything at once
         const formData = new FormData();
         formData.append("file", procurementFile);
@@ -45,9 +46,16 @@
         if (agreementFile){
           formData.append("file", agreementFile);
         } 
-        postFile(formData);  
-        
-        await getCsvInfo()   
+
+        postFile(formData);
+        // path_to_csv = "/app/procurements" + procurementFile.name 
+        // save this path in local storage
+        // Use this path in getCsvInfo
+
+        // Define variable report_not_done - which is always true, except when process_procurement finally finishes
+        // if report_not_done: 
+        await getCsvInfo(path_to_csv) // Periodically call this to update the table; every 5 seconds
+        // Under the data table add a spinner, that shows that things are processing
     }
 
     async function postFile(formData) {
@@ -56,25 +64,25 @@
         body: formData,
       });
       const out = await res.json();
-      // as result we get path to procurment
-      // save this path
+      // report_not_done = False
     }
 
-    async function getCsvInfo(path_to_procurement) {
-      const res = await fetch("http://localhost:8080/get_csv_info");
+    async function getCsvInfo(path_to_csv) {
+      const res = await fetch("http://localhost:8080/get_csv_info", {
+        method: "GET",
+        body: path_to_csv,
+      });
       const data = await res.text();
-      //document.getElementById("result").textContent = JSON.stringify(out, null, 2) ;
-
-      // localStorage.setItem("csvInfo", data);
-      // create_data_table(data)
-      
       // data example
       //     #     [...{
       // #     "Nr": "8",
       // #     "Atbilde": "nē",
       // #     "Pamatojums": "Nezinu"
       // # }]
-      
+
+      // If localStorge csvInfo differs from new incoming csvInfo update the local storage
+      // localStorage.setItem("csvInfo", data);
+      // create_data_table(data) // Append the data table only with the new rows 
       //
 
     window.addEventListener("DOMContentLoaded", () => {
