@@ -2,6 +2,7 @@ import os
 import sys
 import mimetypes
 import re
+import shelve
 from typing import Any, List
 from llama_index.vector_stores.faiss import FaissVectorStore
 import faiss
@@ -248,24 +249,37 @@ class QnAEngine:
 
         cur_batch = []
         result_embeddings = []
+        cur_batch_idxs = []
+        result_idxs = []
 
         with tqdm(
             total=len(alltexts),
             desc="Generating embeddings",
             bar_format="{l_bar}{bar} [ time left: {remaining} ]",
         ) as pbar:
+            embeddings_cache = shelve.open('embeddings_cache.db')
             for idx, txt in enumerate(alltexts):
-                cur_batch.append(txt)
+                cache_key = self.embeddingobject.model_name + txt
+                if cache_key in embeddings_cache:
+                    nodes[idx].embedding = embeddings_cache[cache_key]
+                else:
+                    cur_batch.append(txt)
+                    cur_batch_idxs.append(idx)
                 pbar.update(1)
                 if idx == len(alltexts) - 1 or len(cur_batch) == 10:
                     embeddings = await self.embeddingobject._aget_text_embeddings(
                         cur_batch
                     )
                     result_embeddings.extend(embeddings)
+                    result_idxs.extend(cur_batch_idxs)
+                    for eidx, etxt in enumerate(cur_batch):
+                        embeddings_cache[self.embeddingobject.model_name + etxt] = embeddings[eidx]
                     cur_batch.clear()
-
-        for idx, node in enumerate(nodes):
-            nodes[idx].embedding = result_embeddings[idx]
+                    cur_batch_idxs.clear()
+            embeddings_cache.close()
+        #for idx, node in enumerate(nodes):
+        for idx, idx2 in enumerate(result_idxs):
+            nodes[idx2].embedding = result_embeddings[idx]
 
         print(f"{len(nodes)} segments created and vectorized.")
         return nodes

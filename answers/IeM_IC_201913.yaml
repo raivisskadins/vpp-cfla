@@ -4,7 +4,6 @@
 - nr: 2
   answer0: "nē"
   answer: "n/a"
-  # 3. jautājums unikāls šim dok. Tas tiek ignorēts tālāk nobīde par 1 jaut.
 - nr: 3
   answer: "jā"
 - nr: 4
@@ -37,7 +36,7 @@
   answer: "n/a"
 - nr: 13
   answer0: "?"
-  answer: "?" # šāds jautājums nav dokumentā
+  answer: "?"
 - nr: 14
   answer: "n/a"
 - nr: 15
@@ -55,11 +54,9 @@
   answer: "jā"
 - nr: 20
   answer: "n/a"
-  # Nav 21. jautājums dok. nav šablonā tas tiek izlaists;
-  # 22 (dok) -> 21 (šeit)
-- nr: 21 
+- nr: 21
   answer: "n/a"
-- nr: 22 
+- nr: 22
   answer0: "nē"
   answer: "n/a"
 - nr: 23
@@ -82,11 +79,10 @@
 - nr: 30
   answer0: "nē"
   answer: "n/a"
-- nr: 31 # 33 (dok) -> 31
+- nr: 31
   answer0: "nē"
   answer: "n/a"
-- nr: 32 #
-  # 32 jaut dok. nav šablonā tas tiek izlaists ()
+- nr: 32
   answer0: "nē"
   answer: "n/a"
 - nr: 33
@@ -95,7 +91,6 @@
 - nr: 34
   answer0: "nē"
   answer: "n/a"
-  # 35 jaut dok. nav šablonā tas tiek izlaists ()
 - nr: 35
   answer0: "nē"
   answers:
@@ -105,7 +100,7 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 35.3
-    answer: "n/a"
+    answer: "?"
   - nr: 35.4
     answer: "n/a"
   - nr: 35.5
@@ -139,8 +134,7 @@
     answer: "jā"
   - nr: 37.7
     answer: "jā"
-  - nr: 37.8 # 40.10 -> 37.8
-  # 40.8, 40.9 nav šablonā, izlaisti
+  - nr: 37.8
     answer: "jā"
   - nr: 37.9
     answer0: "nē"
@@ -151,7 +145,7 @@
   - nr: 37.11
     answer: "n/a"
   - nr: 37.12
-    answer: "?" # nav dok.
+    answer: "?"
   - nr: 37.13
     answer: "jā"
 - nr: 38
@@ -169,13 +163,13 @@
     answer0: "jā"
     answer: "jā"
   - nr: 38.6
-    answer: "jā"
-  - nr: 38.7 # 41.7 nav šablonā (41.8 -> 38.7)
+    answer: "?"
+  - nr: 38.7
     answer: "jā"
   - nr: 38.8
     answer0: "jā"
     answer: "jā"
-  - nr: 38.9 # 41.9 nav šablonā (41.11 -> 38.9)
+  - nr: 38.9
     answer0: "nē"
     answer: "n/a"
 - nr: 39
@@ -263,7 +257,7 @@
   - nr: 39.39
     answer: "jā"
   - nr: 39.40
-    answer: "?" # Nebija dok.
+    answer: "?"
 - nr: 40
   answer0: "jā"
   answers:
@@ -295,7 +289,7 @@
   - nr: 40.12
     answer: "jā"
 - nr: 41
-  answer: "?" # Nebija šie jautājumi
+  answer: "jā"
 - nr: 42
   answer0: "?"
   answer: "?"
@@ -329,7 +323,7 @@
     answer0: "?"
     answer: "?"
   - nr: 51.4
-    answer: "?"
+    answer: "jā"
 - nr: 52
   answer: "n/a"
 - nr: 53
