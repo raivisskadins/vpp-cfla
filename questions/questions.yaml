@@ -371,11 +371,12 @@
        pt:
         - 10
   - nr: 39.4
-    question: "Pasūtītājs nav izvirzījis konkrētas kvalifikācijas prasības tādējādi, ka tās visas attiecas arī uz katru no personām, uz kuru iespējām pretendents balstās (t.sk. apakšuzņēmējiem), vai katru no piegādātāju apvienības dalībniekiem"
-    PIL:
-     - chapter: 42
-       pt:
-        - 1
+    question: "Pasūtītājs nav izvirzījis konkrētas kvalifikācijas prasības tādējādi, ka tās visas attiecas arī uz katru no personām, uz kuru iespējām pretendents balstās (t.sk. apakšuzņēmējiem), vai katru no piegādātāju apvienības dalībniekiem. T.i., nav tā, ka pilnīgi visas kvalifikācijas prasības attiecas uz visām personām, apakšuzņēmējiem un piegādātāju apvienības dalībniekiem"
+    #RS: formās es šādu atsauci neatradu
+    #PIL:
+    # - chapter: 42
+    #   pt:
+    #    - 1
   - nr: 39.5
     question: "Pasūtītājs ir pieprasījis, lai pretendents savā piedāvājumā norāda visus tos apakšuzņēmējus, kuru veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka (minētais attiecas uz visa veida līgumiem), un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu (vienlaikus, ja tiek pirkti tikai būvdarbi (bez projektēšanas), nav nepieciešams iebilst, ja pasūtītājs nolikumā nav prasījis piedāvājumā norādīt apakšuzņēmējus, kuru sniedzamo pakalpojumu vērtība ir 10 procenti no kopējās iepirkuma līguma vērtības vai lielāka un katram šādam apakšuzņēmējam izpildei nododamo iepirkuma līguma daļu)."
     PIL:
@@ -557,7 +558,7 @@
   PIL:
    - chapter: 51
 - nr: 44
-  question0: "Vai piedāvājumu salīdzināšanai un izvērtēšanai ir noteikta tikai cena?"
+  question0: "Vai piedāvājumu salīdzināšanai un izvērtēšanai ir noteikta tikai cena? Šeit būtiski nošķirt kvalifikācijas prasības no izvērtēšanas kritērijiem, pieredzi un tehniskas prasības, drīkst prasīt, lai kvalificētos, bet nedrīkst izmantot, vērtējot piedāvājumu, t.i., piešķirot vērtēšanas punktus."
   question: "Vai sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē? Atbildi ar 'jā', ja sagatavotā tehniskā specifikācija ir detalizēta un citiem kritērijiem nav būtiskas nozīmes piedāvājuma izvēlē, 'nē' - ja ir kā citādi"
   PIL:
    - chapter: 51
