@@ -5,7 +5,7 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 3
-  answer: "na"
+  answer: "n/a"
 - nr: 4
   answer0: "nē"
   answer: "n/a"
@@ -35,8 +35,8 @@
 - nr: 12
   answer: "n/a"
 - nr: 13
-  answer0: "nē"
-  answer: "n/a"
+  answer0: "?"
+  answer: "?"
 - nr: 14
   answer: "n/a"
 - nr: 15
@@ -86,10 +86,10 @@
   answer0: "jā"
   answer: "jā"
 - nr: 33
-  answer0: "??"
+  answer0: "nē"
   answer: "n/a"
 - nr: 34
-  answer0: "??"
+  answer0: "nē"
   answer: "n/a"
 - nr: 35
   answer0: "n/a"
@@ -100,7 +100,7 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 35.3
-    answer: "??"
+    answer: "?"
   - nr: 35.4
     answer: "n/a"
   - nr: 35.5
@@ -145,7 +145,7 @@
   - nr: 37.11
     answer: "n/a"
   - nr: 37.12
-    answer: "??"
+    answer: "?"
   - nr: 37.13
     answer: "jā"
 - nr: 38
@@ -163,11 +163,11 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 38.6
-    answer: "jā"
+    answer: "?"
   - nr: 38.7
     answer: "n/a"
   - nr: 38.8
-    answer0: "??"
+    answer0: "nē"
     answer: "n/a"
   - nr: 38.9
     answer0: "nē"
@@ -194,7 +194,7 @@
     answer0: "nē"
     answer: "n/a"
   - nr: 39.10
-    answer: "??"
+    answer: "jā"
   - nr: 39.11
     answer: "jā"
   - nr: 39.12
@@ -241,7 +241,7 @@
   - nr: 39.31
     answer: "jā"
   - nr: 39.32
-    answer: "??"
+    answer: "n/a"
   - nr: 39.33
     answer: "??"
   - nr: 39.34
@@ -253,11 +253,11 @@
   - nr: 39.37
     answer: "nē"
   - nr: 39.38
-    answer: "??"
+    answer: "n/a"
   - nr: 39.39
     answer: "jā"
   - nr: 39.40
-    answer: "??"
+    answer: "?"
 - nr: 40
   answer0: "jā"
   answers:
@@ -291,11 +291,11 @@
 - nr: 41
   answer: "jā"
 - nr: 42
-  answer0: "nē"
-  answer: "n/a"
+  answer0: "?"
+  answer: "?"
 - nr: 43
-  answer0: "nē"
-  answer: "n/a"
+  answer0: "?"
+  answer: "?"
 - nr: 44
   answer0: "jā"
   answer: "jā"
@@ -308,7 +308,7 @@
 - nr: 48
   answer: "jā"
 - nr: 49
-  answer: "jā"
+  answer: "?"
 - nr: 50
   answer0: "nē"
   answer: "n/a"
@@ -316,12 +316,12 @@
   answer0: "jā"
   answers:
   - nr: 51.1
-    answer: "jā"
+    answer: "?"
   - nr: 51.2
-    answer: "??"
+    answer: "?"
   - nr: 51.3
-    answer0: "??"
-    answer: "n/a"
+    answer0: "?"
+    answer: "?"
   - nr: 51.4
     answer: "nē"
 - nr: 52
