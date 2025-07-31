@@ -444,7 +444,7 @@
   - nr: 39.23
     question: "Nav prasīta konkrētu gadu pieredze noteiktā jomā/darbu veikšanā/pakalpojumu sniegšanā/piegāžu veikšanā"
   - nr: 39.24
-    question: "Gadījumā, ja piegādātājs balstās uz citas personas tehniskajām un profesionālajām spējām, nav noteikts ierobežojums attiecībā uz piegādātāja un tā norādītās personas, uz kuras tehniskajām un profesionālajām iespējām piegādātājs balstās, lai apliecinātu savu kvalifikāciju, savstarpējo attiecību tiesisko raksturu (piemēram, prasība par solidāras atbildības esamību)"
+    question: "Gadījumā, ja piegādātājs balstās uz citas personas tehniskajām un profesionālajām spējām, nav noteikts ierobežojums attiecībā uz piegādātāja un tā norādītās personas, uz kuras tehniskajām un profesionālajām iespējām piegādātājs balstās, lai apliecinātu savu kvalifikāciju, savstarpējo attiecību tiesisko raksturu (piemēram, prasība par solidāras atbildības esamību). T.i., iepirkuma dokumentos nav nepamatoti pieprasīts, lai piegādātājs un uzņēmums, uz kura spējām paļaujas piegādātājs, būtu tiesiskās attiecībās, jeb juridiski saistīti ar līgumu, bet pēc likuma drīkst prasīt solidāru atbildību."
     PIL:
      - chapter: 45
        pt:
