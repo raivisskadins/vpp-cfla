@@ -3,29 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <title>Upload File</title>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+    }
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 8px 10px;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
   <h1>Upload a File</h1>
-  <input type="file" id="fileInput" />
-  <button onclick="upload()">Upload</button>
+
+  <div style="margin-bottom: 10pt;">
+    <label>procurement file*</label>
+    <input type="file" id="procurementFile" />
+  </div>
+
+  <div style="margin-bottom: 10pt;">
+    <label>agreement file</label>
+    <input type="file" id="agreementFile" />
+  </div>
+
+  <button type="button" onclick="upload()">Upload</button>
   <pre id="result"></pre>
 
   <script>
     async function upload() {
-      const file = document.getElementById("fileInput").files[0];
-      if (!file) return;
+        const procurementFile = document.getElementById("procurementFile").files[0];
+        const agreementFile = document.getElementById("agreementFile").files[0];
+        if (!procurementFile) return;
+        
+        const formData = new FormData();
+        formData.append("file", procurementFile);
+        postFile(formData);
 
-      const formData = new FormData();
-      formData.append("file", file);
+        if (agreementFile){
+          formData.append("file", agreementFile);
+          postFile(formData);
+        }   
+        
+        await getCsvInfo()   
+    }
 
+    async function postFile(formData) {
       const res = await fetch("http://localhost:8080/upload", {
         method: "POST",
         body: formData,
       });
-
       const out = await res.json();
-      document.getElementById("result").textContent = JSON.stringify(out, null, 2);
     }
+
+    async function getCsvInfo() {
+      const res = await fetch("http://localhost:8080/get_csv_info");
+      const data = await res.text();
+      //document.getElementById("result").textContent = JSON.stringify(out, null, 2) ;
+
+      localStorage.setItem("csvInfo", data);
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const storedData = localStorage.getItem("csvInfo");
+      if (storedData) {
+        document.getElementById("result").innerHTML = storedData;
+      }
+    });
   </script>
 </body>
 </html>
