@@ -17,8 +17,8 @@
 </style>
 </head>
 <body>
-  <h1>Upload a File</h1>
 
+  <!-- Form with text - Iepirkuma ID -->
   <div style="margin-bottom: 10pt;">
     <label>procurement file*</label>
     <input type="file" id="procurementFile" />
@@ -38,33 +38,44 @@
         const agreementFile = document.getElementById("agreementFile").files[0];
         if (!procurementFile) return;
         
+        // Send everything at once
         const formData = new FormData();
         formData.append("file", procurementFile);
-        postFile(formData);
 
         if (agreementFile){
           formData.append("file", agreementFile);
-          postFile(formData);
-        }   
+        } 
+        postFile(formData);  
         
         await getCsvInfo()   
     }
 
     async function postFile(formData) {
-      const res = await fetch("http://localhost:8080/upload", {
+      const res = await fetch("http://localhost:8080/process_procurement", {
         method: "POST",
         body: formData,
       });
       const out = await res.json();
+      // as result we get path to procurment
+      // save this path
     }
 
-    async function getCsvInfo() {
+    async function getCsvInfo(path_to_procurement) {
       const res = await fetch("http://localhost:8080/get_csv_info");
       const data = await res.text();
       //document.getElementById("result").textContent = JSON.stringify(out, null, 2) ;
 
-      localStorage.setItem("csvInfo", data);
-    }
+      // localStorage.setItem("csvInfo", data);
+      // create_data_table(data)
+      
+      // data example
+      //     #     [...{
+      // #     "Nr": "8",
+      // #     "Atbilde": "nē",
+      // #     "Pamatojums": "Nezinu"
+      // # }]
+      
+      //
 
     window.addEventListener("DOMContentLoaded", () => {
       const storedData = localStorage.getItem("csvInfo");
@@ -72,6 +83,7 @@
         document.getElementById("result").innerHTML = storedData;
       }
     });
+  }
   </script>
 </body>
 </html>

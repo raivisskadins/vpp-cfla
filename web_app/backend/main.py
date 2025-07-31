@@ -2,46 +2,46 @@ from fastapi import FastAPI, File, UploadFile
 import shutil
 import os
 
-#from scripts.web_report import build_web_report_html
-
 app = FastAPI()
 
-UPLOAD_DIR = "/app/uploads"
+UPLOAD_DIR = "/app/procurements"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-@app.post("/upload")
-async def upload_file(file: UploadFile = File(...)):
-    file_path = os.path.join(UPLOAD_DIR, file.filename)
+@app.post("/process_procurement")
+async def process_procurement(Proc_ID, procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(...)): 
+    
+    procurement_dir = UPLOAD_DIR / Proc_ID
+    os.makedirs(procurement_dir, exist_ok=True)
+
+    file_path = os.path.join(procurement_dir, procurement_file.filename)
     with open(file_path, "wb") as buffer:
-        shutil.copyfileobj(file.file, buffer)
-    return {"filename": file.filename}
+        shutil.copyfileobj(procurement_file.file, buffer)
+
+    if agreement_file:
+        # Upload agreement file
+        return
+    
+    # main script (pass in, proc_id, procurement_file, agreement_file, other data) -> generates csv file
+
+    return {"proc_path": procurement_dir} # Get procurment_file path
 
 @app.get("/get_csv_info")
-async def get_csv_info():
-    #with open(get_csv_name, "wb") as buffer:
-    return build_web_report_html({
-        "Nr": "8",
-        "Atbilde": "nē",
-        "Pamatojums": "Nezinu"
-    })
-
-def build_web_report_html(data: dict) -> str:
-    html = [
-        "<table>",
-        "  <thead><tr><th>Nr</th><th>Atbilde</th><th>Pamatojums</th></tr></thead>",
-        "  <tbody>"
-    ]
-
-    html.append(f"    <tr>")
-    html.append(f"      <td>{data['Nr']}</td>")
-    html.append(f"      <td>{data['Atbilde']}</td>")
-    html.append(f"      <td>{data['Pamatojums']}</td>")
-    html.append(f"    </tr>")
-
-    html.extend([
-        "  </tbody>",
-        "</table>",
-    ])
-
-    return html
+async def get_csv_info(procurement_file_name):
+    #with open(procurement_file_name, "wb") as buffer:
+    df = pd.read_csv(procurement_file_name, keep_default_na=False, encoding="utf-8")
+    # turn csv -> json list of objects
+    # when extracting Pamatojums, get only the explanation key
+    #     {
+    #   ""answer"": ""jā"",
+    #   ""rate"": ""augsta"",
+    #   ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma priekšmets nav sadalīts daļās. Iepirkuma priekšmets netiek dalīts daļās, jo ir viens pretendentu loks; viens būvobjekts; viens būvdarbu veikšanas laiks būvobjektā.""
+    # }
+    procurement_data = df.json
+    return procurement_data
+    # List of objects like these:
+    #     {
+    #     "Nr": "8",
+    #     "Atbilde": "nē",
+    #     "Pamatojums": "Nezinu"
+    # }
     
