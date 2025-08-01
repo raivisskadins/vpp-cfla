@@ -1,9 +1,19 @@
-from fastapi import FastAPI, File, UploadFile
-import shutil
-import os
-from scripts import main_script
+from fastapi import FastAPI, File, UploadFile, Query
+from fastapi.responses import JSONResponse
+#from scripts import main_script
+import shutil, os, json, re
+import pandas as pd
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 UPLOAD_DIR = "/app/procurements"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
@@ -30,27 +40,33 @@ async def process_procurement(Proc_ID, procurement_file: UploadFile = File(...),
     return {"proc_report_path": procurement_dir / "report.csv"} # Get procurement csv file path 
 
 @app.get("/get_csv_info")
-async def get_csv_info(proc_report_path):
-    
-    # Read in the report csv file
+async def get_csv_info(proc_report_path: str = Query(...)):
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    proc_report_path = os.path.join(base_dir, "procurements/", proc_report_path)
 
-    # df = pd.read_csv(proc_report_path, keep_default_na=False, encoding="utf-8")
-    
-    # turn csv into json list of objects
+    if not os.path.isfile(proc_report_path):
+        raise FileNotFoundError(f"Fails {proc_report_path} nav atrasts")
 
-    # List of objects like these:
-    #     {
-    #     "Nr": "8",
-    #     "Atbilde": "nē",
-    #     "Pamatojums": "Nezinu"
-    # }
+    df = pd.read_csv(proc_report_path, keep_default_na=False, encoding="utf-8")
+    output = []
 
-    # when extracting Pamatojums, get only the explanation key
-    #     {
-    #   ""answer"": ""jā"",
-    #   ""rate"": ""augsta"",
-    #   ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma priekšmets nav sadalīts daļās. Iepirkuma priekšmets netiek dalīts daļās, jo ir viens pretendentu loks; viens būvobjekts; viens būvdarbu veikšanas laiks būvobjektā.""
-    # }
+    for _, row in df.iterrows():
+        # Extracting Pamatojums, get only the explanation key
+        raw_text = row["Pamatojums"]
+        cleaned = re.sub(r'```json\s*|```', '', raw_text).strip()
+        cleaned = cleaned.replace('""', '"')
+        try:
+            data = json.loads(cleaned)
+            explanation = data.get("explanation", "")
+        except json.JSONDecodeError:
+            explanation = "Nav pamatojuma"
+
+        output.append({
+            "Nr": row["Nr"],
+            "Atbilde": row["Atbilde"],
+            "Pamatojums": explanation
+        })
+
+    return JSONResponse(content=output)
+
     
-    # procurement_data = df.json
-    # return procurement_data

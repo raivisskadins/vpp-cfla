@@ -14,47 +14,100 @@
         padding: 8px 10px;
         text-align: center;
     }
+    .allInputs {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .processBtn {
+      background-color: #4f46e5;
+    }
+    .processBtn:hover {
+      background-color: #4338ca;
+    }
+
+    button {
+      color: rgb(233, 230, 230);
+      padding: 8px 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .cancelBtn {
+      background: rgb(215, 42, 42);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 85px;
+      font-weight: bold;
+    }
+    .cancelBtn:hover {
+      background: rgb(149, 17, 17);
+    }
+
 </style>
 </head>
 <body>
   <!-- TODO make frontned look nicer -->
   <!-- Form with text - Iepirkuma ID -->
-  <div style="margin-bottom: 10pt;">
-    <label>procurement file*</label>
-    <input type="file" id="procurementFile" />
+  <div class="allInputs">
+    <div class="iepirkumaID">
+      <label>Iepirkuma ID</label>
+      <input type="text" id="iepirkumaID" />
+    </div> 
+
+    <div>
+      <label>procurement file*</label>
+      <input type="file" id="procurementFile" />
+    </div>
+
+    <div>
+      <label>agreement file</label>
+      <input type="file" id="agreementFile" />
+    </div>
   </div>
 
-  <div style="margin-bottom: 10pt;">
-    <label>agreement file</label>
-    <input type="file" id="agreementFile" />
-  </div>
+  <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
 
-  <button type="button" onclick="processProcurement()">Apstrādāt iepirkumu</button>
-  <pre id="result"></pre>
+  <!-- <button type="button" class="cancelBtn" onclick="">Atcelt apstrādi</button> -->
+
+  <div id="result"></div>
 
   <script>
     async function processProcurement() {
-        const procurementFile = document.getElementById("procurementFile").files[0];
-        const agreementFile = document.getElementById("agreementFile").files[0];
-        if (!procurementFile) return;
-        // Get Iepirkuma ID
+        // const procurementFile = document.getElementById("procurementFile").files[0];
+        // const agreementFile = document.getElementById("agreementFile").files[0];
+        // if (!procurementFile) return;
+        // // Get Iepirkuma ID
 
-        // Send everything at once
-        const formData = new FormData();
-        formData.append("file", procurementFile);
+        // // Send everything at once
+        // const formData = new FormData();
+        // formData.append("file", procurementFile);
 
-        if (agreementFile){
-          formData.append("file", agreementFile);
-        } 
+        // if (agreementFile){
+        //   formData.append("file", agreementFile);
+        // } 
 
-        postFile(formData);
+        // postFile(formData);
         // path_to_csv = "/app/procurements" + procurementFile.name 
         // save this path in local storage
         // Use this path in getCsvInfo
 
         // Define variable report_not_done - which is always true, except when process_procurement finally finishes
         // if report_not_done: 
-        await getCsvInfo(path_to_csv) // Periodically call this to update the table; every 5 seconds
+        await getCsvInfo("report.csv")
+        //await getCsvInfo(path_to_csv) // Periodically call this to update the table; every 5 seconds
         // Under the data table add a spinner, that shows that things are processing
     }
 
@@ -68,30 +121,59 @@
     }
 
     async function getCsvInfo(path_to_csv) {
-      const res = await fetch("http://localhost:8080/get_csv_info", {
-        method: "GET",
-        body: path_to_csv,
-      });
-      const data = await res.text();
+      const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
+      const jsonText = await res.text();
+
       // data example
       //     #     [...{
-      // #     "Nr": "8",
+      // #     "Nr": "8",s
       // #     "Atbilde": "nē",
       // #     "Pamatojums": "Nezinu"
       // # }]
 
       // If localStorge csvInfo differs from new incoming csvInfo update the local storage
-      // localStorage.setItem("csvInfo", data);
-      // create_data_table(data) // Append the data table only with the new rows 
-      //
+      const previous = localStorage.getItem("csvInfo");
+      
+      if (previous !== jsonText) {
+        localStorage.setItem("csvInfo", jsonText);
+        const data = JSON.parse(jsonText);
+        create_data_table(data) // Append the data table only with the new rows 
+      }
+    }
+
+    function create_data_table(data) {
+      const table = document.createElement("table");
+      table.border = 1;
+
+      // Header
+      const header = table.insertRow();
+      ["Nr", "Atbilde", "Pamatojums"].forEach(heading => {
+        const th = document.createElement("th");
+        th.textContent = heading;
+        header.appendChild(th);
+      });
+
+      // Data
+      data.forEach(row => {
+        const tr = table.insertRow();
+        tr.insertCell().textContent = row.Nr;
+        tr.insertCell().textContent = row.Atbilde;
+        tr.insertCell().textContent = row.Pamatojums;
+      });
+
+      // Makes table
+      const container = document.getElementById("result");
+      container.innerHTML = "";
+      container.appendChild(table);
+    }
 
     window.addEventListener("DOMContentLoaded", () => {
       const storedData = localStorage.getItem("csvInfo");
       if (storedData) {
-        document.getElementById("result").innerHTML = storedData;
+        const data = JSON.parse(storedData);
+        create_data_table(data);
       }
     });
-  }
   </script>
 </body>
 </html>
