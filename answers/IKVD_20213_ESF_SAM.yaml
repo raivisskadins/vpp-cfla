@@ -215,8 +215,8 @@
   - nr: 39.19
     answer: "jā"
   - nr: 39.20
-    answer0: "nē"
-    answer: "n/a"
+    answer0: "jā"
+    answer: "jā"
   - nr: 39.21
     answer: "jā"
   - nr: 39.22
@@ -253,7 +253,7 @@
   - nr: 39.37
     answer: "n/a"
   - nr: 39.38
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.39
     answer: "n/a"
   - nr: 39.40
@@ -332,7 +332,7 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 55
-  answer: "nē"
+  answer: "jā"
 - nr: 56
   answer: "jā"
 - nr: 57
