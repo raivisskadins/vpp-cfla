@@ -1,56 +1,64 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, HTTPException
+from pathlib import Path
 import shutil
-import os
-from scripts import main_script
+import pandas as pd
 
 app = FastAPI()
 
-UPLOAD_DIR = "/app/procurements"
-os.makedirs(UPLOAD_DIR, exist_ok=True)
+# Base dir inside the container where we’ll store uploads
+UPLOAD_DIR = Path("/app/procurements")
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
 
 @app.post("/process_procurement")
-async def process_procurement(Proc_ID, procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(...)): 
-    
-    # Create new procurement directory
+async def process_procurement(
+    Proc_ID: str,
+    procurement_file: UploadFile = File(...),
+    agreement_file: UploadFile = File(None),
+):
+    """
+    Saves the uploaded files into /app/procurements/{Proc_ID}/
+    and returns the path to the generated report.csv.
+    """
+    # Create procurement-specific directory
     procurement_dir = UPLOAD_DIR / Proc_ID
-    os.makedirs(procurement_dir, exist_ok=True)
+    procurement_dir.mkdir(parents=True, exist_ok=True)
 
-    # Upload procurement file
-    file_path = os.path.join(procurement_dir, procurement_file.filename)
-    with open(file_path, "wb") as buffer:
+    # Save procurement file
+    proc_path = procurement_dir / procurement_file.filename
+    with proc_path.open("wb") as buffer:
         shutil.copyfileobj(procurement_file.file, buffer)
 
-    # Upload agreement file
+    # (Optional) Save agreement file if provided
     if agreement_file:
-        # Upload agreement file
-        return
-    
-    # main_script(procurement_file, agreement_file) # this generates a csv file; Make sure it's in the same procurement directory; 
-    
-    return {"proc_report_path": procurement_dir / "report.csv"} # Get procurement csv file path 
+        agr_path = procurement_dir / agreement_file.filename
+        with agr_path.open("wb") as buffer:
+            shutil.copyfileobj(agreement_file.file, buffer)
+
+    # Here you’d call your processing script, e.g.:
+    # report_path = main_script.generate_report(proc_path, agr_path, output_dir=procurement_dir)
+    # For now let’s assume it writes report.csv into procurement_dir:
+    report_path = procurement_dir / "report.csv"
+
+    # Make sure the report actually exists
+    if not report_path.exists():
+        raise HTTPException(status_code=500, detail="Report not generated")
+
+    return {"proc_report_path": str(report_path)}
+
 
 @app.get("/get_csv_info")
-async def get_csv_info(proc_report_path):
-    
-    # Read in the report csv file
+async def get_csv_info(proc_report_path: str):
+    """
+    Reads the CSV at proc_report_path and returns a JSON array of rows.
+    """
+    path = Path(proc_report_path)
+    if not path.exists() or not path.suffix == ".csv":
+        raise HTTPException(status_code=404, detail="CSV not found")
 
-    # df = pd.read_csv(proc_report_path, keep_default_na=False, encoding="utf-8")
-    
-    # turn csv into json list of objects
+    # Load CSV into a DataFrame
+    df = pd.read_csv(path, keep_default_na=False, encoding="utf-8")
 
-    # List of objects like these:
-    #     {
-    #     "Nr": "8",
-    #     "Atbilde": "nē",
-    #     "Pamatojums": "Nezinu"
-    # }
-
-    # when extracting Pamatojums, get only the explanation key
-    #     {
-    #   ""answer"": ""jā"",
-    #   ""rate"": ""augsta"",
-    #   ""explanation"": ""Kontekstā ir norādīts, ka iepirkuma priekšmets nav sadalīts daļās. Iepirkuma priekšmets netiek dalīts daļās, jo ir viens pretendentu loks; viens būvobjekts; viens būvdarbu veikšanas laiks būvobjektā.""
-    # }
-    
-    # procurement_data = df.json
-    # return procurement_data
+    # Convert each row to a dict and return
+    data = df.to_dict(orient="records")
+    return {"procurement_data": data}
