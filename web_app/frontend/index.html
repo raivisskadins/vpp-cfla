@@ -56,60 +56,91 @@
       background: rgb(149, 17, 17);
     }
 
+      .spinner {
+    margin: 10px auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 </style>
 </head>
 <body>
-  <!-- TODO make frontned look nicer -->
-  <!-- Form with text - Iepirkuma ID -->
   <div class="allInputs">
-    <div class="iepirkumaID">
+    <div class="procurementID">
       <label>Iepirkuma ID</label>
-      <input type="text" id="iepirkumaID" />
+      <input type="text" id="procurementID" />
     </div> 
 
     <div>
-      <label>procurement file*</label>
+      <label>Iepirkuma fails*</label>
       <input type="file" id="procurementFile" />
     </div>
 
     <div>
-      <label>agreement file</label>
+      <!-- Tulkojums? -->
+      <label>agreement file</label> 
       <input type="file" id="agreementFile" />
     </div>
   </div>
 
   <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
 
-  <button type="button" class="cancelBtn" onclick="">Atcelt apstrādi</button>
+  <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
 
   <div id="result"></div>
 
   <script>
+    let report_not_done = true;
+    let pollingInterval = null;
+
     async function processProcurement() {
-        // const procurementFile = document.getElementById("procurementFile").files[0];
-        // const agreementFile = document.getElementById("agreementFile").files[0];
-        // if (!procurementFile) return;
-        // // Get Iepirkuma ID
+        const procurementFile = document.getElementById("procurementFile").files[0];
+        const agreementFile = document.getElementById("agreementFile").files[0];
+        const procurementID = document.getElementById("procurementID").value.trim();
+        const resultContainer = document.getElementById("result");
 
-        // // Send everything at once
-        // const formData = new FormData();
-        // formData.append("file", procurementFile);
+        if (!procurementID || !procurementFile) {
+          alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+          return;
+        }
 
-        // if (agreementFile){
-        //   formData.append("file", agreementFile);
-        // } 
+        const formData = new FormData();
+        formData.append("Proc_ID", procurementID);
+        formData.append("procurement_file", procurementFile);
+        if (agreementFile) {
+          formData.append("agreement_file", agreementFile);
+        }
 
-        // postFile(formData);
-        // path_to_csv = "/app/procurements" + procurementFile.name 
-        // save this path in local storage
-        // Use this path in getCsvInfo
+        // Clear result and show spinner
+        resultContainer.innerHTML = `<p>Apstrāde notiek...</p><div class="spinner"></div>`;
 
-        // Define variable report_not_done - which is always true, except when process_procurement finally finishes
-        // if report_not_done: 
-        await getCsvInfo("report.csv")
-        //await getCsvInfo(path_to_csv) // Periodically call this to update the table; every 5 seconds
-        // Under the data table add a spinner, that shows that things are processing
-    }
+        // Start polling after submission
+        const csvPath = `${procurementID}/report.csv`;
+        localStorage.setItem("csvPath", csvPath);
+        report_not_done = true;
+
+        try {
+          await postFile(formData);
+          // Start polling every 5 seconds
+          pollingInterval = setInterval(async () => {
+            if (report_not_done) {
+              await getCsvInfo(csvPath);
+            }
+          }, 5000);
+        } catch (e) {
+          console.error(e);
+          resultContainer.textContent = "Kļūda serverī";
+        }
+      }
 
     async function postFile(formData) {
       const res = await fetch("http://localhost:8080/process_procurement", {
@@ -117,28 +148,24 @@
         body: formData,
       });
       const out = await res.json();
+      // When the function is finally done it returns that it's done, we update report_not_done
       // report_not_done = False
+    }
+
+    async function stopProcessProcurement(){
+
     }
 
     async function getCsvInfo(path_to_csv) {
       const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
       const jsonText = await res.text();
-
-      // data example
-      //     #     [...{
-      // #     "Nr": "8",s
-      // #     "Atbilde": "nē",
-      // #     "Pamatojums": "Nezinu"
-      // # }]
-
-      // If localStorge csvInfo differs from new incoming csvInfo update the local storage
       const previous = localStorage.getItem("csvInfo");
       
-      if (previous !== jsonText) {
+      // if (previous !== jsonText) {
         localStorage.setItem("csvInfo", jsonText);
         const data = JSON.parse(jsonText);
         create_data_table(data) // Append the data table only with the new rows 
-      }
+      // }
     }
 
     function create_data_table(data) {
@@ -169,10 +196,10 @@
 
     window.addEventListener("DOMContentLoaded", () => {
       const storedData = localStorage.getItem("csvInfo");
-      if (storedData) {
-        const data = JSON.parse(storedData);
-        create_data_table(data);
-      }
+      // if (storedData) {
+      //   const data = JSON.parse(storedData);
+      //   create_data_table(data);
+      // }
     });
   </script>
 </body>
