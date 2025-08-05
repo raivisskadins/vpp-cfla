@@ -1,0 +1,14 @@
+version: '3.9'   
+
+services:
+  jupyter:
+    build: .
+    container_name: vpp-cfla-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work          # live-mount whole repo
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    env_file:
+      - ./.env                     #  shared secrets / keys
