@@ -1,9 +1,9 @@
+# web_app/backend/Dockerfile
 FROM python:3.12-slim
-
 WORKDIR /app
-# Copy all file from backend dir into container
-COPY . . 
+
+COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install python-multipart
+RUN pip install  --no-cache-dir python-multipart
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
