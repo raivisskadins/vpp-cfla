@@ -3,8 +3,8 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.azure_openai import AzureOpenAI
 from datetime import date
 from pathlib import Path
-from scripts.extractmd import Extractor
-from scripts.utilities import get_prompt_dict, get_questions, get_answers, get_supplementary_info
+from .extractmd import Extractor
+from .utilities import get_prompt_dict, get_questions, get_answers, get_supplementary_info
 
 embedding_conf = {
     "embeddingmodel": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2", #"sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3" "nomic-ai/nomic-embed-text-v2-moe" # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
