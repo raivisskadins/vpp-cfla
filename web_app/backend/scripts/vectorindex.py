@@ -283,11 +283,6 @@ class QnAEngine:
             self.alltext = file_content
             documents = self.load_md(file_content)
             nodes = await self.get_nodes(documents, filetype, chunk_size, chunk_overlap)
-            with open("tmp2.md", "w", encoding="utf-8") as ofile:
-                for node in nodes:
-                    print(
-                        f"ChunkNr:{node.metadata['ChunkNr']}\n{node.text}", file=ofile
-                    )
             self.newindex = VectorStoreIndex(
                 nodes,
                 show_progress=False,

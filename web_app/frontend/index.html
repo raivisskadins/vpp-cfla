@@ -6,28 +6,35 @@
 </head>
 <body>
   <div class="allInputs">
+    <h1>Iepirkuma apstrāde</h1>
     <div class="procurementID">
-      <label>Iepirkuma ID</label>
+      <label>Iepirkuma ID:</label>
       <input type="text" id="procurementID" />
     </div> 
 
-    <div>
-      <label>Iepirkuma dokuments*</label>
-      <input type="file" id="procurementFile" />
+    <div class="file-input-wrapper">
+      <label>Iepirkuma dokuments*:</label>
+      <div class="file-input-container">
+        <input type="file" id="procurementFile" onchange="toggleClearButton('procurementFile')" />
+        <span class="clear-btn" id="clear-procurementFile" onclick="clearFile('procurementFile')">✖</span>
+      </div>
     </div>
 
-    <div>
-      <!-- Tulkojums? -->
-      <label>Piekrišanas dokuments</label> 
-      <input type="file" id="agreementFile" />
+    <div class="file-input-wrapper">
+      <label>Piekrišanas dokuments:</label>
+      <div class="file-input-container">
+        <input type="file" id="agreementFile" onchange="toggleClearButton('agreementFile')" />
+        <span class="clear-btn" id="clear-agreementFile" onclick="clearFile('agreementFile')">✖</span>
+      </div>
     </div>
+
+    <div style="margin-top: 10px;">
+      <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
+      <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
+    </div>
+
+    <div id="result"></div>
   </div>
-
-  <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
-
-  <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
-
-  <div id="result"></div>
 
 <script>
   let report_not_done = true;
@@ -55,7 +62,7 @@
       }
 
       // Clear result and show spinner
-      resultContainer.innerHTML = `<p>Apstrāde notiek...</p><div class="spinner"></div>`;
+      resultContainer.innerHTML = `<p>Notiek apstrāde...</p><div class="spinner"></div>`;
 
       
       const csvPath = `${procurementID}/report.csv`;
@@ -63,14 +70,13 @@
       report_not_done = true;
 
     try {
-      // Start polling immediately
-      pollingInterval = setInterval(async () => {
-        if (report_not_done) {
-            await getCsvInfo(csvPath);}
-      }, 5000);
-
-      // Upload files in parallel with polling
       await postFile(formData);
+      // TODO implement some sort of listening function
+      // pollingInterval = setInterval(async () => {
+      //   if (report_not_done) {
+      //       await getCsvInfo(csvPath);}
+      // }, 5000);
+      await getCsvInfo(csvPath)
     } catch (e) {
       console.error("Error sending files:", e);
       resultContainer.textContent = "Kļūda serverī";
@@ -131,11 +137,30 @@
 
   window.addEventListener("DOMContentLoaded", () => {
     const storedData = localStorage.getItem("csvInfo");
+    toggleClearButton("procurementFile");
+    toggleClearButton("agreementFile");
     // if (storedData) {
     //   const data = JSON.parse(storedData);
     //   create_data_table(data);
     // }
   });
+
+  function clearFile(inputId) {
+    const input = document.getElementById(inputId);
+    input.value = ""; // Clear the file
+    toggleClearButton(inputId); // Also hide the X
+  }
+
+  function toggleClearButton(inputId) {
+    const input = document.getElementById(inputId);
+    const clearBtn = document.getElementById("clear-" + inputId);
+    if (input.files.length > 0) {
+      clearBtn.style.display = "inline";
+    } else {
+      clearBtn.style.display = "none";
+    }
+  }
+
 </script>
 
 <style>
@@ -156,6 +181,7 @@
       flex-direction: column;
       gap: 15px;
       margin-bottom: 15px;
+      margin: 2em;
     }
 
     .processBtn {
@@ -182,11 +208,9 @@
 
     .cancelBtn {
       background: rgb(215, 42, 42);
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 85px;
+      width: auto;
       font-weight: bold;
+      margin-left: 100px;
     }
     .cancelBtn:hover {
       background: rgb(149, 17, 17);
@@ -205,6 +229,29 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  .file-input-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .clear-btn {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+  }
+
+  .clear-btn:hover {
+    color: darkred;
   }
 </style>
 

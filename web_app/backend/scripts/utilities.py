@@ -287,8 +287,6 @@ def get_procurement_content(extractor, procurement_file, agreement_file):
         print(f"Processing file: {agreement_file}")
         agreement_content = extractor.convert2markdown(agreement_file)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
-        with open("tmp3.md", 'w', encoding='utf-8') as fout:
-            print(procurement_content,file=fout)
 
     return procurement_content
 
