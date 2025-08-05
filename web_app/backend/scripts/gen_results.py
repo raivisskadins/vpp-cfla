@@ -67,7 +67,7 @@ def question_replace_w_x(question_data, answer_data, results_table):
     # Manually adds 'X' as answers to main questions where answer0 was "kontekstā nav informācijas"
     q_nr = str(question_data['nr'])
     ans  = answer_data['answer']
-    results_table.append([q_nr, 'X', ans, ''])
+    results_table.append([q_nr, 'kontekstā nav informācijas', ans, ''])
 
 def questions_replace_w_x(questions_data, answers_data, results_table):
     # Goes through all child questions

@@ -7,7 +7,7 @@ from scripts.extractmd import Extractor
 from scripts.utilities import get_prompt_dict, get_questions, get_answers, get_supplementary_info
 
 embedding_conf = {
-    "embeddingmodel": "BAAI/bge-m3", #"sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3" "nomic-ai/nomic-embed-text-v2-moe" # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+    "embeddingmodel": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2", #"sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3" "nomic-ai/nomic-embed-text-v2-moe" # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
     "chunk_size": 1536,
     "chunk_overlap": 0,
     "top_similar": 5,
@@ -52,4 +52,4 @@ default_answer_file_path = script_dir / 'template.yaml'
 default_answer_dictionary = get_answers(default_answer_file_path)
 
 # questions_to_process = ["7", "9", "13", "24"]
-questions_to_process = ["7"]
+questions_to_process = ["7", "9", "13", "24"]

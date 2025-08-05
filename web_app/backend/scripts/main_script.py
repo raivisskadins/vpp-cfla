@@ -6,14 +6,13 @@ from scripts.gen_results import gen_results
 from scripts.vectorindex import QnAEngine
 
 async def main_script(procurement_file_path, agreement_file_path, proc_report_csv_path, Proc_ID):   # What format are thse files expected as, paths or loaded in files?
-    print("x")
     # Getting markdown text from procurement doc
     procurement_content = get_procurement_content(extractor, procurement_file_path, agreement_file_path)
-    print("Retrieved content")
+    print("Retrieved procurement content")
 
     # Creating FAISS vector index for the procurement document
     qnaengine = QnAEngine(embedding,llm)
-    print("Qnaengine")
+    print("Qnaengine loading")
     if embedding_conf["use_similar_chunks"] == True:
         await qnaengine.createIndex(
             procurement_content,
@@ -23,9 +22,9 @@ async def main_script(procurement_file_path, agreement_file_path, proc_report_cs
         )
     else:
         await qnaengine.load_text(procurement_content)   
-    print("Embedding model")
-    ### Generating results
 
+    ### Generating results
+    print("Generating results")
     results_table = gen_results(qnaengine, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process)
     
     # add "Iepirkuma ID" as procurement_id to results table
