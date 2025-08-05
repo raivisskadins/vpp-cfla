@@ -8,11 +8,8 @@ def is_skip_question(question, answer):
     # print(f"Skipping question: {question['nr']}") # for debugging
     return skip_question 
 
-def get_question_nodes(qnaengine, question_data, qtype, embedding_conf, ofile):
-    # Serves only for logging? 
+def get_question_nodes(qnaengine, question_data, qtype, embedding_conf):
     nodes = qnaengine.getSimilarNodes(question_data[qtype], embedding_conf["top_similar"]) 
-    q_nr = f"{question_data['nr']}-0" if qtype == 'question0' else question_data['nr']  
-    print(f"\nQ: {q_nr}\n{nodes['text']}\n{nodes['metadata']}\n{nodes['score']}", file=ofile)
     return nodes
 
 def set_extra_info(question_data, supplementary_info, qnaengine):
@@ -22,7 +19,7 @@ def set_extra_info(question_data, supplementary_info, qnaengine):
     info = qnaengine.compressPrompt(info, 3000) 
     return info 
 
-def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, ofile, results_table):
+def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, results_table):
     suffix = SUFFIX[qtype]
     if qtype == 'question0':
         question_id = f"{question_data['nr']}-{suffix}"
@@ -35,7 +32,7 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     answer_id = answer_data[f"answer{suffix}"]
     query, result = ask_question_save_answer(qnaengine, embedding_conf, full_prompt,
                                       question_data[qtype], question_id, answer_id)
-    result.append(query)
+    # result.append(query)
     results_table.append(result)
     
     llm_answer = result[1]
@@ -87,7 +84,7 @@ def questions_replace_w_x(questions_data, answers_data, results_table):
 
 qcounter = 0
 
-def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table, questions_to_process): 
+def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process): 
     
     if is_skip_question(question_data, answer_data): return
         
@@ -101,7 +98,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
 
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
-        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, ofile, results_table)
+        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, results_table)
 
         if not q0_answer:
             return
@@ -124,29 +121,20 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
     if 'question' in question_data:
         results_table, _ = add_result(
             'question', qnaengine, embedding_conf, promptdict, extrainfo,
-            question_data, answer_data, ofile, results_table
+            question_data, answer_data, results_table
         )
     
     if 'questions' in question_data:
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
             # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
             if not questions_to_process or nested_question['nr'] in questions_to_process:
-                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info,ofile, results_table, questions_to_process)
+                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, results_table, questions_to_process)
 
-def gen_results(qnaengine, configfile, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process): 
+def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process): 
     results_table = []  
-    # Generating log file
-    with open("nodes.log", 'a', encoding='utf-8') as ofile: 
-        print(f"""\n*********************\n{configfile}, {configfile} 
-            \n{embedding_conf["embeddingmodel"]}, 
-            top_similar: {embedding_conf["top_similar"]}, 
-            chunk-size: {embedding_conf["chunk_size"]}, 
-            chunk_overlap: {embedding_conf["chunk_overlap"]}""", 
-            file=ofile 
-        )
-        # TODO add tqdm; however you would need count all of the questions that will be answered - non trivial filtering
-        for question, answer in zip(question_dictionary, answer_dictionary):
-            # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
-            if not questions_to_process or question['nr'] in questions_to_process:
-                process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, ofile, results_table, questions_to_process)
+    for question, answer in zip(question_dictionary, answer_dictionary):
+        print("Processing question")
+        if not questions_to_process or question['nr'] in questions_to_process:
+            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process)
+            # Existing results should be added to the CSV
     return results_table 

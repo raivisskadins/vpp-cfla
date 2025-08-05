@@ -1,25 +1,19 @@
 import pandas as pd
-
-from scripts.constants import *
+import os
+from scripts.constants import extractor, embedding, llm, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process
 from scripts.utilities import get_procurement_content
 from scripts.gen_results import gen_results
 from scripts.vectorindex import QnAEngine
 
-async def main_script(procurement_file, agreement_file):   # What format are thse files expected as, paths or loaded in files?
-
-    # Fix overwrite
-    if overwrite: # overwrtitting report; Delete and create new
-        if report_path_csv.exists():
-                report_path_csv.unlink()
-                    
-    if not os.path.exists(report_dir_path):
-        os.makedirs(report_dir_path)
-
+async def main_script(procurement_file_path, agreement_file_path, proc_report_csv_path, Proc_ID):   # What format are thse files expected as, paths or loaded in files?
+    print("x")
     # Getting markdown text from procurement doc
-    procurement_content = get_procurement_content(extractor, procurement_file, agreement_file)
+    procurement_content = get_procurement_content(extractor, procurement_file_path, agreement_file_path)
+    print("Retrieved content")
 
     # Creating FAISS vector index for the procurement document
     qnaengine = QnAEngine(embedding,llm)
+    print("Qnaengine")
     if embedding_conf["use_similar_chunks"] == True:
         await qnaengine.createIndex(
             procurement_content,
@@ -29,22 +23,20 @@ async def main_script(procurement_file, agreement_file):   # What format are ths
         )
     else:
         await qnaengine.load_text(procurement_content)   
-
+    print("Embedding model")
     ### Generating results
-    results_table = gen_results(qnaengine, procurement_file, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process)
-         
-    for row in results_table:
-        filename = procurement_file.split('/')[-1].split('\\')[-1]
-        row.insert(0, filename)
+
+    results_table = gen_results(qnaengine, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process)
     
+    # add "Iepirkuma ID" as procurement_id to results table
+    # TODO still would be nice to move it inside gen_results
+    for row in results_table:
+            row.insert(0, Proc_ID)
     ### Save output
-    data = pd.DataFrame(results_table, columns=["Iepirkuma ID", "Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums", "Uzvedne"])
+    data = pd.DataFrame(results_table, columns=["Iepirkuma ID", "Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums"])
     data.drop(columns="Sagaidāmā atbilde", inplace=True)
-
-    # Drop other unnecessary columns?
-
-    data.to_csv(report_path_csv, 
+    data.to_csv(proc_report_csv_path, 
     mode='a', 
     index=False, 
-    header=not report_path_csv.exists(), # only adding one header
+    header=True,
     encoding='utf-8')

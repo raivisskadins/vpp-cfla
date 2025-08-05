@@ -283,8 +283,8 @@ def get_config_data(configfile, procurement_file_dir, answer_file_dir):
 def get_procurement_content(extractor, procurement_file, agreement_file):
     print(f"Processing file: {procurement_file}")
     procurement_content = extractor.convert2markdown(procurement_file)
-    if len(agreement_file) > 0: # If agreement file was added
-        print(f"Processing file: {procurement_file}")
+    if agreement_file: # If agreement file was added
+        print(f"Processing file: {agreement_file}")
         agreement_content = extractor.convert2markdown(agreement_file)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
         with open("tmp3.md", 'w', encoding='utf-8') as fout:
