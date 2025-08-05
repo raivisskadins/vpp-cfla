@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Precision Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; position: relative; }
+        table.sortable th { cursor: pointer; }
+
+        .conf-matrix { width: auto; margin-top: 20px; }
+
+        /* Default neutral sort indicator */
+        table.sortable th::after {
+            content: " ▲▼";
+            font-size: 0.8em;
+            color: #999;
+            margin-left: 4px;
+        }
+
+        /* Sorted ascending */
+        table.sortable th.asc::after {
+            content: " ▲";
+            color: black;
+        }
+
+        /* Sorted descending */
+        table.sortable th.desc::after {
+            content: " ▼";
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Model Precision per Question</h1>
+    <div class="report-table">
+        <table border="1" class="dataframe sortable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nr</th>
+      <th>total_asked</th>
+      <th>total_answered</th>
+      <th>total_answered_wo_na</th>
+      <th>n_correct</th>
+      <th>precision</th>
+      <th>precision_answered</th>
+      <th>precision_answered_wo_na</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>38.8-0</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>5</td>
+      <td>0.56</td>
+      <td>0.56</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>38.8</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>5</td>
+      <td>0.56</td>
+      <td>0.56</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>38.9-0</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0.30</td>
+      <td>0.30</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>38.9</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0.10</td>
+      <td>0.10</td>
+      <td>0.10</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+    <h2>Additional Model Evaluation Data</h2>
+    <h3>Confusion Matrix</h3>
+    <table border="1" class="dataframe conf-matrix">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Expected ↓ / Actual →</th>
+      <th>jā</th>
+      <th>nē</th>
+      <th>n/a</th>
+      <th>kontekstā nav informācijas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>jā</th>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>nē</th>
+      <td>11</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>n/a</th>
+      <td>2</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+    <p><strong>Total questions:</strong> 38</p>
+    <p><strong>Confident answers:</strong> 38</p>
+    <p><strong>Unanswerable questions (n/a without q0):</strong> 0</p>
+    <p><strong>Total 'jā' answers:</strong> 6</p>
+    <p><strong>Total 'nē' answers:</strong> 17</p>
+    <p><strong>Total 'n/a' answers:</strong> 15</p>
+    <p><strong>'jā' answer accuracy:</strong> 66.67%</p>
+    <p><strong>'nē' answer accuracy:</strong> 29.41%</p>
+    <p><strong>'n/a' answer accuracy:</strong> 33.33%</p>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('table.sortable th').forEach(headerCell => {
+            headerCell.addEventListener('click', () => {
+                const tableElement = headerCell.closest('table');
+                const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+                const isAscending = headerCell.classList.contains('asc');
+                const directionModifier = isAscending ? -1 : 1;
+                const rows = Array.from(tableElement.querySelectorAll('tbody tr'));
+
+                rows.sort((a, b) => {
+                    const aText = a.children[headerIndex].innerText.trim();
+                    const bText = b.children[headerIndex].innerText.trim();
+
+                    const aNum = parseFloat(aText);
+                    const bNum = parseFloat(bText);
+
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return (aNum - bNum) * directionModifier;
+                    }
+                    return aText.localeCompare(bText) * directionModifier;
+                });
+
+                while (tableElement.tBodies[0].firstChild) {
+                    tableElement.tBodies[0].removeChild(tableElement.tBodies[0].firstChild);
+                }
+
+                tableElement.tBodies[0].append(...rows);
+                tableElement.querySelectorAll('th').forEach(th => th.classList.remove('asc', 'desc'));
+                headerCell.classList.toggle('asc', !isAscending);
+                headerCell.classList.toggle('desc', isAscending);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
