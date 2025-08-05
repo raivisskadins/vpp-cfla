@@ -2,30 +2,258 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Upload File</title>
+  <title>Iepirkuma pārbaude</title>
 </head>
 <body>
-  <h1>Upload a File</h1>
-  <input type="file" id="fileInput" />
-  <button onclick="upload()">Upload</button>
-  <pre id="result"></pre>
+  <div class="allInputs">
+    <h1>Iepirkuma apstrāde</h1>
+    <div class="procurementID">
+      <label>Iepirkuma ID:</label>
+      <input type="text" id="procurementID" />
+    </div> 
 
-  <script>
-    async function upload() {
-      const file = document.getElementById("fileInput").files[0];
-      if (!file) return;
+    <div class="file-input-wrapper">
+      <label>Iepirkuma dokuments*:</label>
+      <div class="file-input-container">
+        <input type="file" id="procurementFile" onchange="toggleClearButton('procurementFile')" />
+        <span class="clear-btn" id="clear-procurementFile" onclick="clearFile('procurementFile')">✖</span>
+      </div>
+    </div>
+
+    <div class="file-input-wrapper">
+      <label>Piekrišanas dokuments:</label>
+      <div class="file-input-container">
+        <input type="file" id="agreementFile" onchange="toggleClearButton('agreementFile')" />
+        <span class="clear-btn" id="clear-agreementFile" onclick="clearFile('agreementFile')">✖</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 10px;">
+      <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
+      <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+<script>
+  let report_not_done = true;
+  let pollingInterval = null;
+
+  async function processProcurement() {
+      const procurementFile = document.getElementById("procurementFile").files[0];
+      const agreementFile = document.getElementById("agreementFile").files[0];
+      const procurementID = document.getElementById("procurementID").value.trim();
+      const resultContainer = document.getElementById("result");
+
+      // Each time executing new process reset csv info
+      localStorage.setItem("csvInfo", "");
+
+      if (!procurementID || !procurementFile) {
+        alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+        return;
+      }
 
       const formData = new FormData();
-      formData.append("file", file);
+      formData.append("Proc_ID", procurementID);
+      formData.append("procurement_file", procurementFile);
+      if (agreementFile) {
+        formData.append("agreement_file", agreementFile);
+      }
 
-      const res = await fetch("http://localhost:8080/upload", {
-        method: "POST",
-        body: formData,
-      });
+      // Clear result and show spinner
+      resultContainer.innerHTML = `<p>Notiek apstrāde...</p><div class="spinner"></div>`;
 
-      const out = await res.json();
-      document.getElementById("result").textContent = JSON.stringify(out, null, 2);
+      
+      const csvPath = `${procurementID}/report.csv`;
+      localStorage.setItem("csvPath", csvPath);
+      report_not_done = true;
+
+    try {
+      await postFile(formData);
+      // TODO implement some sort of listening function
+      // pollingInterval = setInterval(async () => {
+      //   if (report_not_done) {
+      //       await getCsvInfo(csvPath);}
+      // }, 5000);
+      await getCsvInfo(csvPath)
+    } catch (e) {
+      console.error("Error sending files:", e);
+      resultContainer.textContent = "Kļūda serverī";
     }
-  </script>
+    }
+
+  async function postFile(formData) {
+    const res = await fetch("http://localhost:8080/process_procurement", {
+      method: "POST",
+      body: formData,
+    });
+    const out = await res.json();
+    // When the function is finally done it returns that it's done, we update report_not_done
+    // report_not_done = False
+  }
+
+  async function stopProcessProcurement(){
+    // TODO send kill request for main function
+  }
+
+  async function getCsvInfo(path_to_csv) {
+    const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
+    const jsonText = await res.text();
+    const previous = localStorage.getItem("csvInfo");
+    
+    // if (previous !== jsonText) {
+      localStorage.setItem("csvInfo", jsonText);
+      const data = JSON.parse(jsonText);
+      create_data_table(data) // Append the data table only with the new rows 
+    // }
+  }
+
+  function create_data_table(data) {
+    const table = document.createElement("table");
+    table.border = 1;
+
+    // Header
+    const header = table.insertRow();
+    ["Nr", "Atbilde", "Pamatojums"].forEach(heading => {
+      const th = document.createElement("th");
+      th.textContent = heading;
+      header.appendChild(th);
+    });
+
+    // Data
+    data.forEach(row => {
+      const tr = table.insertRow();
+      tr.insertCell().textContent = row.Nr;
+      tr.insertCell().textContent = row.Atbilde;
+      tr.insertCell().textContent = row.Pamatojums;
+    });
+
+    // Makes table
+    const container = document.getElementById("result");
+    container.innerHTML = "";
+    container.appendChild(table);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const storedData = localStorage.getItem("csvInfo");
+    toggleClearButton("procurementFile");
+    toggleClearButton("agreementFile");
+    // if (storedData) {
+    //   const data = JSON.parse(storedData);
+    //   create_data_table(data);
+    // }
+  });
+
+  function clearFile(inputId) {
+    const input = document.getElementById(inputId);
+    input.value = ""; // Clear the file
+    toggleClearButton(inputId); // Also hide the X
+  }
+
+  function toggleClearButton(inputId) {
+    const input = document.getElementById(inputId);
+    const clearBtn = document.getElementById("clear-" + inputId);
+    if (input.files.length > 0) {
+      clearBtn.style.display = "inline";
+    } else {
+      clearBtn.style.display = "none";
+    }
+  }
+
+</script>
+
+<style>
+  
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+    }
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 8px 10px;
+        text-align: center;
+    }
+    .allInputs {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 15px;
+      margin: 2em;
+    }
+
+    .processBtn {
+      background-color: #4f46e5;
+    }
+    .processBtn:hover {
+      background-color: #4338ca;
+    }
+
+    button {
+      color: rgb(233, 230, 230);
+      padding: 8px 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .cancelBtn {
+      background: rgb(215, 42, 42);
+      width: auto;
+      font-weight: bold;
+      margin-left: 100px;
+    }
+    .cancelBtn:hover {
+      background: rgb(149, 17, 17);
+    }
+
+      .spinner {
+    margin: 10px auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .file-input-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .clear-btn {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+  }
+
+  .clear-btn:hover {
+    color: darkred;
+  }
+</style>
+
 </body>
 </html>
