@@ -620,7 +620,12 @@
    - chapter: 51
 - nr: 43
   question0: "Vai noteikta personāla kvalifikācija vai pieredze ir prasīta kā kvalifikācijas (atlases) prasība?"
-  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
+  #question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
+  question: |
+    Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?
+    Šeit būtiski nošķirt kvalifikācijas prasības no izvērtēšanas kritērijiem, 
+    pieredzi drīkst prasīt, lai kvalificētos, 
+    bet pieredzi nedrīkst izmantot, vērtējot piedāvājumu, t.i., piešķirot vērtēšanas punktus.
   PIL:
    - chapter: 51
 - nr: 44
