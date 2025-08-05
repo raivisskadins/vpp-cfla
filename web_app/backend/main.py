@@ -1,9 +1,10 @@
-from fastapi import FastAPI, File, UploadFile, Query
+from fastapi import FastAPI, File, UploadFile, Query, Form
 from fastapi.responses import JSONResponse
 #from scripts import main_script
 import shutil, os, json, re
 import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
+from scripts.main_script import main_script
 
 app = FastAPI()
 
@@ -19,25 +20,29 @@ UPLOAD_DIR = "/app/procurements"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 @app.post("/process_procurement")
-async def process_procurement(Proc_ID, procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(...)): 
-    
-    # Create new procurement directory
-    procurement_dir = UPLOAD_DIR / Proc_ID
-    os.makedirs(procurement_dir, exist_ok=True)
+async def process_procurement(Proc_ID: str = Form(...), procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(None)): 
+    # Create or recreate new procurement directory
+    procurement_dir = os.path.join(UPLOAD_DIR, Proc_ID)
+    if os.path.exists(procurement_dir):
+        shutil.rmtree(procurement_dir)
+    os.makedirs(procurement_dir)
 
     # Upload procurement file
-    file_path = os.path.join(procurement_dir, procurement_file.filename)
-    with open(file_path, "wb") as buffer:
+    proc_file_path = os.path.join(procurement_dir, procurement_file.filename)
+    with open(proc_file_path, "wb") as buffer:
         shutil.copyfileobj(procurement_file.file, buffer)
 
     # Upload agreement file
+    agreement_file_path = None
     if agreement_file:
-        # Upload agreement file
+        agreement_file_path = os.path.join(procurement_dir, agreement_file.filename)
+        with open(agreement_file_path, "wb") as buffer:
+            shutil.copyfileobj(agreement_file.file, buffer)
         return
-    
-    # main_script(procurement_file, agreement_file) # this generates a csv file; Make sure it's in the same procurement directory; 
-    
-    return {"proc_report_path": procurement_dir / "report.csv"} # Get procurement csv file path 
+    print("main script")
+    proc_report_csv_path = os.path.join(procurement_dir, "report.csv")
+    await main_script(proc_file_path, agreement_file_path, proc_report_csv_path, Proc_ID) # this generates a csv file; Make sure it's in the same procurement directory; 
+    return {"proc_report_path": proc_report_csv_path} # Get procurement csv file path 
 
 @app.get("/get_csv_info")
 async def get_csv_info(proc_report_path: str = Query(...)):
@@ -45,7 +50,8 @@ async def get_csv_info(proc_report_path: str = Query(...)):
     proc_report_path = os.path.join(base_dir, "procurements/", proc_report_path)
 
     if not os.path.isfile(proc_report_path):
-        raise FileNotFoundError(f"Fails {proc_report_path} nav atrasts")
+        print("File still being created")
+        return
 
     df = pd.read_csv(proc_report_path, keep_default_na=False, encoding="utf-8")
     output = []

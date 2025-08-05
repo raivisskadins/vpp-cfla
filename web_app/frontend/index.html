@@ -2,8 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Procurement processing</title>
-  <style>
+  <title>Iepirkuma pārbaude</title>
+</head>
+<body>
+  <div class="allInputs">
+    <div class="procurementID">
+      <label>Iepirkuma ID</label>
+      <input type="text" id="procurementID" />
+    </div> 
+
+    <div>
+      <label>Iepirkuma dokuments*</label>
+      <input type="file" id="procurementFile" />
+    </div>
+
+    <div>
+      <!-- Tulkojums? -->
+      <label>Piekrišanas dokuments</label> 
+      <input type="file" id="agreementFile" />
+    </div>
+  </div>
+
+  <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
+
+  <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
+
+  <div id="result"></div>
+
+<script>
+  let report_not_done = true;
+  let pollingInterval = null;
+
+  async function processProcurement() {
+      const procurementFile = document.getElementById("procurementFile").files[0];
+      const agreementFile = document.getElementById("agreementFile").files[0];
+      const procurementID = document.getElementById("procurementID").value.trim();
+      const resultContainer = document.getElementById("result");
+
+      // Each time executing new process reset csv info
+      localStorage.setItem("csvInfo", "");
+
+      if (!procurementID || !procurementFile) {
+        alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("Proc_ID", procurementID);
+      formData.append("procurement_file", procurementFile);
+      if (agreementFile) {
+        formData.append("agreement_file", agreementFile);
+      }
+
+      // Clear result and show spinner
+      resultContainer.innerHTML = `<p>Apstrāde notiek...</p><div class="spinner"></div>`;
+
+      
+      const csvPath = `${procurementID}/report.csv`;
+      localStorage.setItem("csvPath", csvPath);
+      report_not_done = true;
+
+    try {
+      // Start polling immediately
+      pollingInterval = setInterval(async () => {
+        if (report_not_done) {
+            await getCsvInfo(csvPath);}
+      }, 5000);
+
+      // Upload files in parallel with polling
+      await postFile(formData);
+    } catch (e) {
+      console.error("Error sending files:", e);
+      resultContainer.textContent = "Kļūda serverī";
+    }
+    }
+
+  async function postFile(formData) {
+    const res = await fetch("http://localhost:8080/process_procurement", {
+      method: "POST",
+      body: formData,
+    });
+    const out = await res.json();
+    // When the function is finally done it returns that it's done, we update report_not_done
+    // report_not_done = False
+  }
+
+  async function stopProcessProcurement(){
+    // TODO send kill request for main function
+  }
+
+  async function getCsvInfo(path_to_csv) {
+    const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
+    const jsonText = await res.text();
+    const previous = localStorage.getItem("csvInfo");
+    
+    // if (previous !== jsonText) {
+      localStorage.setItem("csvInfo", jsonText);
+      const data = JSON.parse(jsonText);
+      create_data_table(data) // Append the data table only with the new rows 
+    // }
+  }
+
+  function create_data_table(data) {
+    const table = document.createElement("table");
+    table.border = 1;
+
+    // Header
+    const header = table.insertRow();
+    ["Nr", "Atbilde", "Pamatojums"].forEach(heading => {
+      const th = document.createElement("th");
+      th.textContent = heading;
+      header.appendChild(th);
+    });
+
+    // Data
+    data.forEach(row => {
+      const tr = table.insertRow();
+      tr.insertCell().textContent = row.Nr;
+      tr.insertCell().textContent = row.Atbilde;
+      tr.insertCell().textContent = row.Pamatojums;
+    });
+
+    // Makes table
+    const container = document.getElementById("result");
+    container.innerHTML = "";
+    container.appendChild(table);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const storedData = localStorage.getItem("csvInfo");
+    // if (storedData) {
+    //   const data = JSON.parse(storedData);
+    //   create_data_table(data);
+    // }
+  });
+</script>
+
+<style>
+  
     table {
         width: 100%;
         border-collapse: collapse;
@@ -70,137 +206,7 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-
 </style>
-</head>
-<body>
-  <div class="allInputs">
-    <div class="procurementID">
-      <label>Iepirkuma ID</label>
-      <input type="text" id="procurementID" />
-    </div> 
 
-    <div>
-      <label>Iepirkuma fails*</label>
-      <input type="file" id="procurementFile" />
-    </div>
-
-    <div>
-      <!-- Tulkojums? -->
-      <label>agreement file</label> 
-      <input type="file" id="agreementFile" />
-    </div>
-  </div>
-
-  <button type="button" class="processBtn" onclick="processProcurement()">Apstrādāt iepirkumu</button>
-
-  <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
-
-  <div id="result"></div>
-
-  <script>
-    let report_not_done = true;
-    let pollingInterval = null;
-
-    async function processProcurement() {
-        const procurementFile = document.getElementById("procurementFile").files[0];
-        const agreementFile = document.getElementById("agreementFile").files[0];
-        const procurementID = document.getElementById("procurementID").value.trim();
-        const resultContainer = document.getElementById("result");
-
-        if (!procurementID || !procurementFile) {
-          alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
-          return;
-        }
-
-        const formData = new FormData();
-        formData.append("Proc_ID", procurementID);
-        formData.append("procurement_file", procurementFile);
-        if (agreementFile) {
-          formData.append("agreement_file", agreementFile);
-        }
-
-        // Clear result and show spinner
-        resultContainer.innerHTML = `<p>Apstrāde notiek...</p><div class="spinner"></div>`;
-
-        // Start polling after submission
-        const csvPath = `${procurementID}/report.csv`;
-        localStorage.setItem("csvPath", csvPath);
-        report_not_done = true;
-
-        try {
-          await postFile(formData);
-          // Start polling every 5 seconds
-          pollingInterval = setInterval(async () => {
-            if (report_not_done) {
-              await getCsvInfo(csvPath);
-            }
-          }, 5000);
-        } catch (e) {
-          console.error(e);
-          resultContainer.textContent = "Kļūda serverī";
-        }
-      }
-
-    async function postFile(formData) {
-      const res = await fetch("http://localhost:8080/process_procurement", {
-        method: "POST",
-        body: formData,
-      });
-      const out = await res.json();
-      // When the function is finally done it returns that it's done, we update report_not_done
-      // report_not_done = False
-    }
-
-    async function stopProcessProcurement(){
-
-    }
-
-    async function getCsvInfo(path_to_csv) {
-      const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
-      const jsonText = await res.text();
-      const previous = localStorage.getItem("csvInfo");
-      
-      // if (previous !== jsonText) {
-        localStorage.setItem("csvInfo", jsonText);
-        const data = JSON.parse(jsonText);
-        create_data_table(data) // Append the data table only with the new rows 
-      // }
-    }
-
-    function create_data_table(data) {
-      const table = document.createElement("table");
-      table.border = 1;
-
-      // Header
-      const header = table.insertRow();
-      ["Nr", "Atbilde", "Pamatojums"].forEach(heading => {
-        const th = document.createElement("th");
-        th.textContent = heading;
-        header.appendChild(th);
-      });
-
-      // Data
-      data.forEach(row => {
-        const tr = table.insertRow();
-        tr.insertCell().textContent = row.Nr;
-        tr.insertCell().textContent = row.Atbilde;
-        tr.insertCell().textContent = row.Pamatojums;
-      });
-
-      // Makes table
-      const container = document.getElementById("result");
-      container.innerHTML = "";
-      container.appendChild(table);
-    }
-
-    window.addEventListener("DOMContentLoaded", () => {
-      const storedData = localStorage.getItem("csvInfo");
-      // if (storedData) {
-      //   const data = JSON.parse(storedData);
-      //   create_data_table(data);
-      // }
-    });
-  </script>
 </body>
 </html>
