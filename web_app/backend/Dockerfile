@@ -1,5 +1,5 @@
+# web_app/backend/Dockerfile
 FROM python:3.12-slim
-
 WORKDIR /app
 
 COPY . .
