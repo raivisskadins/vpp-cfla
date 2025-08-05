@@ -172,10 +172,10 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
     answer = re.search(r'\{[^\{\}]+\}',result, re.IGNORECASE)
     if answer:
         try:
-            jsonanswer=json.loads(answer.group(1))
+            jsonanswer=json.loads(answer.group(0))
             llmanswer = jsonanswer.get('answer','')
             record = [nr, llmanswer, expectedanswer, result]
-            return record
+            return query, record
         except:
             pass
             
