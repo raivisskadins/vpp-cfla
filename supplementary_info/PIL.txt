@@ -908,6 +908,8 @@ Kandidātu un pretendentu atlase un piedāvājuma izvēle
 
 42. pants. Kandidātu un pretendentu izslēgšanas noteikumi
 
+(1) Pasūtītājs izslēdz kandidātu vai pretendentu no turpmākās dalības iepirkuma procedūrā saskaņā ar šā panta noteikumiem.
+
 (2) Kandidātu un pretendentu izslēgšanas iemesli ir šādi:
 
 1) Kandidāts, pretendents vai saistīta persona ir atzīta par vainīgu vai sodīta par noziedzīgiem nodarījumiem, piemēram, noziedzīgas organizācijas izveidošanu, kukuļošanu, krāpšanu, terorismu, cilvēku tirdzniecību, izvairīšanos no nodokļu maksājumiem.
@@ -940,6 +942,8 @@ Kandidātu un pretendentu atlase un piedāvājuma izvēle
 (9) Pasūtītājs izslēdz kandidātu vai pretendentu, ja konstatē izslēgšanas iemeslus saistībā ar iepirkuma komisijas locekļa saistību, konkurenci ierobežojošām priekšrocībām, prettiesisku ietekmēšanu vai nepatiesu informāciju.
 
 (10) Pasūtītājs veic pārbaudi par izslēgšanas iemesliem atklātā konkursā, slēgtā konkursā, konkursa dialogā, inovāciju partnerības procedūrā, konkursa procedūrā ar sarunām, iepirkumā un sarunu procedūrā.
+
+(11) Ministru kabinets nosaka informācijas sistēmu, kuru izmanto kandidātu un pretendentu pārbaudei, kā arī tās uzturēšanas un izmantošanas kārtību, pārbaudāmās informācijas apstrādes mērķi un apjomu, normatīvos aktus un pantus, kas atbilst izslēgšanas iemesliem, datu apmaiņas kārtību ar citām iestādēm, kā arī informācijas apjomu, kas jāapkopo par ārvalstīs reģistrētām vai dzīvojošām personām.
 
 43. pants. Uzticamības nodrošināšana
 
