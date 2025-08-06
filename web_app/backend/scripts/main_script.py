@@ -32,6 +32,5 @@ async def main_script(procurement_file_path, agreement_file_path, proc_report_cs
     ### Generating results
     print("Generating results")
     await send_status(Proc_ID, "Ģenerē rezultātus...")
-    # results_table = await gen_results(qnaengine, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process, Proc_ID)
-    result = gen_results(qnaengine, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process, proc_report_csv_path)
+    result = await gen_results(qnaengine, embedding_conf, question_dictionary, default_answer_dictionary, prompt_dictionary, supplementary_info, questions_to_process, proc_report_csv_path, Proc_ID)
 

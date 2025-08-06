@@ -1,4 +1,4 @@
-import csv
+import csv, asyncio
 
 from .utilities import ask_question_save_answer, get_extra_info
 from .status_manager import send_status
@@ -160,25 +160,18 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
             if not questions_to_process or nested_question['nr'] in questions_to_process:
                 process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, report_path_csv, questions_to_process)
 
-# async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, Proc_ID): 
-#     results_table = []  
-#     total_questions = count_total_questions(question_dictionary, answer_dictionary, questions_to_process)
-
-#     for question, answer in zip(question_dictionary, answer_dictionary):
-#         if not questions_to_process or question['nr'] in questions_to_process:
-#             process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary)
-#             await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
-#             # Existing results should be added to the CSV
-#     return results_table 
-def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, report_path_csv): 
+async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, report_path_csv, Proc_ID): 
+    total_questions = count_total_questions(question_dictionary, answer_dictionary, questions_to_process)
 
     with open(report_path_csv, mode='w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        # writer.writerow(["Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums", "Uzvedne"])
-        writer.writerow(["Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums"])
+        # writer.writerow(["Nr", "Jautājums", "Atbilde", "Sagaidāmā atbilde", "Pamatojums", "Uzvedne"])
+        writer.writerow(["Nr", "Jautājums", "Atbilde", "Sagaidāmā atbilde", "Pamatojums"])
 
     # TODO add tqdm; however you would need count all of the questions that will be answered - non trivial filtering
     for question, answer in zip(question_dictionary, answer_dictionary):
         if not questions_to_process or question['nr'] in questions_to_process:
+            await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
+            await asyncio.sleep(0)
             process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process)
     return True
