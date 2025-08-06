@@ -174,7 +174,7 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
         try:
             jsonanswer=json.loads(answer.group(1))
             llmanswer = jsonanswer.get('answer','')
-            record = [nr, llmanswer, expectedanswer, result]
+            record = [nr, question, llmanswer, expectedanswer, result]
             return record
         except:
             pass
@@ -184,15 +184,15 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
     if answer:
         llmanswer=answer.group(1)
         #result = result.replace(f"[{llmanswer}]","").replace(f"Atbilde:","")
-        record = [nr, llmanswer, expectedanswer, result]
+        record = [nr, question, llmanswer, expectedanswer, result]
     else:
         answer = re.search(r"'?(jā|nē|kontekstā nav informācijas|n/a)'?", result, re.IGNORECASE)
         if not answer:
             answer = re.search(r'\[(ja|ne)\]', result, re.IGNORECASE)
         if answer:
-            record = [nr, answer.group(1).lower(), expectedanswer, result]
+            record = [nr, question, answer.group(1).lower(), expectedanswer, result]
         else:
-            record = [nr, '', expectedanswer, result] 
+            record = [nr, question, '', expectedanswer, result] 
     return query, record
 
 # TODO needs a more logical name, more info seems to be similar

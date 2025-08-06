@@ -41,10 +41,21 @@
   let pollingInterval = null;
 
   async function processProcurement() {
+      const resultContainer = document.getElementById("result");
       const procurementFile = document.getElementById("procurementFile").files[0];
       const agreementFile = document.getElementById("agreementFile").files[0];
       const procurementID = document.getElementById("procurementID").value.trim();
-      const resultContainer = document.getElementById("result");
+      const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+
+      eventSource.onmessage = function(event) {
+        const message = event.data;
+        console.log("Status update:", message);
+        resultContainer.innerHTML = message;
+
+        if (message === "__DONE__") {
+            eventSource.close();
+        }
+      };
 
       // Each time executing new process reset csv info
       localStorage.setItem("csvInfo", "");
@@ -81,7 +92,7 @@
       console.error("Error sending files:", e);
       resultContainer.textContent = "Kļūda serverī";
     }
-    }
+  }
 
   async function postFile(formData) {
     const res = await fetch("http://localhost:8080/process_procurement", {
@@ -115,16 +126,20 @@
 
     // Header
     const header = table.insertRow();
-    ["Nr", "Atbilde", "Pamatojums"].forEach(heading => {
+    ["Nr", "Jautājums", "Atbilde", "Pamatojums"].forEach(heading => {
       const th = document.createElement("th");
       th.textContent = heading;
       header.appendChild(th);
     });
 
+    
+
     // Data
     data.forEach(row => {
+      console.log("ROW:", row);
       const tr = table.insertRow();
       tr.insertCell().textContent = row.Nr;
+      tr.insertCell().textContent = row["Jautājums"];
       tr.insertCell().textContent = row.Atbilde;
       tr.insertCell().textContent = row.Pamatojums;
     });
@@ -173,7 +188,6 @@
     table th, table td {
         border: 1px solid #ccc;
         padding: 8px 10px;
-        text-align: center;
     }
     .allInputs {
       display: flex;

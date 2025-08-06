@@ -1,4 +1,5 @@
 from .utilities import ask_question_save_answer, get_extra_info
+from .status_manager import send_status
 SUFFIX = {"question0": "0", "question": ""}
 
 def is_skip_question(question, answer):
@@ -19,7 +20,7 @@ def set_extra_info(question_data, supplementary_info, qnaengine):
     info = qnaengine.compressPrompt(info, 3000) 
     return info 
 
-def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, results_table):
+def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, results_table, question_dictionary):
     suffix = SUFFIX[qtype]
     if qtype == 'question0':
         question_id = f"{question_data['nr']}-{suffix}"
@@ -34,6 +35,7 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
                                       question_data[qtype], question_id, answer_id)
     # result.append(query)
     results_table.append(result)
+    print(question_data[qtype])
     
     llm_answer = result[1]
     expected_answer = result[2]
@@ -84,7 +86,24 @@ def questions_replace_w_x(questions_data, answers_data, results_table):
 
 qcounter = 0
 
-def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process): 
+def count_total_questions(question_list, answer_list, questions_to_process):
+    def recursive_count(q_data, a_data):
+        if is_skip_question(q_data, a_data):
+            return 0
+        count = 1
+        if 'questions' in q_data and 'answers' in a_data:
+            for sub_q, sub_a in zip(q_data['questions'], a_data['answers']):
+                if not questions_to_process or sub_q['nr'] in questions_to_process:
+                    count += recursive_count(sub_q, sub_a)
+        return count
+
+    total = 0
+    for q, a in zip(question_list, answer_list):
+        if not questions_to_process or q['nr'] in questions_to_process:
+            total += recursive_count(q, a)
+    return total
+
+def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary): 
     
     if is_skip_question(question_data, answer_data): return
         
@@ -98,7 +117,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
 
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
-        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, results_table)
+        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, results_table, question_dictionary)
 
         if not q0_answer:
             return
@@ -121,7 +140,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
     if 'question' in question_data:
         results_table, _ = add_result(
             'question', qnaengine, embedding_conf, promptdict, extrainfo,
-            question_data, answer_data, results_table
+            question_data, answer_data, results_table, question_dictionary
         )
     
     if 'questions' in question_data:
@@ -130,11 +149,13 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
             if not questions_to_process or nested_question['nr'] in questions_to_process:
                 process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, results_table, questions_to_process)
 
-def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process): 
+async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, Proc_ID): 
     results_table = []  
+    total_questions = count_total_questions(question_dictionary, answer_dictionary, questions_to_process)
+
     for question, answer in zip(question_dictionary, answer_dictionary):
-        print("Processing question")
         if not questions_to_process or question['nr'] in questions_to_process:
-            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process)
+            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary)
+            await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
             # Existing results should be added to the CSV
     return results_table 
