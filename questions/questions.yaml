@@ -530,7 +530,7 @@
       Tu esi aģents, kas pārbauda iepirkuma dokumentācijas atbilstību likumiem. 
       Tev ir pieejami fragmenti no likuma (<law> tagos) un iepirkuma dokumentācijas (<context> tagos). 
       Atbildi uz jautājumiem: 
-      Q1. Atbildi ar jā vai nē. Vai PIL 42.pantā minēto izslēgšanas nosacījumi nolikumā tiek vienādi attiecināti gan uz Latvijas, gan ārzemju pretendentiem?
+      Q1. Atbildi ar jā vai nē. Vai PIL 42.pantā minētie izslēgšanas nosacījumi nolikumā tiek vienādi attiecināti gan uz Latvijas, gan ārzemju pretendentiem?
       Q2. Atbildi ar jā vai nē. Vai nolikumā ir prasīts izziņas un apliecinājumus PIL 42. panta saistībā iesniegt vienlaikus ar piedāvājumu?
       
       Un tad:
@@ -574,7 +574,10 @@
         - 2
         - 10
   - nr: 40.4
-    question0: "Vai iepirkuma dokumentācijā ir noteikts kompetento institūciju izdoto izziņu derīguma termiņš?"
+    #question0: "Vai iepirkuma dokumentācijā ir noteikts kompetento institūciju izdoto izziņu derīguma termiņš?"
+    question0: |
+      Vai iepirkuma dokumentācijā ir noteikts kompetento institūciju izdoto izziņu derīguma termiņš?
+      T.i., pašā iepirkuma nolikumā ir noteikts derīguma terminš, papildu tam, ka tas ir PIL regulējumā.
     question: "Izziņu, kuras izdod Latvijas kompetentas institūcijas saskaņā ar PIL regulējumu, derīguma termiņš ir noteikts ne ilgāks un ne īsāks par 1 mēnesi pirms izziņu iesniegšanas dienas, savukārt ārvalstu kompetentas institūcijas izziņu derīguma termiņš – ne ilgāks un ne īsāks par 6 mēnešiem pirms izziņu iesniegšanas dienas (nevis piedāvājuma/pieteikuma iesniegšanas dienas)"
     PIL:
      - chapter: 41
@@ -617,7 +620,12 @@
    - chapter: 51
 - nr: 43
   question0: "Vai noteikta personāla kvalifikācija vai pieredze ir prasīta kā kvalifikācijas (atlases) prasība?"
-  question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
+  #question: "Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?"
+  question: |
+    Vai piedāvājuma izvērtēšanas kritēriju ietvaros netiek vērtēti tie paši aspekti, kas noteikti atlases prasībās?
+    Šeit būtiski nošķirt kvalifikācijas prasības no izvērtēšanas kritērijiem, 
+    pieredzi drīkst prasīt, lai kvalificētos, 
+    bet pieredzi nedrīkst izmantot, vērtējot piedāvājumu, t.i., piešķirot vērtēšanas punktus.
   PIL:
    - chapter: 51
 - nr: 44
