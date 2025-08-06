@@ -132,11 +132,8 @@
       header.appendChild(th);
     });
 
-    
-
     // Data
     data.forEach(row => {
-      console.log("ROW:", row);
       const tr = table.insertRow();
       tr.insertCell().textContent = row.Nr;
       tr.insertCell().textContent = row["Jautājums"];
