@@ -1,10 +1,10 @@
 from fastapi import FastAPI, File, UploadFile, Query, Form
-from fastapi.responses import JSONResponse
-#from scripts import main_script
+from fastapi.responses import JSONResponse, StreamingResponse
 import shutil, os, json, re
 import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
 from scripts.main_script import main_script
+from scripts.status_manager import get_queue, send_status, remove_queue
 
 app = FastAPI()
 
@@ -18,6 +18,20 @@ app.add_middleware(
 
 UPLOAD_DIR = "/app/procurements"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+@app.get("/events/{proc_id}")
+async def events(proc_id: str):
+    queue = get_queue(proc_id)
+
+    async def event_generator():
+        while True:
+            message = await queue.get()
+            yield f"data: {message}\n\n"
+            if message == "__DONE__":
+                remove_queue(proc_id)
+                break
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
 
 @app.post("/process_procurement")
 async def process_procurement(Proc_ID: str = Form(...), procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(None)): 
@@ -43,6 +57,7 @@ async def process_procurement(Proc_ID: str = Form(...), procurement_file: Upload
     print("main script start")
     proc_report_csv_path = os.path.join(procurement_dir, "report.csv")
     await main_script(proc_file_path, agreement_file_path, proc_report_csv_path, Proc_ID) # this generates a csv file; Make sure it's in the same procurement directory; 
+    await send_status(Proc_ID, "__DONE__") 
     return {"proc_report_path": proc_report_csv_path} # Get procurement csv file path 
 
 @app.get("/get_csv_info")
@@ -70,6 +85,7 @@ async def get_csv_info(proc_report_path: str = Query(...)):
 
         output.append({
             "Nr": row["Nr"],
+            "Jautājums": row["Jautājums"],
             "Atbilde": row["Atbilde"],
             "Pamatojums": explanation
         })
