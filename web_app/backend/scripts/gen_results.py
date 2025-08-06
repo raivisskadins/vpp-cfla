@@ -1,3 +1,5 @@
+import csv
+
 from .utilities import ask_question_save_answer, get_extra_info
 from .status_manager import send_status
 SUFFIX = {"question0": "0", "question": ""}
@@ -20,7 +22,7 @@ def set_extra_info(question_data, supplementary_info, qnaengine):
     info = qnaengine.compressPrompt(info, 3000) 
     return info 
 
-def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, results_table, question_dictionary):
+def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question_data, answer_data, report_path_csv):
     suffix = SUFFIX[qtype]
     if qtype == 'question0':
         question_id = f"{question_data['nr']}-{suffix}"
@@ -34,8 +36,9 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     query, result = ask_question_save_answer(qnaengine, embedding_conf, full_prompt,
                                       question_data[qtype], question_id, answer_id)
     # result.append(query)
-    results_table.append(result)
-    print(question_data[qtype])
+    with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(result)
     
     llm_answer = result[1]
     expected_answer = result[2]
@@ -44,15 +47,17 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
     if qtype == 'question0':
         answer_main_question = llm_answer
          
-    return results_table, answer_main_question
+    return answer_main_question
 
-def question_replace_w_na(question_data, answer_data, results_table):
+def question_replace_w_na(question_data, answer_data, report_path_csv):
     # Manually adds answers to main questions where answer0 was "nē"
     q_nr = str(question_data['nr'])
     ans  = answer_data['answer']
-    results_table.append([q_nr, 'n/a', ans, ''])
+    with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([q_nr, 'nē', ans, ''])
 
-def questions_replace_w_na(questions_data, answers_data, results_table):
+def questions_replace_w_na(questions_data, answers_data, report_path_csv):
     # Goes through all child questions and accounts for questions_0
     for q_data, a_data in zip(questions_data, answers_data):
         if is_skip_question(q_data, a_data): continue
@@ -60,18 +65,22 @@ def questions_replace_w_na(questions_data, answers_data, results_table):
         if 'question0' in q_data:
             q_nr0 = f"{q_data['nr']}-0"
             ans0  = a_data['answer0']
-            results_table.append([q_nr0, 'nē', ans0, ''])
+            with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow([q_nr0, 'nē', ans0, ''])
 
         if 'question' in q_data:
-            question_replace_w_na(q_data, a_data, results_table)
+            question_replace_w_na(q_data, a_data, report_path_csv)
 
-def question_replace_w_x(question_data, answer_data, results_table):
+def question_replace_w_x(question_data, answer_data, report_path_csv):
     # Manually adds 'X' as answers to main questions where answer0 was "kontekstā nav informācijas"
     q_nr = str(question_data['nr'])
     ans  = answer_data['answer']
-    results_table.append([q_nr, 'kontekstā nav informācijas', ans, ''])
+    with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([q_nr, 'X', ans, ''])
 
-def questions_replace_w_x(questions_data, answers_data, results_table):
+def questions_replace_w_x(questions_data, answers_data, report_path_csv):
     # Goes through all child questions
     for q_data, a_data in zip(questions_data, answers_data):
         if is_skip_question(q_data, a_data): continue
@@ -79,10 +88,12 @@ def questions_replace_w_x(questions_data, answers_data, results_table):
         if 'question0' in q_data:
             q_nr0 = f"{q_data['nr']}-0"
             ans0  = a_data['answer0']
-            results_table.append([q_nr0, 'nē', ans0, ''])
+            with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow([q_nr0, 'X', ans0, ''])
 
         if 'question' in q_data:
-            question_replace_w_x(q_data, a_data, results_table)
+            question_replace_w_x(q_data, a_data, report_path_csv)
 
 qcounter = 0
 
@@ -103,7 +114,7 @@ def count_total_questions(question_list, answer_list, questions_to_process):
             total += recursive_count(q, a)
     return total
 
-def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary): 
+def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process): 
     
     if is_skip_question(question_data, answer_data): return
         
@@ -117,45 +128,57 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
 
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
-        results_table, q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, results_table, question_dictionary)
+        q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, report_path_csv)
 
         if not q0_answer:
             return
         if q0_answer == 'nē':
             if 'question' in question_data:
                 question_replace_w_na(question_data, answer_data,
-                                        results_table)
+                                        report_path_csv)
             if 'questions' in question_data:
-                questions_replace_w_na(question_data['questions'],answer_data.get('answers'),results_table)
+                questions_replace_w_na(question_data['questions'],answer_data.get('answers'),report_path_csv)
             return
         if q0_answer == 'kontekstā nav informācijas':
             if 'question' in question_data:
                 question_replace_w_x(question_data, answer_data,
-                                        results_table)
+                                        report_path_csv)
             if 'questions' in question_data:
-                questions_replace_w_x(question_data['questions'],answer_data.get('answers'),results_table)
+                questions_replace_w_x(question_data['questions'],answer_data.get('answers'),report_path_csv)
             return
 
     # Otherwise just handle questions normally
     if 'question' in question_data:
-        results_table, _ = add_result(
+        add_result(
             'question', qnaengine, embedding_conf, promptdict, extrainfo,
-            question_data, answer_data, results_table, question_dictionary
+            question_data, answer_data, report_path_csv
         )
     
     if 'questions' in question_data:
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
             # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
             if not questions_to_process or nested_question['nr'] in questions_to_process:
-                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, results_table, questions_to_process)
+                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, report_path_csv, questions_to_process)
 
-async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, Proc_ID): 
-    results_table = []  
-    total_questions = count_total_questions(question_dictionary, answer_dictionary, questions_to_process)
+# async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, Proc_ID): 
+#     results_table = []  
+#     total_questions = count_total_questions(question_dictionary, answer_dictionary, questions_to_process)
 
+#     for question, answer in zip(question_dictionary, answer_dictionary):
+#         if not questions_to_process or question['nr'] in questions_to_process:
+#             process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary)
+#             await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
+#             # Existing results should be added to the CSV
+#     return results_table 
+def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dictionary, promptdict, supplementary_info, questions_to_process, report_path_csv): 
+
+    with open(report_path_csv, mode='w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        # writer.writerow(["Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums", "Uzvedne"])
+        writer.writerow(["Nr", "Atbilde", "Sagaidāmā atbilde", "Pamatojums"])
+
+    # TODO add tqdm; however you would need count all of the questions that will be answered - non trivial filtering
     for question, answer in zip(question_dictionary, answer_dictionary):
         if not questions_to_process or question['nr'] in questions_to_process:
-            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, results_table, questions_to_process, question_dictionary)
-            await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
-            # Existing results should be added to the CSV
-    return results_table 
+            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process)
+    return True
