@@ -1,12 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Use the first argument as TAG (default to “latest”)
-TAG=${1:-latest}
+# Figure out where we live and where the repo root is
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+
+# Pick up tag from first arg (or fall back to TAG in .env, then to "latest")
+TAG=${1:-${TAG:-latest}}
 export TAG
 
-# Pull the exact images you just pushed
-docker compose --env-file .env -f docker_compose_prod.yml pull
+# 1) Pull fresh images
+docker compose \
+  --env-file "$ROOT_DIR/.env" \
+  -f "$SCRIPT_DIR/docker_compose_prod.yml" \
+  pull
 
-# Bring up the services in detached mode
-docker compose --env-file .env -f docker_compose_prod.yml up -d
+# 2) Recreate containers (force-recreate kills the old ones, avoiding name conflicts)
+docker compose \
+  --env-file "$ROOT_DIR/.env" \
+  -f "$SCRIPT_DIR/docker_compose_prod.yml" \
+  up -d --force-recreate --remove-orphans
