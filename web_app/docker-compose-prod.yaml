@@ -1,4 +1,4 @@
-version: "3.9"
+
 
 services:
   backend:
@@ -8,7 +8,8 @@ services:
     ports:
       - "8080:8080"
     env_file:
-      - .env
+      - .env  
+    
 
   frontend:
     image: "rudis7887/web-frontend:${TAG:-latest}"
@@ -18,3 +19,4 @@ services:
       - backend
     ports:
       - "80:80"
+

@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Use the first argument as TAG (default to “latest”)
-TAG=${1:-latest}
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+
+TAG=${1:-${TAG:-latest}}
 export TAG
 
-# Pull the exact images you just pushed
-docker compose --env-file .env -f docker_compose_prod.yml pull
+docker compose \
+  --env-file "$ROOT_DIR/.env" \
+  -f "$SCRIPT_DIR/docker-compose-prod.yaml" \
+  pull
 
-# Bring up the services in detached mode
-docker compose --env-file .env -f docker_compose_prod.yml up -d
+docker compose \
+  --env-file "$ROOT_DIR/.env" \
+  -f "$SCRIPT_DIR/docker-compose-prod.yaml" \
+  up --force-recreate --remove-orphans
