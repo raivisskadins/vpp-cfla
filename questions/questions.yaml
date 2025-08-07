@@ -431,7 +431,16 @@
     question0: "Vai iepirkums ir dalīts daļās?"
     question: "Vai prasītais finanšu apgrozījums ir noteikts pret katras iepirkuma daļas paredzamo līgumcenu (nevis kopējo iepirkuma paredzamo līgumcenu)?"
   - nr: 39.19
-    question: "Nav pieprasīts apliecināt kopējo apgrozījumu par vairāku gadu periodu"
+    prompt-id: p1
+    #question: "Nav pieprasīts apliecināt kopējo apgrozījumu par vairāku gadu periodu"
+    question: > 
+      Nav pieprasīts apliecināt kopējo apgrozījumu par vairāku gadu periodu.
+  
+      Pasūtītājs var izvirzīt prasības par vidējo finanšu apgrozījumu par vairākiem gadiem vai par gada apgrozījumu 
+      (maks. par iepriekšējiem trim pārskata gadiem), 
+      bet ne par kopējo apgrozījumu par vairākiem gadiem, jo tas ierobežo jaunāko piegādātāju iespējas.
+
+    #Ja netiek pieprasīts apliecināt kopējo apgrozījumu, atbildi ar "n/a".
   - nr: 39.20
     question0: "Vai ir izvirzītas prasības pretendenta apgrozāmo līdzekļu koeficientam?"
     question: "Nav noteikts, ka pretendenta apgrozāmo līdzekļu koeficientam (jeb likviditātes koeficientam) obligāti jābūt lielākam nekā „1”"
