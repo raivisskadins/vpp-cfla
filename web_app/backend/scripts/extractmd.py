@@ -143,18 +143,33 @@ class Extractor:
 
     def useMarkerPDF(self, file_path):
         try:
-            converter = PdfConverter(artifact_dict=create_model_dict(),)
+            print("[MarkerPDF] Creating model dict...")
+            model_dict = create_model_dict()
+
+            print("[MarkerPDF] Initializing converter...")
+            converter = PdfConverter(artifact_dict=model_dict)
+
+            print("[MarkerPDF] Rendering PDF...")
             rendered = converter(file_path)
+            if not rendered:
+                print("[MarkerPDF] Rendering returned nothing.")
+                return ''
+
+            print("[MarkerPDF] Extracting text...")
             text, _, images = text_from_rendered(rendered)
+
+            print("[MarkerPDF] Extraction complete.")
             return text
-        except:
+        except Exception as e:
+            print(f"[MarkerPDF] Exception: {type(e).__name__} - {e}")
             return ''
+
             
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
-            #return(self.usePymupdf4llm(file_path))    
-            return(self.useMarkerPDF(file_path))   
+            return(self.usePymupdf4llm(file_path))    
+            # return(self.useMarkerPDF(file_path)) # For some reason this one fails  
         elif re.match(r".+\.docx$", file_path):
             return(self.useMammothMarkdownify(file_path))
             #return(self.useDocx2txt(file_path))
