@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Load env file data
+if [[ -f .env ]]; then
+  export $(grep -v '^#' .env | xargs)
+fi
+
 # Ensure we have the necessary credentials
 DOCKERHUB_USERNAME=${DOCKERHUB_USERNAME:-}
 if [[ -z "$DOCKERHUB_USERNAME" ]]; then
@@ -25,14 +30,14 @@ echo "$DOCKERHUB_TOKEN" | docker login \
 echo "→ Building backend image…"
 docker build \
   -t "${DOCKERHUB_USERNAME}/web-backend:${TAG}" \
-  -f web_app/backend/Dockerfile \
-  web_app/backend
+  -f backend/Dockerfile \
+  backend
 
 echo "→ Building frontend image…"
 docker build \
   -t "${DOCKERHUB_USERNAME}/web-frontend:${TAG}" \
-  -f web_app/frontend/Dockerfile \
-  web_app/frontend
+  -f frontend/Dockerfile \
+  frontend
 
 echo "→ Pushing images to Docker Hub…"
 docker push "${DOCKERHUB_USERNAME}/web-backend:${TAG}"
