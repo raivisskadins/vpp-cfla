@@ -171,7 +171,7 @@ async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dic
     # TODO add tqdm; however you would need count all of the questions that will be answered - non trivial filtering
     for question, answer in zip(question_dictionary, answer_dictionary):
         if not questions_to_process or question['nr'] in questions_to_process:
-            await send_status(Proc_ID, f"Atlikušie jautājumi apstrādē: {total_questions - qcounter}")
+            await send_status(Proc_ID, f"Atlikušo jautājumu skaits, kas jāapstrādā: {total_questions - qcounter}")
             await asyncio.sleep(0)
             process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process)
     return True

@@ -33,75 +33,76 @@
       <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Atcelt apstrādi</button>
     </div>
 
+    <div id="status"></div>
     <div id="result"></div>
   </div>
 
 <script>
-  let report_not_done = true;
-  let pollingInterval = null;
-
   async function processProcurement() {
-      const resultContainer = document.getElementById("result");
-      const procurementFile = document.getElementById("procurementFile").files[0];
-      const agreementFile = document.getElementById("agreementFile").files[0];
-      const procurementID = document.getElementById("procurementID").value.trim();
-      const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    const statusContainer = document.getElementById("status");
+    const resultContainer = document.getElementById("result");
+    const procurementFile = document.getElementById("procurementFile").files[0];
+    const agreementFile = document.getElementById("agreementFile").files[0];
+    const procurementID = document.getElementById("procurementID").value.trim();
+    const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
 
-      eventSource.onmessage = function(event) {
-        const message = event.data;
-        console.log("Status update:", message);
-        resultContainer.innerHTML = message;
+    // Reset containers
+    resultContainer.innerHTML = "";
+    statusContainer.innerHTML = `
+      <div id="status-messages">
+        <p id="status-text">Notiek apstrāde...</p>
+        <div id="spinner" class="spinner"></div>
+      </div>
+    `;
 
-        if (message === "__DONE__") {
-            eventSource.close();
+
+    eventSource.onmessage = function(event) {
+      const message = event.data;
+      console.log("Status update:", message);
+
+      if (message === "__DONE__") {
+        document.getElementById("spinner")?.remove();
+        document.getElementById("status-messages")?.remove();
+        eventSource.close();
+      } else {
+        const statusText = document.getElementById("status-text");
+        if (statusText) {
+          statusText.textContent = message;
         }
-      };
-
-      // Each time executing new process reset csv info
-      localStorage.setItem("csvInfo", "");
-
-      if (!procurementID || !procurementFile) {
-        alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
-        return;
       }
+    };
 
-      const formData = new FormData();
-      formData.append("Proc_ID", procurementID);
-      formData.append("procurement_file", procurementFile);
-      if (agreementFile) {
-        formData.append("agreement_file", agreementFile);
-      }
+    // Each time executing new process reset csv info
+    localStorage.setItem("csvInfo", "");
 
-      // Clear result and show spinner
-      resultContainer.innerHTML = `<p>Notiek apstrāde...</p><div class="spinner"></div>`;
+    if (!procurementID || !procurementFile) {
+      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+      return;
+    }
 
-      
-      const csvPath = `${procurementID}/report.csv`;
-      localStorage.setItem("csvPath", csvPath);
-      report_not_done = true;
+    const formData = new FormData();
+    formData.append("Proc_ID", procurementID);
+    formData.append("procurement_file", procurementFile);
+    if (agreementFile) {
+      formData.append("agreement_file", agreementFile);
+    }
+
+    const csvPath = `${procurementID}/report.csv`;
 
     try {
-      await postFile(formData);
-      // TODO implement some sort of listening function
-      // pollingInterval = setInterval(async () => {
-      //   if (report_not_done) {
-      //       await getCsvInfo(csvPath);}
-      // }, 5000);
-      await getCsvInfo(csvPath)
+      await postFormData(formData);
+      await getCsvInfo(csvPath);
     } catch (e) {
       console.error("Error sending files:", e);
-      resultContainer.textContent = "Kļūda serverī";
+      statusContainer.innerHTML = `<p>Kļūda serverī</p>`;
     }
   }
 
-  async function postFile(formData) {
+  async function postFormData(formData) {
     const res = await fetch("http://localhost:8080/process_procurement", {
       method: "POST",
       body: formData,
     });
-    const out = await res.json();
-    // When the function is finally done it returns that it's done, we update report_not_done
-    // report_not_done = False
   }
 
   async function stopProcessProcurement(){
@@ -264,6 +265,18 @@
   .clear-btn:hover {
     color: darkred;
   }
+  
+  #status {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  #status p {
+    margin: 0.25em 0;
+    font-style: italic;
+    color: #333;
+  }
+
 </style>
 
 </body>
