@@ -386,7 +386,13 @@
   - nr: 39.6
     question: "Iepirkuma dokumentācijā ir paredzēts pretendentiem pienākums savā piedāvājumā iekļaut informāciju par to, vai piedāvājumu iesniegušā pretendenta uzņēmums vai tā piesaistītā apakšuzņēmēja uzņēmums atbilst mazā vai vidējā uzņēmuma statusam"
   - nr: 39.7
-    question: "Prasības attiecībā uz piegādātāja finansiālo stāvokli ir attiecinātas vienīgi uz tiem piegādātāju apvienības dalībniekiem un personām, uz kuru finansiālajām spējām izpildītājs balstās"
+    #question: "Prasības attiecībā uz piegādātāja finansiālo stāvokli ir attiecinātas vienīgi uz tiem piegādātāju apvienības dalībniekiem un personām, uz kuru finansiālajām spējām izpildītājs balstās"
+    question: >
+      Prasības attiecībā uz piegādātāja finansiālo stāvokli ir attiecinātas vienīgi uz tiem 
+      piegādātāju apvienības dalībniekiem un personām, uz kuru finansiālajām spējām izpildītājs balstās.
+      Ja netiek izvirzītas prasības attiecībā uz finanšu stāvokli, atbildi ar "n/a".
+      Drīkst prasīt, lai summārie vai vidējie finanšu rādītāji atbilst prasībām, 
+      bet nedrīkst prasīt lai finanšu rādītājus katram atsevišķam dalībniekam, t.sk.,tiem uz kuru finansiālajām spējām izpildītājs nebalstās.
   - nr: 39.8
     question: "Pasūtītājs iepirkuma procedūras dokumentos publiska pakalpojuma līguma gadījumā, ja pakalpojumi tiek sniegti pasūtītāja objektā, un publiska būvdarbu līguma gadījumā ir paredzējis, lai pēc iepirkuma līguma slēgšanas tiesību piešķiršanas un ne vēlāk kā uzsākot iepirkuma līguma izpildi, pretendents iesniedz būvdarbos vai pakalpojumu sniegšanā iesaistīto apakšuzņēmēju, ja tādus plānots iesaistīt, (ieskaitot apakšuzņēmēju apakšuzņēmējus) sarakstu, kurā norāda apakšuzņēmēja nosaukumu, kontaktinformāciju un to pārstāvēttiesīgo personu, ciktāl minētā informācija ir zināma"
   - nr: 39.9
@@ -650,6 +656,23 @@
       - 6
 - nr: 47
   question: "Piedāvājuma izvērtēšanas kritēriji ir noteikti saskaņā ar PIL 19.pantu, nodrošinot iepirkuma atbilstību zaļā publiskā iepirkuma principiem, ievērojot samērīguma principu un balstoties uz objektīviem iemesliem"
+  prompt: |
+    Tu esi aģents, kas pārbauda iepirkuma dokumentācijas atbilstību likumiem. 
+    Tev ir pieejami fragmenti no likuma (<law> tagos) un iepirkuma dokumentācijas (<context> tagos). 
+    Atbildi uz jautājumiem: 
+    Q1. Atbildi ar jā vai nē. Vai iepirkuma izvērtēšanas kritērijos ir minēti zaļā publiskā iepirkuma principi. t.sk. PIL 19. panta saistībā
+    Q2. Atbildi ar jā vai nē. Vai zaļā iepirkuma kritēriji ievēro samērīguma principu un balstoties uz objektīviem iemesliem
+    
+    Un tad:
+    Atbildi ar "n/a", izvērtēšanas kritērijos nav minēti zaļā publiskā iepirkuma principi, t.i. atbilde uz Q1 ir nē
+    Atbildi ar "jā", zaļā publiskā iepirkuma principi ir minēti un samērīguma princips ir ievērots, t.i., atbilde ir jā gan uz Q1, gan uz Q2
+    Atbildi ar "nē", citos gadījumos.
+    
+    Atbildē norādi īsu, bet precīzu paskaidroju. Norādi, uz kādiem punktiem balstās atbilde — citē attiecīgās vietas no iepirkuma dokumentācijas. 
+          
+    Rezultātu atgriez **JSON formātā** ar šādiem laukiem: 
+    ```json {  "Q1", "Q1-explanation", "Q2", "Q2-explanation", 
+    "answer", "explanation"}
   PIL:
    - chapter: 19
      pt:
