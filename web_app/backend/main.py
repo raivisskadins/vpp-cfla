@@ -35,7 +35,6 @@ async def events(proc_id: str):
 
 @app.post("/process_procurement")
 async def process_procurement(Proc_ID: str = Form(...), procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(None)): 
-    print("Process procurement start")
     # Create or recreate new procurement directory
     procurement_dir = os.path.join(UPLOAD_DIR, Proc_ID)
     if os.path.exists(procurement_dir):
@@ -54,11 +53,9 @@ async def process_procurement(Proc_ID: str = Form(...), procurement_file: Upload
         with open(agreement_file_path, "wb") as buffer:
             shutil.copyfileobj(agreement_file.file, buffer)
 
-    print("main script start")
     proc_report_csv_path = os.path.join(procurement_dir, "report.csv")
     await main_script(proc_file_path, agreement_file_path, proc_report_csv_path, Proc_ID) # this generates a csv file; Make sure it's in the same procurement directory; 
-    await send_status(Proc_ID, "__DONE__") 
-    return {"proc_report_path": proc_report_csv_path} # Get procurement csv file path 
+    await send_status(Proc_ID, "__DONE__")  
 
 @app.get("/get_csv_info")
 async def get_csv_info(proc_report_path: str = Query(...)):

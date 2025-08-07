@@ -281,28 +281,14 @@ def get_config_data(configfile, procurement_file_dir, answer_file_dir):
     return procurement_id, procurement_file, agreement_file, answer_file
 
 def get_procurement_content(extractor, procurement_file, agreement_file):
-    print(f"Processing file: {procurement_file}")
+    print(f"Processing procurement file file: {procurement_file}")
     procurement_content = extractor.convert2markdown(procurement_file)
     if agreement_file: # If agreement file was added
-        print(f"Processing file: {agreement_file}")
+        print(f"Processing agreement file: {agreement_file}")
         agreement_content = extractor.convert2markdown(agreement_file)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
 
     return procurement_content
-
-def get_ini_files(config_dir, overwrite, report_path_csv):
-    # Getting a list of ini files from a directory without extension
-    # If we are not overwritting we don't append already existing data to the report
-    ini_files = {p.stem for p in Path(config_dir).glob("*.ini")}
-    print(f"Found {len(ini_files)} config files in {config_dir}")
-    if not overwrite and report_path_csv.exists():
-        existing = pd.read_csv(report_path_csv, usecols=["Iepirkuma ID"], dtype=str)
-        done_ids = set(existing["Iepirkuma ID"].unique())
-        remaining = ini_files - done_ids
-        skipped = ini_files & done_ids
-        print(f"Skipping {len(skipped)} already-processed files: {sorted(skipped)}")
-        ini_files = remaining
-    return sorted(ini_files)
 
 def get_questions_without_q0(questions):
     questions_wout_0q = []
