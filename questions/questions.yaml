@@ -495,7 +495,7 @@
 
       Drīkst prasīt pieredzi, kas apliecināta ar realizētiem projektiem kādā laika periodā, 
       bet nedrīkst prasīt vienkārši pieredzi gados.
-      
+
       iespējami 2 gadījumi:
       A: tiek prasīta vienkārši pieredze gados.
       B: tiek prasīti realizēti projekti kādā laika periodā.
@@ -702,7 +702,14 @@
      pt:
       - 5
 - nr: 46
-  question: "Ir norādīti piedāvājuma izvērtēšanas kritēriji, kritēriju vērtības un, ja attiecināms, vērtību diapazoni, kā arī piedāvājuma izvēles algoritms saskaņā ar šiem kritērijiem, kā arī vai ir aprakstīts, kā tiks piemērots katrs no norādītajiem izvērtēšanas kritērijiem"
+  #question: "Ir norādīti piedāvājuma izvērtēšanas kritēriji, kritēriju vērtības un, ja attiecināms, vērtību diapazoni, kā arī piedāvājuma izvēles algoritms saskaņā ar šiem kritērijiem, kā arī vai ir aprakstīts, kā tiks piemērots katrs no norādītajiem izvērtēšanas kritērijiem"
+  question: >
+    Ir norādīti piedāvājuma izvērtēšanas kritēriji, kritēriju vērtības un, 
+    ja attiecināms, vērtību diapazoni, kā arī piedāvājuma izvēles algoritms saskaņā ar šiem kritērijiem, 
+    kā arī vai ir aprakstīts, kā tiks piemērots katrs no norādītajiem izvērtēšanas kritērijiem.
+
+    Ja vienīgais kritērijs ir saimnieciski visizdevīgākais piedāvājums, kuru nosaka, ņemot vērā tikai cenu,
+    tad atbildi ar "n/a"
   PIL:
    - chapter: 51
      pt:
