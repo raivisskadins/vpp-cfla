@@ -1,11 +1,26 @@
-# To build:
+# Docker usage instructions
 
+1. Make sure to populate the env file and rename it to .env
+2. Launch all scripts from this directory
+
+# DEV
+
+### To build:
+(Takes ~5 minutes)
 docker compose up --build
 
-# To destory:
+### Regular launch after building
+docker compose up
 
+### To take down:
 docker compose down
 
-# To list containers:
+# Production
 
-docker ps
+### To build:
+./build_and_push.sh
+(Optionally add --TAG to specify version)
+
+### To launch 
+./deploy_prod.sh
+(Optionally add --TAG to specify version)
