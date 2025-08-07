@@ -432,9 +432,7 @@
     question: "Vai prasītais finanšu apgrozījums ir noteikts pret katras iepirkuma daļas paredzamo līgumcenu (nevis kopējo iepirkuma paredzamo līgumcenu)?"
   - nr: 39.19
     prompt-id: p1
-    #question: "Nav pieprasīts apliecināt kopējo apgrozījumu par vairāku gadu periodu"
-
-    # šis bija labs, bet tikai 40%
+    # šis bija labs, bet tikai 40%, šis bija mēģinājums iztikt bez speciālā prompta
     # question: > 
     #   Nav ierobežota jaunāko piegādātāju iespējas, pieprasot apliecināt kopējo (smmāro) apgrozījumu par vairāku gadu periodu.
   
