@@ -80,8 +80,8 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 31
-  answer0: "jā"
-  answer: "jā"
+  answer0: "n/a"
+  answer: "n/a"
 - nr: 32
   answer0: "jā"
   answer: "jā"
@@ -243,7 +243,7 @@
   - nr: 39.32
     answer: "n/a"
   - nr: 39.33
-    answer: "??"
+    answer: "n/a"
   - nr: 39.34
     answer: "jā"
   - nr: 39.35
@@ -253,7 +253,7 @@
   - nr: 39.37
     answer: "nē"
   - nr: 39.38
-    answer: "n/a"
+    answer: "nē"
   - nr: 39.39
     answer: "jā"
   - nr: 39.40
@@ -306,7 +306,7 @@
 - nr: 47
   answer: "n/a"
 - nr: 48
-  answer: "jā"
+  answer: "nē"
 - nr: 49
   answer: "?"
 - nr: 50
