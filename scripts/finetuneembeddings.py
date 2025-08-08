@@ -122,8 +122,8 @@ def load_existing_data(
 
 embedding_conf = {
     "embeddingmodel": "E:\\GPTQnAData\\bge-m3",  #"/tmp/Daiga/bge-m3",  # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3",
-    "fine_tuned": "bge-m3-procurements",  # "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
-    "fine_tuned_path": "../bge-m3-procurements",  # "../paraphrase-multilingual-procurements",
+    "fine_tuned": "bge-m3-procurements_lr9e-6_warmup28600",  # "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
+    "fine_tuned_path": "E:\\eis_files_crawled\\finetuned\\bge-m3-procurements_lr9e-6_warmup28600",  # "../paraphrase-multilingual-procurements",
     "chunk_size": 1536,
     "chunk_overlap": 0,
 }
@@ -146,7 +146,7 @@ def evaluate_st(
 
     evaluator = InformationRetrievalEvaluator(queries, corpus, relevant_docs, name=name)
     model = SentenceTransformer(model_name_or_path=model_id,device = device)
-    output_path = "../emb_eval_results/"
+    output_path = "E:\\eis_files_crawled\\finetuned"
     Path(output_path).mkdir(exist_ok=True, parents=True)
     return evaluator(model, output_path=output_path)
 
@@ -191,11 +191,10 @@ async def evaluate_only():
     val_dataset = EmbeddingQAFinetuneDataset.from_json("../eis_files/val_dataset.json")
     
     acc1 = evaluate_st(val_dataset, embedding_conf["embeddingmodel"], name="original")
-    acc2 = evaluate_st(val_dataset, embedding_conf["fine_tuned_path"], name="finetuned")
-
-    print(
-        f"Original model {embedding_conf['embeddingmodel']}: {str(acc1)}\nFine-tuned model {embedding_conf['fine_tuned']}: {str(acc2)}"
-    )
+    acc2 = evaluate_st(val_dataset, embedding_conf["fine_tuned_path"], name=embedding_conf['fine_tuned'])
+    with open("E:\\eis_files_crawled\\finetuned\\results.txt", 'a') as fout:
+        print(
+        f"Original model {embedding_conf['embeddingmodel']}: {str(acc1)}\nFine-tuned model {embedding_conf['fine_tuned']}: {str(acc2)}", file = fout)
     
 if __name__ == "__main__":
     asyncio.run(evaluate_only())
