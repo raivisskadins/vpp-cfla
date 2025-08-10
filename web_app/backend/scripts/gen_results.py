@@ -55,7 +55,7 @@ def question_replace_w_na(question_data, answer_data, report_path_csv):
     ans  = answer_data['answer']
     with open(report_path_csv, mode='a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow([q_nr, 'nē', ans, ''])
+        writer.writerow([q_nr, 'n/a', ans, ''])
 
 def questions_replace_w_na(questions_data, answers_data, report_path_csv):
     # Goes through all child questions and accounts for questions_0
