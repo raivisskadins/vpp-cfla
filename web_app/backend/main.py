@@ -19,6 +19,10 @@ app.add_middleware(
 UPLOAD_DIR = "/app/procurements"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
+@app.get("/server/check")
+def server_check():
+    return {"status": "ok"}
+
 @app.get("/events/{proc_id}")
 async def events(proc_id: str):
     queue = get_queue(proc_id)
