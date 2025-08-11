@@ -40,13 +40,56 @@
   </div>
 
 <script>
+  const statusContainer = document.getElementById("status");
+  const processBtn = document.querySelector(".processBtn");
+  const cancelBtn = document.querySelector(".cancelBtn");
+  processBtn.disabled = true;
+  cancelBtn.disabled = true;
+  let currentEventSource = null;
+  let isCancelled = false;
+
+  async function checkServerReady() {
+    try {
+      const response = await fetch("http://localhost:8080/server/check");
+      if (response.ok) {
+        console.log("Serveris gatavas darbam!");
+        statusContainer.innerHTML = `
+          <div id="status-messages">
+            <p id="status-text">Serveris gatavas darbam!</p>
+          </div>
+        `;
+        processBtn.disabled = false;
+      } else {
+        console.log("Serveris atbildēja, bet ar kļūdu:", response.status);
+        retryLater();
+      }
+    } catch (error) {
+      statusContainer.innerHTML = `
+          <div id="status-messages">
+            <p id="status-text">Tiek gaidīta atbilde no servera...</p>
+          </div>
+        `;
+      retryLater();
+    }
+  }
+
+  function retryLater() {
+    setTimeout(checkServerReady, 1000);
+  }
+
+  window.addEventListener("load", retryLater);
+
   async function processProcurement() {
-    const statusContainer = document.getElementById("status");
     const resultContainer = document.getElementById("result");
     const procurementFile = document.getElementById("procurementFile").files[0];
     const agreementFile = document.getElementById("agreementFile").files[0];
     const procurementID = document.getElementById("procurementID").value.trim();
-    const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    currentEventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    isCancelled = false;
+
+    const csvPath = `${procurementID}/report.csv`;
+    processBtn.disabled = true;
+    cancelBtn.disabled = false;
 
     if (!procurementID || !procurementFile) {
       alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
@@ -63,18 +106,21 @@
     `;
 
     // Event listeners
-    eventSource.onmessage = function(event) {
+    currentEventSource.onmessage = async function(event) {
       const message = event.data;
       console.log("Status update:", message);
 
       if (message === "__DONE__") {
         document.getElementById("spinner")?.remove();
         document.getElementById("status-messages")?.remove();
-        eventSource.close();
+        currentEventSource.close();
+        cancelBtn.disabled = true;
+        processBtn.disabled = false;
       } else {
         const statusText = document.getElementById("status-text");
         if (statusText) {
           statusText.textContent = message;
+          await getCsvInfo(csvPath);
         }
       }
     };
@@ -88,10 +134,10 @@
     if (agreementFile) {
       formData.append("agreement_file", agreementFile);
     }
-    const csvPath = `${procurementID}/report.csv`;
 
     try {
       await postFormData(formData);
+      if (isCancelled) return;
       await getCsvInfo(csvPath);
     } catch (e) {
       console.error("Error sending files:", e);
@@ -107,8 +153,22 @@
   }
 
   async function stopProcessProcurement(){
-    // TODO send kill request for main function
-  }
+    isCancelled = true
+    const procurementID = document.getElementById("procurementID").value.trim();
+    const statusText = document.getElementById("status-text");
+
+    if (!procurementID) alert("Netika atasts iepirkuma ID");
+    cancelBtn.disabled = true;
+    currentEventSource.close();
+    statusText.textContent = "Apstrāde tiek pārtraukta...";
+
+    await fetch(`http://localhost:8080/cancel/${procurementID}`, {
+      method: "POST"
+    });
+    document.getElementById("spinner")?.remove();
+    statusText.textContent = "Apstrāde pārtraukta";
+    processBtn.disabled = false;
+}
 
   async function getCsvInfo(path_to_csv) {
     const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
@@ -153,10 +213,10 @@
     const storedData = localStorage.getItem("csvInfo");
     toggleClearButton("procurementFile");
     toggleClearButton("agreementFile");
-    // if (storedData) {
-    //   const data = JSON.parse(storedData);
-    //   create_data_table(data);
-    // }
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      create_data_table (data);
+    }
   });
 
   function clearFile(inputId) {
@@ -178,58 +238,64 @@
 </script>
 
 <style>
-  
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1em 0;
-    }
-    table th, table td {
-        border: 1px solid #ccc;
-        padding: 8px 10px;
-    }
-    .allInputs {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 15px;
-      margin-bottom: 15px;
-      margin: 2em;
-    }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+  .allInputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+    margin: 2em;
+  }
 
-    .processBtn {
-      background-color: #4f46e5;
-    }
-    .processBtn:hover {
-      background-color: #4338ca;
-    }
+  .processBtn {
+    background-color: #4f46e5;
+  }
+  .processBtn:hover {
+    background-color: #4338ca;
+  }
 
-    button {
-      color: rgb(233, 230, 230);
-      padding: 8px 16px;
-      font-weight: 600;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-    }
+  button {
+    color: rgb(233, 230, 230);
+    padding: 8px 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
 
-    .cancelBtn {
-      background: rgb(215, 42, 42);
-      width: auto;
-      font-weight: bold;
-      margin-left: 100px;
-    }
-    .cancelBtn:hover {
-      background: rgb(149, 17, 17);
-    }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
 
-      .spinner {
+  .cancelBtn {
+    background: rgb(215, 42, 42);
+    width: auto;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  .cancelBtn:hover {
+    background: rgb(149, 17, 17);
+  }
+
+  .spinner {
     margin: 10px auto;
     border: 4px solid #f3f3f3;
     border-top: 4px solid #333;
@@ -279,6 +345,5 @@
   }
 
 </style>
-
 </body>
 </html>
