@@ -62,7 +62,11 @@
         retryLater();
       }
     } catch (error) {
-      console.log("Neizdevās sasniegt serveri:", error);
+      statusContainer.innerHTML = `
+          <div id="status-messages">
+            <p id="status-text">Tiek gaidīta atbilde no servera...</p>
+          </div>
+        `;
       retryLater();
     }
   }
@@ -80,6 +84,7 @@
     const procurementID = document.getElementById("procurementID").value.trim();
     const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
 
+    const csvPath = `${procurementID}/report.csv`;
     processBtn.disabled = true;
     cancelBtn.disabled = false;
 
@@ -98,7 +103,7 @@
     `;
 
     // Event listeners
-    eventSource.onmessage = function(event) {
+    eventSource.onmessage = async function(event) {
       const message = event.data;
       console.log("Status update:", message);
 
@@ -106,10 +111,13 @@
         document.getElementById("spinner")?.remove();
         document.getElementById("status-messages")?.remove();
         eventSource.close();
+        cancelBtn.disabled = true;
+        processBtn.disabled = false;
       } else {
         const statusText = document.getElementById("status-text");
         if (statusText) {
           statusText.textContent = message;
+          await getCsvInfo(csvPath);
         }
       }
     };
@@ -123,7 +131,6 @@
     if (agreementFile) {
       formData.append("agreement_file", agreementFile);
     }
-    const csvPath = `${procurementID}/report.csv`;
 
     try {
       await postFormData(formData);
@@ -192,7 +199,7 @@
     toggleClearButton("agreementFile");
     // if (storedData) {
     //   const data = JSON.parse(storedData);
-    //   create_data_table(data);
+    //   create_data_table (data);
     // }
   });
 
