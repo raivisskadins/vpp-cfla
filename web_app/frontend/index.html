@@ -45,6 +45,8 @@
   const cancelBtn = document.querySelector(".cancelBtn");
   processBtn.disabled = true;
   cancelBtn.disabled = true;
+  let currentEventSource = null;
+  let isCancelled = false;
 
   async function checkServerReady() {
     try {
@@ -82,7 +84,8 @@
     const procurementFile = document.getElementById("procurementFile").files[0];
     const agreementFile = document.getElementById("agreementFile").files[0];
     const procurementID = document.getElementById("procurementID").value.trim();
-    const eventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    currentEventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    isCancelled = false;
 
     const csvPath = `${procurementID}/report.csv`;
     processBtn.disabled = true;
@@ -103,14 +106,14 @@
     `;
 
     // Event listeners
-    eventSource.onmessage = async function(event) {
+    currentEventSource.onmessage = async function(event) {
       const message = event.data;
       console.log("Status update:", message);
 
       if (message === "__DONE__") {
         document.getElementById("spinner")?.remove();
         document.getElementById("status-messages")?.remove();
-        eventSource.close();
+        currentEventSource.close();
         cancelBtn.disabled = true;
         processBtn.disabled = false;
       } else {
@@ -134,6 +137,7 @@
 
     try {
       await postFormData(formData);
+      if (isCancelled) return;
       await getCsvInfo(csvPath);
     } catch (e) {
       console.error("Error sending files:", e);
@@ -149,10 +153,22 @@
   }
 
   async function stopProcessProcurement(){
-    // TODO send kill request for main function
+    isCancelled = true
+    const procurementID = document.getElementById("procurementID").value.trim();
+    const statusText = document.getElementById("status-text");
+
+    if (!procurementID) alert("Netika atasts iepirkuma ID");
     cancelBtn.disabled = true;
+    currentEventSource.close();
+    statusText.textContent = "Apstrāde tiek pārtraukta...";
+
+    await fetch(`http://localhost:8080/cancel/${procurementID}`, {
+      method: "POST"
+    });
+    document.getElementById("spinner")?.remove();
+    statusText.textContent = "Apstrāde pārtraukta";
     processBtn.disabled = false;
-  }
+}
 
   async function getCsvInfo(path_to_csv) {
     const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
