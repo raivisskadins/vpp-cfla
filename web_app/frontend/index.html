@@ -213,10 +213,10 @@
     const storedData = localStorage.getItem("csvInfo");
     toggleClearButton("procurementFile");
     toggleClearButton("agreementFile");
-    // if (storedData) {
-    //   const data = JSON.parse(storedData);
-    //   create_data_table (data);
-    // }
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      create_data_table (data);
+    }
   });
 
   function clearFile(inputId) {
