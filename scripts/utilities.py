@@ -284,7 +284,7 @@ def get_procurement_content(extractor, procurement_file_path, agreement_file_pat
     print(f"Processing file: {procurement_file_path}")
     procurement_content = extractor.convert2markdown(procurement_file_path)
     if len(agreement_file_path) > 0: # If agreement file was added
-        print(f"Processing file: {procurement_file_path}")
+        print(f"Processing file: {agreement_file_path}")
         agreement_content = extractor.convert2markdown(agreement_file_path)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
         with open("tmp3.md", 'w', encoding='utf-8') as fout:
