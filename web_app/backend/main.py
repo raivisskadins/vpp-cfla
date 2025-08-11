@@ -5,6 +5,7 @@ import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
 from scripts.main_script import main_script
 from scripts.status_manager import get_queue, send_status, remove_queue
+from scripts.cancel_state import cancel_flags
 
 app = FastAPI()
 
@@ -40,6 +41,7 @@ async def events(proc_id: str):
 @app.post("/process_procurement")
 async def process_procurement(Proc_ID: str = Form(...), procurement_file: UploadFile = File(...), agreement_file: UploadFile = File(None)): 
     # Create or recreate new procurement directory
+    cancel_flags[Proc_ID] = False
     procurement_dir = os.path.join(UPLOAD_DIR, Proc_ID)
     if os.path.exists(procurement_dir):
         shutil.rmtree(procurement_dir)
@@ -93,4 +95,8 @@ async def get_csv_info(proc_report_path: str = Query(...)):
 
     return JSONResponse(content=output)
 
+@app.post("/cancel/{proc_id}")
+async def cancel_procurement(proc_id: str):
+    cancel_flags[proc_id] = True
+    return {"status": "cancelled"}
     

@@ -2,6 +2,7 @@ import csv, asyncio
 
 from .utilities import ask_question_save_answer, get_extra_info
 from .status_manager import send_status
+from scripts.check_cancelation import check_cancellation
 SUFFIX = {"question0": "0", "question": ""}
 
 def is_skip_question(question, answer):
@@ -97,8 +98,8 @@ def questions_replace_w_x(questions_data, answers_data, report_path_csv):
 
 qcounter = 0
 
-def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process): 
-    
+def process_question(question_data, answer_data, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process, Proc_ID): 
+    if check_cancellation(Proc_ID): return
     if is_skip_question(question_data, answer_data): return
         
     extrainfo = set_extra_info(question_data, supplementary_info, qnaengine)
@@ -141,7 +142,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
         for nested_question, nested_answer in zip(question_data.get('questions'),answer_data.get('answers')):
             # If questions_to_process is empty, process all questions. If not, process only those questions that are in the list
             if not questions_to_process or nested_question['nr'] in questions_to_process:
-                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, report_path_csv, questions_to_process)
+                process_question(nested_question, nested_answer, qnaengine, embedding_conf, promptdict,supplementary_info, report_path_csv, questions_to_process, Proc_ID)
 
 def count_total_questions(question_list, answer_list, questions_to_process):
     def recursive_count(q_data, a_data):
@@ -172,5 +173,5 @@ async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dic
         if not questions_to_process or question['nr'] in questions_to_process:
             await send_status(Proc_ID, f"Atlikušo jautājumu skaits, kas jāapstrādā: {total_questions - qcounter}")
             await asyncio.sleep(0)
-            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process)
+            process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process, Proc_ID)
     return True
