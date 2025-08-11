@@ -128,7 +128,7 @@
     answer0: "jā"
     answer: "nē"
   - nr: 37.5
-    answer0: "nē"
+    answer0: "jā"
     answer: "jā"
   - nr: 37.6
     answer: "jā"
@@ -183,7 +183,7 @@
   - nr: 39.4
     answer: "jā"
   - nr: 39.5
-    answer: "nē"
+    answer: "jā"
   - nr: 39.6
     answer: "jā"
   - nr: 39.7
@@ -231,7 +231,7 @@
   - nr: 39.26
     answer: "jā"
   - nr: 39.27
-    answer: "n/a"
+    answer: "jā"
   - nr: 39.28
     answer: "jā"
   - nr: 39.29
