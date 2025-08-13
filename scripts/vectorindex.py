@@ -370,7 +370,7 @@ class QnAEngine:
                     nodelist = [
                         fragment for fragment in nodedict["text"]
                     ]  # [.., .., ..]
-
+                query_prompt = query_prompt.replace("{", "{{").replace("}", "}}") # Safety guard against template text in prompts
                 newquery = PromptTemplate(
                     query_prompt + "\n" + text_qa_template_str
                 ).format(context_str="\n".join(nodelist), query_str=q)
