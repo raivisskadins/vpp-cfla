@@ -165,7 +165,11 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
                                    n=embedding_conf["top_similar"],
                                    n4rerank=embedding_conf["n4rerank"],
                                    prevnext=embedding_conf["prevnext"])
-    
+    if result == "": # handeling case when result returns an exception
+        query = ""
+        record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
+        return query, record
+
     query = result["query"]
     result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
 
