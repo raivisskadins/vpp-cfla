@@ -68,7 +68,7 @@ overwrite = globals().get('my_overwrite', True)
             # Else - new data will be appended only if it isn't in the CSV file.
 
 question_dictionary = get_questions(question_file_path)
-prompt_dictionary = get_prompt_dict(prompt_file, question_file_path)
+prompt_dictionary = get_prompt_dict(prompt_file, question_dictionary)
 supplementary_info = get_supplementary_info()
 
 default_answer_file_path = answer_file_dir / 'template.yaml'

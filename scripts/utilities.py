@@ -226,7 +226,7 @@ def get_supplementary_info():
 
     return pilchapters, mk107chapters, nslchapters, mki3chapters
 
-def get_prompt_dict(prompt_file, question_file):
+def get_prompt_dict(prompt_file, question_dict):
     try:
         with open(prompt_file, 'r', encoding='utf-8') as file:
             prompts_loaded = yaml.load(file, Loader=yaml.BaseLoader)
@@ -237,8 +237,6 @@ def get_prompt_dict(prompt_file, question_file):
     except yaml.YAMLError as e:
         print(f"Error parsing YAML file: {e}")
         exit
-
-    questions_loaded = get_questions(question_file)
     
     promptdict = {}
 
@@ -247,7 +245,7 @@ def get_prompt_dict(prompt_file, question_file):
             promptdict["0"] = prompt["prompt"]
             break
 
-    for question in questions_loaded:
+    for question in question_dict:
         if "questions" in question:
             for subquestion in question.get("questions"):
                 for prompt in prompts_loaded:
