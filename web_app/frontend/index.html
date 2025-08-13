@@ -90,17 +90,18 @@
     const procurementFile = document.getElementById("procurementFile").files[0];
     const agreementFile = document.getElementById("agreementFile").files[0];
     const procurementID = document.getElementById("procurementID").value.trim();
+
+    if (!procurementID || !procurementFile) {
+      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+      return;
+    }
+
     currentEventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
     isCancelled = false;
 
     const csvPath = `${procurementID}/report.csv`;
     processBtn.disabled = true;
     cancelBtn.disabled = false;
-
-    if (!procurementID || !procurementFile) {
-      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
-      return;
-    }
 
     // Reset containers
     resultContainer.innerHTML = "";
