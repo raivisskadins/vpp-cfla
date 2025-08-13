@@ -268,7 +268,7 @@ def get_answers(answer_file_path):
 
 def get_config_data(configfile, procurement_file_dir, answer_file_dir):
     config = configparser.ConfigParser()
-    config.read(configfile)
+    config.read(configfile,encoding='utf-8')
     # EIS_URL = config.get('Procurement', 'EIS_URL')
     procurement_id = config.get('Procurement', 'procurement_id')
     procurement_file_name = config.get('Procurement', 'procurement_file_name')
@@ -288,7 +288,7 @@ def get_procurement_content(extractor, procurement_file_path, agreement_file_pat
     print(f"Processing file: {procurement_file_path}")
     procurement_content = extractor.convert2markdown(procurement_file_path)
     if len(agreement_file_path) > 0: # If agreement file was added
-        print(f"Processing file: {procurement_file_path}")
+        print(f"Processing file: {agreement_file_path}")
         agreement_content = extractor.convert2markdown(agreement_file_path)
         procurement_content = procurement_content + "\n\n# IEPIRKUMA LĪGUMA PROJEKTS\n\n" + agreement_content
         with open("tmp3.md", 'w', encoding='utf-8') as fout:
