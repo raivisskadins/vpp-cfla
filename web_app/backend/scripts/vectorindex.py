@@ -342,7 +342,6 @@ class QnAEngine:
                     nodelist = self.getRerankedNodes(
                         q, n4rerank, n, prevnext
                     )  # [.., .., ..]
-
                 else:
                     nodedict = self.getSimilarNodes(
                         q, n, prevnext
@@ -351,11 +350,10 @@ class QnAEngine:
                     nodelist = [
                         fragment for fragment in nodedict["text"]
                     ]  # [.., .., ..]
-
+                query_prompt = query_prompt.replace("{", "{{").replace("}", "}}") # Safety guard against template text in prompts
                 newquery = PromptTemplate(
                     query_prompt + "\n" + text_qa_template_str
                 ).format(context_str="\n".join(nodelist), query_str=q)
-
                 result = self.llm.complete(newquery)
                 self.chached_responses[(query_prompt, q)] = {"query": newquery,"result": str(result)}
                 return {"query": newquery, "result": str(result)}

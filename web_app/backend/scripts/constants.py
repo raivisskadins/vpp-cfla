@@ -52,4 +52,5 @@ default_answer_file_path = script_dir / 'template.yaml'
 default_answer_dictionary = get_answers(default_answer_file_path)
 
 # questions_to_process = ["2", "7", "9", "11", "13", "24", "32", "33"]
-questions_to_process = []
+questions_to_process = ["38", "38.8"]
+# questions_to_process = ["39","39.7"]
