@@ -113,7 +113,6 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
         q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, report_path_csv)
-        print('\nTest: ', question_data["nr"], q0_answer)
 
         if not q0_answer:
             return
