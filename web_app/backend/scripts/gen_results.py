@@ -41,8 +41,8 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
         writer = csv.writer(f)
         writer.writerow(result)
     
-    llm_answer = result[1]
-    expected_answer = result[2]
+    llm_answer = result[2]
+    expected_answer = result[3]
     
     answer_main_question = None
     if qtype == 'question0':
@@ -113,6 +113,7 @@ def process_question(question_data, answer_data, qnaengine, embedding_conf, prom
     # Handle optional question0; If it returns "nē" we replace all child questions with "n/a" and skip to next question
     if 'question0' in question_data:
         q0_answer = add_result('question0', qnaengine, embedding_conf, promptdict, extrainfo,question_data, answer_data, report_path_csv)
+        print('\nTest: ', question_data["nr"], q0_answer)
 
         if not q0_answer:
             return
@@ -172,6 +173,6 @@ async def gen_results(qnaengine, embedding_conf, question_dictionary, answer_dic
     for question, answer in zip(question_dictionary, answer_dictionary):
         if not questions_to_process or question['nr'] in questions_to_process:
             await send_status(Proc_ID, f"Atlikušo jautājumu skaits, kas jāapstrādā: {total_questions - qcounter}")
-            await asyncio.sleep(0)
+            await asyncio.sleep(0.05) # Necessary to respond to requests, otherwise requests might hang until all questions are processed
             process_question(question, answer, qnaengine, embedding_conf, promptdict, supplementary_info, report_path_csv, questions_to_process, Proc_ID)
     return True
