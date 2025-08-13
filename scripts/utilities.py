@@ -226,14 +226,39 @@ def get_supplementary_info():
 
     return pilchapters, mk107chapters, nslchapters, mki3chapters
 
-def get_prompt_dict(prompt_file):
+def get_prompt_dict(prompt_file, question_file):
+    try:
+        with open(prompt_file, 'r', encoding='utf-8') as file:
+            prompts_loaded = yaml.load(file, Loader=yaml.BaseLoader)
+            print("Prompts loaded")
+    except FileNotFoundError:
+        print(f"Error: File '{prompt_file}' not found.")
+        exit
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file: {e}")
+        exit
+
+    questions_loaded = get_questions(question_file)
+    
     promptdict = {}
-    with open(prompt_file,'r',encoding='utf-8') as file:
-        for line in file:
-            lineparts = line.strip().split('\t')
-            if len(lineparts)==2:
-                for q in lineparts[1].split(','):
-                    promptdict[str(q)] = lineparts[0] 
+
+    for prompt in prompts_loaded:
+        if "default" in prompt:
+            promptdict["0"] = prompt["prompt"]
+            break
+
+    for question in questions_loaded:
+        if "questions" in question:
+            for subquestion in question.get("questions"):
+                for prompt in prompts_loaded:
+                    if "prompt-id" in subquestion and subquestion["prompt-id"] == prompt["id"]:
+                        promptdict[subquestion["nr"]] = prompt["prompt"]
+                        break
+        else:
+            for prompt in prompts_loaded:
+                if "prompt-id" in question and question["prompt-id"] == prompt["id"]:
+                    promptdict[question["nr"]] = prompt["prompt"]
+                    break
 
     return promptdict
 
