@@ -122,8 +122,8 @@ def load_existing_data(
 
 embedding_conf = {
     "embeddingmodel": "E:\\GPTQnAData\\bge-m3",  #"/tmp/Daiga/bge-m3",  # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3",
-    "fine_tuned": "bge-m3-procurements_lr9e-6_warmup28600",  # "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
-    "fine_tuned_path": "E:\\eis_files_crawled\\finetuned\\bge-m3-procurements_lr9e-6_warmup28600",  # "../paraphrase-multilingual-procurements",
+    "fine_tuned": "bge_m3_lr5e-6_warmup28600",  # "paraphrase-multilingual-procurements",  # "bge-m3-procurements",
+    "fine_tuned_path": "E:\\eis_files_crawled\\finetuned\\bge_m3_lr5e-6_warmup28600",  # "../paraphrase-multilingual-procurements",
     "chunk_size": 1536,
     "chunk_overlap": 0,
 }
