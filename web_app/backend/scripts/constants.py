@@ -36,7 +36,7 @@ script_dir = Path(".").resolve()
 
 # Document paths
 question_file_path = script_dir / "questions" / "questions.yaml" # original.yaml
-prompt_file = script_dir / "questions" / "prompts.tsv"
+prompt_file = script_dir / "questions" / "prompts.yaml"
 report_dir = script_dir / "reports"
 answer_file_dir = script_dir / "answers" # Only necessary for the answer file template
 
@@ -45,7 +45,7 @@ overwrite = True # TODO figure out if we are keeping it
             # Else - new data will be appended only if it isn't in the CSV file.
 
 question_dictionary = get_questions(question_file_path)
-prompt_dictionary = get_prompt_dict(prompt_file)
+prompt_dictionary = get_prompt_dict(prompt_file, question_dictionary)
 supplementary_info = get_supplementary_info()
 
 default_answer_file_path = script_dir / 'template.yaml'
