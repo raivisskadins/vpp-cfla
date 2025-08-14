@@ -11,7 +11,7 @@ from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
 from marker.output import text_from_rendered
 
-from docling.document_converter import DocumentConverter
+# from docling.document_converter import DocumentConverter
 class Extractor:
 
     def fromPdfText2mdText(self,filetxt):
@@ -177,9 +177,9 @@ class Extractor:
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
-            # return(self.usePymupdf4llm(file_path))    
+            return(self.usePymupdf4llm(file_path))    
             # return(self.useMarkerPDF(file_path)) # For some reason this one fails  
-            return(self.useDocling(file_path))  
+            # return(self.useDocling(file_path))  
         elif re.match(r".+\.docx$", file_path):
             return(self.useMammothMarkdownify(file_path))
             #return(self.useDocx2txt(file_path))

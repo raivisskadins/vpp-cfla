@@ -182,4 +182,4 @@ tmp*
 scripts/my_config.py
 
 #embedding cache
-embeddings_cache.db.*
+embeddings_cache.*
