@@ -244,27 +244,26 @@ def get_prompt_dict(prompt_file, question_dict):
     
     promptdict = {}
 
+    # Map id's to prompts directly
+    prompt_dict_by_id = {}
     for prompt in prompts_loaded:
-        if "default" in prompt:
+        prompt_dict_by_id[prompt["id"]] = prompt["prompt"]
+        # Also get default prompt
+        if prompt.get("default"):
             promptdict["0"] = prompt["prompt"]
-            break
 
     for question in question_dict:
         if "questions" in question:
             for subquestion in question.get("questions"):
-                for prompt in prompts_loaded:
-                    if "prompt-id" in subquestion and subquestion["prompt-id"] == prompt["id"]:
-                        promptdict[subquestion["nr"]] = prompt["prompt"]
-                        if not "prompt0-id" in subquestion: break
-                    if "prompt0-id" in subquestion and subquestion["prompt0-id"] == prompt["id"]:
-                        promptdict[subquestion["nr"]+"-0"] = prompt["prompt"]
+                if "prompt-id" in subquestion:
+                    promptdict[subquestion["nr"]] = prompt_dict_by_id[subquestion["prompt-id"]]
+                if "prompt0-id" in subquestion:
+                    promptdict[subquestion["nr"]+"-0"] = prompt_dict_by_id[subquestion["prompt0-id"]]
         else:
-            for prompt in prompts_loaded:
-                if "prompt-id" in question and question["prompt-id"] == prompt["id"]:
-                    promptdict[question["nr"]] = prompt["prompt"]
-                    if not "prompt0-id" in question: break
-                if "prompt0-id" in question and question["prompt0-id"] == prompt["id"]:
-                    promptdict[question["nr"]+"-0"] = prompt["prompt"]
+            if "prompt-id" in question:
+                promptdict[question["nr"]] = prompt_dict_by_id[question["prompt-id"]]
+            if "prompt0-id" in question:
+                promptdict[question["nr"]+"-0"] = prompt_dict_by_id[question["prompt0-id"]]
 
     return promptdict
 
