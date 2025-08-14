@@ -11,7 +11,7 @@ from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
 from marker.output import text_from_rendered
 
-from docling.document_converter import DocumentConverter
+# from docling.document_converter import DocumentConverter
 
 class Extractor:
 
@@ -152,21 +152,21 @@ class Extractor:
         except:
             return ''
 
-    def useDocling(self, file_path):
-        try:
-            converter = DocumentConverter()
-            result = converter.convert(file_path)
+    # def useDocling(self, file_path):
+    #     try:
+    #         converter = DocumentConverter()
+    #         result = converter.convert(file_path)
 
-            return result.document.export_to_markdown()
-        except:
-            return ""
+    #         return result.document.export_to_markdown()
+    #     except:
+    #         return ""
             
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
-            #return(self.usePymupdf4llm(file_path))    
+            return(self.usePymupdf4llm(file_path))    
             #return(self.useMarkerPDF(file_path))  
-            return(self.useDocling(file_path))  
+            # return(self.useDocling(file_path))  
         elif re.match(r".+\.docx$", file_path):
             return(self.useMammothMarkdownify(file_path))
             #return(self.useDocx2txt(file_path))
