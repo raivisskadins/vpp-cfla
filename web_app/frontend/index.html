@@ -9,26 +9,32 @@
     <h1>Iepirkuma dokumentācijas pārbaude</h1>
     <div class="procurementID">
       <label>Iepirkuma ID*:</label>
-      <input type="text" id="procurementID" />
+      <input type="text" id="procurementID"/>
     </div> 
 
     <div class="file-input-wrapper">
       <label>Iepirkuma nolikums*:</label>
+      <p>Atbalstītie formāti: PDF, DOCX</p>
       <div class="file-input-container">
-        <input type="file" id="procurementFile" onchange="toggleClearButton('procurementFile')" />
+        <input type="file" id="procurementFile" required onchange="toggleClearButton('procurementFile')" 
+               accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        />
         <span class="clear-btn" id="clear-procurementFile" onclick="clearFile('procurementFile')">✖</span>
       </div>
     </div>
 
     <div class="file-input-wrapper">
       <label>Līguma projekts:</label>
+      <p>Atbalstītie formāti: PDF, DOCX</p>
       <div class="file-input-container">
-        <input type="file" id="agreementFile" onchange="toggleClearButton('agreementFile')" />
+        <input type="file" id="agreementFile" onchange="toggleClearButton('agreementFile')" 
+               accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        />
         <span class="clear-btn" id="clear-agreementFile" onclick="clearFile('agreementFile')">✖</span>
       </div>
     </div>
 
-    <p style="font-size: x-small; margin-top: -3px;">* obligāti aizpildāmie lauki</p>
+    <p style="font-size: x-small; margin-top: -2px;">* obligāti aizpildāmie lauki</p>
 
     <div style="margin-top: 10px;">
       <button type="button" class="processBtn" onclick="processProcurement()">Pārbaudīt</button>
@@ -84,17 +90,18 @@
     const procurementFile = document.getElementById("procurementFile").files[0];
     const agreementFile = document.getElementById("agreementFile").files[0];
     const procurementID = document.getElementById("procurementID").value.trim();
+
+    if (!procurementID || !procurementFile) {
+      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+      return;
+    }
+
     currentEventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
     isCancelled = false;
 
     const csvPath = `${procurementID}/report.csv`;
     processBtn.disabled = true;
     cancelBtn.disabled = false;
-
-    if (!procurementID || !procurementFile) {
-      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
-      return;
-    }
 
     // Reset containers
     resultContainer.innerHTML = "";
@@ -314,6 +321,12 @@
     position: relative;
     display: inline-block;
     width: fit-content;
+    margin-left: 15px;
+  }
+
+  .file-input-wrapper p {
+    font-size: 15px;
+    margin: 10px 0 10px 15px;
   }
 
   .clear-btn {

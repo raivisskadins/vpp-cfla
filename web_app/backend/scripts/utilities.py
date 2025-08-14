@@ -169,10 +169,9 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
         query = ""
         record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
         return query, record
-        
+    
     query = result["query"]
     result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
-
     answer = re.search(r'\{[^\{\}]+\}',result, re.IGNORECASE)
     if answer:
         try:
@@ -187,7 +186,6 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
     
     if answer:
         llmanswer=answer.group(1)
-        #result = result.replace(f"[{llmanswer}]","").replace(f"Atbilde:","")
         record = [nr, question, llmanswer, expectedanswer, result]
     else:
         answer = re.search(r"'?(jā|nē|kontekstā nav informācijas|n/a)'?", result, re.IGNORECASE)
@@ -196,7 +194,7 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
         if answer:
             record = [nr, question, answer.group(1).lower(), expectedanswer, result]
         else:
-            record = [nr, question, '', expectedanswer, result] 
+            record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
     return query, record
 
 # TODO needs a more logical name, more info seems to be similar
