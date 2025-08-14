@@ -165,7 +165,11 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
                                    n=embedding_conf["top_similar"],
                                    n4rerank=embedding_conf["n4rerank"],
                                    prevnext=embedding_conf["prevnext"])
-    
+    if result == "": # handeling case when result returns an exception
+        query = ""
+        record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
+        return query, record
+        
     query = result["query"]
     result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
 
@@ -251,12 +255,16 @@ def get_prompt_dict(prompt_file, question_dict):
                 for prompt in prompts_loaded:
                     if "prompt-id" in subquestion and subquestion["prompt-id"] == prompt["id"]:
                         promptdict[subquestion["nr"]] = prompt["prompt"]
-                        break
+                        if not "prompt0-id" in subquestion: break
+                    if "prompt0-id" in subquestion and subquestion["prompt0-id"] == prompt["id"]:
+                        promptdict[subquestion["nr"]+"-0"] = prompt["prompt"]
         else:
             for prompt in prompts_loaded:
                 if "prompt-id" in question and question["prompt-id"] == prompt["id"]:
                     promptdict[question["nr"]] = prompt["prompt"]
-                    break
+                    if not "prompt0-id" in question: break
+                if "prompt0-id" in question and question["prompt0-id"] == prompt["id"]:
+                    promptdict[question["nr"]+"-0"] = prompt["prompt"]
 
     return promptdict
 
