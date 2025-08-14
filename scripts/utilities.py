@@ -168,8 +168,8 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
     if result == "": # handeling case when result returns an exception
         query = ""
         record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
-        return query, record
-
+        return query, record    
+    
     query = result["query"]
     result = re.sub(r'\n\n+',r'\n',result["result"]).strip()
 
@@ -230,14 +230,40 @@ def get_supplementary_info():
 
     return pilchapters, mk107chapters, nslchapters, mki3chapters
 
-def get_prompt_dict(prompt_file):
+def get_prompt_dict(prompt_file, question_dict):
+    try:
+        with open(prompt_file, 'r', encoding='utf-8') as file:
+            prompts_loaded = yaml.load(file, Loader=yaml.BaseLoader)
+            print("Prompts loaded")
+    except FileNotFoundError:
+        print(f"Error: File '{prompt_file}' not found.")
+        exit
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file: {e}")
+        exit
+    
     promptdict = {}
-    with open(prompt_file,'r',encoding='utf-8') as file:
-        for line in file:
-            lineparts = line.strip().split('\t')
-            if len(lineparts)==2:
-                for q in lineparts[1].split(','):
-                    promptdict[str(q)] = lineparts[0] 
+
+    # Map id's to prompts directly
+    prompt_dict_by_id = {}
+    for prompt in prompts_loaded:
+        prompt_dict_by_id[prompt["id"]] = prompt["prompt"]
+        # Also get default prompt
+        if prompt.get("default"):
+            promptdict["0"] = prompt["prompt"]
+
+    for question in question_dict:
+        if "questions" in question:
+            for subquestion in question.get("questions"):
+                if "prompt-id" in subquestion:
+                    promptdict[subquestion["nr"]] = prompt_dict_by_id[subquestion["prompt-id"]]
+                if "prompt0-id" in subquestion:
+                    promptdict[subquestion["nr"]+"-0"] = prompt_dict_by_id[subquestion["prompt0-id"]]
+        else:
+            if "prompt-id" in question:
+                promptdict[question["nr"]] = prompt_dict_by_id[question["prompt-id"]]
+            if "prompt0-id" in question:
+                promptdict[question["nr"]+"-0"] = prompt_dict_by_id[question["prompt0-id"]]
 
     return promptdict
 
