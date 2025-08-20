@@ -1,4 +1,5 @@
 # Docker usage instructions
+# TODO pārrakstīt latviski un papildināt
 
 1. Make sure to populate the env file and rename it to .env
 2. Launch all scripts from this directory
@@ -11,6 +12,8 @@ docker compose up --build
 
 ### Regular launch after building
 docker compose up
+
+[localhost tagad būs pieejama demo vide]
 
 ### To take down:
 docker compose down
