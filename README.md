@@ -33,7 +33,7 @@ source .venv/bin/activate
 pip install -r requirements.txt  
 ```
 
-### Docker izstrādes konteineris
+### 2. Docker izstrādes konteineris
 Lietotājam jābūt instalētam Docker programmai
 
 #### Lai darbinātu projektu 1. rezi rakstīt terminālī:
