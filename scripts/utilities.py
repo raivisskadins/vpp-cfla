@@ -337,9 +337,15 @@ def get_ini_files(config_dir, overwrite, report_path_csv):
     return sorted(ini_files)
 
 def get_questions_without_q0(questions):
+    # This function returns a list of nr's for questions that potentially cannot be answered; I.e. expected answer = "n/a", but LLM can't give such an answer
+    # There are a few propmts that however do allow it, so the filter is a little bit more complicated
+    
     questions_wout_0q = []
 
     for q in questions:
+        if 'allows_na' in q:
+            continue
+
         # If "question0" is not present, add this question's number
         if 'question0' not in q:
             if 'nr' in q:
