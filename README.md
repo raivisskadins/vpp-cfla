@@ -10,6 +10,8 @@ Informāciju par demo vides uzstādīšanu un lietošanu meklēt demo mapes READ
 
 Testa vides galvenais darbināmais skripts ir "ProjectProcurementReview.ipynb"
 [Ko tas dara?]
+Skriptu palaižot, tas iziet cauri visiem failiem "config" mapē, padodot modelim jautājumus, uz kuriem tas sniedz atbildes, ņemot vērā nolikumu un iepirkuma līgumu, tad atgriež rezultātu tabulu un izveido .csv un .htm formātu report failus, kuros ir apskatāma sīka informācija par katru jautājumu. Pēc tam tiek izveidots main_report.html, kurā var apskatīt savērstu, pārskatāmāku sarakstu ar iepirkumiem, kuru iespējams izvērst un apskatīt visus jautājumus detalizēti. Beigās izveidojas precision_report.html fails, kurā var apskatīt katra apstrādātā jautājuma precizitātes un papildus modeļa novērtēšanas datus.
+
 [Par my_config_template.py]
 
 "PromptTest.ipynb" iespējams notestēt individuālas uzvednes
@@ -17,7 +19,7 @@ Testa vides galvenais darbināmais skripts ir "ProjectProcurementReview.ipynb"
 ## Kā uzstādīt?
 Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija. Iesakāms, ka lietotājam ir vismaz 16GB RAM un vēlams arī laba video karte.
 Vispirms nepieciešams aizpildīt .env-example failu ar pareizajām vertībām un pārsaukt uz -> .env
-"cfla_files" mapē ir jāiekopē attiecīgie faili, kas norādīti attiecgīgajā "config" mapes ini failā.
+"cfla_files" mapē ir jāiekopē attiecīgie faili, kas norādīti attiecīgajā "config" mapes ini failā.
 
 Projektu iespējams uzstādīt:
 1. Kā parasti ielādējot vajadzīgās bibliotēkas (iesakām ar virtuālo vidi).
@@ -57,6 +59,20 @@ docker compose down
 
 [answers]
 [cfla_files] - 
+
+### scripts
+
+#### extractmd.py
+Šis fails satur Extractor klasi, kas apstrādā .docx un .pdf formāta dokumentus un pārveido tos markdown formātā. Izveidotas fails tiek nodots tālāk modelim, lai veidotu indeksu un ļautu uzdot jautājumus par dokumenta saturu.
+
+#### gen_results.py
+Šis fails ģenerē rezultātu tabulu. Šajā failā tiek apstrādāti visi jautājumi un apakšjautājumi. 
+Ja nepieciešams, jautājums vai apakšjautājums tiek izlaists. 
+Ja uz kādu question0 jautājumu ir atbildēts ar "nē", tad uz tā paša numurācijas jautājumu bez 0 un konkrētā jautājuma visiem apakšjautājumiem ir atbildēts ar "n/a".
+Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas", tad uz tā paša numurācijas jautājumu bez 0 un konkrētā jautājuma visiem apakšjautājumiem ir atbildēts ar "X".
+
+#### utilities.py
+Šajā failā ir dažādas nepieciešamās funkcijas: papildus informācijas iegūšana modelim; jautājumu nodošana modelim un atbildes atgriešana; uzvednes, jautājumu un atbilžu (no answers mapes) iegūšana no konkrētiem failiem, vajadzīgo failu nosaukumu iegūšana no config mapes un to pārveidošana par markdown failiem; saraksts ar jautājumiem, kuri, iespējams, nav atbildāmi.
 
 ## License?
 Dažādas atsauces, ja tās nepieciešamas?
