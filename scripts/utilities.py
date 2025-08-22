@@ -167,7 +167,7 @@ def ask_question_save_answer(qnaengine, embedding_conf, prompt, question, nr, ex
                                    prevnext=embedding_conf["prevnext"])
     if result == "": # handeling case when result returns an exception
         query = ""
-        record = [nr, question, 'Modelis neatgrieza atbildi', expectedanswer, result] 
+        record = [nr, 'Modelis neatgrieza atbildi', expectedanswer, result] 
         return query, record    
     
     query = result["query"]
