@@ -2,7 +2,6 @@ fastapi==0.116.1
 uvicorn==0.35.0
 python-multipart==0.0.20
 pandas==2.3.1
-
 llama-index-core==0.11.0
 llama_index-vector_stores-faiss==0.2.1
 llama-index-llms-openai==0.2.0
@@ -13,7 +12,7 @@ llama-index-embeddings-huggingface==0.3.1
 openai==1.63.2
 faiss-cpu==1.10.0
 pymupdf4llm==0.0.17
-sentence_transformers==3.4.1
+sentence_transformers==5.0.0
 httpx==0.28.1
 mammoth==1.9.0
 markdownify==0.13.1
