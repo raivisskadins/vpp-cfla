@@ -210,10 +210,24 @@
       tr.insertCell().textContent = row.Pamatojums;
     });
 
-    // Makes table
+    // Makes table + copy button (minimal wrapper)
     const container = document.getElementById("result");
     container.innerHTML = "";
-    container.appendChild(table);
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+
+    const copyBtn = document.createElement("button");
+    copyBtn.className = "copy-btn";
+    copyBtn.type = "button";
+    copyBtn.title = "Kopēt tabulu";
+    copyBtn.setAttribute("aria-label", "Kopēt tabulu");
+    copyBtn.innerHTML = "📋";
+    copyBtn.onclick = () => copyTableToClipboard(table, copyBtn);
+
+    wrapper.appendChild(copyBtn);
+    wrapper.appendChild(table);
+    container.appendChild(wrapper);
   }
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -241,6 +255,42 @@
       clearBtn.style.display = "none";
     }
   }
+
+  function tableToTSV(tableEl) {
+  const rows = Array.from(tableEl.querySelectorAll("tr"));
+  return rows.map(row => {
+    const cells = Array.from(row.querySelectorAll("th,td"));
+    return cells.map(cell => {
+      return (cell.textContent || "")
+        .replace(/\t/g, " ")
+        .replace(/\r?\n+/g, " ")
+        .trim();
+    }).join("\t");
+  }).join("\n");
+}
+
+async function copyTableToClipboard(tableEl, btnEl) {
+  const html = tableEl.outerHTML;
+  const tsv = tableToTSV(tableEl); // keep your existing helper
+
+  try {
+    if (navigator.clipboard?.write && window.ClipboardItem) {
+      // Preferred: write both HTML and plain text
+      await navigator.clipboard.write([
+        new ClipboardItem({
+          "text/html": new Blob([html], { type: "text/html" }),
+          "text/plain": new Blob([tsv],  { type: "text/plain" })
+        })
+      ]);
+    } 
+    const prev = btnEl.innerHTML;
+    btnEl.innerHTML = "✓";
+    setTimeout(() => (btnEl.innerHTML = prev), 900);
+  } catch (e) {
+    console.error(e);
+    alert("Neizdevās nokopēt tabulu.");
+  }
+}
 
 </script>
 
@@ -356,6 +406,29 @@
     font-style: italic;
     color: #333;
   }
+
+  .table-wrapper {
+  position: relative;
+}
+.copy-btn {
+  position: absolute;
+  top: -40px;
+  right: 8px;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  padding: 0;
+  line-height: 32px;
+  text-align: center;
+  font-size: 16px;
+  background: #f3f4f6;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.copy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
 
 </style>
 </body>

@@ -6,8 +6,15 @@ from pathlib import Path
 from .extractmd import Extractor
 from .utilities import get_prompt_dict, get_questions, get_answers, get_supplementary_info
 
+script_dir = Path(".").resolve()
+embedding_model_name_or_path = os.environ.get(
+    "EMBEDDING_MODEL_NAME_FROM_HF", # Use model name that is on Hugging face to download a different models
+    str(script_dir / "embedding_models" / "bge-m3-procurements_lr9e-6_warmup28600")
+)
+print(f"Loading embedding model: {embedding_model_name_or_path}")
+# embedding_model_name_or_path = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2" # "BAAI/bge-m3"
 embedding_conf = {
-    "embeddingmodel": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2", #"sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # "BAAI/bge-m3" "nomic-ai/nomic-embed-text-v2-moe" # "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+    "embeddingmodel": embedding_model_name_or_path,
     "chunk_size": 1536,
     "chunk_overlap": 0,
     "top_similar": 5,
@@ -32,7 +39,7 @@ llm=AzureOpenAI(azure_deployment=llmmodelAzure["azure_deployment"],
 extractor = Extractor() # Markdown doc extractor
 
 # Script dir for getting relative paths for notebook file
-script_dir = Path(".").resolve()
+
 
 # Document paths
 question_file_path = script_dir / "questions" / "questions.yaml" # original.yaml
@@ -51,5 +58,5 @@ supplementary_info = get_supplementary_info()
 default_answer_file_path = script_dir / 'template.yaml'
 default_answer_dictionary = get_answers(default_answer_file_path)
 
-# questions_to_process = ["38", "38.8"] # example for processing just 38.8 question
-questions_to_process = []
+questions_to_process = ["38", "38.8"] # example for processing just 38.8 question
+# questions_to_process = []
