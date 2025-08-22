@@ -85,8 +85,9 @@ Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas"
 
 #### vectorindex.py
 
-[reports]
-[supplementary_info]
+### reports mape
+
+### supplementary_info mape
 
 ## License?
 Dažādas atsauces, ja tās nepieciešamas?
