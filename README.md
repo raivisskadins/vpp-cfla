@@ -48,6 +48,82 @@ docker compose down
 ```
 
 [Jupiter lab saite, kuru var lietot pēc tam]
+Papildus informācija docker:
+
+ **Konteinera attēli Docker Hub** 
+
+* `/web-backend:`
+* `/web-frontend:` 
+
+** Porti** 
+
+* Frontend: `http://localhost/`
+* Backend: `http://localhost:8080/` 
+
+## Priekšnosacījumi 
+
+* Docker Engine + Docker Compose v2
+* Docker Hub konts (attēlu ievietošanai) 
+
+--- 
+
+## Vides konfigurācija 
+
+Izveidojiet **root** failu `.env` (neaugšuplādēt). 
+
+env. mainīgie:
+# Docker Hub
+DOCKERHUB_USERNAME=jūsu-dockerhub-lietotājvārds
+DOCKERHUB_TOKEN=jūsu-dockerhub-piekļuves-žetons # Personīgā piekļuves žetons (nevis jūsu parole)
+
+# 
+TAG=v0.1.7
+
+# (Pēc izvēles) Azure OpenAI – izmanto aizmugures sistēma, ja tāda ir
+AZURE_OPENAI_VERSION=
+AZURE_ENDPOINT=
+AZURE_OPENAI_KEY=
+
+No repo saknes:
+
+```bash
+./web_app/build_and_push.sh  v0.1.7
+
+## Izvietot / Palaist (prod compose)
+
+No repo saknes:
+
+```bash
+./web_app/deploy_prod.sh v0.1.7
+
+
+Tas veiks sekojošo:
+
+* Iegūs `web-backend:` un `web-frontend:`.
+
+
+ Pēc tam:
+
+* Fronted→ [http://localhost/](http://localhost/)
+* Backend  → [http://localhost:8080/docs](http://localhost:8080/docs)
+* Worksoace→ [http://localhost:8080/server/check]
+
+---
+
+**Pārbaudīt logs**
+
+```bash
+docker logs -f web-backend
+docker logs -f web-frontend
+
+
+
+
+**Saraksts ar konteineriem**
+
+```bash
+docker ps
+
 
 ## Kā izveidot jaunu jautājumu?
 
