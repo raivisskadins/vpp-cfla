@@ -74,7 +74,7 @@ Izveidojiet **root** failu `.env` (neaugšuplādēt).
 env. mainīgie:
 # Docker Hub
 DOCKERHUB_USERNAME=jūsu-dockerhub-lietotājvārds
-DOCKERHUB_TOKEN=jūsu-dockerhub-piekļuves-žetons # Personīgā piekļuves žetons (nevis jūsu parole)
+DOCKERHUB_TOKEN=jūsu-dockerhub-piekļuves-žetons 
 
 # 
 TAG=v0.1.7
