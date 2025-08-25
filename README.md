@@ -17,7 +17,15 @@ Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija. Iesakām
 Vispirms nepieciešams aizpildīt .env-example failu ar pareizajām vertībām un pārsaukt uz -> .env
 "cfla_files" mapē ir jāiekopē attiecīgie faili, kas norādīti attiecīgajā "config" mapes ini failā.
 
-Projektu iespējams uzstādīt:
+### LLM modelis
+Atbilžu ģenerēšanai tiek izmantots Azure OpenAI *gpt-4o* modelis. Lai iegūtu pieeju šim modelim, [portal.azure.com](https://portal.azure.com/) ir jāizveido Azure OpenAI resurss. Pēc tam [Azure OpenAI Studio](https://oai.azure.com/) jāizvēlas *Deployments* un jāizvēlas modelis 'gpt-4o'. Vērtībai *Deployment name* jābūt tādai pašai kā *Model name* - 'gpt-4o'.
+ 
+Skatīt vairāk [šeit](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+ 
+.env failā jāieraksta modelim atbilstošās vērtības - AZURE_OPENAI_KEY, AZURE_ENDPOINT un AZURE_OPENAI_VERSION.
+
+### Projekta darbināšana
+Projektu iespējams darbināt:
 1. Kā parasti ielādējot vajadzīgās bibliotēkas (iesakām ar virtuālo vidi).
 2. Kā docker konteineri.
 
@@ -99,14 +107,13 @@ Satur sagaidāmo atbilžu failus. Tie izmantojami, lai sistēma varētu novērt�
 ### cfla_files mape
 Satur nolikumu un līguma projektu oriģinālos dokumentus un novērtējuma lapas. No tiem tiek izgūts konteksts modelim.
 ### config mape
-Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti testēšanai.
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti testēšanai (testa daty kopa).
 ### dev_config mape
-Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti izstrādei.
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti izstrādei (validācijas datu kopa).
 ### questions mape
 Satur jautajumu failu (questions.yaml), oriģinālo jautājumu failu (original.yaml) un uzvedņu failu (prompts.yaml). Jautājumu fails satur jautājumus, kuri ir adaptēti no CFLA pārbaudes lapām, un norādes uz apstrādei nepieciešamajiem datiem. Jautājumi un uzvednes tiek izmantoti, sūtot pieprasījumus uz LLM.
 
 ### scripts mape
-
 #### extractmd.py
 Šis fails satur Extractor klasi, kas apstrādā .docx un .pdf formāta dokumentus un pārveido tos markdown formātā, kuru var apstrādāt embedding modelis.
 
