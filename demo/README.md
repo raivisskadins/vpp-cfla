@@ -1,12 +1,19 @@
 # Prototips (demo)
 
-Šī mape satur visus datus, kas nepieciešami prototipam. Tā sastāv no divām vidēm izstrādes un produkcijas.
+Šī mape satur visus datus, kas nepieciešami prototipam. To iespējams darbināt kā izstrādes vai produkcijas vidi.
 Visām vidēm nepieciešams Docker (https://www.docker.com/), lai tās darbinātu. 
-Prototips izmanto daudz skriptus un datus, kas tiek lietoti arī testa vidē, tomēr tie ir modificēti un nošķirti.
+Prototips izmanto daudz skriptus un datus, kas tiek lietoti arī testa vidē (galvenā mape), tomēr tie ir modificēti un nošķirti.
 Pieliekot klāt jaunus jautājumus jāatceras tos pielikt arī prototipam, ja ir vēlme tos šeit lietot.
 
 ## Kā uzstādīt?
 Vispirms ievadīt mainīgos iekš .env-example faila un to pārsaukt par .env.
+
+### LLM modelis
+Atbilžu ģenerēšanai tiek izmantots Azure OpenAI *gpt-4o* modelis. Lai iegūtu pieeju šim modelim, [portal.azure.com](https://portal.azure.com/) ir jāizveido Azure OpenAI resurss. Pēc tam [Azure OpenAI Studio](https://oai.azure.com/) jāizvēlas *Deployments* un jāizvēlas modelis 'gpt-4o'. Vērtībai *Deployment name* jābūt tādai pašai kā *Model name* - 'gpt-4o'.
+ 
+Skatīt vairāk [šeit](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+ 
+.env failā jāieraksta modelim atbilstošās vērtības - AZURE_OPENAI_KEY, AZURE_ENDPOINT un AZURE_OPENAI_VERSION.
 
 ### 1. Produkcijas vide
 Caur komandrindu šajā mapē palaist komandu:
