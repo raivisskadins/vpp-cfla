@@ -1,6 +1,6 @@
 # VPP CFLA
 Šis projekts satur prototipa (demo) risinājumu un dažādus eksperimentus, kas saistīti ar CFLA iepirkuma dokumentācijas pārbaudes sistēmas darbināšanu lietojot LLM ar RAG.
-Projekts satur autoru marķētu datukopu "answers" mapē, kas atbilst 30 CFLA iepirkumiem, kuri ir izvērtēti. Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šada veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā.
+Projekts satur autoru marķētu datu kopu "answers" mapē, kas atbilst 30 CFLA iepirkumiem, kuri ir izvērtēti. Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā.
 
 ## Projekta sastāvdaļas
 Projekts sastāv no 2 vidēm testa un prototipa (demo).
@@ -42,7 +42,7 @@ docker compose up --build
 ```
 docker compose up
 ```
-#### Lai apstādinātu koneneri:
+#### Lai apstādinātu konteineri:
 ```
 docker compose down
 ```
@@ -82,7 +82,7 @@ Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt
 **Ja jautājums ir jautājumu grupas apakšpunkts, tas jāievieto failā pie attiecīgas grupas. Atstarpju skaits YAML failiem jābūt tāds pats ka citiem jautājumiem grupā. Tas ir attiecināms arī uz atbildēm, ko ieraksta atbilžu failos.**
 
 **Ja jautājums sastāv no divām daļām, kur pirmai daļai jābūt izpildītai, lai jautājums būtu attiecināms, to var ierakstīt kā divus jautājumus, kā piemēram:**
-- Jautajumu failā (questions.yaml), pie question:
+- Jautājumu failā (questions.yaml), pie question:
 ```
   question0: "[nosacījuma jautājuma teksts, kuram jābūt izpildītam, lai viss jautājums būtu attiecināms (pēdiņās)]"
   prompt0-id: [uzvednes id numurs apakšjautājumam, nav obligāts]
@@ -105,9 +105,6 @@ Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt
 #### extractmd.py
 Šis fails satur Extractor klasi, kas apstrādā .docx un .pdf formāta dokumentus un pārveido tos markdown formātā, kuru var apstrādāt embedding modelis.
 
-#### finetune_st_embedd.py
-Skripts priekš embedding modeļu pielāgošanas. Tā darbināšanai nepieciešams lejupielādēts modelis, kas tiks pielāgots un apmācības un validācijas datu kopas. Mēs lietojām BGE-m3 modeli un datukopa, kas tika izgūta no EIS sistēmas.
-
 #### gen_precision_report.py
 Šis skripts izveido precision_report.html faila saturu, kur funkcijas atgriež html kodu, katra apstrādātā jautājuma precizitātes un papildus novērtēšanas datus.
 
@@ -115,16 +112,16 @@ Skripts priekš embedding modeļu pielāgošanas. Tā darbināšanai nepiecieša
 Šis fails ģenerē rezultātu tabulu. Šajā failā tiek apstrādāti visi jautājumi un apakšjautājumi. 
 Ja kādam jautājumam norādīts questions.yaml failā ar "check" tad attiecīgais jautājums vai apakšjautājums tiek izlaists. 
 Ja uz kādu question0 jautājumu ir atbildēts ar "nē", tad konkrētā jautājumā un visiem apakšjautājumiem ir atbildēts ar "n/a".
-Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas", tad konkrētājā jautājumā un visiem ir atbildēts ar "X".
+Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas", tad konkrētajā jautājumā un visiem ir atbildēts ar "X".
 
 #### main_report.py
 Šis skripts izveido main_report.html faila saturu, kurā tiek izveidots html kods, rezultātu tabula un skripts tabulas funkcionalitātei. 
 
 #### my_config_template.py
-Šis fails ir paraugs my_config.py faila izveidei. Šāds fails ir nepieciešams, lai, mainot parametrus ProjectProcurementReview.ipynb failā un daloties ar izmaiņām, citiem izstrādātājiem nebūtu "merge conflict" šo parametru dēļ. Lai izamntotu failu tas ir jāpārsauc uz my_config.py.
+Šis fails ir paraugs my_config.py faila izveidei. Šāds fails ir nepieciešams, lai, mainot parametrus ProjectProcurementReview.ipynb failā un daloties ar izmaiņām, citiem izstrādātājiem nebūtu "merge conflict" šo parametru dēļ. Lai izmantotu failu tas ir jāpārsauc uz my_config.py.
 
 #### utilities.py
-Šajā failā ir dažādas nepieciešamās funkcijas: papildus informācijas iegūšana modelim; jautājumu nodošana modelim un atbildes atgriešana; uzvednes, jautājumu un atbilžu (no answers mapes) iegūšana no konkrētiem failiem, vajadzīgo failu nosaukumu iegūšana no config mapes un to pārveidošana par markdown failiem; saraksts ar jautājumiem, kuri, iespējams, nav atbildāmi.
+Šajā failā ir dažādas nepieciešamās funkcijas: papildus informācijas iegūšana modelim; jautājumu nodošana modelim un atbildes atgriešana; uzvednes, jautājumu un atbilžu (no answers mapes) iegūšana no konkrētiem failiem, vajadzīgo failu nosaukumu iegūšana no config mapes un to pārveidošana par markdown failiem; saraksts ar jautājumiem, kuri, iespējams, nav atbildami.
 
 #### vectorindex.py
 Šajā failā ir QnAEngine klase, kas akcentē markdown failā virsrakstus; sadala dokumentus mazākos fragmentos (chunks), ģenerē to embeddings un saglabā cache, lai paātrinātu atkārtotu izmantošanu; izveido vektoru indeksu; veic jautājumu apstrādi un atbilžu atgriešanu.
