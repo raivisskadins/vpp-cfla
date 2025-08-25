@@ -54,7 +54,7 @@ docker compose down
 **Failā questions/questions.yaml var ierakstīt jaunu jautājumu ar tādu pašu struktūru kā eksistējošiem jautājumiem (ievērojot atstarpes):**
 ```
 - nr: [jautājuma numurs]
-  prompt-id: [uzvednes id numurs (No questions/prompts.yaml faila. Šī rinda nav obligāta.)]
+  prompt-id: [uzvednes id numurs (No questions/prompts.yaml faila. Šī rinda nav obligāta - ja to atstāj tukšu tiks lietos prompt-id 0.)]
   question: "[jauna jautājuma teksts (pēdiņās)]"
 ```
 Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt šādā veidā:
@@ -81,9 +81,9 @@ Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt
   answer: "[atbilde (pēdiņās)]"
 ```
 
-**Ja jautājums ir jautājumu grupas apakšpunkts, tas jāievieto failā pie attiecīgas grupas. Atstarpju skaits jābūt tāds pats ka citiem jautājumiem grupā. Tas ir attiecināms arī uz atbildēm, ko ieraksta atbilžu failos.**
+**Ja jautājums ir jautājumu grupas apakšpunkts, tas jāievieto failā pie attiecīgas grupas. Atstarpju skaits YAML failiem jābūt tāds pats ka citiem jautājumiem grupā. Tas ir attiecināms arī uz atbildēm, ko ieraksta atbilžu failos.**
 
-**Ja jautājums sastāv no divām daļām, kur pirmai daļai jābūt izpildītai, lai jautājums būtu attiecināms, to var ierakstīt ka divus jautājumus, pievienojot modificējamiem failiem arī šādas vērtības zem tā paša numura:**
+**Ja jautājums sastāv no divām daļām, kur pirmai daļai jābūt izpildītai, lai jautājums būtu attiecināms, to var ierakstīt kā divus jautājumus, pievienojot modificējamiem failiem arī šādas vērtības zem tā paša numura:**
 - Jautajumu failā, pie question:
 ```
   question0: "[nosacījuma jautājuma teksts, kuram jābūt izpildītam, lai viss jautājums būtu attiecināms (pēdiņās)]"
