@@ -112,6 +112,7 @@ Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt
 #### finetuneembeddings.py
 
 #### gen_precision_report.py
+Šis skripts izveido precision_report.html faila saturu, kur funkcijas atgriež html kodu, katra apstrādātā jautājuma precizitātes un papildus novērtēšanas datus.
 
 #### gen_results.py
 Šis fails ģenerē rezultātu tabulu. Šajā failā tiek apstrādāti visi jautājumi un apakšjautājumi. 
@@ -120,13 +121,16 @@ Ja uz kādu question0 jautājumu ir atbildēts ar "nē", tad konkrētā jautāju
 Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas", tad konkrētājā jautājumā un visiem ir atbildēts ar "X".
 
 #### main_report.py
+Šis skripts izveido main_report.html faila saturu, kurā tiek izveidots html kods, rezultātu tabula un skripts tabulas funkcionalitātei. 
 
 #### my_config_template.py
+Šis fails ir paraugs my_config.py faila izveidei. Šāds fails ir nepieciešams, lai, mainot parametrus ProjectProcurementReview.ipynb failā un daloties ar izmaiņām, citiem izstrādātājiem nebūtu "merge conflict" šo parametru dēļ.
 
 #### utilities.py
 Šajā failā ir dažādas nepieciešamās funkcijas: papildus informācijas iegūšana modelim; jautājumu nodošana modelim un atbildes atgriešana; uzvednes, jautājumu un atbilžu (no answers mapes) iegūšana no konkrētiem failiem, vajadzīgo failu nosaukumu iegūšana no config mapes un to pārveidošana par markdown failiem; saraksts ar jautājumiem, kuri, iespējams, nav atbildāmi.
 
 #### vectorindex.py
+Šajā failā ir QnAEngine klase, kas akcentē markdown failā virsrakstus; sadala dokumentus mazākos fragmentos (chunks), ģenerē to embeddings un saglabā cache, lai paātrinātu atkārtotu izmantošanu; izveido vektoru indeksu; veic jautājumu apstrādi un atbilžu atgriešanu.
 
 ### reports mape
 
