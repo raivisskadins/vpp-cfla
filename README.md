@@ -139,8 +139,13 @@ Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas"
 Šajā failā ir QnAEngine klase, kas akcentē markdown failā virsrakstus; sadala dokumentus mazākos fragmentos (chunks), ģenerē to embeddings un saglabā cache, lai paātrinātu atkārtotu izmantošanu; izveido vektoru indeksu; veic jautājumu apstrādi un atbilžu atgriešanu.
 
 ### reports mape
+Šajā mapē atrodas visi projektā veiktie eksperimentu rezultāti. Reporti ir nosaukti pēc kāda izdomāta identifkatora un datuma, kad veikts tests. Reporti sastāv no galvenajiem rezultātu datiem - report.csv. Metadatiem, parametriem par testu - config.json. Vizualizēti rezultāti par katru apstrādāto iepirkumu ar sagaidāmajiem un iegūtajiem rezultātiem, paskaidrojuma un pilnajām uzvednēm iekš - main_report.html (līdzīgs reports). Precizitātes radītāji katram jautājumam - precision report.html. Mēs lietojam 3 precizitātes. 
+1. "precision" - galvenā precizitāte, kas tiek mērīta vienkārši salīdzina vai sagaidāmā atbilde sakrīt ar iegūto. Total_asked / n_correct. Total_asked - jautājumu skaits, kas tika apstrādāti, tie var būt mazāk par jautājumu skaitu, jo dažiem iepirkumiem šie jautājumi var būt izlaisti, kad sagaidāmā atbilde ir "?". 
+2. "precision_answered" - Šīs precizitātes mērķis ir parādīt cik sistēma labi darbotos, ja saktītu tikai tās atbildes, kur LLM modelis ir pārliecināts par savu atbildi, atbildot ar "jā" vai "nē". Precizitāte tiek merīta atņemot tos jautājumus, kuros atbilde ir "kontekstā nav informācija". total_answered / n_correct.
+3. "precision_answered_wo_na" - precizitātes mērķis ir parādīt kāda ir maksimālā iespējamā precizitāte, kādu iespējams iegūt ar šo sistēmu pieņemot, ka datos nav jautājumi, kuri nav atbildami. Šobrīd pastāv tādi jautājumi, kuriem sagaidāmā atbilde ir "n/a", bet LLM nav dota iespēja atbildēt šādi. Precizitāte rēķināta šādi - total_answered_wo_na / n_correct. total_answered_wo_na - iegūta saskaitot tos jautājumus, kuriem atbildē nebija "kontekstā nav informācija" un kuri bija atbildami.
 
 ### supplementary_info mape
+Satur dokumentus ar dažādu likumu tekstu, kas tiek lietots kā konteksts modelim.
 
 ## License?
 Dažādas atsauces, ja tās nepieciešamas?
