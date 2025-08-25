@@ -79,7 +79,7 @@ DOCKERHUB_TOKEN=jūsu-dockerhub-piekļuves-žetons # Personīgā piekļuves žet
 # 
 TAG=v0.1.7
 
-# (Pēc izvēles) Azure OpenAI – izmanto aizmugures sistēma, ja tāda ir
+#
 AZURE_OPENAI_VERSION=
 AZURE_ENDPOINT=
 AZURE_OPENAI_KEY=
