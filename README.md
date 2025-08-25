@@ -95,7 +95,7 @@ No repo saknes:
 
 ```bash
 ./web_app/deploy_prod.sh v0.1.7
-
+```
 
 Tas veiks sekojošo:
 
@@ -115,7 +115,7 @@ Tas veiks sekojošo:
 ```bash
 docker logs -f web-backend
 docker logs -f web-frontend
-
+```
 
 
 
@@ -123,7 +123,7 @@ docker logs -f web-frontend
 
 ```bash
 docker ps
-
+```
 
 ## Kā izveidot jaunu jautājumu?
 
@@ -172,11 +172,16 @@ Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt
 
 ## Par citām mapēm un ko tās satur
 
-[answers]
-[cfla_files] -
-[config]
-[dev_config]
-[questions]
+### answers mape
+Satur sagaidāmo atbilžu failus. Tie izmantojami, lai sistēma varētu novērtēt precizitāti.
+### cfla_files mape
+Satur nolikumu un līguma projektu oriģinālos dokumentus un novērtējuma lapas. No tiem tiek izgūts konteksts modelim.
+### config mape
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti testēšanai.
+### dev_config mape
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti izstrādei.
+### questions mape
+Satur jautajumu failu (questions.yaml), oriģinālo jautājumu failu (original.yaml) un uzvedņu failu (prompts.yaml). Jautājumu fails satur jautājumus, kuri ir adaptēti no CFLA pārbaudes lapām, un norādes uz apstrādei nepieciešamajiem datiem. Jautājumi un uzvednes tiek izmantoti, sūtot pieprasījumus uz LLM.
 
 ### scripts mape
 
