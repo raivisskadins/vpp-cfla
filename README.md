@@ -12,7 +12,7 @@ Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) 
 ## Eksperimentu programmatūra
 
 Galvenais eksperimentos izmantotais skripts ir izveidots kā Python Notebook — [ProjectProcurementReview.ipynb](ProjectProcurementReview.ipynb).  
-Papildu skripti, kas nepieciešami tā darbināšanai, atrodas mapē [scripts] kā atsevišķi Python faili.
+Papildu skripti, kas nepieciešami tā darbināšanai, atrodas mapē [scripts](scripts) kā atsevišķi Python faili.
 
 ## Projekta sastāvdaļas
 Projektā ir 2 vides:
