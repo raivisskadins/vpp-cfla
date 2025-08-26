@@ -5,36 +5,36 @@ Projekta galvenais mērķis ir novērtēt ģeneratīvā mākslīgā intelekta (�
 Šajā repozitorijā ir: 1) pētniecības programmatūra, kas izmantota projekta eksperimentiem, un 2) praktisks [prototips](demo), ko var izmantot rezultātu izvērtēšanai.
 Papildus programmatūrai šajā repozitorijā ir pieejamas arī datu kopas, kas izmantotas eksperimentos. Datu kopas sastāv no 30 iepirkumu dokumentiem, kurus novērtējuši CFLA eksperti. Ekspertu sagatavotās iepirkumu pārbaudes lapas ir pārveidotas mašīnlasāmā formātā. Par katru iepirkumu tiek uzdoti 168 jautājumi par tā atbilstību likumdošanai, un pie katra jautājuma ir norādīta atbilde. Datu kopa ir sadalīta divās apakškopās: izstrādes datu kopa (10 iepirkumi) un novērtēšanas datu kopa (20 iepirkumi). Datu kopas veido: 1) jautājumi [questions](questions) mapē, kas veidoti uz pārbaudes lapas S.7.1.-PL-21 (09.12.2019. redakcija) pamata; 2) marķēta datu kopa [answers](answers) mapē, kas atbilst 30 CFLA izvērtētiem iepirkumiem.
 
-_Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā._
-
-Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) algoritmu dokumentācijas pārbaudei ar lielo valodas modeli (LLM).
-
 ## Eksperimentu programmatūra
 
 Galvenais eksperimentos izmantotais skripts ir izveidots kā Python Notebook — [ProjectProcurementReview.ipynb](ProjectProcurementReview.ipynb).  
 Papildu skripti, kas nepieciešami tā darbināšanai, atrodas mapē [scripts](scripts) kā atsevišķi Python faili.
 Faktiski eksperimentu programmatūru veido viss kods, izņemot *demo* mapi. 
+Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) algoritmu dokumentācijas pārbaudei ar lielo valodas modeli (LLM).
+
 
 Palaižot skriptu, 
-- tas iziet cauri visiem .ini failiem *config* mapē (ja lietojam testa kopu), veicot sekojošas darbības:
-	- no iepirkuma un līguma projekta faila tiek izgūts teksts markdown formatējumā;
+- tas iziet cauri visiem iepirkumu failiem, kas ietilpst izvēlētajā eksperienta konfigurācijā (novērtēšanas datu kopas konfigurācija atrodas [config](config) mapē, izstrādes datu kopas konfigurācija - [dev_config](dev_config)), veicot sekojošas darbības:
+	- no iepirkuma un līguma projekta faila tiek izgūts teksts markdown formātā;
 	- teksts tiek sadalīts fragmentos un fragmentiem atbilstošie vektori tiek pievienoti vektoru bāzei;
 	- katram jautājumam no saraksta
-	  - no vektoru bāzes tiek izgūti līdzīgākie fragmenti;
-	  - tiek veidota uzvedne ar jautājumam līdzīgākajiem fragmentiem, jautājumu un papildu juridisko informāciju;
-	  - uzvedne tiek padota LLM modelim, kurš ģenerē atbildi;
+	  - no vektoru bāzes tiek izgūti semantiski līdzīgākie fragmenti;
+	  - tiek veidota uzvedne ar jautājumam līdzīgākajiem fragmentiem, jautājumu un papildu informāciju no likumiem;
+	  - uzvedne tiek nosūtīta uz LLM modeli, kas ģenerē atbildi;
 	  - atbilde tiek salīdzināta ar sagaidāmo atbildi no marķētā atbilžu faila;
-	- atbildes tiek saglabātas .csv un .html formātu report failos, kuros ir apskatāma sīka informācija par katru jautājumu;
+	- atbildes tiek saglabātas .csv un .html formātu atskaišu failos, kuros ir apskatāma sīka informācija par katru jautājumu;
 - tiek izveidota visiem pārbaudītajiem iepirkumiem kopēja atskaite *main_report.html*, kurā var aplūkot pārskatāmāku sarakstu ar iepirkumiem, saraksta rindiņas iespējams izvērst un apskatīt visus jautājumus detalizēti; 
-- tiek izveidots *precision_report.html* fails, kurā var apskatīt katra apstrādātā jautājuma precizitāti un papildu novērtēšanas datus par apstrādes sniegumu;
-- tiek izveidots arī *report.htm* fails, kas ir iepriekš lietotā *main_report.html* versija.
+- tiek izveidota atskaite *precision_report.html* , kurā var apskatīt katra apstrādātā jautājuma precizitāti un papildu novērtēšanas datus par apstrādes sniegumu;
+- tiek izveidots arī *report.htm* fails, kas ir iepriekš lietotā *report.csv* HTML versija.
 
 Ar *PromptTest.ipynb* skriptu iespējams notestēt individuālas uzvednes.
+
+_Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā._
 
 ## Prototips
 Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo\README.md).
 
-## Kā uzstādīt?
+## Uzstādīšana
 Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija - vismaz 16GB RAM un vēlams arī laba video karte.
 Pirms darba uzsākšanas nepieciešams aizpildīt .env-example failu ar pareizajām vertībām un pārsaukt to uz -> .env
 
