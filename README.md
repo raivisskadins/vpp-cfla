@@ -3,13 +3,11 @@ Valsts pētījumu programmas ietvaros tiek īstenots projekts "[Mākslīgā inte
 Projekta galvenais mērķis ir novērtēt ģeneratīvā mākslīgā intelekta (ĢMI) piemērotību un efektivitāti Eiropas Savienības (ES) fondu projektu iepirkumu dokumentācijas analīzē. Projekta ietvaros tiks pētīti dažādi ĢMI risinājumi, analizējot to spēju apstrādāt iepirkumu dokumentāciju tekstus. Projekta rezultātā tiks izstrādāts prototips, kas demonstrēs ĢMI pielietošanas iespējas iepirkumu analīzes procesu automatizācijā un sagatavoti rīcībpolitikas ieteikumi ĢMI risinājumu izmantojumam ES fondu projektu uzraudzības procesos.
 
 Šajā repozitorijā ir: 1) pētniecības programmatūra, kas izmantota projekta eksperimentiem, un 2) praktisks [prototips](demo), ko var izmantot rezultātu izvērtēšanai.
-Papildus programmatūrai šajā repozitorijā ir pieejamas arī datu kopas, kas izmantotas eksperimentos. Datu kopas sastāv no 30 iepirkumu dokumentiem, kurus novērtējuši CFLA eksperti. Ekspertu sagatavotās iepirkumu pārbaudes lapas ir pārveidotas mašīnlasāmā formātā. Par katru iepirkumu tiek uzdoti 168 jautājumi par tā atbilstību likumdošanai, un pie katra jautājuma ir norādīta atbilde. Datu kopa ir sadalīta divās apakškopās: izstrādes datu kopa (10 iepirkumi) un novērtēšanas datu kopa (20 iepirkumi).
+Papildus programmatūrai šajā repozitorijā ir pieejamas arī datu kopas, kas izmantotas eksperimentos. Datu kopas sastāv no 30 iepirkumu dokumentiem, kurus novērtējuši CFLA eksperti. Ekspertu sagatavotās iepirkumu pārbaudes lapas ir pārveidotas mašīnlasāmā formātā. Par katru iepirkumu tiek uzdoti 168 jautājumi par tā atbilstību likumdošanai, un pie katra jautājuma ir norādīta atbilde. Datu kopa ir sadalīta divās apakškopās: izstrādes datu kopa (10 iepirkumi) un novērtēšanas datu kopa (20 iepirkumi). Datu kopas veido: 1) jautājumi (questions) mapē, kas veidoti uz pārbaudes lapas S.7.1.-PL-21 (09.12.2019. redakcija) pamata; 2) marķēta datu kopa (answers) mapē, kas atbilst 30 CFLA izvērtētiem iepirkumiem.
 
 _Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā._
 
 Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) algoritmu dokumentācijas pārbaudei ar lielo valodas modeli (LLM).
-
-Projektā lietotie dati: 1) jautājumi *questions* mapē, kas veidoti uz pārbaudes lapas S.7.1.-PL-21 (09.12.2019. redakcija) pamata; 2) marķēta datu kopa *answers* mapē, kas atbilst 30 CFLA izvērtētiem iepirkumiem.
 
 ## Projekta sastāvdaļas
 Projektā ir 2 vides:
