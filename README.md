@@ -13,18 +13,8 @@ Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) 
 
 Galvenais eksperimentos izmantotais skripts ir izveidots kā Python Notebook — [ProjectProcurementReview.ipynb](ProjectProcurementReview.ipynb).  
 Papildu skripti, kas nepieciešami tā darbināšanai, atrodas mapē [scripts](scripts) kā atsevišķi Python faili.
+Faktiski eksperimentu programmatūru veido viss kods, izņemot *demo* mapi. 
 
-## Projekta sastāvdaļas
-Projektā ir 2 vides:
-
-- prototipa (demo) vide
-
-Atrodas mapē *demo*. Informāciju par demo vides uzstādīšanu un lietošanu meklēt *demo* mapes *README.MD*.
-
-- testa vide
-
-Ietilpst viss kods, izņemot *demo* mape. 
-Testa vides galvenais darbināmais skripts ir *ProjectProcurementReview.ipynb*. 
 Palaižot skriptu, 
 - tas iziet cauri visiem .ini failiem *config* mapē (ja lietojam testa kopu), veicot sekojošas darbības:
 	- no iepirkuma un līguma projekta faila tiek izgūts teksts markdown formatējumā;
@@ -40,6 +30,9 @@ Palaižot skriptu,
 - tiek izveidots arī *report.htm* fails, kas ir iepriekš lietotā *main_report.html* versija.
 
 Ar *PromptTest.ipynb* skriptu iespējams notestēt individuālas uzvednes.
+
+## Prototips
+Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo\README.md).
 
 ## Kā uzstādīt?
 Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija - vismaz 16GB RAM un vēlams arī laba video karte.
