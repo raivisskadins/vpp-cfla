@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Iepirkuma pārbaude</title>
+</head>
+<body>
+  <div class="allInputs">
+    <h1>Iepirkuma dokumentācijas pārbaude</h1>
+    <div class="procurementID">
+      <label>Iepirkuma ID*:</label>
+      <input type="text" id="procurementID"/>
+    </div> 
+
+    <div class="file-input-wrapper">
+      <label>Iepirkuma nolikums*:</label>
+      <p>Atbalstītie formāti: PDF, DOCX</p>
+      <div class="file-input-container">
+        <input type="file" id="procurementFile" required onchange="toggleClearButton('procurementFile')" 
+               accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        />
+        <span class="clear-btn" id="clear-procurementFile" onclick="clearFile('procurementFile')">✖</span>
+      </div>
+    </div>
+
+    <div class="file-input-wrapper">
+      <label>Līguma projekts:</label>
+      <p>Atbalstītie formāti: PDF, DOCX</p>
+      <div class="file-input-container">
+        <input type="file" id="agreementFile" onchange="toggleClearButton('agreementFile')" 
+               accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        />
+        <span class="clear-btn" id="clear-agreementFile" onclick="clearFile('agreementFile')">✖</span>
+      </div>
+    </div>
+
+    <p style="font-size: x-small; margin-top: -2px;">* obligāti aizpildāmie lauki</p>
+
+    <div style="margin-top: 10px;">
+      <button type="button" class="processBtn" onclick="processProcurement()">Pārbaudīt</button>
+      <button type="button" class="cancelBtn" onclick="stopProcessProcurement()">Pārtraukt pārbaudi</button>
+    </div>
+
+    <div id="status"></div>
+    <div id="result"></div>
+  </div>
+
+<script>
+  const statusContainer = document.getElementById("status");
+  const processBtn = document.querySelector(".processBtn");
+  const cancelBtn = document.querySelector(".cancelBtn");
+  processBtn.disabled = true;
+  cancelBtn.disabled = true;
+  let currentEventSource = null;
+  let isCancelled = false;
+
+  async function checkServerReady() {
+    try {
+      const response = await fetch("http://localhost:8080/server/check");
+      if (response.ok) {
+        console.log("Serveris gatavas darbam!");
+        statusContainer.innerHTML = `
+          <div id="status-messages">
+            <p id="status-text">Serveris gatavas darbam!</p>
+          </div>
+        `;
+        processBtn.disabled = false;
+      } else {
+        console.log("Serveris atbildēja, bet ar kļūdu:", response.status);
+        retryLater();
+      }
+    } catch (error) {
+      statusContainer.innerHTML = `
+          <div id="status-messages">
+            <p id="status-text">Tiek gaidīta atbilde no servera...</p>
+          </div>
+        `;
+      retryLater();
+    }
+  }
+
+  function retryLater() {
+    setTimeout(checkServerReady, 1000);
+  }
+
+  window.addEventListener("load", retryLater);
+
+  async function processProcurement() {
+    const resultContainer = document.getElementById("result");
+    const procurementFile = document.getElementById("procurementFile").files[0];
+    const agreementFile = document.getElementById("agreementFile").files[0];
+    const procurementID = document.getElementById("procurementID").value.trim();
+
+    if (!procurementID || !procurementFile) {
+      alert("Lūdzu ievadiet Iepirkuma ID un izvēlieties iepirkuma failu.");
+      return;
+    }
+
+    currentEventSource = new EventSource(`http://localhost:8080/events/${procurementID}`);
+    isCancelled = false;
+
+    const csvPath = `${procurementID}/report.csv`;
+    processBtn.disabled = true;
+    cancelBtn.disabled = false;
+
+    // Reset containers
+    resultContainer.innerHTML = "";
+    statusContainer.innerHTML = `
+      <div id="status-messages">
+        <p id="status-text">Notiek apstrāde...</p>
+        <div id="spinner" class="spinner"></div>
+      </div>
+    `;
+
+    // Event listeners
+    currentEventSource.onmessage = async function(event) {
+      const message = event.data;
+      console.log("Status update:", message);
+
+      if (message === "__DONE__") {
+        document.getElementById("spinner")?.remove();
+        document.getElementById("status-messages")?.remove();
+        currentEventSource.close();
+        cancelBtn.disabled = true;
+        processBtn.disabled = false;
+      } else {
+        const statusText = document.getElementById("status-text");
+        if (statusText) {
+          statusText.textContent = message;
+          await getCsvInfo(csvPath);
+        }
+      }
+    };
+
+    // Each time executing new process reset csv info
+    localStorage.setItem("csvInfo", "");
+
+    const formData = new FormData();
+    formData.append("Proc_ID", procurementID);
+    formData.append("procurement_file", procurementFile);
+    if (agreementFile) {
+      formData.append("agreement_file", agreementFile);
+    }
+
+    try {
+      await postFormData(formData);
+      if (isCancelled) return;
+      await getCsvInfo(csvPath);
+    } catch (e) {
+      console.error("Error sending files:", e);
+      statusContainer.innerHTML = `<p>Kļūda serverī</p>`;
+    }
+  }
+
+  async function postFormData(formData) {
+    const res = await fetch("http://localhost:8080/process_procurement", {
+      method: "POST",
+      body: formData,
+    });
+  }
+
+  async function stopProcessProcurement(){
+    isCancelled = true
+    const procurementID = document.getElementById("procurementID").value.trim();
+    const statusText = document.getElementById("status-text");
+
+    if (!procurementID) alert("Netika atasts iepirkuma ID");
+    cancelBtn.disabled = true;
+    currentEventSource.close();
+    statusText.textContent = "Apstrāde tiek pārtraukta...";
+
+    await fetch(`http://localhost:8080/cancel/${procurementID}`, {
+      method: "POST"
+    });
+    document.getElementById("spinner")?.remove();
+    statusText.textContent = "Apstrāde pārtraukta";
+    processBtn.disabled = false;
+}
+
+  async function getCsvInfo(path_to_csv) {
+    const res = await fetch(`http://localhost:8080/get_csv_info?proc_report_path=${encodeURIComponent(path_to_csv)}`);
+    const jsonText = await res.text();
+    const previous = localStorage.getItem("csvInfo");
+    
+    // if (previous !== jsonText) {
+      localStorage.setItem("csvInfo", jsonText);
+      const data = JSON.parse(jsonText);
+      create_data_table(data) // Append the data table only with the new rows 
+    // }
+  }
+
+  function create_data_table(data) {
+    const table = document.createElement("table");
+    table.border = 1;
+
+    // Header
+    const header = table.insertRow();
+    ["Nr", "Jautājums", "Atbilde", "Pamatojums"].forEach(heading => {
+      const th = document.createElement("th");
+      th.textContent = heading;
+      header.appendChild(th);
+    });
+
+    // Data
+    data.forEach(row => {
+      const tr = table.insertRow();
+      tr.insertCell().textContent = row.Nr;
+      tr.insertCell().textContent = row["Jautājums"];
+      tr.insertCell().textContent = row.Atbilde;
+      tr.insertCell().textContent = row.Pamatojums;
+    });
+
+    // Makes table + copy button (minimal wrapper)
+    const container = document.getElementById("result");
+    container.innerHTML = "";
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+
+    const copyBtn = document.createElement("button");
+    copyBtn.className = "copy-btn";
+    copyBtn.type = "button";
+    copyBtn.title = "Kopēt tabulu";
+    copyBtn.setAttribute("aria-label", "Kopēt tabulu");
+    copyBtn.innerHTML = "📋";
+    copyBtn.onclick = () => copyTableToClipboard(table, copyBtn);
+
+    wrapper.appendChild(copyBtn);
+    wrapper.appendChild(table);
+    container.appendChild(wrapper);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const storedData = localStorage.getItem("csvInfo");
+    toggleClearButton("procurementFile");
+    toggleClearButton("agreementFile");
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      create_data_table (data);
+    }
+  });
+
+  function clearFile(inputId) {
+    const input = document.getElementById(inputId);
+    input.value = ""; // Clear the file
+    toggleClearButton(inputId); // Also hide the X
+  }
+
+  function toggleClearButton(inputId) {
+    const input = document.getElementById(inputId);
+    const clearBtn = document.getElementById("clear-" + inputId);
+    if (input.files.length > 0) {
+      clearBtn.style.display = "inline";
+    } else {
+      clearBtn.style.display = "none";
+    }
+  }
+
+  function tableToTSV(tableEl) {
+  const rows = Array.from(tableEl.querySelectorAll("tr"));
+  return rows.map(row => {
+    const cells = Array.from(row.querySelectorAll("th,td"));
+    return cells.map(cell => {
+      return (cell.textContent || "")
+        .replace(/\t/g, " ")
+        .replace(/\r?\n+/g, " ")
+        .trim();
+    }).join("\t");
+  }).join("\n");
+}
+
+async function copyTableToClipboard(tableEl, btnEl) {
+  const html = tableEl.outerHTML;
+  const tsv = tableToTSV(tableEl); // keep your existing helper
+
+  try {
+    if (navigator.clipboard?.write && window.ClipboardItem) {
+      // Preferred: write both HTML and plain text
+      await navigator.clipboard.write([
+        new ClipboardItem({
+          "text/html": new Blob([html], { type: "text/html" }),
+          "text/plain": new Blob([tsv],  { type: "text/plain" })
+        })
+      ]);
+    } 
+    const prev = btnEl.innerHTML;
+    btnEl.innerHTML = "✓";
+    setTimeout(() => (btnEl.innerHTML = prev), 900);
+  } catch (e) {
+    console.error(e);
+    alert("Neizdevās nokopēt tabulu.");
+  }
+}
+
+</script>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+  .allInputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+    margin: 2em;
+  }
+
+  .processBtn {
+    background-color: #4f46e5;
+  }
+  .processBtn:hover {
+    background-color: #4338ca;
+  }
+
+  button {
+    color: rgb(233, 230, 230);
+    padding: 8px 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .cancelBtn {
+    background: rgb(215, 42, 42);
+    width: auto;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  .cancelBtn:hover {
+    background: rgb(149, 17, 17);
+  }
+
+  .spinner {
+    margin: 10px auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .file-input-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    margin-left: 15px;
+  }
+
+  .file-input-wrapper p {
+    font-size: 15px;
+    margin: 10px 0 10px 15px;
+  }
+
+  .clear-btn {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+  }
+
+  .clear-btn:hover {
+    color: darkred;
+  }
+  
+  #status {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  #status p {
+    margin: 0.25em 0;
+    font-style: italic;
+    color: #333;
+  }
+
+  .table-wrapper {
+  position: relative;
+}
+.copy-btn {
+  position: absolute;
+  top: -40px;
+  right: 8px;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  padding: 0;
+  line-height: 32px;
+  text-align: center;
+  font-size: 16px;
+  background: #f3f4f6;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.copy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+</style>
+</body>
+</html>

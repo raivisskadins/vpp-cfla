@@ -28,7 +28,7 @@
   - nr: 9.3
     answer: "n/a"
 - nr: 10
-  answer: "jā"
+  answer: "n/a"
 - nr: 11
   answer: "n/a"
 - nr: 12
@@ -66,7 +66,7 @@
   answer: "jā"
 - nr: 25
   answer0: "jā"
-  answer: "nē"
+  answer: "jā"
 - nr: 26
   answer: "jā"
 - nr: 27
@@ -256,7 +256,7 @@
   - nr: 39.39
     answer: "jā"
   - nr: 39.40
-    answer: "n/a"
+    answer: "?"
 - nr: 40
   answer0: "jā"
   answers:
@@ -360,8 +360,8 @@
   answer0: "nē"
   answer: "n/a"
 - nr: 66
-  answer0: "jā"
-  answer: "jā"
+  answer0: "nē"
+  answer: "n/a"
 - nr: 67
   answer0: "nē"
   answer: "n/a"
