@@ -1,3 +1,5 @@
+import re
+import html
 import pandas as pd
 from pathlib import Path
 from .utilities import get_questions_without_q0
@@ -69,6 +71,16 @@ HTML_STYLE = """
         font-weight: bold;
         background-color: #e8f0ff;
     }
+
+    /* --- New styles for readable prompts --- */
+    pre.prompt-block {
+        white-space: pre-wrap;      /* preserve newlines + wrap long lines */
+        word-break: break-word;
+        padding: 10px 12px;
+        line-height: 1.45;
+        font-size: 0.92rem;
+        margin: 0.4rem 0 0.8rem 0;
+    }
 </style>
 """
 
@@ -87,6 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 """
 
+# ---------- Helpers to safely render multiline text ----------
+
+def render_multiline_as_pre(text: str) -> str:
+    if text is None:
+        text = ""
+    escaped = html.escape(str(text))  # turns <context> into &lt;context&gt;
+    return f"<pre class='prompt-block'>{escaped}</pre>"
+
+# ---------- HTML building ----------
+
 def create_question_details(row) -> str:
     qnum = row["Nr"]
     answer = row["Atbilde"]
@@ -95,13 +117,16 @@ def create_question_details(row) -> str:
     prompt = row["Uzvedne"]
 
     mismatch_class = "mismatch" if answer != expect else ""
+    prompt_html = render_multiline_as_pre(prompt)            # literal text with preserved newlines
 
     return f"""
     <details class='question {mismatch_class}'>
         <summary>{qnum}: Answer="{answer}" vs Expected="{expect}"</summary>
         <div class='question-content'>
-            <p><strong>Pamatojums:</strong> {justification}</p>
-            <p><strong>Uzvedne:</strong> {prompt}</p>
+            <p><strong>Pamatojums:</strong></p>
+            <div style="text-align: left;">{justification}</div>
+            <p><strong>Uzvedne:</strong></p>
+            <div style="text-align: left;">{prompt_html}</div>
         </div>
     </details>
     """
@@ -110,7 +135,7 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
     df = pd.read_csv(input_csv_path, keep_default_na=False, encoding="utf-8")
     questions_wout_0q = get_questions_without_q0(question_dictionary)
 
-    html = [
+    html_parts = [
         "<!DOCTYPE html>",
         "<html lang='en'>",
         "<head>",
@@ -152,22 +177,27 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
         max_possible_mask = answered_mask & ~na_mask
         is_possible_correct = is_correct & max_possible_mask
 
-        precision = is_correct.mean()
-        precision_answered = is_answered_correct.sum() / answered_mask.sum() if answered_mask.sum() > 0 else 0.0
-        max_possible_precision = is_possible_correct.sum() / max_possible_mask.sum() if max_possible_mask.sum() > 0 else 0.0
+        precision = (is_correct.sum() / question_count) if question_count > 0 else 0.0
+        answered_sum = int(answered_mask.sum())
+        max_possible_sum = int(max_possible_mask.sum())
 
-        total_correct += is_correct.sum()
-        total_answered_correct += is_answered_correct.sum()
-        total_possible_correct += is_possible_correct.sum()
+        precision_answered = (is_answered_correct.sum() / answered_sum) if answered_sum > 0 else 0.0
+        max_possible_precision = (is_possible_correct.sum() / max_possible_sum) if max_possible_sum > 0 else 0.0
+
+        total_correct += int(is_correct.sum())
+        total_answered_correct += int(is_answered_correct.sum())
+        total_possible_correct += int(is_possible_correct.sum())
 
         total_question_count += question_count
-        total_answered += answered_mask.sum()
-        total_possible += max_possible_mask.sum()
+        total_answered += answered_sum
+        total_possible += max_possible_sum
 
-        html.append(f"""
+        safe_proc_id = html.escape(str(procurement_id))
+
+        html_parts.append(f"""
         <tr class="expandable">
             <td class="toggle-cell"><span class="toggle-icon"></span></td>
-            <td>{procurement_id}</td>
+            <td>{safe_proc_id}</td>
             <td>{precision * 100:.2f}%</td>
             <td>{precision_answered * 100:.2f}%</td>
             <td>{max_possible_precision * 100:.2f}%</td>
@@ -175,7 +205,7 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
         """)
 
         questions_html = "\n".join([create_question_details(row) for _, row in group.iterrows()])
-        html.append(f"""
+        html_parts.append(f"""
         <tr class="details-row">
             <td colspan="5">
                 {questions_html}
@@ -183,12 +213,12 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
         </tr>
         """)
 
-    # Final total row
-    total_precision = total_correct / total_question_count if total_question_count > 0 else 0.0
-    total_answered_precision = total_answered_correct / total_answered if total_answered > 0 else 0.0
-    total_max_possible_precision = total_possible_correct / total_possible if total_possible > 0 else 0.0
+    # Final totals
+    total_precision = (total_correct / total_question_count) if total_question_count > 0 else 0.0
+    total_answered_precision = (total_answered_correct / total_answered) if total_answered > 0 else 0.0
+    total_max_possible_precision = (total_possible_correct / total_possible) if total_possible > 0 else 0.0
 
-    html.append(f"""
+    html_parts.append(f"""
     <tr class="total-row">
         <td></td>
         <td><strong>Kopējā precizitāte</strong></td>
@@ -198,11 +228,11 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
     </tr>
     """)
 
-    html.extend([
+    html_parts.extend([
         "</tbody>",
         "</table>",
         "</body>",
         "</html>"
     ])
 
-    return "\n".join(html)
+    return "\n".join(html_parts)

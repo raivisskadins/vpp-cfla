@@ -1,0 +1,1 @@
+{"embeddingmodel": "E:\\eis_files_crawled\\finetuned\\bge-m3-procurements_lr9e-6_warmup28600", "chunk_size": 1536, "chunk_overlap": 0, "top_similar": 5, "n4rerank": 0, "use_similar_chunks": true, "prevnext": true, "model": "gemma3:27b", "temperature": 0.0, "timeout": 120, "max_retries": 3}

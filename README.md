@@ -1,26 +1,151 @@
-# vpp-cfla
-https://www.python.org/downloads/  
-install python 3.10  
+# VPP CFLA
+Šis projekts satur prototipa (demo) risinājumu un dažādus eksperimentus, kas saistīti ar CFLA iepirkuma dokumentācijas pārbaudes sistēmas darbināšanu lietojot LLM ar RAG.
+Projekts satur autoru marķētu datu kopu "answers" mapē, kas atbilst 30 CFLA iepirkumiem, kuri ir izvērtēti. Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā.
 
-start jupyterlab with the command:  
-jupyter lab   
+## Projekta sastāvdaļas
+Projekts sastāv no 2 vidēm testa un prototipa (demo).
+Testa vidē ietilpst viss, izņemot demo mape, kas ir demo videi.
+Informāciju par demo vides uzstādīšanu un lietošanu meklēt demo mapes README.MD.
+
+Testa vides galvenais darbināmais skripts ir "ProjectProcurementReview.ipynb"
+Skriptu palaižot, tas iziet cauri visiem failiem "config" mapē (ja lietojam testa kopu), padodod LLM modelim jautājumus, uz kuriem tas sniedz atbildes, ņemot vērā nolikumu un iepirkuma līgumu, tad atgriež rezultātu tabulu un izveido .csv un .html formātu report failus, kuros ir apskatāma sīka informācija par katru jautājumu. Pēc tam tiek izveidots main_report.html, kurā var apskatīt, pārskatāmāku sarakstu ar iepirkumiem, kuru iespējams izvērst un apskatīt visus jautājumus detalizēti. Beigās izveidojas precision_report.html fails, kurā var apskatīt katra apstrādātā jautājuma precizitātes un papildus novērtēšanas datus, par apstrādes sniegumu. Tiek izveidots arī report.htm, fails, kas ir veca versija main_report.html.
+
+"PromptTest.ipynb" iespējams notestēt individuālas uzvednes.
+
+## Kā uzstādīt?
+Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija. Iesakāms, ka lietotājam ir vismaz 16GB RAM un vēlams arī laba video karte.
+Vispirms nepieciešams aizpildīt .env-example failu ar pareizajām vertībām un pārsaukt uz -> .env
+"cfla_files" mapē ir jāiekopē attiecīgie faili, kas norādīti attiecīgajā "config" mapes ini failā.
+
+### LLM modelis
+Atbilžu ģenerēšanai tiek izmantots Azure OpenAI *gpt-4o* modelis. Lai iegūtu pieeju šim modelim, [portal.azure.com](https://portal.azure.com/) ir jāizveido Azure OpenAI resurss. Pēc tam [Azure OpenAI Studio](https://oai.azure.com/) jāizvēlas *Deployments* un jāizvēlas modelis 'gpt-4o'. Vērtībai *Deployment name* jābūt tādai pašai kā *Model name* - 'gpt-4o'.
  
-## Virutal env
+Skatīt vairāk [šeit](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+ 
+.env failā jāieraksta modelim atbilstošās vērtības - AZURE_OPENAI_KEY, AZURE_ENDPOINT un AZURE_OPENAI_VERSION.
 
+### Projekta darbināšana
+Projektu iespējams darbināt:
+1. Kā parasti ielādējot vajadzīgās bibliotēkas (iesakām ar virtuālo vidi).
+2. Kā docker konteineri.
+
+### 1. Virtuālā vide
+Notestēts ar Python versiju 3.11 un uz augšu
+Komandas terminālī 1. izveidos virtuālo vidi, 2. to aktivizēs, ielādēs nepieciešamās bibliotēkas (aizņem kādu laiku):
+
+```
 python3 -m venv .venv  
 source .venv/bin/activate  
 pip install -r requirements.txt  
+```
 
-## Docker dev container
+### 2. Docker izstrādes konteineris
+Lietotājam jābūt instalētam Docker programmai
 
-### First run
+#### Lai darbinātu projektu 1. reizi rakstīt terminālī:
+```
 docker compose up --build
-
-### If not adding new dependencies
+```
+#### Pārējās rezies:
+```
 docker compose up
+```
+#### Lai apstādinātu konteineri:
+```
+docker compose down
+```
 
-./scripts/build_and_push.sh v0.1.2
+## Kā izveidot jaunu jautājumu?
 
-./scripts/deploy_prod.sh v0.1.2
+**Failā questions/questions.yaml var ierakstīt jaunu jautājumu ar tādu pašu struktūru kā eksistējošiem jautājumiem (ievērojot atstarpes):**
+```
+- nr: [jautājuma numurs]
+  prompt-id: [uzvednes id numurs (No questions/prompts.yaml faila. Šī rinda nav obligāta - ja to atstāj tukšu tiks lietos prompt-id 0.)]
+  question: "[jauna jautājuma teksts (pēdiņās)]"
+```
+Ja jautājuma atbildei nepieciešami likumi kā PIL vai MK107, tos var norādīt šādā veidā:
+```
+  PIL:
+   - chapter: [panta numurs]
+     pt:
+      - [nodaļas numurs]
+```
+```
+  MK107:
+   - chapter: [panta numurs]
+```
 
-http://localhost:8080/docs
+**Arī jāieraksta atbildes jaunam jautājumam atbilžu failos, ar tādu pašu struktūru kā citām atbildēm (ievērojot atstarpes).**
+- Demo vidē - failā backend/template.yaml jāieraksta tukša atbilde ar jaunā jautājuma numuru:
+```
+- nr: [jautājuma numurs]
+  answer: ""
+```
+- Testa vidē - visos failos answers mapē, kurus plānots izmantot, jāieraksta jaunā jautājuma numurs un atbilde ("jā" vai "nē" vai "n/a"):
+```
+- nr: [jautājuma numurs]
+  answer: "[atbilde (pēdiņās)]"
+```
+
+**Ja jautājums ir jautājumu grupas apakšpunkts, tas jāievieto failā pie attiecīgas grupas. Atstarpju skaits YAML failiem jābūt tāds pats ka citiem jautājumiem grupā. Tas ir attiecināms arī uz atbildēm, ko ieraksta atbilžu failos.**
+
+**Ja jautājums sastāv no divām daļām, kur pirmai daļai jābūt izpildītai, lai jautājums būtu attiecināms, to var ierakstīt kā divus jautājumus, kā piemēram:**
+- Jautājumu failā (questions.yaml), pie question:
+```
+  question0: "[nosacījuma jautājuma teksts, kuram jābūt izpildītam, lai viss jautājums būtu attiecināms (pēdiņās)]"
+  prompt0-id: [uzvednes id numurs apakšjautājumam, nav obligāts]
+```
+- Atbilžu failā, pie answer:
+```
+  answer0: "[atbilde apakšjautājumam]"
+```
+
+## Par citām mapēm un ko tās satur
+
+### answers mape
+Satur sagaidāmo atbilžu failus. Tie izmantojami, lai sistēma varētu novērtēt precizitāti.
+### cfla_files mape
+Satur nolikumu un līguma projektu oriģinālos dokumentus un novērtējuma lapas. No tiem tiek izgūts konteksts modelim.
+### config mape
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti testēšanai (testa daty kopa).
+### dev_config mape
+Satur konfigurācijas failus, kas norāda uz nolikumu un līguma projektu dokumentiem un tiem atbilstošiem atbilžu failiem. Šajā mapē ir konfigurācijas faili projektiem, kas tika izmantoti izstrādei (validācijas datu kopa).
+### questions mape
+Satur jautajumu failu (questions.yaml), oriģinālo jautājumu failu (original.yaml) un uzvedņu failu (prompts.yaml). Jautājumu fails satur jautājumus, kuri ir adaptēti no CFLA pārbaudes lapām, un norādes uz apstrādei nepieciešamajiem datiem. Jautājumi un uzvednes tiek izmantoti, sūtot pieprasījumus uz LLM.
+
+### scripts mape
+#### extractmd.py
+Šis fails satur Extractor klasi, kas apstrādā .docx un .pdf formāta dokumentus un pārveido tos markdown formātā, kuru var apstrādāt embedding modelis.
+
+#### gen_precision_report.py
+Šis skripts izveido precision_report.html faila saturu, kur funkcijas atgriež html kodu, katra apstrādātā jautājuma precizitātes un papildus novērtēšanas datus.
+
+#### gen_results.py
+Šis fails ģenerē rezultātu tabulu. Šajā failā tiek apstrādāti visi jautājumi un apakšjautājumi. 
+Ja kādam jautājumam norādīts questions.yaml failā ar "check" tad attiecīgais jautājums vai apakšjautājums tiek izlaists. 
+Ja uz kādu question0 jautājumu ir atbildēts ar "nē", tad konkrētā jautājumā un visiem apakšjautājumiem ir atbildēts ar "n/a".
+Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas", tad konkrētajā jautājumā un visiem ir atbildēts ar "X".
+
+#### main_report.py
+Šis skripts izveido main_report.html faila saturu, kurā tiek izveidots html kods, rezultātu tabula un skripts tabulas funkcionalitātei. 
+
+#### my_config_template.py
+Šis fails ir paraugs my_config.py faila izveidei. Šāds fails ir nepieciešams, lai, mainot parametrus ProjectProcurementReview.ipynb failā un daloties ar izmaiņām, citiem izstrādātājiem nebūtu "merge conflict" šo parametru dēļ. Lai izmantotu failu tas ir jāpārsauc uz my_config.py.
+
+#### utilities.py
+Šajā failā ir dažādas nepieciešamās funkcijas: papildus informācijas iegūšana modelim; jautājumu nodošana modelim un atbildes atgriešana; uzvednes, jautājumu un atbilžu (no answers mapes) iegūšana no konkrētiem failiem, vajadzīgo failu nosaukumu iegūšana no config mapes un to pārveidošana par markdown failiem; saraksts ar jautājumiem, kuri, iespējams, nav atbildami.
+
+#### vectorindex.py
+Šajā failā ir QnAEngine klase, kas akcentē markdown failā virsrakstus; sadala dokumentus mazākos fragmentos (chunks), ģenerē to embeddings un saglabā cache, lai paātrinātu atkārtotu izmantošanu; izveido vektoru indeksu; veic jautājumu apstrādi un atbilžu atgriešanu.
+
+### reports mape
+Šajā mapē atrodas visi projektā veiktie eksperimentu rezultāti. Reporti ir nosaukti pēc kāda izdomāta identifkatora un datuma, kad veikts tests. Reporti sastāv no galvenajiem rezultātu datiem - report.csv. Metadatiem, parametriem par testu - config.json. Vizualizēti rezultāti par katru apstrādāto iepirkumu ar sagaidāmajiem un iegūtajiem rezultātiem, paskaidrojuma un pilnajām uzvednēm iekš - main_report.html (līdzīgs reports). Precizitātes radītāji katram jautājumam - precision report.html. Mēs lietojam 3 precizitātes. 
+1. "precision" - galvenā precizitāte, kas tiek mērīta vienkārši salīdzina vai sagaidāmā atbilde sakrīt ar iegūto. Total_asked / n_correct. Total_asked - jautājumu skaits, kas tika apstrādāti, tie var būt mazāk par jautājumu skaitu, jo dažiem iepirkumiem šie jautājumi var būt izlaisti, kad sagaidāmā atbilde ir "?". 
+2. "precision_answered" - Šīs precizitātes mērķis ir parādīt cik sistēma labi darbotos, ja saktītu tikai tās atbildes, kur LLM modelis ir pārliecināts par savu atbildi, atbildot ar "jā" vai "nē". Precizitāte tiek merīta atņemot tos jautājumus, kuros atbilde ir "kontekstā nav informācija". total_answered / n_correct.
+3. "precision_answered_wo_na" - precizitātes mērķis ir parādīt kāda ir maksimālā iespējamā precizitāte, kādu iespējams iegūt ar šo sistēmu pieņemot, ka datos nav jautājumi, kuri nav atbildami. Šobrīd pastāv tādi jautājumi, kuriem sagaidāmā atbilde ir "n/a", bet LLM nav dota iespēja atbildēt šādi. Precizitāte rēķināta šādi - total_answered_wo_na / n_correct. total_answered_wo_na - iegūta saskaitot tos jautājumus, kuriem atbildē nebija "kontekstā nav informācija" un kuri bija atbildami.
+
+### supplementary_info mape
+Satur dokumentus ar dažādu likumu tekstu, kas tiek lietots kā konteksts modelim.
+
+## License?
+Dažādas atsauces, ja tās nepieciešamas?

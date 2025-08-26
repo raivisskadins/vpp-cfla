@@ -29,7 +29,7 @@ def add_result(qtype, qnaengine, embedding_conf, promptdict, extrainfo, question
         current_prompt = promptdict.get(question_data["nr"]+"-0",promptdict.get("0"))
     else:
         question_id = f"{question_data['nr']}{suffix}"
-        if "prompt" in question_data:
+        if "prompt" in question_data: # Deprecated
             current_prompt = question_data.get("prompt","")
         else:
             current_prompt = promptdict[str(question_data['nr'])]
