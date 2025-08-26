@@ -147,5 +147,10 @@ Ja uz kādu question0 jautājumu ir atbildēts ar "kontekstā nav informācijas"
 ### supplementary_info mape
 Satur dokumentus ar dažādu likumu tekstu, kas tiek lietots kā konteksts modelim.
 
-## License?
+## Third-Party Software
+
+This project relies on third-party software components.  
+A complete list of dependencies, including versions, licenses, and sources, is provided in [SRF-VPP-CFLA.md](SRF-VPP-CFLA.md).
+
+## License
 Dažādas atsauces, ja tās nepieciešamas?

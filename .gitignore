@@ -183,3 +183,6 @@ scripts/my_config.py
 
 #embedding cache
 embeddings_cache.*
+
+#for SRF file generation
+missing_licenses.md
