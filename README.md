@@ -9,6 +9,11 @@ _Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli
 
 Sistēma ir izstrādāta, izmantojot izguves papildinātas ģenerēšanas (RAG) algoritmu dokumentācijas pārbaudei ar lielo valodas modeli (LLM).
 
+## Eksperimentu programmatūra
+
+Galvenais eksperimentos izmantotais skripts ir izveidots kā Python Notebook — [ProjectProcurementReview.ipynb](ProjectProcurementReview.ipynb).  
+Papildu skripti, kas nepieciešami tā darbināšanai, atrodas mapē [scripts] kā atsevišķi Python faili.
+
 ## Projekta sastāvdaļas
 Projektā ir 2 vides:
 
