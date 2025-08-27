@@ -1,40 +1,53 @@
 # Prototips (demo)
 
-Šī mape satur visus datus, kas nepieciešami prototipam. Tā sastāv no divām vidēm izstrādes un produkcijas.
+Šī mape satur visus datus, kas nepieciešami prototipam. To iespējams darbināt kā izstrādes vai produkcijas vidi.
 Visām vidēm nepieciešams Docker (https://www.docker.com/), lai tās darbinātu. 
-Prototips izmanto daudz skriptus un datus, kas tiek lietoti arī testa vidē, tomēr tie ir modeficēti un nošķirti.
-Pieliekot klāt jaunus jautājumus jāatceras tos pielikt arī prototipam, ja ir vēlme tos šeit lietot.
+Skripti un dati, ko prototips izmanto, ir nedaudz modificēti salīdzinājumā ar testa vidē (galvenā mape) izmantotajiem skriptiem.
+Pievienojot jaunus jautājumus testa vidē, jāatceras tos pielikt arī prototipam, ja ir vēlme pārbaudīt tos arī prototipā.
 
-## Kā uzstādīt?
-Vispirms ievadīt mainīgos iekš ".env-example" faila un to pārsaukt par ".env".
+## Uzstādīšana
+Failā *.env-example* jāievada mainīgie, kas nepieciešami pieejai LLM modelim un DockerHub vietnei, un jāmaina faila paplašinājums uz *.env*.
+
+### LLM modelis
+Atbilžu ģenerēšanai tiek izmantots Azure OpenAI *gpt-4o* modelis. Lai iegūtu pieeju šim modelim, [portal.azure.com](https://portal.azure.com/) ir jāizveido Azure OpenAI resurss. Pēc tam [Azure OpenAI Studio](https://oai.azure.com/) jāizvēlas *Deployments* un jāizvēlas modelis 'gpt-4o'. Vērtībai *Deployment name* jābūt tādai pašai kā *Model name* - 'gpt-4o'.
+ 
+Skatīt vairāk [šeit](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+ 
+.env failā jāieraksta modelim atbilstošas vērtības - AZURE_OPENAI_KEY, AZURE_ENDPOINT un AZURE_OPENAI_VERSION.
 
 ### 1. Produkcijas vide
-Caur komandrinu šajā mapē palaist komandu:
+Lai darbotos produkcijas vidē, komandrindā jāievada šāda komanda (Papildus var norādīt --TAG lai norādītu specifisku versiju):
 ```
 ./deploy_prod.sh
 ```
-(Papildus var norādit --TAG lai norādītu specifisku versiju)
-Šī komanda lejupielādēs Docker attēlus, kas satur mūsu projektu un to iedarbinās. Pēc iedarbināšanas projektu var atrast vientē "**localhost**" - protams, to varētu arī tālāk izmitināt zem kādas citas ip adresses.
+
+Šī komanda lejupielādēs Docker attēlus, kas satur projektu, un to iedarbinās. Pēc komandas izpildes ar prototipu var darboties tīmekļa pārlūkprogrammā adresē **http://localhost:80**. To var arī tālāk izmitināt zem kādas citas IP adreses.
+
+![Prototips](prototips.png)
 
 ### 2. Izstrādes vide
-Šo vidi lietot, lai ātrāk testētu un veiktu izstrādi prototipam. Mainot kodu un to saglabājot nav jāpstādina konteineris, tas uzreiz būs pieejams, izņemot ielādētās bibliotēkas.
-#### Lai darbinātu projektu 1. reizi rakstīt terminālī:
+Šī vide ir paredzēta, lai veiktu turpmāku prototipa izstrādi un testēšanu, kā arī ja tiek mainīta testējamo jautājumu kopu. Mainot kodu un to saglabājot, nav jāapstādina konteineris, tas uzreiz būs pieejams, ja vien netiek mainītas jau ielādētās bibliotēkas.
+
+- Lai darbinātu projektu pirmo reizi, vispirms ir jāsabūvē docker konteineris. Ierakstot terminālī šādu komandu, konteineris tiek sabūvēts un startēts:
 ```
 docker compose up --build
 ```
-#### Pārējās rezies:
+- Pārējās reizies atkārtoti pārbūvēt projektu nav nepieciešams, to var startēt ar šādu komandu:
 ```
 docker compose up
 ```
-#### Lai apstādinātu koneneri:
+- Konteineri var apstādināt ar šādu komandu:
 ```
 docker compose down
 ```
 
 #### Produkcijas vides atjaunošana:
-Kad pabeigta izstāde, lietot šo komandu, kas uzbūvēs produkcijas konteineri un to augšupielādēs DockerHub vietnē zem DOCKERHUB_USERNAME lietotāja.
-Šo konteineri pēc tam atkal būs iespējams lietot produkcijā.
+
+Pēc izstrādes pabeigšanas produkcijas konteineri var sabūvēt un augšupielādēt DockerHub vietnē zem DOCKERHUB_USERNAME lietotāja ar šadu komandu:
+
 ```
 ./build_and_push.sh
 ```
-(Papildus var norādit --TAG lai norādītu specifisku versiju)
+(Papildus var norādīt --TAG lai norādītu specifisku versiju)
+
+Pēc pārbūvētas konteinera versijas saglabāšanas DockerHub vietnē, to atkal ir iespējams lietot produkcijā.
