@@ -1,6 +1,6 @@
 services:
   backend:
-    image: "rudis7887/web-backend:${TAG:-latest}"
+    image: "raivisskadins/web-backend:${TAG:-latest}"
     container_name: web-backend
     restart: unless-stopped
     ports:
@@ -9,7 +9,7 @@ services:
       - .env  
 
   frontend:
-    image: "rudis7887/web-frontend:${TAG:-latest}"
+    image: "raivisskadins/web-frontend:${TAG:-latest}"
     container_name: web-frontend
     restart: unless-stopped
     depends_on:
