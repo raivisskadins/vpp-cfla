@@ -182,6 +182,14 @@ Ja uz kādu *question0* jautājumu ir atbildēts ar "kontekstā nav informācija
  
 Šajā failā ir QnAEngine klase, kas sadala dokumentus mazākos fragmentos (chunks), ģenerē un saglabā to vektorus, lai paātrinātu atkārtotu izmantošanu; izveido vektoru indeksu; veic jautājumu apstrādi un atbilžu atgriešanu.
 
+ - *gen_finetuning_data.py* 
+ 
+Skripts ģenerē pielāgošanas datus vektorizēšanas modelim, izmantojot *gpt-4o* modeli. No [Iepirkumu sistēmas vietnes](https://www.eis.gov.lv/EKEIS/Supplier) izgūtie dokumenti tiek fragmentēti, izmantojot funkcijas no skriptiem *extractmd.py* un *vectorindex.py*, un katram fragmentam tiek ģenerēti jautājumi.
+
+ - *finetune_st_embedd.py* 
+ 
+Skripts veic vektorizēšanas modeļa *bge-m3* pielāgošanu, izmantojot sintētiskus datus.
+
 ### *reports* mape 
 
 Šajā mapē atrodas projektā veikto eksperimentu rezultāti. Atskaites ir nosauktas pēc identifkatora un datuma, kad veikts tests. Atskaites sastāv no galvenajiem rezultātu datiem failā *report.csv* un testa parametriem failā *config.json*. Vizualizēti rezultāti par katru apstrādāto iepirkumu ar sagaidāmajiem un iegūtajiem rezultātiem, paskaidrojuma un pilnajām uzvednēm atrodami failā *main_report.html*. Precizitātes rādītāji katram jautājumam ir failā *precision_report.html*. 
