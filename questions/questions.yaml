@@ -374,70 +374,13 @@
        pt:
         - 1
   - nr: 38.4
+    prompt-id: p_for_38.4
     #question: "Izvēles izslēgšanas nosacījumi papildus pretendentam/ kandidātam ir attiecināti tikai uz šādām likumā noteiktajām personām:\n1) uz personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, ir attiecināmi PIL 42.panta otrās daļas 2. punkta nosacījumi;\n 2) uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no kopējās publiska būvdarbu, pakalpojuma vai piegādes līguma vērtības, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi;\n 3) uz kandidāta vai pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi."
     question: >
       Izvēles izslēgšanas nosacījumi papildus pretendentam/ kandidātam ir attiecināti tikai uz šādām likumā noteiktajām personām:
       1) uz personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, ir attiecināmi PIL 42.panta otrās daļas 2. punkta nosacījumi;
       2) uz pretendenta norādīto apakšuzņēmēju, kura veicamo būvdarbu vai sniedzamo pakalpojumu vērtība ir vismaz 10 procenti no kopējās publiska būvdarbu, pakalpojuma vai piegādes līguma vērtības, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi;
       3) uz kandidāta vai pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, lai apliecinātu, ka tā kvalifikācija atbilst paziņojumā par līgumu vai iepirkuma procedūras dokumentos noteiktajām prasībām, ir attiecināmi PIL 42.panta otrās daļas 1. vai 2. punkta nosacījumi.
-    prompt: |
-      Tu esi aģents, kas pārbauda iepirkuma dokumentācijas atbilstību likumiem. 
-      Tev ir pieejami fragmenti no likuma (<law> tagos) un iepirkuma dokumentācijas (<context> tagos). 
-      
-      Esi uzmanīgs - jautājumi ir par PIL 42.panta otrās daļas 1. un 2. punktu. Nejauc ar PIL 42.panta pirmo daļu!
-      
-      Lai visi likuma nosacījumi būtu ievēroti, jāizpildās visiem tālāk norādītajiem nosacījumiem.
-      1. nolikumā NAV norādīts, ka  personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, 
-      var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-      2. nolikumā ir norādīts, ka  pretendenta norādīto apakšuzņēmēju, 
-      var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-      3. nolikumā ir norādīts, ka  pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, 
-      var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-      4. nolikumā ir norādīts, ka  personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, 
-      var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-      5. nolikumā ir norādīts, ka  pretendenta norādīto apakšuzņēmēju, 
-      var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-      6. nolikumā ir norādīts, ka  pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, 
-      var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-      
-      Vai visi nosacījumi ir spēkā? Paskaidro kuri nosacījumi ir spēkā un kuri nav.
-      
-      Atbildē norādi īsu, bet precīzu paskaidroju. Norādi, uz kādiem punktiem balstās atbilde — citē attiecīgās vietas no iepirkuma dokumentācijas. 
-            
-      Rezultātu atgriez **JSON formātā** ar šādiem laukiem: 
-      ```json { "answer":"jā"|"nē"|"n/a", "explanation"}    
-    # prompt: |
-    #   Tu esi aģents, kas pārbauda iepirkuma dokumentācijas atbilstību likumiem. 
-    #   Tev ir pieejami fragmenti no likuma (<law> tagos) un iepirkuma dokumentācijas (<context> tagos). 
-      
-    #   Esi uzmanīgs - jautājumi ir par PIL 42.panta otrās daļas 1. un 2. punktu. Nejauc ar PIL 42.panta pirmo daļu!
-      
-    #   Atbildi uz jautājumiem ar "jā" vai "nē": 
-    #   Q1. Vai nolikumā norādīts, ka  personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, 
-    #   var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-    #   Q2. Vai nolikumā norādīts, ka  pretendenta norādīto apakšuzņēmēju, 
-    #   var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-    #   Q3. Vai nolikumā norādīts, ka  pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, 
-    #   var izslēgt PIL 42.panta otrās daļas 1. punkta nosacījumu dēļ?
-      
-    #   Q4. Vai nolikumā norādīts, ka  personālsabiedrības biedru, ja kandidāts vai pretendents ir personālsabiedrība, 
-    #   var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-    #   Q5. Vai nolikumā norādīts, ka  pretendenta norādīto apakšuzņēmēju, 
-    #   var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-    #   Q6. Vai nolikumā norādīts, ka  pretendenta norādīto personu, uz kuras iespējām kandidāts vai pretendents balstās, 
-    #   var izslēgt PIL 42.panta otrās daļas 2. punkta nosacījumu dēļ?
-      
-    #   Un tad, secīgi pārbaudi sekojošos nosacījumus un sniedz atbili, ja atbilde zināma tālākos nosacījumus ignorē
-    #   - Atbildi ar "nē", ja atbilde uz Q1 ir "jā"
-    #   - Atbildi ar "nē", ja atbilde uz kādu no jautājumiem Q2, Q3, Q4, Q5 vai Q6 ir "nē"
-    #   - Atbildi ar "jā", ja atbilde uz Q1 ir "nē" un uz jautājumiem Q2, Q3, Q4, Q5 vai Q6 ir atbilde ir "jā"
-    #   - Atbildi ar "n/a", citos gadījumos.
-      
-    #   Atbildē norādi īsu, bet precīzu paskaidroju. Norādi, uz kādiem punktiem balstās atbilde — citē attiecīgās vietas no iepirkuma dokumentācijas. 
-            
-    #   Rezultātu atgriez **JSON formātā** ar šādiem laukiem: 
-    #   ```json {  "Q1", "Q1-explanation", "Q2", "Q2-explanation", ...
-    #   "answer", "explanation"}    
     PIL:
      - chapter: 42
        pt:
