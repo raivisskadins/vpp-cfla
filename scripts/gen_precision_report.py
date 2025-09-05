@@ -179,9 +179,9 @@ def generate_precision_report(input_csv: str, questions_without_q0) -> str:
             total_answered_wo_na=('answered_wo_na', 'sum'),
             n_correct=('correct', 'sum')
         )
-        .assign(precision=lambda d: round(d['n_correct'] / d['total_asked'], 2))
-        .assign(precision_answered = lambda d: round(d['n_correct'] / d['total_answered'].clip(lower=1), 2))
-        .assign(precision_answered_wo_na = lambda d: round(d['n_correct'] / d['total_answered_wo_na'].clip(lower=1), 2))
+        .assign(precision=lambda d: (d['n_correct'] / d['total_asked'] * 100).map("{:.2f}%".format))
+        .assign(precision_answered=lambda d: (d['n_correct'] / d['total_answered'].clip(lower=1) * 100).map("{:.2f}%".format))
+        .assign(precision_answered_wo_na=lambda d: (d['n_correct'] / d['total_answered_wo_na'].clip(lower=1) * 100).map("{:.2f}%".format))
         .reindex(original_order)
         .reset_index()
     )
@@ -190,6 +190,29 @@ def generate_precision_report(input_csv: str, questions_without_q0) -> str:
     total_answered_wo_na = table_data['total_answered_wo_na'].sum()
 
     extra_data = get_extra_data(df, total_asked, total_answered_wo_na, unanswerable_mask.sum())
+
+    totals = {
+        'Nr': 'TOTAL',
+        'total_asked': table_data['total_asked'].sum(),
+        'total_answered': table_data['total_answered'].sum(),
+        'total_answered_wo_na': table_data['total_answered_wo_na'].sum(),
+        'n_correct': table_data['n_correct'].sum(),
+    }
+    totals['precision'] = "{:.2f}%".format(totals['n_correct'] / totals['total_asked'] * 100)
+    totals['precision_answered'] = "{:.2f}%".format(totals['n_correct'] / max(totals['total_answered'], 1) * 100)
+    totals['precision_answered_wo_na'] = "{:.2f}%".format(totals['n_correct'] / max(totals['total_answered_wo_na'], 1) * 100)
+
+    table_data = pd.concat([table_data, pd.DataFrame([totals])], ignore_index=True)
+
+    table_data = table_data.rename(columns={
+        "total_asked": "Total asked",
+        "total_answered": "Total answered confidently",
+        "total_answered_wo_na": "Total answered without unobtainable N/A",
+        "n_correct": "Correct",
+        "precision": "Accuracy-1",
+        "precision_answered": "Accuracy-2",
+        "precision_answered_wo_na": "Accuracy-3"
+    })
 
     table_html = table_data.to_html(index=False, classes="sortable")
     precison_report_html = generate_precision_report_html(table_html, extra_data)
