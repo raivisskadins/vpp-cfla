@@ -150,9 +150,9 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
         "  <tr>",
         "    <th></th>",
         "    <th>Iepirkuma ID</th>",
-        "    <th>Precizitāte</th>",
-        "    <th>Precizitāte bez kontekstā nav informācijas</th>",
-        "    <th>Kopējā iespējamā precizitāte</th>",
+        "    <th>Akurātums-1</th>",
+        "    <th>Akurātums-2</th>",
+        "    <th>Akurātums-3</th>",
         "  </tr>",
         "</thead>",
         "<tbody>"
@@ -221,7 +221,7 @@ def build_main_report_html(input_csv_path: Path, question_dictionary: dict) -> s
     html_parts.append(f"""
     <tr class="total-row">
         <td></td>
-        <td><strong>Kopējā precizitāte</strong></td>
+        <td><strong>Kopējais akurātums</strong></td>
         <td>{total_precision * 100:.2f}%</td>
         <td>{total_answered_precision * 100:.2f}%</td>
         <td>{total_max_possible_precision * 100:.2f}%</td>
