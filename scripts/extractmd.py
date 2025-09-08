@@ -2,16 +2,16 @@ import os
 import sys
 import mimetypes
 import re
-import pymupdf4llm
+#import pymupdf4llm
 from io import BytesIO
 import mammoth
 from markdownify import markdownify as md
 import docx2txt
-from marker.converters.pdf import PdfConverter
-from marker.models import create_model_dict
-from marker.output import text_from_rendered
+#from marker.converters.pdf import PdfConverter
+#from marker.models import create_model_dict
+#from marker.output import text_from_rendered
 
-# from docling.document_converter import DocumentConverter
+from docling.document_converter import DocumentConverter
 
 class Extractor:
 
@@ -57,15 +57,15 @@ class Extractor:
         filetxt = re.sub(r"(\r?\n)\*\*(\d+\.)(\*\*)? *(\*\*)?([^\n]+)\*\*(\r?\n)", r"\1\1## \2 \5\6\6", filetxt) 
         return filetxt
     
-    def usePymupdf4llm(self,file_path):
-        try:
-            result = pymupdf4llm.to_markdown(file_path)
-            result = re.sub(r'(\r?\n)+\#\s\d+(\r?\n)+(---+(\r?\n)+)?',r'\n\n',result)
+#    def usePymupdf4llm(self,file_path):
+#        try:
+#            result = pymupdf4llm.to_markdown(file_path)
+#            result = re.sub(r'(\r?\n)+\#\s\d+(\r?\n)+(---+(\r?\n)+)?',r'\n\n',result)
             
-            return self.fromPdfText2mdText(result)
-        except Exception as error:
-            print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
-            return ''
+#            return self.fromPdfText2mdText(result)
+#        except Exception as error:
+#            print(f"An exception occurred: {type(error).__name__} {error.args[0]}")
+#            return ''
             
            
     def useMammothMarkdownify(self,file_path):
@@ -143,30 +143,30 @@ class Extractor:
         except:
             return ''
 
-    def useMarkerPDF(self, file_path):
+#    def useMarkerPDF(self, file_path):
+#        try:
+#            converter = PdfConverter(artifact_dict=create_model_dict(),)
+#            rendered = converter(file_path)
+#            text, _, images = text_from_rendered(rendered)
+#            return text
+#        except:
+#            return ''
+
+    def useDocling(self, file_path):
         try:
-            converter = PdfConverter(artifact_dict=create_model_dict(),)
-            rendered = converter(file_path)
-            text, _, images = text_from_rendered(rendered)
-            return text
+            converter = DocumentConverter()
+            result = converter.convert(file_path)
+
+            return result.document.export_to_markdown()
         except:
-            return ''
-
-    # def useDocling(self, file_path):
-    #     try:
-    #         converter = DocumentConverter()
-    #         result = converter.convert(file_path)
-
-    #         return result.document.export_to_markdown()
-    #     except:
-    #         return ""
+            return ""
             
     def convert2markdown(self,file_path):
     
         if re.match(r".+\.pdf$", file_path):
-            return(self.usePymupdf4llm(file_path))    
+            #return(self.usePymupdf4llm(file_path))    
             #return(self.useMarkerPDF(file_path))  
-            # return(self.useDocling(file_path))  
+            return(self.useDocling(file_path))  
         elif re.match(r".+\.docx$", file_path):
             return(self.useMammothMarkdownify(file_path))
             #return(self.useDocx2txt(file_path))
