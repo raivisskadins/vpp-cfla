@@ -208,6 +208,12 @@ Satur dokumentus ar dažādu likumu tekstu, kas tiek iekļauts LLM uzvednē.
 This project relies on third-party software components.  
 A complete list of dependencies, including versions, licenses, and sources, is provided in [SRF-VPP-CFLA.md](SRF-VPP-CFLA.md).
 
-## License?
+## License
 
-Dažādas atsauces, ja tās nepieciešamas?
+This project is licensed under the [Apache License 2.0](LICENSE). [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+### Copyright
+
+© 2025 State Research Programme project *"Analysis of the Applicability of Artificial Intelligence Methods in the Field of European Union Fund Projects"*  
+(Project number: **VPP-CFLA-Artificial Intelligence-2024/1-0003**).  
+The project is implemented by the University of Latvia.
