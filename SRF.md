@@ -26,3 +26,4 @@
 | tabulate | 0.9.0 | [MIT ](https://pypi.org/project/tabulate/ ) | Pretty-print tabular data  | Unknown  |
 | ipywidgets | 8.1.7 | [BSD 3-Clause License ](https://pypi.org/project/ipywidgets/ ) | Jupyter interactive widgets  | http://jupyter.org  |
 | docling | 2.15.1 | [MIT ](https://pypi.org/project/docling/ ) | SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified document representation for powering downstream workflows such as gen AI applications.  | https://github.com/DS4SD/docling  |
+

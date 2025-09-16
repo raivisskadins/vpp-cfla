@@ -29,3 +29,4 @@
 | transformers | 4.45.2 | [Apache 2.0 License ](https://pypi.org/project/transformers/ ) | State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow  | https://github.com/huggingface/transformers  |
 | tabulate | 0.9.0 | [MIT ](https://pypi.org/project/tabulate/ ) | Pretty-print tabular data  | Unknown  |
 | ipywidgets | 8.1.7 | [BSD 3-Clause License ](https://pypi.org/project/ipywidgets/ ) | Jupyter interactive widgets  | http://jupyter.org  |
+

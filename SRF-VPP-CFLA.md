@@ -1,6 +1,6 @@
 # VPP-CFLA Software
 
-## Global dependencies
+## Global dependencies 
 
 _No global dependencies found_
 
