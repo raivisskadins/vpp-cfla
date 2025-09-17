@@ -32,7 +32,7 @@ Ar *PromptTest.ipynb* skriptu iespējams notestēt individuālas uzvednes.
 _Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā._
 
 ## Prototips
-Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo\README.md).
+Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo/README.md).
 
 ## Uzstādīšana
 Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija - vismaz 16GB RAM un vēlams arī laba video karte.
