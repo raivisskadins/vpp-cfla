@@ -32,7 +32,7 @@ Ar *PromptTest.ipynb* skriptu iespējams notestēt individuālas uzvednes.
 _Ir izstrādāti skripti ar kuriem iespējams iegūt pielāgotu embedding modeli šāda veida sistēmai (uzlabojot tā rezultātu), un projekta ietvarā ir pielāgots šāds modelis, kas ir pieejams prototipā._
 
 ## Prototips
-Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo\README.md).
+Atrodas mapē [demo](demo). Informāciju par tā uzstādīšanu un lietošanu meklēt *demo* mapes [README.md](demo/README.md).
 
 ## Uzstādīšana
 Sistēmas darbināšanai nepieciešama pietiekami stipra darba stacija - vismaz 16GB RAM un vēlams arī laba video karte.
@@ -215,5 +215,5 @@ This project is licensed under the [Apache License 2.0](LICENSE). [![License](ht
 ### Copyright
 
 © 2025 State Research Programme project *"Analysis of the Applicability of Artificial Intelligence Methods in the Field of European Union Fund Projects"*  
-(Project number: **VPP-CFLA-Artificial Intelligence-2024/1-0003**).  
+(Project number: **VPP-CFLA-Mākslīgais intelekts-2024/1-0003**).  
 The project is implemented by the University of Latvia.
