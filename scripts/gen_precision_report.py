@@ -40,7 +40,7 @@ def generate_precision_report_html(
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Precision Report</title>
+    <title>Accuracy Report</title>
     <style>
         body {{ font-family: Arial, sans-serif; padding: 20px; }}
         h1, h2, h3 {{ color: #333; }}
@@ -73,7 +73,7 @@ def generate_precision_report_html(
     </style>
 </head>
 <body>
-    <h1>Model Precision per Question</h1>
+    <h1>Model Accuracy per Question</h1>
     <div class="report-table">
         {table_html}
     </div>
