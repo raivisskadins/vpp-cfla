@@ -217,3 +217,6 @@ This project is licensed under the [Apache License 2.0](LICENSE). [![License](ht
 © 2025 State Research Programme project *"Analysis of the Applicability of Artificial Intelligence Methods in the Field of European Union Fund Projects"*  
 (Project number: **VPP-CFLA-Mākslīgais intelekts-2024/1-0003**).  
 The project is implemented by the University of Latvia.
+
+## Acknowledgements
+This study has been supported by the State Research Programme project "Analysis of the Applicability of Artificial Intelligence Methods in the Field of European Union Fund Projects" (Project number: VPP-CFLA-Mākslīgais intelekts-2024/1-0003).
