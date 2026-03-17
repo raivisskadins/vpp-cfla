@@ -429,7 +429,7 @@
   questions:
   - nr: 39.1
     prompt-id: p0
-    question: "Nav norādītas diskriminējošas prasības, piemēram, pretendentu nacionalitāte, ģeogrāfiskais izvietojums, pieredze konkrētā teritorijā"
+    question: "Ir norādītas diskriminējošas prasības, piemēram, pretendentu nacionalitāte, ģeogrāfiskais izvietojums, pieredze konkrētā teritorijā"
     PIL:
      - chapter: 13
   - nr: 39.2
@@ -577,12 +577,12 @@
 
       Drīkst prasīt pieredzi, kas apliecināta ar realizētiem projektiem kādā laika periodā, 
       bet nedrīkst prasīt vienkārši pieredzi gados.
-
-      iespējami 2 gadījumi:
-      A: tiek prasīta vienkārši pieredze gados.
-      B: tiek prasīti realizēti projekti kādā laika periodā.
-
-      Ja kādā no iepirkuma punktiem tiek prasīta A tipa pieredze, atbildi ar "nē", citādi ar "jā" 
+#
+#      iespējami 2 gadījumi:
+#      A: tiek prasīta vienkārši pieredze gados.
+#      B: tiek prasīti realizēti projekti kādā laika periodā.
+#
+#      Ja kādā no iepirkuma punktiem tiek prasīta A tipa pieredze, atbildi ar "nē", citādi ar "jā" 
   - nr: 39.24
     prompt-id: p15
     question: "Gadījumā, ja piegādātājs balstās uz citas personas tehniskajām un profesionālajām spējām, nav noteikts ierobežojums attiecībā uz piegādātāja un tā norādītās personas, uz kuras tehniskajām un profesionālajām iespējām piegādātājs balstās, lai apliecinātu savu kvalifikāciju, savstarpējo attiecību tiesisko raksturu (piemēram, prasība par solidāras atbildības esamību). T.i., iepirkuma dokumentos nav nepamatoti pieprasīts, lai piegādātājs un uzņēmums, uz kura spējām paļaujas piegādātājs, būtu tiesiskās attiecībās, jeb juridiski saistīti ar līgumu, bet pēc likuma drīkst prasīt solidāru atbildību."
